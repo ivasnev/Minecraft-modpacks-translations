@@ -1,0 +1,1094 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_two"
+	group: "2FE70BF4886F08F4"
+	icon: "byg:subzero_crystal_cluster"
+	id: "762FE9447FC2B081"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["55C6945D58D77AB6"]
+			description: [
+				"Пока солнце садится над Уилден-Гроув, для вашего ковена восходит и луна."
+				""
+				"Обними ночь."
+			]
+			id: "4C676E7D2BA75DE4"
+			rewards: [
+				{
+					count: 2
+					id: "0F52F5957E3F3790"
+					item: "rftoolsbase:infused_diamond"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "kubejs:gloaming_catalyst"
+					id: "7D0D0C5E4E8FF86D"
+					observe_type: 0
+					timer: 0L
+					title: "Gloaming Catalyst"
+					to_observe: "kubejs:gloaming_catalyst"
+					type: "observation"
+				}
+			]
+			title: "Gloaming Catalyst"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["00B21E64DEFACB40"]
+			description: ["Способный накладывать на предметы множество чар, этот зачаровывающий аппарат, без сомнения, будет иметь огромную ценность в будущих начинаниях."]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "31E4C2A162D7497C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "4C9ACBB578AFC307"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					count: 3
+					id: "3EA016A20F0AE7FA"
+					item: "ars_nouveau:arcane_platform"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2D56C518D77625DD"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "0C24097F0058189C"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55C6945D58D77AB6"]
+			description: [
+				"По словам Королевы, Уайлден-Гроув применил опасный ритуал, чтобы попытаться остановить Культ Ур-Гаста, пока не стало слишком поздно."
+				""
+				"К сожалению, ритуала оказалось слишком много, и они отдались Зову Зверя."
+				""
+				"Отправьте сообщение от имени Королевы. Скажите им &7 «О вашей дружбе оплакивают. А теперь отдохни».&r, затем опусти их."
+				""
+				"======================================"
+				""
+				"Врата для этого боя находятся на коротком таймере."
+				""
+				"Поймайте химеру Уилдена и победите остальных, чтобы получить дань Уилдена. Захваченная химера Уилдена будет использоваться для добычи Магицита, который имеет множество применений."
+				""
+				"Не стесняйтесь повторять этот бой, но он не предназначен для повторения."
+			]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:wilden_grove_gate"
+				}
+			}
+			id: "0B7E9625225C8413"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "57F9A2443CFDEB47"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5E066AEF6EE32A8F"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:wilden_grove_gate"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BBD39057657A72D"
+					item: "ars_nouveau:wilden_tribute"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0B7E9625225C8413"]
+			description: ["Дань Уилдена, найденная после битвы с Рощей Уилдена, — это знак, которым владеют те, кто достиг вершины магических способностей."]
+			id: "10238EBB9B55F67B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "2D791DABDEA4EA64"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1DDBFACA2CC5B913"
+					item: "ars_elemental:mark_of_mastery"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["21C352EEFEB25365"]
+			description: [
+				"Извлечение полезных количеств элементарного железа из руды — непростая задача, и для ее выполнения потребуется специальное оборудование."
+				""
+				"Для начала потребуется специально зачарованное дробильное колесо, чтобы разбить руду на более мелкие куски. Полученную измельченную руду затем необходимо будет обработать в кислотной ванне при высокой температуре, чтобы начать удаление примесей."
+			]
+			id: "6044FE23384692A5"
+			rewards: [
+				{
+					id: "7D7743EF1763E052"
+					item: "create:rotation_speed_controller"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0B70A4972A7F691F"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["33BCDA0A76E2523C"]
+			description: [
+				"Сосредоточенные выбросы контролируемой магической энергии необходимы для трансмутации определенных материалов. Так получилось, что специально подготовленный хрустальный шар действует как идеальная линза для такого рода трансмутации; принятие и усиление энергий, посланных извне."
+				""
+				"============================"
+				""
+				"Энергетические стержни должны быть прикреплены к блоку, выдающему энергию; их нельзя размещать отдельно."
+				""
+				"Размещение их на дне пульсирующего кристалла работает, но может быть немного неудобно. Вместо этого рассмотрите возможность использования счетчика энергии или модульного маршрутизатора в качестве блока для их размещения. Просто настройте их так, чтобы они выходили на ту сторону, на которой будет расположен энергетический стержень."
+			]
+			hide: true
+			icon: "powah:energizing_orb"
+			id: "60324503ED7AC4C1"
+			rewards: [
+				{
+					id: "4FE88FB703488A37"
+					item: "energymeter:meter"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1173DB9473878230"
+					item: "powah:energizing_rod_basic"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1E9F51D9111326A7"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					id: "05525E02360F94FE"
+					item: "powah:energizing_rod_basic"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6044FE23384692A5"]
+			description: [
+				"Чтобы получить высокую температуру и идеальные условия, необходимые для продолжения очистки железа, потребуется построить еще один магический аппарат — улучшенную доменную печь."
+				""
+				"Это устройство использует пылающие кристаллы в качестве топлива и, хотя оно идеально подходит для железа, оно также хорошо подходит для обработки многих других металлов."
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "2BA70920EA1ED0A8"
+			rewards: [
+				{
+					count: 8
+					id: "123F692F841A813C"
+					item: "powah:crystal_blazing"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "79ABD0D7EFB8D300"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "3296A9C9C71EBE17"
+					item: "kubejs:crude_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Improved Blast Furnace"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21C352EEFEB25365"]
+			description: [
+				"Следующие многоблочные машины могут быть изготовлены из блоков для начинающих:"
+				""
+				"● Металлический пресс"
+				"● Микшер"
+				"● Разливочная машина"
+				"● Ассемблер"
+				"● Лесопильный завод"
+			]
+			icon: "immersiveengineering:light_engineering"
+			id: "2C43443DCFFF65F4"
+			rewards: [
+				{
+					id: "4124CD879D379691"
+					item: "immersiveengineering:fluid_pump"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "05A605FCDAEBD972"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+			]
+			title: "Light Machinery"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1034686D695A8A6D"]
+			description: [
+				"В мирах существует определенный дисбаланс магических энергий. В то время как некоторые из них, как и этот мир, определенно переполнены магическим потенциалом, другим его явно не хватает."
+				""
+				"Когда Древо Жизни частично восстановлено, можно безопасно возобновить древнюю сделку, заключенную с духами Потустороннего мира, обменивая Источник на их труд."
+				""
+				"Матрица энергетического переноса служит мостом, облегчающим этот обмен. При правильной интеграции в тайный аппарат материалы и Источник могут быть перенаправлены в Потусторонний мир. Взамен обитающие там духи преобразуют материалы и возвращают их, сохраняя Источник в качестве платы."
+				""
+				"Действительно, вполне честная сделка."
+			]
+			icon: "kubejs:energetic_transference_matrix"
+			id: "21C352EEFEB25365"
+			rewards: [
+				{
+					id: "5C549F9BD46501E4"
+					item: "powah:player_transmitter_basic"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "363F6A8483473ED2"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			subtitle: "Interdimensional Outsourcing"
+			tasks: [
+				{
+					id: "4027AFF2F762B0D1"
+					item: "kubejs:energetic_transference_matrix"
+					type: "item"
+				}
+				{
+					id: "0FC163032DB062F7"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2BA70920EA1ED0A8"
+				"4C676E7D2BA75DE4"
+			]
+			description: [
+				"Металлургический заварочный аппарат, специализированный аппарат для магического наполнения материалов различными веществами, имеет решающее значение в процессе очистки элементарного железа."
+				""
+				"При включении элементарного огня сырое железо можно закалить в сталь, а добавление элементарного воздуха очистит металл до ковкого железа."
+			]
+			id: "49159D9F94B7006C"
+			rewards: [
+				{
+					count: 8
+					id: "37CB2B7EFAFD94D1"
+					item: "emendatusenigmatica:enriched_fire_essence"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1D69775E794A868E"
+					item: "emendatusenigmatica:enriched_air_essence"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7667047356862670"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4CC418E7200DF351"]
+			description: [
+				"Клеточный лабиринт кажется подходящим местом для начала. Найдите его и найдите подсказки о местонахождении Королевы.  Они примечательны своими большими ячейками, разделенными медовой паутиной и содержащими бесчисленное количество медовых коконов."
+				""
+				"Обязательно получите Защиту Улья перед входом!"
+				""
+				"================================"
+				""
+				"Находясь в зоне шмеля, щелкните правой кнопкой мыши по медовому компасу в воздухе, чтобы настроить его на клеточный лабиринт."
+			]
+			id: "57861ABDB35ED555"
+			rewards: [
+				{
+					count: 16
+					id: "7171199016FE9E99"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "707735727FE79FB9"
+					item: {
+						Count: 1b
+						id: "the_bumblezone:honey_compass"
+						tag: {
+							CompassType: "structure"
+							TargetDimension: "the_bumblezone:the_bumblezone"
+							TargetPos: {
+								X: -2480
+								Y: 0
+								Z: -1936
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57861ABDB35ED555"]
+			description: [
+				"Наконец-то королева!"
+				""
+				"Заслужите благо королевы, выполняя требуемые им задания или возвращая им то, что принадлежит им по праву."
+				""
+				"================================"
+				""
+				"Эссенция пчел действительно очень редкая награда, так что не тратьте ее зря!"
+				"Используйте его, чтобы сначала создать Сумрачный катализатор, а затем использовать его, чтобы получить остальные постоянные награды, которые он дает."
+			]
+			icon: "the_bumblezone:essence_of_the_bees"
+			id: "55C6945D58D77AB6"
+			rewards: [
+				{
+					count: 8
+					id: "5D5766AB445B727E"
+					item: "the_bumblezone:royal_jelly_bottle"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "21E8E534E6A7EBA6"
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run summon the_bumblezone:beehemoth ~ ~2 ~"
+					icon: "the_bumblezone:bee_queen_spawn_egg"
+					id: "1F7EF0E9FB5A71ED"
+					title: "The Queen's Guard"
+					type: "command"
+				}
+				{
+					advancement: "restrictedportals:overworld"
+					criterion: ""
+					id: "31B0F8BB850C792B"
+					type: "advancement"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3CC2FBDD7AB29403"
+					item: {
+						Count: 1b
+						id: "the_bumblezone:honey_compass"
+						tag: {
+							CompassType: "structure"
+							CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
+							CustomName: "item.the_bumblezone.honey_compass_throne_structure"
+							Locked: 1b
+							TargetDimension: "the_bumblezone:the_bumblezone"
+							TargetPos: {
+								X: -1472
+								Y: 0
+								Z: -4688
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "586A6799065EA729"
+					item: "the_bumblezone:essence_of_the_bees"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2153EBB1D50F0039"]
+			description: [
+				"Извилистые тропы в Зоне шмеля созданы для коллективных разумов, поэтому другим может быть трудно следовать им. Создание медового компаса будет самым безопасным способом продвижения вперед."
+				""
+				"Не забывайте проявлять уважение к пчелам, находясь в их доме. Кормите пчел и сотовые расплоды. Блокируйте вкусные медовые угощения, чтобы заработать защиту улья. В самые священные места пускают только почетных гостей."
+				""
+				"================================"
+				""
+				"Находясь в Bumblezone, можно уйти в любой момент, заминировав крышу или пол. Выше или ниже определенной точки вы будете телепортированы обратно туда, откуда пришли."
+			]
+			icon: "minecraft:honeycomb"
+			id: "4CC418E7200DF351"
+			rewards: [
+				{
+					count: 16
+					id: "6AA44F123D286226"
+					item: "the_bumblezone:bee_bread"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4F31450F59F287F9"
+					item: {
+						Count: 1b
+						id: "the_bumblezone:honey_compass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "727B3D8940DE93A6"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "the_bumblezone:bee_bread"
+								}
+								{
+									Count: 1b
+									id: "minecraft:honey_bottle"
+								}
+							]
+						}
+					}
+					title: "Bee Treats"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60324503ED7AC4C1"]
+			description: ["Этот уникальный сплав, известный древним как горная медь, особенно полезен в продвинутых зачарованиях в качестве усилителя."]
+			id: "00B21E64DEFACB40"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "23B342C9B1B2B79C"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "01AF1B57146069F1"
+					item: "emendatusenigmatica:brass_ingot"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31E4C2A162D7497C"]
+			description: [
+				"В местах, где до сих пор сохраняются старые обычаи, пчелы занимают привилегированное положение в общественной жизни. От рождения ребенка до смерти друга новости о важных событиях в первую очередь передаются пчелам."
+				""
+				"Было широко известно, что жители Уилден-Гроув были заядлыми пчеловодами, и некоторые предполагали, что пчелы передают им послания во сне, информируя их о новостях со всего мира."
+				""
+				"Красивая история, но, несомненно, простое гадание сделало бы то же самое."
+				""
+				"Тем не менее, эта практика так и не вымерла, особенно среди Рощи. Кажется вероятным, что по мере того, как Культ Ур-Гаста приобретал известность в этом месте, друиды, возможно, обсуждали события с пчелами, возможно, даже обращаясь за советом к Королеве."
+				""
+				"Найдите пчелиную матку и узнайте, есть ли у нее какие-нибудь подсказки."
+				""
+				"=============================================="
+				""
+				"Чтобы попасть в Зону шмеля, необходимо поместить телепорт прямо под улей, а затем бросить в улей Жемчужину Эндера."
+			]
+			icon: "minecraft:beehive"
+			id: "2153EBB1D50F0039"
+			min_width: 300
+			rewards: [
+				{
+					id: "6363919C99636DBD"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					advancement: "restrictedportals:bumblezone"
+					criterion: ""
+					id: "2E1997D119E6F3A3"
+					type: "advancement"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4A2B53416D546C80"
+					item: "minecraft:beehive"
+					type: "item"
+				}
+				{
+					id: "637617E3CEC25857"
+					item: "mekanism:teleporter"
+					type: "item"
+				}
+			]
+			title: "Telling of the Bees"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C676E7D2BA75DE4"]
+			description: [
+				"В награду за оказанные услуги королева дарует безопасный проход в пышное царство изобилия."
+				""
+				"Напитайте Древо Жизни своими дарами и отправляйтесь в Преисподнюю в поисках новых ответов по восстановлению Древа."
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:tree_of_life_2"
+			id: "2759988A5B69A455"
+			rewards: [
+				{
+					count: 2
+					id: "0606173E7BE74E39"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:stable_warp_scroll"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "14AC976E409BBD66"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "48FE87B0C247EE47"
+					item: "kubejs:tree_of_life_2"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "110AE71D3773300B"
+					item: "kubejs:shard_of_enduring"
+					type: "item"
+				}
+			]
+			title: "Tree of Life"
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2759988A5B69A455"]
+			description: [
+				"Благодаря предметам, соответствующим месту назначения, и благословению пчелиной королевы, путешествие в верхний мир теперь стало возможным."
+				""
+				"================================"
+				""
+				"Телепортация с использованием Древа Жизни склонна… к дрейфу. Обязательно возьмите с собой средства, чтобы вернуться домой, а также создать портал на другой стороне."
+			]
+			icon: "supplementaries:globe"
+			id: "356B7D1DFF632DBD"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "4F02BC40CABDEFBD"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					icon: "supplementaries:globe"
+					id: "38380859B691C3D0"
+					title: "Visit The Overworld"
+					type: "dimension"
+				}
+				{
+					id: "4448E4A5664FA364"
+					item: "kubejs:teleport_overworld"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["00B21E64DEFACB40"]
+			description: ["Элементали, бьющееся сердце магической энергетической сети, связанные с МЕ-контроллером, направляют поток магической энергии между различными компонентами сети, позволяя ведьме совершать самые чудесные подвиги, которые только можно вообразить."]
+			icon: "ae2:controller"
+			id: "330C200F0F0243FC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "72393E06B7289A9F"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "5C8EE393AD050F66"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3B6B2B365CAD16C1"
+					item: "ae2:controller"
+					type: "item"
+				}
+				{
+					id: "77937A9F77A075BC"
+					item: {
+						Count: 1b
+						id: "thermal:blizz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blizz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blizz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00B21E64DEFACB40"]
+			description: ["Известные своей силой и выносливостью, Базальзы будут неустанно работать над созданием механизмов, если их правильно компенсировать магической энергией."]
+			icon: "createaddition:electric_motor"
+			id: "1FDD6F9166A33F8D"
+			rewards: [
+				{
+					id: "340D5E7099030199"
+					item: "kubejs:bright_arcanite_crystal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "04B03547884EC0AA"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+				{
+					id: "3484734D8BB146ED"
+					item: {
+						Count: 1b
+						id: "thermal:basalz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_basalz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_basalz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D0AA79380E87E57"]
+			description: ["Рунические манифольды служат для стабилизации кармана большего размера, позволяя большему количеству духов одновременно работать над необходимой задачей, требуя при этом меньше физического пространства для самого устройства. Изысканный!"]
+			id: "7563E41DBF4FD286"
+			rewards: [
+				{
+					id: "616836DA3BC9596E"
+					item: "kubejs:bright_arcanite_crystal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6D78A382292EF627"
+					item: "industrialforegoing:machine_frame_simple"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1D0AA79380E87E57"]
+			description: [
+				"Следующие многоблочные машины могут быть построены из блоков Adept Artificing Blocks:"
+				""
+				"● Промышленный ферментер"
+				"● Промышленный соковыжималка"
+				"● НПЗ"
+				"● Дробилка"
+			]
+			id: "15F56E72212629FB"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "42238537475907E4"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0154E90B21C27B44"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+			]
+			title: "Heavy Machinery"
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49159D9F94B7006C"]
+			description: [
+				"Хотя инвар сам по себе полезен для точного изготовления, он более известен среди ремесленников своей уникальной способностью противостоять магическому сжатию."
+				""
+				"================================"
+				""
+				"Зачаруйте Инвар, чтобы создать Зачарованный Инвар."
+				""
+				"Следующая форма заклинания раздавит предметы на земле:"
+				""
+				"&5Снаряд&r > &aСокрушение&r > &6Чувствительный&r"
+			]
+			id: "1D0AA79380E87E57"
+			rewards: [
+				{
+					id: "5D844F4A7BA28FCE"
+					item: "pneumaticcraft:compressed_iron_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5C129E4F6EAC8C83"
+					item: "pneumaticcraft:ingot_iron_compressed"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1034686D695A8A6D"]
+			description: [
+				"Иметь друзей на Другой Стороне оказывается весьма выгодно, так как кажется, что расстояния для них мало что значат в их царстве."
+				""
+				"Квантовый сетевой мост довольно удобно использует эту функцию, позволяя транспортировать предметы, жидкости, газы и даже энергию на невероятно большие расстояния и между мирами."
+				""
+				"Для получения дополнительной информации о построении этого мультиблока обратитесь к квесту в главе «Прикладная энергетика 2»."
+			]
+			icon: "ae2:quantum_entangled_singularity"
+			id: "206B112E5F0C1C0A"
+			rewards: [
+				{
+					id: "51FA17E37F1C0EE5"
+					item: "ae2:singularity"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "191656C32155B744"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "588420C0C476EAA5"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			title: "Quantum Network Bridge"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7563E41DBF4FD286"]
+			description: ["Машины кажутся немного медленными? Просто освободите там место для еще нескольких духов с помощью установщиков уровня. Окажите им некоторую помощь, установив улучшения «Энергия» и «Скорость»."]
+			icon: "mekanism:basic_tier_installer"
+			id: "0945523A7F5C5494"
+			rewards: [
+				{
+					count: 2
+					id: "138C7D0E7C94DA26"
+					item: "mekanism:advanced_tier_installer"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "274A3556346681CA"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_tier_installer"
+								}
+							]
+						}
+					}
+					title: "Tier Installers"
+					type: "item"
+				}
+				{
+					id: "13E55AEB17889CB5"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:upgrade_energy"
+								}
+								{
+									Count: 1b
+									id: "mekanism:upgrade_speed"
+								}
+							]
+						}
+					}
+					title: "Upgrades"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7001144C71F0E0BC"]
+			description: [
+				"Хотя вручную это несколько обременительно, кажется, можно отколоть небольшие осколки от Пространственной Кристаллической Матрицы."
+				""
+				"Запихивание большого количества материала в эти кристаллы без какой-либо формы планарной стабилизации, похоже, разрушило карманное царство, образовав сингулярность, которая, по-видимому, способна связывать отдаленные места через какое-то другое пространство."
+				""
+				"================================"
+				""
+				"Компонента хранения 4K будет достаточно для создания сингулярностей."
+			]
+			icon: "ae2:condenser"
+			id: "1034686D695A8A6D"
+			rewards: [
+				{
+					id: "4AB0ED4E487C5632"
+					item: "ae2:singularity"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "20C82AF23D7B3FF1"
+					item: "ae2:condenser"
+					type: "item"
+				}
+				{
+					id: "34F15A06EC034615"
+					item: "ae2:cell_component_4k"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2D8D0D2EA0C2B717"]
+			description: [
+				"Хотя карманное пространство внутри этой Кристаллической Матрицы и невелико, оно должно оказаться весьма полезным для хранения материалов."
+				""
+				"Но, возможно, здесь есть еще что-то, что можно открыть. Возможно, очень острым ножом…"
+			]
+			id: "7001144C71F0E0BC"
+			rewards: [
+				{
+					count: 6
+					id: "5BFE207A3A4BFFD4"
+					item: "kubejs:dimensional_storage_crystal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5A0EE27AC02790EC"
+					item: {
+						Count: 1b
+						id: "occultism:dimensional_matrix"
+						tag: {
+							spiritName: "Morjyrzur"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7001144C71F0E0BC"]
+			description: [
+				"Как и предполагалось, даже при минимальной стабилизации Матрица может хранить поразительное количество предметов."
+				""
+				"Безусловно, необходимы дополнительные эксперименты с планарными стабилизаторами."
+			]
+			id: "5D2DEF2DF3C21A09"
+			rewards: [
+				{
+					id: "0BA1C1494478B440"
+					item: "occultism:storage_stabilizer_tier1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0DFF4D850A8B2CF1"
+					item: "occultism:storage_controller"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2153EBB1D50F0039"]
+			description: [
+				"Свет странным образом преломляется в этих кристаллах... как будто он прошел гораздо большее расстояние. Возможно, в этих историях все-таки есть доля правды?"
+				""
+				"Действительно, эти блестящие кристаллы меда после наделения их аурой демонстрируют очень необычную топологию."
+				""
+				"================================"
+				""
+				"Пространственные кристаллы можно превратить в блок расцвета и вырастить так же, как аметист, что упрощает получение большего количества."
+			]
+			icon: "the_bumblezone:glistering_honey_crystal"
+			id: "2D8D0D2EA0C2B717"
+			tasks: [
+				{
+					id: "1E12D23625F0F61C"
+					item: "the_bumblezone:glistering_honey_crystal"
+					type: "item"
+				}
+				{
+					id: "49BFDDCD188AC1EC"
+					item: "rftoolsbase:dimensionalshard"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "Chapter Two"
+}

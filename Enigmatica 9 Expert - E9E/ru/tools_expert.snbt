@@ -1,0 +1,1262 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tools_expert"
+	group: "0856CF7F5CBEB20A"
+	icon: {
+		Count: 1b
+		id: "minecraft:netherite_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "6532940C993EB0C1"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Многие моды добавляют множество очень полезных инструментов, которые легко не заметить. Эти квесты не охватывают всего, но послужат для того, чтобы выделить некоторые из наиболее примечательных вариантов, которые не были описаны в других главах квестов."
+				""
+				"Примечание. Большинство инструментов и доспехов помечены тегами для облегчения поиска в EMI. Чтобы узнать больше, выполните поиск по следующим категориям:"
+				""
+				"● #броня"
+				"● #armor/helm"
+				"● #armor/грудь"
+				"● #броня/леггинсы"
+				"● #armor/boots"
+				""
+				"● #инструменты"
+				"● #tools/кирка"
+				"● #инструменты/лопата"
+				"● #tools/axe"
+				"● #tools/мотыга"
+				"● #tools/многофункциональный инструмент"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "291E5727DD1ADDF4"
+			rewards: [
+				{
+					id: "6C88FB980076E7D5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "6CB601D6EDB6AA57"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools"
+						}
+					}
+					title: "Any Tool"
+					type: "item"
+				}
+			]
+			title: "Tools and Armor"
+			x: -10.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"Электроинструмент, способный добывать блоки на расстоянии."
+				""
+				"Опасность: лазерное устройство класса 4. Избегайте воздействия на глаза или кожу."
+				""
+				"Заметные обновления"
+				""
+				"● Место для факела"
+				"● Горнодобывающая промышленность"
+				"● Шелковое прикосновение"
+				"● Фортуна"
+				"● Фильтруемое обновление Бездны"
+				"● Магнитное обновление"
+			]
+			icon: {
+				Count: 1b
+				id: "mininggadgets:mininggadget"
+				tag: {
+					energy: 1000000
+				}
+			}
+			id: "400BF1DBF5EF7971"
+			rewards: [
+				{
+					id: "00DFFC8DE1F504C3"
+					item: "mininggadgets:upgrade_light_placer"
+					title: "Upgrade: Light Placer"
+					type: "item"
+				}
+				{
+					id: "1BD7572FA91C5CC2"
+					item: "mininggadgets:upgrade_void_junk"
+					type: "item"
+				}
+			]
+			subtitle: "Frickin' Laser Beams"
+			tasks: [
+				{
+					id: "2570BAAA2D7D8317"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mininggadgets:mininggadget"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "mininggadgets:mininggadget_simple"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "mininggadgets:mininggadget_fancy"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "Mining Gadget"
+					type: "item"
+				}
+				{
+					id: "3FEA294367FD4307"
+					item: "mininggadgets:modificationtable"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"Вам когда-нибудь хотелось начать строить платформу в небе, не пробираясь туда с помощью шеста?"
+				""
+				"Что ж, если ты не умеешь летать, тебе все равно может понадобиться этот шест для ботанов. Однако, если вы можете, возьмите бутылку облака, которая станет отправной точкой для платформы."
+				""
+				"Используя стеклянную бутылку между 192 и 196 годами, вы получите Облако в бутылке. Повторный щелчок правой кнопкой мыши по воздуху поместит облако, позволяя разместить напротив него другие блоки. Он исчезнет через несколько мгновений, но сам вернется в вашу бутылку, если вовремя поставить против него другой блок."
+			]
+			hide_dependency_lines: true
+			id: "7C80BF770471D535"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "7B241F0433CB46B4"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Head in the Clouds"
+			tasks: [
+				{
+					id: "36B52599415F3A77"
+					item: "quark:bottled_cloud"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"Сохраняйте каждый день как сокровище и тратьте его на все, что захотите."
+				""
+				"Подкрадитесь к большинству машин, щелкнув правой кнопкой мыши, чтобы потратить на них сохраненное время и ненадолго ускорить их работу."
+			]
+			hide_dependency_lines: true
+			id: "49E1BA11BF18AC10"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "7878D3C0A8B1AE6D"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Just to Spend it With You..."
+			tasks: [
+				{
+					id: "0862CF8273A2BA78"
+					item: {
+						Count: 1b
+						id: "tiab:time_in_a_bottle"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"В Enigmatica 9 нет специального мода для майнинга жил, поскольку у нас есть множество очень интересных инструментов, предлагающих те же функции и даже больше."
+				""
+				"AoE-добыча? Добыча жил? Жуткая добыча полезных ископаемых на расстоянии? Да, у нас это есть."
+				""
+				"Следующие квесты помогут выделить некоторые из наиболее примечательных вариантов. Наслаждаться!"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4650EB4575965AAD"
+			rewards: [
+				{
+					id: "19455C7D8B7BAD8F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "5792CBBC2598D7C9"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools"
+						}
+					}
+					title: "Any Tool"
+					type: "item"
+				}
+			]
+			title: "Vein Miner?"
+			x: -10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"Начиная с уровня бурового долота «Алмаз», пневматический отбойный молоток способен добывать жильные руды и древесину. У него также есть ряд других режимов, которые помогут более контролируемо очистить территорию."
+				""
+				"На уровне Нетерита он получает возможность добывать любой блок, если желает."
+			]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:jackhammer"
+				tag: {
+					DigMode: "MODE_1X1"
+					DrillBit: "DIAMOND"
+					UpgradeCache: {
+						speed: 10
+						volume: 25
+					}
+					UpgradeInventory: {
+						Items: [
+							{
+								Count: 25b
+								Slot: 0
+								id: "pneumaticcraft:volume_upgrade"
+							}
+							{
+								Count: 10b
+								Slot: 1
+								id: "pneumaticcraft:speed_upgrade"
+							}
+						]
+						Size: 9
+					}
+					"pneumaticcraft:air": 1200000
+				}
+			}
+			id: "28DF07224351C4B0"
+			rewards: [
+				{
+					count: 4
+					id: "6EB5B00B9A480AC9"
+					item: "pneumaticcraft:volume_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "183025779DB8C0CD"
+					item: "pneumaticcraft:jackhammer"
+					type: "item"
+				}
+				{
+					id: "39F8AF3AEE8B4C31"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "pneumaticcraft:drill_bit_diamond"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:drill_bit_netherite"
+								}
+							]
+						}
+					}
+					title: "Drill Bits"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"После установки Vein Mining Units Meka-Tool получает возможность добывать жилы в руде и бревнах. При желании его можно переключить на применение к любому блоку."
+				""
+				"Кроме того, взрывной блок позволяет минировать большую территорию размером до 9x9, радиус и все другие параметры настраиваются в меню Module Tweaker."
+			]
+			icon: {
+				Count: 1b
+				id: "mekanism:meka_tool"
+				tag: {
+					mekData: {
+						EnergyContainers: [
+							{
+								Container: 0b
+								stored: "16000000"
+							}
+						]
+						modules: {
+							"mekanism:blasting_unit": {
+								amount: 4
+								blast_radius: 4
+								enabled: 1b
+								renderHUD: 1b
+							}
+						}
+					}
+				}
+			}
+			id: "03213C040584537B"
+			rewards: [
+				{
+					id: "3DB1C4ACE53A9FE0"
+					item: "mekanism:module_shearing_unit"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4845CF13045C8DAE"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+				{
+					id: "5D160816F72F66AF"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:module_vein_mining_unit"
+								}
+								{
+									Count: 1b
+									id: "mekanism:module_blasting_unit"
+								}
+							]
+						}
+					}
+					title: "Mining Modules"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"При применении к топору чары «Бензопила» заставят топор валить целые деревья, а не по одному блоку за раз."
+				""
+				"Созданные топоры Steeleaf даже бывают предварительно зачарованными!"
+			]
+			id: "1EA2524632247041"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "0074A49DCD3DD188"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "12371C7615E49F82"
+					item: {
+						Count: 1b
+						id: "twilightforest:steeleaf_axe"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:efficiency"
+									lvl: 2s
+								}
+								{
+									id: "apotheosis:chainsaw"
+									lvl: 1s
+								}
+							]
+							RepairCost: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Chainsaw"
+			x: -8.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: ["Ручной топор Skyseeker изначально способен рубить целые деревья, что позволяет быстро справиться с любой лесозаготовительной операцией."]
+			id: "24FA5629BEE5681B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "3570B6A36168655F"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "26BB982DA92AE9A0"
+					item: {
+						Count: 1b
+						id: "naturesaura:sky_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"В Книгу Заклинаний Новичка входит Символ Падения, который действует на деревья, грибы, кактусы и любую другую растительность, срубая их одним быстрым действием."
+				""
+				"Доступный на уровне 2, символ разрушения используется для разрушения блоков любого типа."
+				""
+				""
+				"Примените символ AOE после любого из этих символов, чтобы увеличить количество блоков, которые они разрушат."
+				""
+				"Пример: Нажмите > Упасть или сломаться > AOE x8."
+			]
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:creative_spell_book"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 2
+						flavor: ""
+						spell_count: 10
+						spells: {
+							spell0: {
+								name: "Grow"
+								recipe: {
+									part0: "ars_nouveau:glyph_touch"
+									part1: "ars_nouveau:glyph_grow"
+									size: 2
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 255
+									r: 25
+								}
+							}
+							spell1: {
+								name: ""
+								recipe: {
+									part0: "ars_elemental:glyph_homing_projectile"
+									part1: "ars_nouveau:glyph_freeze"
+									part2: "ars_nouveau:glyph_cold_snap"
+									part3: "ars_nouveau:glyph_cold_snap"
+									part4: "ars_nouveau:glyph_amplify"
+									part5: "ars_nouveau:glyph_amplify"
+									part6: "ars_nouveau:glyph_amplify"
+									part7: "ars_nouveau:glyph_amplify"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_amplify"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 167
+									g: 25
+									r: 80
+								}
+							}
+							spell2: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_touch"
+									part1: "ars_nouveau:glyph_fell"
+									part2: "ars_nouveau:glyph_aoe"
+									part3: "ars_nouveau:glyph_aoe"
+									part4: "ars_nouveau:glyph_aoe"
+									part5: "ars_nouveau:glyph_aoe"
+									part6: "ars_nouveau:glyph_aoe"
+									part7: "ars_nouveau:glyph_aoe"
+									part8: "ars_nouveau:glyph_aoe"
+									part9: "ars_nouveau:glyph_aoe"
+									size: 10
+								}
+								sound: {
+									pitch: 0.01f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 25
+									r: 30
+								}
+							}
+							spell3: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_orbit"
+									part1: "ars_nouveau:glyph_aoe"
+									part2: "ars_nouveau:glyph_aoe"
+									part3: "ars_nouveau:glyph_aoe"
+									part4: "ars_nouveau:glyph_aoe"
+									part5: "ars_nouveau:glyph_aoe"
+									part6: "ars_nouveau:glyph_aoe"
+									part7: "ars_nouveau:glyph_split"
+									part8: "ars_nouveau:glyph_split"
+									part9: "ars_nouveau:glyph_lightning"
+									size: 10
+								}
+								sound: {
+									pitch: 1.67f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 255
+									r: 255
+								}
+							}
+							spell4: {
+								name: "Launch"
+								recipe: {
+									part0: "ars_nouveau:glyph_projectile"
+									part1: "ars_nouveau:glyph_launch"
+									part2: "ars_nouveau:glyph_heal"
+									size: 3
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 90
+									r: 255
+								}
+							}
+							spell5: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_projectile"
+									part1: "ars_nouveau:glyph_redstone_signal"
+									size: 2
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 255
+									r: 25
+								}
+							}
+							spell6: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_touch"
+									part1: "ars_nouveau:glyph_snare"
+									part2: "ars_nouveau:glyph_crush"
+									size: 3
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 74
+									r: 150
+								}
+							}
+							spell7: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_orbit"
+									part1: "ars_nouveau:glyph_split"
+									part2: "ars_nouveau:glyph_split"
+									part3: "ars_nouveau:glyph_split"
+									part4: "ars_nouveau:glyph_harm"
+									part5: "ars_nouveau:glyph_extend_time"
+									part6: "ars_nouveau:glyph_hex"
+									part7: "ars_elemental:glyph_poison_spores"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_extend_time"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 25
+									g: 255
+									r: 25
+								}
+							}
+							spell8: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_self"
+									part1: "ars_elemental:glyph_poison_spores"
+									part2: "ars_nouveau:glyph_extend_time"
+									part3: "ars_nouveau:glyph_extend_time"
+									part4: "ars_nouveau:glyph_extend_time"
+									part5: "ars_nouveau:glyph_extend_time"
+									part6: "ars_nouveau:glyph_amplify"
+									part7: "ars_nouveau:glyph_amplify"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_amplify"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 180
+									g: 25
+									r: 255
+								}
+							}
+							spell9: {
+								name: "Storm"
+								recipe: {
+									part0: "ars_nouveau:glyph_orbit"
+									part1: "ars_nouveau:glyph_split"
+									part2: "ars_nouveau:glyph_split"
+									part3: "ars_nouveau:glyph_split"
+									part4: "ars_elemental:glyph_poison_spores"
+									part5: "ars_elemental:glyph_poison_spores"
+									part6: "ars_nouveau:glyph_amplify"
+									part7: "ars_nouveau:glyph_amplify"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_amplify"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 25
+									r: 30
+								}
+							}
+						}
+					}
+				}
+			}
+			id: "2CFAA6C4D717E6BF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "26D391BE317C1493"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6EF4B7A372868F7B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_spell_book"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_spell_book"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_spell_book"
+								}
+							]
+						}
+					}
+					title: "Spellbooks"
+					type: "item"
+				}
+				{
+					id: "5CF6DEDBBA142D2B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:glyph_fell"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:glyph_break"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Glyph of Fell or Break"
+					type: "item"
+				}
+			]
+			title: "Spells"
+			x: -11.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"Обновления до базовых лопат и молотков. Эти инструменты добывают территорию размером 3х3."
+				""
+				"Примените к ним Силу глубины, чтобы увеличить глубину добычи. Каждый уровень чар заставит инструмент добывать еще один блок в глубину."
+			]
+			icon: {
+				Count: 1b
+				id: "simplytools:diamond_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E6CE233428FFE63"
+			rewards: [
+				{
+					id: "60ABB884D6744408"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [
+								{
+									id: "simplytools:power_of_the_depth"
+									lvl: 3s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "38A42BC191855ECB"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^simplytools:.*_(hammer|excavator)$"
+						}
+					}
+					title: "Excavators"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: ["С каждым уровнем зарядки «Бесконечная дрель» и «Бесконечная пила» работают во все возрастающих областях. Бур работает в простом радиусе вокруг точки добычи, а пила пилит деревья сверху вниз на большой площади."]
+			icon: {
+				Count: 1b
+				id: "industrialforegoing:infinity_drill"
+				tag: {
+					CanCharge: 1b
+					Energy: 9223372036854775807L
+					Fluid: {
+						Amount: 1000000
+						FluidName: "biofuel"
+					}
+					Selected: "ARTIFACT"
+					Special: 1b
+				}
+			}
+			id: "4439EC0EB57A1F69"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "52510292FF8D040C"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0DD2A260790C8A0A"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "industrialforegoing:infinity_nuke"
+									tag: {
+										CanCharge: 1b
+										Energy: 9223372036854775807L
+										Fluid: {
+											Amount: 0
+											FluidName: "biofuel"
+										}
+										Selected: "ARTIFACT"
+										Special: 0b
+									}
+								}
+								{
+									Count: 1b
+									id: "industrialforegoing:infinity_hammer"
+									tag: {
+										Beheading: 0
+										CanCharge: 1b
+										Energy: 9223372036854775807L
+										Fluid: {
+											Amount: 0
+											FluidName: "biofuel"
+										}
+										Selected: "ARTIFACT"
+										Special: 0b
+									}
+								}
+								{
+									Count: 1b
+									id: "industrialforegoing:infinity_drill"
+									tag: {
+										CanCharge: 1b
+										Energy: 9223372036854775807L
+										Fluid: {
+											Amount: 0
+											FluidName: "biofuel"
+										}
+										Selected: "ARTIFACT"
+										Special: 0b
+									}
+								}
+								{
+									Count: 1b
+									id: "industrialforegoing:infinity_trident"
+									tag: {
+										CanCharge: 1b
+										Channeling: 0b
+										Energy: 9223372036854775807L
+										Fluid: {
+											Amount: 0
+											FluidName: "biofuel"
+										}
+										Loyalty: 0
+										Riptide: 0
+										Selected: "ARTIFACT"
+										Special: 0b
+									}
+								}
+								{
+									Count: 1b
+									id: "industrialforegoing:infinity_saw"
+									tag: {
+										CanCharge: 1b
+										Energy: 9223372036854775807L
+										Fluid: {
+											Amount: 0
+											FluidName: "biofuel"
+										}
+										Selected: "ARTIFACT"
+										Special: 0b
+									}
+								}
+							]
+						}
+					}
+					title: "Infinity Tools"
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"И Mining Drill, и Buzzsaw работают на жидком топливе, принимая большую часть жидкого топлива в упаковке."
+				""
+				"Сам бур способен обрабатывать территорию размером до 3х3, а циркулярная пила попытается срубить целые деревья."
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Items: [
+							{
+								Count: 1b
+								Slot: 0
+								id: "immersiveengineering:drillhead_steel"
+							}
+						]
+						Size: 5
+					}
+				}
+				id: "immersiveengineering:drill"
+				tag: {
+					Fluid: {
+						Amount: 4000
+						FluidName: "immersiveengineering:biodiesel"
+					}
+					singleBlockMode: 0b
+					upgrades: {
+						capacity: 2000
+						oiled: 1b
+						waterproof: 1b
+					}
+				}
+			}
+			id: "3F7FCEDE77D9EC80"
+			rewards: [
+				{
+					id: "7A8C7FC8EDC3EA90"
+					item: "immersiveengineering:toolupgrade_drill_damage"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1CE712C151A1CB1F"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									ForgeCaps: {
+										Parent: {
+											Items: [ ]
+											Size: 5
+										}
+									}
+									id: "immersiveengineering:buzzsaw"
+									tag: { }
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										Parent: {
+											Items: [ ]
+											Size: 5
+										}
+									}
+									id: "immersiveengineering:drill"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "Engineer's Tools"
+					type: "item"
+				}
+				{
+					id: "6C75C7F200B7655D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "immersiveengineering:drillhead_iron"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:drillhead_steel"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:sawblade"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:rockcutter"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Drills and Sawblades"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			dependency_requirement: "all_started"
+			description: [
+				"Creeping Creepers тебя расстроили? Ретивые зомби бросаются тебе в лицо? Непристойные скелеты просто не дадут вам спокойно добывать?"
+				""
+				"Получите щит! Но это не просто щит, а превосходные щиты, которые носят в слотах Curio и автоматически защищают своего владельца даже от подлых атак сзади."
+				""
+				"Превосходные щиты имеют три важные характеристики, определяющие, насколько хорошо они защищают:"
+				""
+				"● Очки жизни"
+				"Количество сердец урона, которые они способны заблокировать, прежде чем потребуется перезарядка."
+				""
+				"● Скорость пополнения счета"
+				"Количество секунд, необходимое для перезарядки половины щита."
+				""
+				"● Задержка перезарядки"
+				"Время в секундах без получения урона, прежде чем щит начнет перезаряжаться."
+				""
+				"В совокупности эти характеристики означают, что щит будет эффективен только в ситуациях, когда носитель не подвергается постоянному нападению. Как только очки жизни уменьшаются, носителю необходимо отойти от опасности, чтобы дать ему возможность перезарядиться. Итак, они отлично подходят для неожиданных атак, но не сохранят вам жизнь навсегда."
+				""
+				"В дополнение к своим основным характеристикам, они также могут быть зачарованы рядом интересных эффектов, таких как излечение носителя от всех эффектов зелий, когда щит истощен, или применение яда ко всему, что повреждает щит."
+			]
+			hide_dependency_lines: true
+			id: "121CF33BFAEF6205"
+			min_width: 300
+			rewards: [
+				{
+					id: "3345648606C68BEB"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [
+								{
+									id: "superiorshields:quickened"
+									lvl: 3s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "2FCA3B2C9ABB9D73"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "superiorshields:netherite_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "50541B95613CA29B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "superiorshields:bronze_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:electrum_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:constantan_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:ironwood_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:steeleaf_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:knightmetal_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:enchanter_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Superior Shields"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"Нужна помощь в использовании всех этих инструментов? Создайте пояс для инструментов!"
+				""
+				"Пояс для инструментов по умолчанию вмещает два инструмента, но его можно расширить до девяти слотов, добавив поясные сумки на наковальне."
+				""
+				"Когда ремень носится в слоте для сувениров, он позволяет быстро переключаться между любыми хранящимися в нем инструментами. Проверьте меню «Привязки клавиш», чтобы найти параметры. По умолчанию открытие меню смены инструментов находится на R, а открытие инвентаря ремня для добавления или удаления инструментов — на V."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "toolbelt:belt"
+				tag: { }
+			}
+			id: "5460EDD6024A9548"
+			rewards: [
+				{
+					id: "1A699324C4F5EC1A"
+					item: "toolbelt:pouch"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5A274B01C0215C3F"
+					item: {
+						Count: 1b
+						id: "toolbelt:belt"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: -12.5d
+		}
+	]
+	title: "Equipment"
+}

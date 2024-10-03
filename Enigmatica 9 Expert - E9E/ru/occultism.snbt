@@ -1,0 +1,1565 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "occultism"
+	group: "5A8B89F87F77CF4C"
+	icon: {
+		Count: 1b
+		id: "occultism:miner_djinni_ores"
+		tag: {
+			Damage: 0
+			spiritName: "Drakarcark"
+		}
+	}
+	id: "0000000000000CB0"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E45018D600614BA"]
+			description: [
+				"Благодаря Оккультизму Потусторонний мир и его обитатели будут в вашем полном распоряжении. От простых фамильяров, дающих разнообразные боевые бонусы, до рудодробильных духов для ранней обработки руды и мощных джиннов-шахтеров, позволяющих собирать ценные материалы по вашему приказу, — в «Оккультизме» каждый найдет что-то для себя."
+				""
+				"В «Словаре духов» есть все необходимое, чтобы начать путь, и он выступает как в качестве руководства, так и в качестве ингредиента для получения имен духов."
+			]
+			hide: true
+			icon: "occultism:dictionary_of_spirits"
+			id: "0000000000000CB1"
+			rewards: [
+				{
+					id: "72582AC6CA1713DA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "379B9C805D818944"
+					item: "occultism:datura_seeds"
+					type: "item"
+				}
+			]
+			title: "Occultism"
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0000000000000CB1"]
+			description: [
+				"Сон Демона, который считается местным растением Потустороннего мира, подаренным Духами много лет назад для начала торговли между мирами, представляет собой мощный фрукт с несколькими уникальными свойствами, которые использовались практикующими на протяжении веков."
+				""
+				"Поедание фруктов Мечты Демона отодвигает завесу, разделяющую этот мир и Потусторонний мир, позволяя увидеть вещи такими, какие они есть на самом деле. В частности, деревья Потустороннего мира в этом мире имеют тенденцию выдавать себя за обыкновенный дуб, но их можно собрать такими, какие они есть, находясь под воздействием Сна Демона."
+				""
+				"Сжигание плода приводит к открытию небольшого разлома в Потусторонний мир, создавая пламя, которое существует в основном в этом Другом Месте. Просто бросьте его и зажгите. Это пламя не сжигает существ, но может использоваться для трансмутации или очистки определенных материалов, например, для превращения андезита в другой камень."
+				""
+				"Наконец, духи из потустороннего мира обожают вкус этого фрукта, и кормление им им поможет восстановить их здоровье."
+				""
+				"Семена мечты демона можно получить на рынке «Земледелие для тупоголовых»."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:spirit_fire"
+			id: "0000000000000CDA"
+			min_width: 300
+			rewards: [
+				{
+					auto: "disabled"
+					count: 8
+					id: "0000000000000CDE"
+					item: "occultism:otherstone"
+					title: "Otherstone"
+					type: "item"
+				}
+				{
+					auto: "disabled"
+					count: 4
+					id: "0000000000000CDF"
+					item: "occultism:spirit_attuned_gem"
+					title: "Spirit Attuned Gem"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000E22"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Burnin' For You"
+			tasks: [
+				{
+					id: "0000000000000CDC"
+					item: "occultism:spirit_attuned_gem"
+					type: "item"
+				}
+				{
+					id: "0000000000000CDD"
+					item: "occultism:otherstone"
+					type: "item"
+				}
+				{
+					id: "386529EFD016E71D"
+					item: "occultism:otherworld_log"
+					type: "item"
+				}
+				{
+					id: "371C009E09E2D16E"
+					item: "occultism:datura"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Ritual Magic"
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F87CE318651EBA0"]
+			description: [
+				"Когда кто-то действует вне времени, раскопать образец горной породы и извлечь все полезные частицы материала — тривиальная задача. Все более мощные духи смогут получить еще больший урожай от данного образца."
+				""
+				"Хотя они не особенно быстры в этом, Foliot Crushers отлично подходят для любых операций по добыче полезных ископаемых. Им можно передать стопку предметов, щелкнув их правой кнопкой мыши, или они просто подберут ближайшие предметы, которые смогут раздавить. В любом случае они бросят измельченный материал на землю, где его нужно будет подобрать."
+			]
+			hide_dependency_lines: true
+			icon: "emendatusenigmatica:iron_ore"
+			id: "0000000000000CF7"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0000000000000CFB"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Working up an Apatite"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_foliot_crusher"
+					criterion: ""
+					id: "6742939F6AE06371"
+					type: "advancement"
+				}
+			]
+			title: "Summon Foliot Crusher"
+			x: 17.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: [
+				"Свечи — еще один предмет, используемый в большинстве ритуальных пентаклей. Их делают из жира, получаемого при забое свиней, коров, овец и других подобных животных."
+				""
+				"Они работают как источник света, а также отлично подходят для украшения!"
+			]
+			icon: "minecraft:purple_candle"
+			id: "0000000000000D92"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000DFD"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Standard Candle"
+			tasks: [
+				{
+					id: "0000000000000DF3"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "minecraft:candles"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "hexerei:candles"
+									}
+								}
+								{
+									Count: 1b
+									id: "occultism:candle_white"
+								}
+							]
+						}
+					}
+					title: "Any Candle"
+					type: "item"
+				}
+				{
+					id: "0000000000000DF5"
+					item: "occultism:tallow"
+					type: "item"
+				}
+			]
+			title: "Candles"
+			x: 11.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000CDA"]
+			description: [
+				"Общение и торговля с Потусторонним миром осуществимы и безопасны для послушника, хотя для начала потребуются некоторые специализированные материалы."
+				""
+				"Очищенные чернила — единственное известное вещество, подходящее для записи имен духов для использования в ритуальной магии. Все остальное имеет странную тенденцию исчезать, как будто оно предпочитает не участвовать в нем."
+				""
+				"Обгоревший потусторонний камень и пепел потустороннего мира можно объединить и очистить, чтобы получить специальную форму мела, подходящую для рисования ритуальных кругов, используемых в ритуалах."
+			]
+			id: "0000000000000D96"
+			rewards: [
+				{
+					count: 4
+					id: "0000000000000DEB"
+					item: "occultism:purified_ink"
+					title: "Purified Ink"
+					type: "item"
+				}
+				{
+					id: "0000000000000DEC"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000E21"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000D97"
+					item: "occultism:purified_ink"
+					type: "item"
+				}
+				{
+					id: "3C082F7F992A1F03"
+					item: "occultism:otherworld_ashes"
+					type: "item"
+				}
+				{
+					id: "5F98799A8ABB1A19"
+					item: "occultism:burnt_otherstone"
+					type: "item"
+				}
+			]
+			title: "Occult Materials"
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["Хотя белый мел встречается в большинстве известных пентаклей, он сам по себе имеет лишь ограниченную связывающую силу. Тем не менее, его можно использовать для основных ритуалов, пока не будут получены дополнительные материалы."]
+			id: "0000000000000D9A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000E25"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					id: "3E2B9D7C4A9B4BD5"
+					item: "occultism:brush"
+					type: "item"
+				}
+			]
+			subtitle: "Returning to the Chalk"
+			tasks: [
+				{
+					id: "0000000000000D9B"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_white"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "White Chalk"
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["Включение редких и дорогих материалов в Мел позволяет создать более прочную связь с Потусторонним миром, позволяя духам напрямую связываться с предметами для их улучшения."]
+			id: "0000000000000D9C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0DA435A9800123EC"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "4FAC0A541EDA605E"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "All Chalks of Life"
+			tasks: [
+				{
+					id: "0000000000000D9D"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_gold"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Golden Chalk"
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: [
+				"Благодаря сильному экстрапланарному компоненту фиолетовый мел помогает связывать все более могущественных духов."
+				""
+				"Однако ритуалы, в которых используется фиолетовый мел, не лишены риска, и при общении с некоторыми из этих духов была бы разумна определенная осторожность; не все так дружелюбны к тому, чтобы их призвали в это царство."
+			]
+			id: "0000000000000D9E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "64B928DADA731482"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "2D08D8D8EDB7FCA5"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "... And The Moon Went With Him"
+			tasks: [
+				{
+					id: "0000000000000D9F"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_purple"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["Наполненный самой сущностью могущественных духов, Красный Мел используется в качестве последнего слоя защиты в самых могущественных кругах призыва."]
+			id: "0000000000000DA0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000E53"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "03B4E985392B7110"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Culture Chalk"
+			tasks: [
+				{
+					id: "0000000000000DA1"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_red"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6A1D5A9B037CB379"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Поистине ошеломляющее волшебство, Актуатор Пространственного Хранения захватывает карман Потустороннего мира и делает его доступным из любой точки мира."
+				""
+				"Хотя изначально он довольно небольшой, его мощность можно значительно расширить за счет добавления стабилизаторов. Можно добавить до шести стабилизаторов; поместите их так, чтобы они были обращены к кристаллу на самом Приводе."
+				""
+				"Доступ к приводу возможен вручную или с помощью средств автоматизации, таких как трубы, бункеры или шина хранения данных ME."
+				""
+				"Их можно брать и перемещать, не беспокоясь об их содержимом; все будет на том же месте, где и было оставлено, когда привод хранилища будет помещен обратно вниз. Однако все, что связано с приводом, например червоточины, необходимо будет восстановить."
+			]
+			id: "0000000000000DA4"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E6C"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Truly Out of This World"
+			tasks: [
+				{
+					id: "0000000000000DA5"
+					item: "occultism:storage_controller"
+					type: "item"
+				}
+			]
+			title: "Cross-Dimensional Storage"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			description: [
+				"Стабилизаторы хранения используются для расширения внутреннего пространства накопителя за счет сохранения целостности пространственного кармана."
+				""
+				"Сами стабилизаторы могут быть размещены на расстоянии до пяти блоков от привода в каждом из основных направлений. На каждой стороне может быть активен только один, но можно использовать все шесть сторон привода. Убедитесь, что они обращены к Кристаллу на Приводе, а не к самому пьедесталу."
+				""
+				"Примечание. Удаление стабилизатора не приведет к потере элементов привода. Вместо этого, если текущее хранилище Актуатора превышает его текущую емкость, он просто откажется от новых предметов. Однако предметы все равно можно извлечь."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000DA8"
+			rewards: [
+				{
+					id: "0000000000000E59"
+					item: "occultism:storage_stabilizer_tier1"
+					title: "Tier 1 Dimensional Storage Stabilizer"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0E27087990A1AE2B"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+			]
+			subtitle: "Taking the broader view"
+			tasks: [
+				{
+					id: "0000000000000DA9"
+					item: "occultism:storage_stabilizer_tier1"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000DA8"]
+			description: ["Используя резонансные свойства есния для усиления поля стабилизации, эти стабилизаторы являются самыми мощными из известных и расширяют возможности накопительного привода до невероятной мощности."]
+			id: "0000000000000DAE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000E55"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Expanding horizons"
+			tasks: [
+				{
+					id: "0000000000000DAF"
+					item: "occultism:storage_stabilizer_tier4"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			description: [
+				"Небольшое портативное устройство, предоставляющее носителю портативную связь с Актуатором Хранилища, к которому оно привязано."
+				""
+				"Подкрадитесь и щелкните правой кнопкой мыши по приводу, чтобы связать его."
+			]
+			id: "0000000000000DB2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E5D"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Overstepping boundaries"
+			tasks: [
+				{
+					id: "0000000000000DB3"
+					item: {
+						Count: 1b
+						id: "occultism:storage_remote"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			description: [
+				"Переносное отверстие, которое можно разместить где угодно, предоставляя доступ к привязанному Актуатору Хранилища. Доступ к ним осуществляется с помощью средств автоматизации, таких как трубы или транспортеры-фолиоты, что позволяет легко транспортировать материалы на большие расстояния."
+				""
+				"Подкрадитесь и щелкните правой кнопкой мыши по приводу, чтобы связать его."
+			]
+			id: "0000000000000DBA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E5B"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+				{
+					id: "0000000000000E5C"
+					item: {
+						Count: 1b
+						id: "occultism:stable_wormhole"
+						tag: { }
+					}
+					title: "Stable Wormhole"
+					type: "item"
+				}
+			]
+			subtitle: "Bigger on the inside"
+			tasks: [
+				{
+					id: "0000000000000DBB"
+					item: {
+						Count: 1b
+						id: "occultism:stable_wormhole"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4F87CE318651EBA0"]
+			description: [
+				"Незначительная безделушка с мощными последствиями, Камень Души по сути является небольшими вратами в Потусторонний мир, позволяющими поместить одно существо в стазис в Другом Месте."
+				""
+				"Существа, содержащиеся таким образом, не ощущают времени, и их биологические потребности полностью прекращаются."
+				""
+				"Щелкните правой кнопкой мыши существо, чтобы сохранить его, и еще раз щелкните правой кнопкой мыши блок, чтобы освободить его."
+			]
+			id: "0000000000000DBC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E36"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+			]
+			subtitle: "How Captivating"
+			tasks: [
+				{
+					id: "0000000000000DBD"
+					item: {
+						Count: 1b
+						id: "occultism:soul_gem"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Soul Gem"
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000DE6"]
+			description: [
+				"Хотя Жезла для прорицания достаточно, чтобы найти иесниевую руду, этот процесс медленный и требует острого взгляда. Однако для облегчения этого процесса можно использовать Духов Потустороннего мира."
+				""
+				"Нося очки с линзами, наполненными Духом Потустороннего мира, человек получает возможность видеть материалы Потустороннего мира такими, какие они есть на самом деле; очень похоже на поедание Мечты Демона, хотя и без тошнотворных побочных эффектов."
+			]
+			icon: {
+				Count: 1b
+				id: "occultism:otherworld_goggles"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0000000000000DBE"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "120DF5E2156628C5"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5B611AD85C18BD01"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Cautiously Optimistic"
+			tasks: [
+				{
+					id: "0000000000000DBF"
+					item: {
+						Count: 1b
+						id: "occultism:otherworld_goggles"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Otherworld Goggles"
+			x: 15.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000DD0"]
+			description: ["Иесниевая кирка имеет те же характеристики, что и обычная алмазная кирка, но с дополнительным бонусом, позволяющим добывать иесниевую руду."]
+			id: "0000000000000DC2"
+			rewards: [
+				{
+					command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0000000000000E48"
+					title: "Miner's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E49"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000DC3"
+					item: {
+						Count: 1b
+						id: "occultism:iesnium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: [
+				"Вызов одержимого эндермита позволяет начинающему практикующему легко получить доступ к редкому компоненту, необходимому для некоторых ритуалов: Камню Края."
+				""
+				"Да, можно просто отправиться в Край, чтобы получить его, но этот шлюз не всегда доступен. Вместо этого небольшой бартер с Потусторонним миром может привести к тому, что некоторые из них будут доставлены лишь с незначительными осложнениями."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:crushed_end_stone"
+			id: "0000000000000DC4"
+			min_width: 300
+			rewards: [
+				{
+					count: 16
+					id: "0000000000000E66"
+					item: "minecraft:end_stone"
+					title: "End Stone"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000E67"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Stairway to the Stars"
+			tasks: [
+				{
+					advancement: "occultism:occultism/possess_endermite"
+					criterion: ""
+					id: "309ABA5DBFCE9FAE"
+					type: "advancement"
+				}
+			]
+			title: "Crushed End Stone"
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["Черепа используются для изготовления нескольких Ритуальных Пентаклей, и получить их не всегда легко. Заручитесь помощью Потустороннего мира, чтобы вызвать Скелета с избытком черепов."]
+			hide_dependency_lines: true
+			icon: "minecraft:skeleton_skull"
+			id: "0000000000000DC6"
+			rewards: [
+				{
+					count: 2
+					id: "0000000000000E65"
+					item: "minecraft:skeleton_skull"
+					title: "Skeleton Skull"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000E68"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "We'll beheading off, then"
+			tasks: [
+				{
+					advancement: "occultism:occultism/possess_skeleton"
+					criterion: ""
+					id: "682D362422C35932"
+					type: "advancement"
+				}
+			]
+			title: "Skeleton Skulls"
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: [
+				"Крайний жемчуг — мощные объекты алхимического значения. Хотя их можно получить у редкого Эндермена, оказавшегося в нашем мире, нет никакой гарантии, что он у них будет."
+				""
+				"С другой стороны, из Одержимого Края всегда выпадает несколько штук."
+				""
+				"Будьте осторожны, поскольку этот конкретный ритуал может стать весьма нестабильным, а его многомерная природа, как известно, разрывает ткань реальности."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:ender_pearl"
+			id: "0000000000000DC8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E37"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+				{
+					count: 8
+					id: "0000000000000E3A"
+					item: "minecraft:ender_pearl"
+					title: "Ender Pearl"
+					type: "item"
+				}
+			]
+			subtitle: "Black Oyster Occult"
+			tasks: [
+				{
+					advancement: "occultism:occultism/possess_enderman"
+					criterion: ""
+					id: "2AECCA110B58A591"
+					type: "advancement"
+				}
+			]
+			title: "Ender Pearls"
+			x: 11.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4F87CE318651EBA0"]
+			description: [
+				"Пространственная Шахта открывает крошечные разломы по всем планам, предоставляя трудолюбивым Духам доступ ко всем видам драгоценных материалов. Материалы, которыми они с радостью поделятся, так как не смогут получить к ним доступ без посторонней помощи."
+				""
+				"Для работы шахтерская лампа должна быть размещена внутри шахты. Со временем он будет генерировать материалы, которые можно будет извлечь с помощью любой формы автоматизации. Сами лампы обладают долговечностью, которая расходуется за каждый завершенный цикл добычи. Хоть они и недолговечны, при желании их можно извлечь и починить."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:dimensional_mineshaft"
+			id: "0000000000000DCA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0000000000000E4A"
+					title: "Miner's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0000000000000E69"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "They all have their faults"
+			tasks: [
+				{
+					id: "0000000000000DCB"
+					item: "occultism:dimensional_mineshaft"
+					type: "item"
+				}
+				{
+					id: "34740575B9FE43A9"
+					item: {
+						Count: 1b
+						id: "occultism:miner_foliot_unspecialized"
+						tag: {
+							Damage: 0
+							maxMiningTime: 400
+							rollsPerOperation: 1
+							spiritName: "Mrokzeraeus"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000DCA"]
+			description: ["Вершина горнодобывающей промышленности, основанной на духах, острый ум и терпение маридов позволяют им находить руды, которые меньшие духи не заметили бы."]
+			id: "0000000000000DCE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000E4E"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0000000000000E6A"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Try not to take them for Granite"
+			tasks: [
+				{
+					id: "28F2FB6D5692A0D7"
+					item: {
+						Count: 1b
+						id: "occultism:miner_marid_master"
+						tag: {
+							Damage: 0
+							maxMiningTime: 100
+							rollsPerOperation: 1
+							spiritName: "Merzeraeus"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000DBE"]
+			description: [
+				"Как будто это и так не достаточно сложно, несмотря на все предсказания и второе зрение, необходимые для того, чтобы найти и увидеть еснийскую руду, ее добыча также требует специально настроенных инструментов, чтобы предотвратить ее постоянное оседание в Пустоте."
+				""
+				"И снова нужно будет использовать Духов, на этот раз в виде кристаллической Настоянной кирки. Эти инструменты невероятно хрупкие, и поэтому их следует использовать только для добычи иесниевой руды. Однако на самом деле эту кирку не придется использовать более нескольких раз, поскольку из первых нескольких руды можно изготовить гораздо более прочную иесниевую кирку. и в будущем использовался для добычи Iesnium."
+			]
+			id: "0000000000000DD0"
+			min_width: 300
+			rewards: [
+				{
+					command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0000000000000E45"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000DD1"
+					item: {
+						Count: 1b
+						id: "occultism:infused_pickaxe"
+						tag: {
+							Damage: 0
+							spiritName: "Raslamarmed"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["Эти настроенные кристаллы, резонирующие с потусторонними энергиями, представляют собой простой, но эффективный метод стабилизации ритуалов, добавляющий практикующему еще один уровень защиты."]
+			id: "0000000000000DD2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "69B546B3BFC6B80E"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Discordant Resonance"
+			tasks: [
+				{
+					id: "0000000000000DD3"
+					item: "occultism:spirit_attuned_crystal"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000CB1"]
+			description: [
+				"Молодые практикующие часто считают, что они командуют духами, подчиняя их своей воле. Однако это ошибочное мнение. По правде говоря, духи — существа-долгожители, само восприятие времени которых сильно отличается от нашего собственного, недолговечного."
+				""
+				"Лучше думать об этих взаимодействиях как о торговле. Отдавая что-то редкое из нашего мира в обмен на каплю из моря своего времени. В конце концов, даже практикующий-долгожитель погибнет задолго до того, как Духи, с которыми он соединился, погибнут."
+				""
+				"Поэтому при совершении этих ритуалов необходимо обменивать что-то ценное. Предметы следует разложить в Жертвенные Чаши до начала Ритуала. Обычные Жертвенные Чаши можно размещать где угодно в пределах восьми блоков от Золотой Жертвенной Чаши, даже за пределами Пентакля. Аналогично, предметы можно положить в любую миску, порядок не имеет значения."
+				""
+				"Предмет для Золотой Жертвенной Чаши должен быть помещен последним; это запустит ритуал, если все остальное размещено правильно. Если ритуал требует принесения в жертву существа или использования предмета, эти действия должны быть выполнены после активации ритуала и должны быть выполнены в пределах восьми блоков от Золотой Жертвенной Чаши."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:golden_sacrificial_bowl"
+			id: "0000000000000DD8"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000DFC"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000DD9"
+					item: "occultism:golden_sacrificial_bowl"
+					type: "item"
+				}
+				{
+					id: "5746C491E6AD9B90"
+					item: "occultism:sacrificial_bowl"
+					type: "item"
+				}
+			]
+			title: "Sacrificial Bowls"
+			x: 13.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4F87CE318651EBA0"]
+			description: [
+				"Некоторые духи обладают способностью управлять погодой в нашем мире."
+				""
+				"Призыв соответствующего Духа может принести ясное небо, вызвать дождь или даже вызвать грозу!"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:sunflower"
+			id: "0000000000000DDC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000E3D"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000E3E"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "3B0ABDBA2725BC6D"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Blossoming even as we gaze"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_afrit_rain_weather"
+					criterion: ""
+					id: "3188428D30751420"
+					type: "advancement"
+				}
+				{
+					advancement: "occultism:occultism/summon_afrit_thunder_weather"
+					criterion: ""
+					id: "6ED94ECE76057AB1"
+					type: "advancement"
+				}
+				{
+					id: "15BB14C412869DC0"
+					item: "occultism:ritual_dummy/summon_djinni_clear_weather"
+					type: "item"
+				}
+			]
+			title: "Weather Rituals"
+			x: 19.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4F87CE318651EBA0"]
+			description: [
+				"Для вневременных существ, таких как духи потустороннего мира, нет большой разницы между прошлым и настоящим. Они знают о нашем восприятии времени, но для них разница ближе к нашему восприятию Верха и Низа; переместиться в другое место во времени для них так же просто, как для нас подняться на гору."
+				""
+				"Призовите джинна, чтобы перейти из дня в ночь и из ночи в день."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:clock"
+			id: "0000000000000DDE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000E44"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					id: "12B8F2B6EAC1C375"
+					item: "twilightforest:moon_dial"
+					type: "item"
+				}
+			]
+			subtitle: "Swiftly flow the days"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_djinni_night_time"
+					criterion: ""
+					id: "755FD72F1D6B76C3"
+					title: "From Dusk..."
+					type: "advancement"
+				}
+				{
+					advancement: "occultism:occultism/summon_djinni_day_time"
+					criterion: ""
+					id: "00B70D6B980E6447"
+					title: "...Till Dawn"
+					type: "advancement"
+				}
+			]
+			title: "Celestial Rituals"
+			x: 17.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: [
+				"Мощное связующее вещество, которое в основном используется при производстве красного мела, Эссенция Африта может быть получена только путем победы над Афритом в бою, что требует вызова указанного Африта в сломанном Пентакле, который оставляет практикующего без защиты и во власти этих могущественных врагов."
+				""
+				"Примечание. Получить сущность из африта не всегда возможно. Рекомендуется использовать оружие, зачарованное мародерством, чтобы увеличить шансы на сбор этого мощного материала."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:afrit_essence"
+			id: "0000000000000DE0"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000E50"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000E51"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Dominance and Submission"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_wild_afrit"
+					criterion: ""
+					id: "07F1945FC4D37FE2"
+					type: "advancement"
+				}
+			]
+			title: "Afrit Essence"
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: [
+				"Рога Дикой Охоты вселяют страх в сердца большинства, кто слышит их зов, зная, что вскоре за ними последуют страдания и смерть. Намеренно вызывать их на битву было бы в лучшем случае безрассудно."
+				""
+				"Однако Духи Потустороннего мира более чем рады помочь в этом начинании тем, кто считает себя способным пережить натиск."
+				""
+				"Этот Ритуал гарантирует получение нескольких черепов скелетов-иссушителей и может даже принести другие особые награды тем, кто преуспеет в охоте."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:wither_skeleton_skull"
+			id: "0000000000000DE4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E6F"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E70"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Getting ahead in life"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_wild_hunt"
+					criterion: ""
+					id: "306528255ABDBFC7"
+					type: "advancement"
+				}
+			]
+			title: "Wither Skeleton Skulls"
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000D96"]
+			description: [
+				"Известно, что странный материал, получивший название Исниум, просачивается в Пустоту из Потустороннего мира. Ранние алхимики не решались даже объявить его металлом, поскольку, несмотря на его твердость и ковкость, он всегда выглядит так, будто течет медленно."
+				""
+				"Найти Исниум — нетривиальная задача, в первую очередь требующая путешествия в адский мир Пустоты. Он формируется в крошечных, разбросанных по всей земле карманах и скрывает себя под родным Нетерраком."
+				""
+				"Хотя были изобретены и другие методы, возможно, самый простой способ найти руду — это гадание. Жезл гадания можно настроить на Иесниум, щелкнув его правой кнопкой мыши на обычном Пустотраке. После настройки удерживайте правую кнопку мыши, чтобы с помощью Жезла выделить ближайшую иесниевую руду, маскирующуюся под Пустоту."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:iesnium_ore"
+			id: "0000000000000DE6"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3F636CC422DFEEDA"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "6A3F63D2D3360EDE"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0A0945B034D01A04"
+					item: {
+						Count: 1b
+						id: "occultism:divination_rod"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Getting Started: Iesnium Ore"
+			x: 15.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6A1D5A9B037CB379"]
+			description: [
+				"Транспортеры Foliot, которые когда-то были обычным явлением в мастерской любого практикующего, быстры и умны и позволяют хранить предметы там, где это необходимо."
+				""
+				"Используйте Книгу Призыва, идущую в комплекте с Духом, чтобы указать, где извлекать и хранить. Подкрадитесь. Щелкните правой кнопкой мыши по книге духа, чтобы связать его. Книгу Призыва также можно использовать для транспортировки Духа."
+				""
+				"Подкрадитесь к Духу правой кнопкой мыши, чтобы получить доступ к графическому интерфейсу, в котором можно установить фильтры."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:chest_minecart"
+			id: "0000000000000E0A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E23"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Keep on truckin'"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_foliot_transport_items"
+					criterion: ""
+					id: "68F5F1A4432546B2"
+					type: "advancement"
+				}
+			]
+			title: "Summon Foliot Transporting Spirit"
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			description: [
+				"Дух джинна-механика используется вместе с Актуалом пространственного хранения в качестве базовой формы автокрафта."
+				""
+				"Используйте Книгу Призыва, чтобы привязать Духа к машине, а затем используйте ее еще раз, чтобы указать, с какой стороны Дух будет подталкивать и вытягивать предметы. Наконец, назначьте Джинна активатору хранилища."
+				""
+				"В Storage Actuator выберите стопку предметов, которые Дух должен обработать, и поместите ее в слот слева от графического интерфейса. Откроется меню, в котором можно выбрать оператора станка. Это заставит Оператора собрать предметы и обработать их на своей машине."
+			]
+			icon: "minecraft:furnace"
+			id: "0000000000000E71"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000E76"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+			]
+			subtitle: "I Better Be Gettin' Overtime For This..."
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_djinni_manage_machine"
+					criterion: ""
+					id: "4FDCE30BF1570E18"
+					type: "advancement"
+				}
+			]
+			title: "Summon Djinni Machine Operator"
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6267BAB65DB567DA"]
+			description: [
+				"Некоторые фамильяры лучше подходят для боевых ситуаций, чем другие. Тех, кто предоставляет простые бонусы, иногда предпочтительнее держать на ринге, где они могут безопасно предоставить свой бонус, не рискуя поймать шальную стрелу."
+				""
+				"Щелкните правой кнопкой мыши любого фамильяра, чтобы сохранить его в кольце. Ношение его даст любые пассивные бонусы, передаваемые Фамильяром."
+				""
+				"Кольцо также полезно для обмена Фамильяров с другими практикующими, поскольку Фамильяры будут рассматривать того, кто выпустит их из кольца, как своего нового компаньона."
+			]
+			id: "50FCDBB9ABEFC493"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "132D5C23B97D5E1F"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Shoulda put a ring on it"
+			tasks: [
+				{
+					id: "402BD39506DFCF52"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								hasFamiliar: 0b
+							}
+						}
+						id: "occultism:familiar_ring"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4F87CE318651EBA0"]
+			description: ["Хотя Маридов редко можно увидеть, они известны своей невероятной терпеливостью и дотошностью, извлекая даже самые мелкие частицы материала."]
+			hide_dependency_lines: true
+			icon: "occultism:iesnium_ore"
+			id: "62EC5B3B5D4AC29A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "6CA0ED39817B0F4E"
+					title: "Occultism Legendary Loot Chest"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "55F8A50BA2FEEFF5"
+					title: "Occultism Legendary Loot Chest"
+					type: "command"
+				}
+			]
+			subtitle: "Good at mining their own business"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_marid_crusher"
+					criterion: ""
+					id: "34CAFDABC7BB1684"
+					type: "advancement"
+				}
+			]
+			title: "Summon Marid Crusher"
+			x: 17.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6A1D5A9B037CB379"]
+			description: [
+				"Foliot Janitor прекрасно сочетается с Crusher Spirits или чем-то еще, что любит разбрасывать вещи по земле. Он быстро извлекает предметы и помещает их в указанный инвентарь или стабильную червоточину."
+				""
+				"Используйте Книгу призвания, прилагаемую к Духу, чтобы указать его рабочую зону и место для хранения. Подкрадитесь. Щелкните правой кнопкой мыши по книге духа, чтобы связать его. Книгу Призыва также можно использовать для транспортировки Духа."
+				""
+				"Подкрадитесь к Духу правой кнопкой мыши, чтобы получить доступ к графическому интерфейсу, в котором можно установить фильтры."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:brush"
+			id: "55DC3E0B9FA8AA4F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "63C1F20FAAC09395"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "My job. Toilets 'n boilers, boilers 'n toilets. Plus that one boilin' toilet. Fire me if'n you dare."
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_foliot_cleaner"
+					criterion: ""
+					id: "6ECA710049B35C6A"
+					type: "advancement"
+				}
+			]
+			title: "Summon Foliot Janitor"
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Пожертвовав жизнью Иному миру, можно вызвать поистине великолепных друзей, предоставив постоянные блага или даже сражаясь бок о бок со своим хозяином, пока их телесная форма больше не сможет поддерживать себя, и Дух не ускользнет обратно в Иное Место."
+				""
+				"Хотя список ниже и не является исчерпывающим, он подчеркивает некоторые преимущества, которые можно получить, подружившись с Духами. Одновременно может быть вызвано более одного."
+				""
+				"Для получения полной информации об этих и других фамильярах обратитесь к Словарю духов в разделе «Фамильярные ритуалы»."
+				""
+				"Бой"
+				"● Мумия – борется за вас."
+				"● Beholder – стреляет магическими лучами."
+				""
+				"Полезность"
+				"● Страж – ходячий Тотем Бессмертия."
+				"● Жадный – собирает предметы, как магнит."
+				"● Бобр – помогает быстрее ломать дрова."
+				""
+				"Баффы"
+				"● Drikwing – обеспечивает многократный прыжок, ускорение прыжка и медленное падение."
+				"● Дракон – увеличивает получаемый опыт."
+				"● Летучая мышь – дает ночное видение."
+				"● Ктулху – дает водное дыхание."
+				"● Олень – дает повышение прыжка."
+				"● Дьявол – дает сопротивление огню."
+				""
+				"Другой"
+				"● Кузнец – ремонтирует оборудование и применяет улучшения к другим фамильярам, ​​улучшая их множеством способов."
+				""
+				"Примечание: Фамильяры защищены от дружественного огня, поэтому сражаться рядом с ними, как правило, безопасно."
+			]
+			hide_dependency_lines: true
+			icon: "occultism:ritual_dummy/custom_ritual"
+			id: "6267BAB65DB567DA"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "541B0FFB87E21DA6"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: "occultism:ritual_dummy/custom_ritual"
+					id: "2B2ACD5CCFD4637F"
+					observe_type: 6
+					timer: 0L
+					title: "Observe an Occultism Familiar"
+					to_observe: "#occultism:familiars"
+					type: "observation"
+				}
+			]
+			title: "Familiars"
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["Для существа, которое большую часть времени проводит в слезах, слез Гаста, похоже, не хватает. Однако с помощью Потустороннего мира может быть создан Гаст со слезами на глазах."]
+			hide_dependency_lines: true
+			icon: "minecraft:ghast_tear"
+			id: "23C8CBCFFA809AF6"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "664C3245FFD0C0A6"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "The Great Ghastly"
+			tasks: [
+				{
+					advancement: "occultism:occultism/possess_ghast"
+					criterion: ""
+					id: "7942A6C316DB60B5"
+					type: "advancement"
+				}
+			]
+			title: "Ghast Tears"
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["От обработки материалов и автоматизированной добычи полезных ископаемых до небесных манипуляций — оккультизм может принести огромную пользу. Изучите некоторые варианты в следующих квестах."]
+			hide_dependency_lines: true
+			icon: "occultism:spirit_lantern"
+			id: "4F87CE318651EBA0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "52E295A408C0602E"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "08A0109CB7D5CE04"
+					item: "occultism:spirit_attuned_gem"
+					type: "item"
+				}
+			]
+			title: "Tools and Utility"
+			x: 18.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			description: ["Оккультизм может многое предложить с точки зрения хранения и логистики предметов. Следующие квесты будут охватывать некоторые наиболее примечательные особенности."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "occultism:satchel"
+				tag: {
+					spiritName: "Zurtimder"
+				}
+			}
+			id: "6A1D5A9B037CB379"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "4D224E3CA3AF70CA"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "400856AD3142714E"
+					item: "occultism:spirit_attuned_gem"
+					type: "item"
+				}
+			]
+			title: "Storage and Logistics"
+			x: 8.0d
+			y: 1.0d
+		}
+	]
+	title: "Occultism"
+}

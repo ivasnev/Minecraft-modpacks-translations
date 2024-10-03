@@ -1,0 +1,1711 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:chest"
+	id: "583482A1C530FE26"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E45018D600614BA"]
+			description: [
+				"Найти место для хранения вещей всегда немного сложно, и поддержание порядка порой может оказаться непростой задачей. К счастью, существует несколько модов, которые помогут в этом начинании. Следующие квесты помогут вам открыть эти моды."
+				""
+				"Примечание. Большинство блоков, полезных в качестве блоков хранения, помечены для поиска в EMI. Ищите следующие категории:"
+				""
+				"● #containers"
+				"● #containers/basic"
+				"● #containers/bulk"
+				"● #контейнеры/сумка"
+				"● #контейнеры/энергия"
+				"● #контейнеры/газ"
+				"● #контейнеры/жидкость"
+			]
+			hide: true
+			icon: "minecraft:chest"
+			id: "00000000000003FF"
+			rewards: [
+				{
+					id: "0000000000000CA3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "7215FE5828A30793"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "enigmatica:containers/basic"
+						}
+					}
+					title: "Storage"
+					type: "item"
+				}
+			]
+			title: "Storage"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Очень большое хранилище на том же месте, что и сундук. Комплексное хранилище добавляет усовершенствованные сундуки, бочки и шалкеровые ящики с несколькими уровнями вместимости. Они даже принимают различные обновления для добавления дополнительных функций."
+				""
+				"Их можно улучшить на месте, используя на них предмет улучшения соответствующего уровня."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "sophisticatedstorage:iron_chest"
+				tag: {
+					accentColor: 1908001
+					mainColor: 1908001
+				}
+			}
+			id: "0000000000000405"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000A6B"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "02608E766DA0DA92"
+					item: "sophisticatedstorage:basic_tier_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "A very fancy chest"
+			tasks: [
+				{
+					id: "0000000000000EA5"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "sophisticatedstorage:storage_wooden"
+						}
+					}
+					title: "Any Wooden Tier Storage"
+					type: "item"
+				}
+			]
+			title: "Sophisticated Storage"
+			x: -0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: ["Забыли, где оставили свой драгоценный диорит? Наведите указатель мыши на некоторые из них в своем инвентаре или JEI и нажмите Y, чтобы найти их в ближайших инвентарях."]
+			hide_dependency_lines: true
+			icon: "naturesaura:range_visualizer"
+			id: "000000000000040B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000A5E"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000040C"
+					type: "checkmark"
+				}
+			]
+			title: "Find Me"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Ищете удобное место для хранения молотка в кузнице? Устали рыться в сундуке за сундуком в поисках кнопки переключения передач? Вместо этого поместите их в мир!"
+				""
+				"Plonk позволяет размещать до четырех стопок предметов в любом пространстве блока. Просто удерживайте предмет, укажите на блок и нажмите P, чтобы разместить его. Щелкните правой кнопкой мыши, чтобы вернуть элементы обратно."
+			]
+			hide_dependency_lines: true
+			icon: "create:brass_hand"
+			id: "000000000000040D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "2D1E55B5A92B9F94"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000040E"
+					type: "checkmark"
+				}
+			]
+			title: "Plonk"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"0000000000000966"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Функциональный контроллер хранилища действует как центральный узел автоматизации. Доступ ко всем связанным ящикам осуществляется через него с помощью таких вещей, как трубы, бункеры или шина хранения данных ME."
+				""
+				"Ящики не должны соприкасаться ни с контроллером, ни друг с другом. Их просто нужно выбрать и привязать к контроллеру с помощью инструмента связывания."
+				""
+				"Для начала выберите контроллер ящика, щелкнув его правой кнопкой мыши с помощью инструмента связывания. Выбранный контроллер подсвечивается, пока инструмент связывания находится в руках."
+				""
+				"Сам инструмент имеет несколько режимов связывания и действий связывания, которые можно менять в любое время:"
+				""
+				"● Переключайтесь между режимами одиночного и множественного связывания, используя скрытность + щелчок правой кнопкой мыши по воздуху."
+				"● Переключайтесь между действиями «Добавить» и «Удалить связывание», щелкнув правой кнопкой мыши по воздуху."
+				""
+				"Перейдя в нужный режим, просто щелкните правой кнопкой мыши целевой ящик, чтобы привязать или отменить его привязку. В режиме множественного связывания щелкните правой кнопкой мыши ящик «Начало» и «Конец». Каждый ящик в выбранной области будет связан сразу. Каждый ящик, связанный с выбранным контроллером, также будет выделен, пока инструмент связывания находится под рукой."
+			]
+			id: "000000000000040F"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "00000000000009AB"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					id: "791D3C5F2F1F201A"
+					item: {
+						Count: 1b
+						id: "functionalstorage:linking_tool"
+						tag: {
+							Action: "ADD"
+							Mode: "SINGLE"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000068C"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000405"]
+			description: ["Каждый уровень хранилища предлагает как больше слотов для обновления, так и больше слотов для хранения."]
+			icon: {
+				Count: 1b
+				id: "sophisticatedstorage:gold_chest"
+				tag: {
+					woodType: "oak"
+				}
+			}
+			id: "0000000000000951"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "00000000000009A3"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Bedazzled Chests"
+			tasks: [
+				{
+					id: "0000000000000EA7"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+								}
+							]
+						}
+					}
+					title: "Any Gold Tier Storage"
+					type: "item"
+				}
+			]
+			title: "Upgraded Storage"
+			x: -0.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Ищете место для хранения десяти тысяч железных слитков? Не смотрите дальше. В функциональных ящиках есть ящики, вмещающие очень большое количество определенного предмета. Они также предлагают ряд полезных обновлений, которые помогут как в хранении, так и в автоматизации."
+				""
+				"Инструмент настройки можно использовать для блокировки ящика, скрытия или отображения хранимого элемента и его количества или отключения рендеринга для любых установленных обновлений."
+				""
+				"● Переключайтесь между режимами с помощью скрытности + щелчка правой кнопкой мыши в воздухе."
+				"● Щелкните правой кнопкой мыши ящик, чтобы изменить настройки в выбранном режиме."
+			]
+			hide_dependency_lines: true
+			icon: "functionalstorage:oak_4"
+			id: "0000000000000966"
+			rewards: [
+				{
+					id: "776CF888356B7AC8"
+					item: {
+						Count: 1b
+						id: "functionalstorage:configuration_tool"
+						tag: {
+							Mode: "LOCKING"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Drawing a line in the sand"
+			tasks: [
+				{
+					id: "0000000000000967"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "functionalstorage:drawer"
+						}
+					}
+					title: "Storage Drawers"
+					type: "item"
+				}
+			]
+			title: "Functional Storage"
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: [
+				"Тридцати двух стопок недостаточно? Решение есть!"
+				""
+				"В каждом ящике есть четыре слота для обновлений, которые можно использовать для увеличения объема хранения, увеличивая вместимость до поистине монументальной."
+			]
+			id: "0000000000000980"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "00000000000009A1"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "00000000000009A0"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "functionalstorage:copper_upgrade"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:gold_upgrade"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:diamond_upgrade"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:netherite_upgrade"
+								}
+							]
+						}
+					}
+					title: "Storage Upgrades"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: ["Больше не всегда значит лучше. Понижение объема хранилища может быть полезно в случае легких ситуаций, связанных с хранением запасов."]
+			id: "0000000000000982"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "00000000000009AA"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000983"
+					item: "functionalstorage:iron_downgrade"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: ["Лишние предметы будут автоматически аннулированы."]
+			id: "0000000000000984"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "695D02E01FA0C0BD"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000985"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Изысканные рюкзаки — это модификация рюкзака, о которой вы даже не подозревали."
+				""
+				"Сами рюкзаки можно носить в слоте для сувениров и получать к ним доступ через привязку клавиш, а также помещать в мир и взаимодействовать с ними через трубы или бункеры."
+				""
+				"Помимо этих и без того превосходных функций, они также могут содержать ряд очень полезных обновлений."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					inventorySlots: 27
+					upgradeSlots: 1
+				}
+			}
+			id: "0000000000000986"
+			rewards: [
+				{
+					icon: "minecraft:leather"
+					id: "0000000000000997"
+					item: "minecraft:leather"
+					random_bonus: 3
+					title: "Leather"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "60860FF293535D2F"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:backpack"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: ["Фильтруемое обновление, которое доставляет предметы издалека прямо в ваш рюкзак."]
+			id: "000000000000098E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000A50"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000098F"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: ["Никогда больше не теряйте свои драгоценные товары!"]
+			id: "0000000000000990"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "000000000000099C"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "0000000000000A6A"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000991"
+					item: "sophisticatedbackpacks:everlasting_upgrade"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: ["Фильтруемое улучшение, позволяющее предметам попадать прямо в рюкзак, когда их поднимает игрок."]
+			id: "0000000000000992"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "000000000000099D"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000993"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: ["Нужен перекус? Пусть ваш рюкзак предоставит вам все необходимое."]
+			id: "0000000000000994"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "0000000000000A51"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "You're Not You When You're Hungry"
+			tasks: [
+				{
+					id: "0000000000000995"
+					item: "sophisticatedbackpacks:feeding_upgrade"
+					title: "Feeding Upgrade"
+					type: "item"
+				}
+			]
+			title: "Feeding Upgrade"
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Персональное термоусадочное устройство может спрятать человека прямо в укромных уголках специальных машин."
+				""
+				"Создайте внутри них свое собственное приспособление, отвечающее вашим потребностям, с настраиваемыми входными и выходными сторонами."
+				""
+				"Просто щелкните правой кнопкой мыши компактную машину с персональным термоусадочным устройством, чтобы деформировать ее внутри."
+			]
+			hide_dependency_lines: true
+			id: "0AD2769DC173D26D"
+			rewards: [
+				{
+					count: 2
+					id: "07BAD39E967F6B85"
+					item: "naturesaura:ender_crate"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6B198B6A029D9333"
+					item: "compactmachines:personal_shrinking_device"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0AD2769DC173D26D"]
+			description: [
+				"Соберите материалы для своей первой компактной машины!"
+				""
+				"Компактные машины имеют размеры от 3x3x3 до 13x13x13 блоков внутреннего пространства."
+				""
+				"Выберите размер, который лучше всего соответствует вашим потребностям, и приступайте к сборке!"
+			]
+			icon: "compactmachines:machine_tiny"
+			id: "3787A109AABC8921"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "3E2CA8D755178794"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "One, cut a hole in a box"
+			tasks: [
+				{
+					icon: "compactmachines:machine_small"
+					id: "16A0C1D718EA19AF"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "compactmachines:machine_tiny"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_small"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_normal"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_large"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_giant"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_maximum"
+								}
+							]
+						}
+					}
+					title: "Compact Machines"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3787A109AABC8921"]
+			description: [
+				"Размещенные на стенах внутри компактных машин туннели обеспечивают связь с внешним миром."
+				""
+				"Например, поместите туннель на стену и щелкайте по нему правой кнопкой мыши, пока не появится сообщение о том, что он настроен в верхнее положение, затем поставьте напротив него сундук. Вернитесь наружу, поместите бункер на верхнюю часть машины и загрузите несколько предметов. Их унесет в сундук внутри. Используйте эту концепцию для подачи предметов в машину или из нее по мере необходимости."
+				""
+				"Конечно, существует множество других способов ввоза и вывоза вещей."
+			]
+			id: "5511E0236BA3BDCA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "526E10A2F22FF97C"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Two, stick your junk in that box"
+			tasks: [
+				{
+					id: "2D8BF6B60DE16FC8"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "compactmachines:tunnel"
+									tag: {
+										definition: {
+											id: "compactmachines:energy"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "compactmachines:tunnel"
+									tag: {
+										definition: {
+											id: "compactmachines:fluid"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "compactmachines:tunnel"
+									tag: {
+										definition: {
+											id: "compactmachines:item"
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "Tunnels"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: ["Каждый уровень рюкзака предлагает как больше слотов для улучшений, так и больше слотов для хранения."]
+			id: "585A22AF9FB84AFD"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "2102EE1604B1EE96"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Haversack, will travel"
+			tasks: [
+				{
+					id: "4F51BBE2671F8947"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:iron_backpack"
+									tag: {
+										contentsUuid: [I;
+											1020082760
+											1650280995
+											-2026079560
+											1430724906
+										]
+										inventorySlots: 54
+										upgradeSlots: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:gold_backpack"
+									tag: {
+										contentsUuid: [I;
+											-1791111194
+											-866301855
+											-1654859019
+											-1658630351
+										]
+										inventorySlots: 81
+										upgradeSlots: 3
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:diamond_backpack"
+									tag: {
+										contentsUuid: [I;
+											-1078261197
+											-1384300211
+											-1721607180
+											631454807
+										]
+										inventorySlots: 108
+										upgradeSlots: 5
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:netherite_backpack"
+									tag: {
+										contentsUuid: [I;
+											-875608460
+											-699055422
+											-1565753794
+											94699093
+										]
+										inventorySlots: 120
+										upgradeSlots: 7
+									}
+								}
+							]
+						}
+					}
+					title: "Upgraded Backpacks"
+					type: "item"
+				}
+			]
+			title: "Upgraded Backpacks"
+			x: 5.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"У вас больше гаджетов и штуковин, чем может вместить одна пещера? Больше всякой всячины и всякой фигни, с которой ты не знаешь, что делать? Тогда пришло время отправить его в другое измерение и нанять кого-нибудь, чтобы он разобрался с этим за вас. Просто прочитайте мелкий шрифт всех контрактов, которые вы подписываете."
+				""
+				"Оккультизм предлагает обширные возможности хранения с межпространственным доступом как вручную, так и с помощью автоматизации, такой как трубы, бункеры или ME Storage Bus."
+				""
+				"Более подробную информацию об этом процессе можно найти в главе «Оккультизм»."
+			]
+			hide_dependency_lines: true
+			id: "662DA1135F00D6B6"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "44BA68CC5061BD0A"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Wouldn't you think my collection's complete?"
+			tasks: [
+				{
+					id: "0B58FB5EED4BBC33"
+					item: "occultism:storage_controller"
+					type: "item"
+				}
+			]
+			title: "Dimensional Storage"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: [
+				"Коллекционное обновление позволяет ящику собирать предметы из мира."
+				""
+				"Установите направление захвата в графическом интерфейсе ящика."
+			]
+			id: "4E92570E06A632C1"
+			rewards: [
+				{
+					id: "23A13AB2F98CDF57"
+					item: {
+						Count: 1b
+						id: "functionalstorage:collector_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "433C740CEEB2C72A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "26B4B487EC799FC4"
+					item: {
+						Count: 1b
+						id: "functionalstorage:collector_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: [
+				"Улучшения Puller и Pusher позволяют ящику вытягивать предметы из соседних инвентарей или перемещать их в соседние инвентари."
+				""
+				"Установите направление в графическом интерфейсе ящика."
+			]
+			id: "1E3D0A22137BC69D"
+			rewards: [
+				{
+					id: "65E41DA8B0427C9F"
+					item: {
+						Count: 1b
+						id: "functionalstorage:pusher_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "275EAD67101B76E8"
+					item: {
+						Count: 1b
+						id: "functionalstorage:puller_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					random_bonus: 3
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0A86B1D1939EE2E6"
+					item: {
+						Count: 1b
+						id: "functionalstorage:pusher_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23FEE61D1BC3AA32"
+					item: {
+						Count: 1b
+						id: "functionalstorage:puller_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: [
+				"Ящики Ender, как следует из названия, позволяют получить доступ к их содержимому из нескольких мест."
+				""
+				"Каждому ящику при размещении присваивается уникальная частота, которую можно скопировать, щелкнув его левой кнопкой мыши с помощью инструмента связывания. Щелкнув правой кнопкой мыши по другому ящику Ender, вы копируете в него частоту, фактически заставляя два ящика действовать как один."
+			]
+			icon: "functionalstorage:ender_drawer"
+			id: "47EF38C8E41B2DE8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "70E4602ABF82C34E"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Getting your drawers in a knot"
+			tasks: [
+				{
+					id: "1E8ECE61CC02806E"
+					item: "functionalstorage:ender_drawer"
+					type: "item"
+				}
+				{
+					id: "4F28E77E9C804917"
+					item: {
+						Count: 1b
+						id: "functionalstorage:linking_tool"
+						tag: {
+							Action: "ADD"
+							Mode: "SINGLE"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: [
+				"Уплотняющиеся ящики автоматически меняют форму хранящихся предметов."
+				""
+				"От блока к слиткам, от слитков к самородкам. Наоборот и все сразу."
+			]
+			id: "4B15775FF9D71CFE"
+			rewards: [
+				{
+					id: "643CCF8714B8719F"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "1F4645AC8B559D5D"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "085AFBA229687140"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "66F3136BE821E73D"
+					item: "functionalstorage:compacting_drawer"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000966"]
+			description: [
+				"Мечта кладоискателя сбылась. Теперь ничто из этой моб-фермы не пропадет зря!"
+				""
+				"В Оружейном шкафу будет храниться очень значительное количество брони, оружия, инструментов и других нештабелируемых предметов."
+				""
+				"Блок не имеет ручного интерфейса, доступ к элементам осуществляется посредством автоматизации."
+			]
+			id: "42854348FF66AAC5"
+			rewards: [
+				{
+					count: 2
+					id: "400AF04A55583751"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			subtitle: "Oh my god Becky, look at that trunk"
+			tasks: [
+				{
+					id: "6E1A61C9BC490741"
+					item: "functionalstorage:armory_cabinet"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Applied Energistics 2 — это нечто большее, чем простое решение для хранения, оно предлагает полный спектр возможностей автоматизации и межпространственной транспортировки."
+				""
+				"Дополнительную информацию можно найти в специальной главе AE2."
+			]
+			hide_dependency_lines: true
+			id: "6C528552302BCEDC"
+			min_width: 250
+			rewards: [
+				{
+					count: 16
+					id: "0D90890F782B9600"
+					item: "ae2:fluix_smart_cable"
+					random_bonus: 16
+					type: "item"
+				}
+				{
+					count: 4
+					id: "115AF38BB4ED00B6"
+					item: "ae2:logic_processor"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					count: 4
+					id: "181F3C0D6742E235"
+					item: "ae2:calculation_processor"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5873FC0F1B04508A"
+					item: "ae2:engineering_processor"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			subtitle: "Digital Age for Experts"
+			tasks: [
+				{
+					id: "122D1ECB8E615692"
+					item: "ae2:controller"
+					type: "item"
+				}
+			]
+			title: "Applied Energetics 2"
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: ["Улучшения стека позволяют каждому слоту вмещать больше, чем обычно, при этом их эффекты также суммируются друг с другом. Одно обновление уровня 1 удвоит количество слотов до 128, а другое обновление уровня 1 удвоит это число еще раз до 256!"]
+			id: "72E2F80597E42934"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "5B1B6013E6ED0715"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "399BC888799C334C"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:stack_upgrade_tier_2"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:stack_upgrade_tier_3"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:stack_upgrade_tier_4"
+								}
+							]
+						}
+					}
+					title: "Stack Upgrades"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: ["Добавьте в свой рюкзак дополнительные функции, например, возможность плавить, создавать предметы или использовать камнерез, не выходя из интерфейса."]
+			id: "137090962A587556"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "6D5ED9C4BB24D5EA"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "02E55ED53908580B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:smelting_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:smoking_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:blasting_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:crafting_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:stonecutter_upgrade"
+								}
+							]
+						}
+					}
+					title: "Functional Upgrades"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: [
+				"Персональное хранилище жидкости с множеством практических применений."
+				""
+				"Это обновление дополняется обновлениями стека."
+			]
+			id: "38B014017412A9EA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "54D08CA9D3C99DF7"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "011CB3994D325742"
+					item: "sophisticatedbackpacks:tank_upgrade"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: [
+				"Хранение инструментов заряженными на ходу может оказаться утомительным занятием. Прикрепите аккумулятор к рюкзаку, чтобы заряжать его в дороге."
+				""
+				"Это обновление дополняется обновлениями стека."
+			]
+			id: "503B1A17248C9070"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5F17B44DFEC645FB"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "483996F5C4C5660B"
+					item: "sophisticatedbackpacks:battery_upgrade"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0000000000000986"]
+			description: [
+				"В сочетании с улучшением резервуара насосы позволяют рюкзаку закачивать жидкости из окружающего мира. Отправляйтесь на погружение!"
+				""
+				"Насос опыта позволяет вместо этого хранить в рюкзаке опыт игрока и даже ремонтировать экипированные инструменты и броню, зачарованную с помощью Mending!"
+			]
+			id: "11A59FBD489A8212"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "7BF2A0DA41927B29"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0697F99860277935"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:pump_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:advanced_pump_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:xp_pump_upgrade"
+								}
+							]
+						}
+					}
+					title: "Pump Upgrades"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000405"]
+			description: ["Улучшения стека позволяют каждому слоту вмещать больше, чем обычно, при этом их эффекты также суммируются друг с другом. Одно обновление уровня 1 удвоит количество слотов до 128, а другое обновление уровня 1 удвоит это число еще раз до 256!"]
+			id: "7B0AFE310E9AD4EB"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0B5190854F290B9D"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2C795523C6B0BF7A"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedstorage:stack_upgrade_tier_1"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:stack_upgrade_tier_2"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:stack_upgrade_tier_3"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:stack_upgrade_tier_4"
+								}
+							]
+						}
+					}
+					title: "Stack Upgrades"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["0000000000000405"]
+			description: ["Добавьте в свое хранилище некоторые дополнительные функции, такие как возможность плавить, создавать или использовать камнерез, не выходя из интерфейса."]
+			id: "3F946CAEE4DDCFD2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "6D9CB4B5D250FD85"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "31018F129D832B9C"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedstorage:smelting_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:smoking_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:blasting_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:crafting_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:stonecutter_upgrade"
+								}
+							]
+						}
+					}
+					title: "Functional Upgrades"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["0000000000000405"]
+			description: ["Любой предмет, который вступает в прямой контакт со хранилищем, будет забран автоматически."]
+			id: "1CFC2F757BE1EAED"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "677C92499FF4E2D8"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "450EE65B0C525FF0"
+					item: "sophisticatedstorage:pickup_upgrade"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["0000000000000405"]
+			description: ["Подбирает предметы на территории и помещает их в хранилище."]
+			id: "5C185A0CE6459C3F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "53C384EC8266F233"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "12B21D7BF891349E"
+					item: "sophisticatedstorage:magnet_upgrade"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"0000000000000405"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Сложный контроллер хранилища действует как центральный узел автоматизации. Любые связанные контейнеры доступны через него с помощью таких вещей, как трубы, бункеры или шина хранения данных ME."
+				""
+				"Чтобы подключить контейнер сложного хранилища к контроллеру, просто поместите его рядом с контроллером. Можно добавить больше контейнеров, если все соприкасается. Таким образом, цепочка получается в 12 блоках от контроллера."
+				""
+				"В противном случае удаленные контейнеры могут быть связаны с помощью ссылки на хранилище. Это будет работать почти так же, как контроллер, поскольку одну ссылку можно использовать для соединения цепочки контейнеров."
+				""
+				"Сначала поместите ссылку на хранилище напротив рассматриваемого блока."
+				""
+				"Затем нажмите «Скрытность» + щелкните правой кнопкой мыши контроллер с инструментом хранения, чтобы выбрать его."
+				""
+				"Наконец, щелкните правой кнопкой мыши одну или несколько ссылок на хранилище, чтобы создать соединение. Каждая успешная ссылка будет отображать линию между контроллером и ссылкой на хранилище."
+			]
+			id: "50D051B9CD6372F1"
+			min_width: 300
+			rewards: [
+				{
+					count: 3
+					id: "6A3A74529BC9D88E"
+					item: "sophisticatedstorage:storage_link"
+					type: "item"
+				}
+				{
+					id: "2153557DF3335F11"
+					item: "sophisticatedstorage:storage_tool"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "649223683D1A2C0E"
+					item: "sophisticatedstorage:controller"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Хотя запутанный блок на самом деле не является хранилищем сам по себе, он обеспечивает удаленный доступ к блоку или машине, к которой он привязан, расширяя возможности блока до запутанного блока."
+				""
+				"Что это значит? Что ж, если целевой блок принимает энергию, теперь энергия может быть подана к нему через запутанный блок. То же самое и с другими вещами, такими как жидкости, предметы, газы-механизмы, воздух и тепло PNC и, возможно, многое другое."
+				""
+				"Применение этих блоков практически безгранично: от сокрытия надоедливой проводки вне поля зрения до повышения производительности машины за счет открытия большего количества граней для вставки."
+				""
+				"Имейте в виду, что сам запутанный блок все еще пассивен. Например, если привязанная машина настроена на выталкивание предметов в соседний сундук, запутанный блок не будет этого делать."
+				""
+				"Чтобы привязать блок к запутанному блоку, щелкните правой кнопкой мыши целевой блок с запутанным связующим. Затем просто щелкните правой кнопкой мыши размещенный запутанный блок. Целевой блок будет отображаться внутри запутанного блока, если он правильно связан."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "entangled:block"
+				tag: { }
+			}
+			id: "0FB7A6E25F2D548C"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "54930DB1BCAFFAFC"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Trading Places"
+			tasks: [
+				{
+					id: "3233A7CA900E0BE2"
+					item: {
+						Count: 1b
+						id: "entangled:block"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2D7723E13C38D112"
+					item: {
+						Count: 1b
+						id: "entangled:item"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Позвольте страсти к путешествиям унести вас туда, куда дует ветер, и возьмите с собой в путешествие ваш дом."
+				""
+				"Палатки Nomadic обеспечивают небольшое пространство для хранения всего необходимого. Постройте внутри небольшую систему хранения с помощью базового оборудования. Если хочешь, оставь там и свою постель; спать разрешено!"
+				""
+				"Создайте палатку любого размера, затем щелкните правой кнопкой мыши и удерживайте землю, чтобы разместить каркас. Щелкните правой кнопкой мыши каждый блок рамы с помощью молотка для палатки, чтобы сформировать палатку. Использование молотка Golden Tent Mallet мгновенно обрамляет всю палатку!"
+				""
+				"Чтобы снова поднять палатку, щелкните правой кнопкой мыши по двери один раз любым молотком для палатки."
+				""
+				"Чтобы войти или выйти из палатки, просто щелкните правой кнопкой мыши или пройдите через дверь. Наслаждайтесь своим уютным новым жилым пространством!"
+				""
+				"======================================"
+				""
+				"Примечание. Обычно в этом моде есть лопаты для палаток, которые используются для увеличения глубины пола палатки. Они были намеренно отключены, и по умолчанию во всех палатках глубина пола увеличена до максимума."
+				""
+				"У вас уже есть палатка мега-размера, но вы не обновили пол? Создайте его вместе с деревянной лопатой, чтобы максимально увеличить количество слоев."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "nomadictents:mega_yurt"
+				tag: { }
+			}
+			id: "025C09686412AB3D"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "683A154EC6984812"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "nomadictents:tiny_yurt"
+						tag: { }
+					}
+					id: "269EA5D2111B8063"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^nomadictents:(tiny|small|medium|large|giant|mega)"
+						}
+					}
+					title: "Nomadic Tents"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "nomadictents:mallet"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "16D5F888C22D1C21"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "nomadictents:mallet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "nomadictents:golden_mallet"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Mallet"
+					type: "item"
+				}
+			]
+			title: "Nomadic Tents"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0AD2769DC173D26D"
+				"025C09686412AB3D"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Нет ничего более расстраивающего, чем падение в пустоту и смерть из-за ошибки."
+				""
+				"Всякое случается. Иногда игроки выходят за пределы Компактной Машины или Палатки и попадают в неловкую ситуацию, когда не могут вернуться обратно."
+				""
+				"Enigmatica предприняла специальные меры предосторожности для таких ситуаций."
+				""
+				"Просто прыгните в пустоту, чтобы вас телепортировали к месту появления."
+				""
+				"================================"
+				""
+				"Допустимые размеры"
+				""
+				"● &3Компактные машины&r"
+				"● &6Кочевые палатки&r"
+				"● &5Конец&r"
+			]
+			icon: "pneumaticcraft:bandage"
+			id: "1881C88DD5D42696"
+			rewards: [
+				{
+					id: "473CAA5579E95F8E"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+			]
+			shape: "heart"
+			subtitle: "Don't Panic!"
+			tasks: [
+				{
+					id: "27D76CDD3F2023A0"
+					title: "Safety First!"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Наводим порядок благодаря силе дружбы!"
+				""
+				"Кафедры для хранения служат центральной точкой доступа к системе хранения, предлагаемой Ars Nouveau. Он соединяет несколько блоков хранения вместе с помощью Bookwyrms, а также предлагает некоторые ограниченные возможности автоматизации!"
+				""
+				"Подробнее о настройке читайте в разделе квестов Ars Nouveau."
+			]
+			hide_dependency_lines: true
+			id: "5849E8A4BB955685"
+			rewards: [
+				{
+					count: 9
+					id: "170C97B3C4EBAB7B"
+					item: "create:item_vault"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "189B818C10C98349"
+					item: "ars_nouveau:storage_lectern"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -8.5d
+		}
+	]
+	title: "Storage"
+}

@@ -1,0 +1,832 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_expert"
+	group: "72A9465344128AF9"
+	icon: "mekanism:alloy_atomic"
+	id: "713775E5BF39DAAB"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2F22D2DB89CB9225"]
+			description: [
+				"Как уже отмечалось, Mekanism уделяет особое внимание эффективности всего мода. По мере модернизации машин и внедрения новых систем они становятся более эффективными, производительными и более дешевыми в эксплуатации."
+				""
+				"Сосредоточение внимания на эффективности с самого начала в конечном итоге окупится в долгосрочной перспективе."
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:alloy_infused"
+			id: "094FAB57D8E3D2F6"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "7FB5DB1D16235D02"
+					item: "kubejs:crude_iron_ingot"
+					title: "Material Processing"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Material Processing"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"Как только базовая энергетическая инфраструктура будет создана, следующей по значимости машиной станет Металлургический заварочный агрегат."
+				""
+				"Обратите внимание на цветовую кодировку в графическом интерфейсе Mekanism, поскольку она указывает, куда идут материалы. Желтый квадрат слева — это место, куда попадает инфузия. Он будет поглощен внутренним буфером, а затем использован во время самого процесса."
+				""
+				"Эти цвета также соответствуют цветам на панели Side Config. По умолчанию этот аппарат ожидает, что инфузионный материал будет вставлен снизу аппарата. Однако все это можно настроить, поэтому установите их так, как вам удобнее."
+				""
+				"Примечание по автоматизации: поскольку два необходимых входных материала используют два разных канала, красный и желтый, невозможно подать оба элемента с одной и той же поверхности. В результате зачастую проще всего изготовить несколько машин, каждая из которых предназначена для своего инфузионного материала."
+			]
+			hide_dependency_lines: true
+			id: "13762022DEE4BEC5"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "03D6AC51756CA1AD"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Advanced Metallurgy"
+			tasks: [
+				{
+					id: "367A53ACB8A3AECB"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:metallurgic_infuser"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_infusing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_infusing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_infusing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_infusing_factory"
+								}
+							]
+						}
+					}
+					title: "Metallurgic Infuser"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"Сплавы обычно будут необходимы для более совершенного оборудования. Однако их изготовление может быть довольно дорогостоящим, поскольку материалы для инфузий не очень распространены."
+				""
+				"Однако их можно расширить еще немного, обогатив в камере обогащения."
+				""
+				"Например, из одного красного камня можно сделать один настоянный сплав, однако из одного обогащенного красного камня можно получить восемь сплавов. Поэтому стоит приложить усилия, чтобы обогатить эти предметы."
+			]
+			hide_dependency_lines: true
+			id: "5EC7CA1A86435B30"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "131BF3970989B404"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Put One In The Chamber"
+			tasks: [
+				{
+					id: "5F5EE2F551F7913B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:enrichment_chamber"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_enriching_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_enriching_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_enriching_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_enriching_factory"
+								}
+							]
+						}
+					}
+					title: "Enrichment Chamber"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: ["Некоторые химические реакции происходят только при более высоких давлениях, и PRC можно использовать для их облегчения."]
+			hide_dependency_lines: true
+			id: "4427B8F3C87DDF02"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "1958B307B1019C34"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Pushing Down On Me, Pressing Down On You"
+			tasks: [
+				{
+					id: "0E9481BE3E52363E"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"Наполняя Пандемониум невероятным количеством магической энергии, его можно превратить в материал с мощными трансмутационными свойствами: этерий."
+				""
+				"Два порта с катушками с наддувом будут принимать входную мощность. Два других порта будут использоваться для ввода отходов и вывода антиматерии."
+				""
+				"Добавление дополнительных портов с подключенными к ним портами с наддувом позволит машине работать быстрее, при условии, конечно, что можно обеспечить достаточную мощность и отходы."
+				""
+				"{\"text\":\"Mekanism Wiki: Сверхкритический фазовращатель\",\"color\":\"blue\",\"подчеркнуто\":\"true\",\"clickEvent\":{\ "action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Supercritical_Phase_Shifter\"}}"
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:sps_casing"
+			id: "3F0DE5664216AD01"
+			min_width: 275
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "2A335028425C54BC"
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "I've Giv'n Her All We've Got, Captain"
+			tasks: [
+				{
+					count: 60L
+					id: "45E5874F0FCCDECE"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 123L
+					id: "2164A5647CB59BA2"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6E2FC37AF289F820"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					id: "4D702AA818D8DE41"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+			]
+			title: "Supercritical Phase Shifter"
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"Алхимики прошлого были правы, полагая, что элементарные вещества можно трансмутировать."
+				""
+				"Чего они не смогли понять, так это огромного количества энергии, которое потребуется для этого."
+			]
+			hide_dependency_lines: true
+			id: "2D91422DA1C8E72A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "5A38C9C7570957F9"
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Indistinguishable from Magic"
+			tasks: [
+				{
+					id: "0F4DBE31B74978E5"
+					item: "mekanism:antiprotonic_nucleosynthesizer"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"Это обязательно произойдет. Поскольку трубы и кабели проложены повсюду, кто знает, что попадет в эту машину, когда она упадет. Вода? Водород? И как только что-то попадает вовнутрь, зачастую непонятно, как его вытащить."
+				""
+				"Именно здесь на помощь приходит Gauge Dropper. Этот небольшой инструмент поможет извлечь нежелательные входные данные с различных машин. Нажатие на входные данные внутри графического пользовательского интерфейса машины с помощью Dropper извлечет небольшую часть входных данных, что позволит легко перенести их на другую машину. Скрытность + щелчок левой кнопкой мыши вместо этого приведет к аннулированию материала."
+				""
+				"Аналогичным образом, «Скрытность» + щелчок правой кнопкой мыши по воздуху с помощью пипетки манометра приведет к аннулированию всего, что хранится в данный момент."
+			]
+			hide_dependency_lines: true
+			id: "06C3D5F78BA710C4"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "469F014669D8372A"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Better Than a Stick in the Eye"
+			tasks: [
+				{
+					id: "68D52990792852FA"
+					item: "mekanism:gauge_dropper"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"Существуют ограничения на количество повышений скорости, которые можно использовать в машинах. После этого расширение в сторону — единственный вариант ускорить процесс. К счастью, установщики уровня делают это несколько проще, чем просто выбросить еще девять машин, полных обновлений. Помните: все дело в эффективности!"
+				""
+				"Каждый установщик уровня добавит к машине несколько входных и выходных слотов, что позволит запускать такое количество элементов параллельно. Каждый слот разделяет другие улучшения в машине, что уменьшает количество улучшений, которые необходимо создать."
+				""
+				"Чтобы применить установщик уровня, просто прокрадитесь + щелкните правой кнопкой мыши на машине, находящейся в мире. Уровни необходимо устанавливать по порядку, пропуск уровней запрещен!"
+			]
+			hide_dependency_lines: true
+			id: "5A47B6B53BADF585"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "5D6190F7A86AA552"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Yo Dawg, Heard You Liked Machines..."
+			tasks: [
+				{
+					id: "1841697C3D1FDFAE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_tier_installer"
+								}
+							]
+						}
+					}
+					title: "Tier Installers"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"Вам нужно куда-то поехать и нет времени туда добраться? Ну, начинай ходить. И в следующий раз возьмите с собой телепорт и установите его, когда доберетесь туда, чтобы снова не идти в долгий путь."
+				""
+				"Рамки телепорта не являются обязательными."
+			]
+			hide_dependency_lines: true
+			id: "4A9E737597297689"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "418966840E6DECD6"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Guests are reminded that Platform One forbids the use of weapons, teleportation, and religion."
+			tasks: [
+				{
+					id: "11AFA218FE7BA802"
+					item: {
+						Count: 1b
+						id: "mekanism:teleporter"
+						tag: {
+							mekData: {
+								EnergyContainers: [
+									{
+										Container: 0b
+										stored: "5000000"
+									}
+								]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F22D2DB89CB9225"]
+			description: [
+				"Меканизм занимается передачей энергии, жидкости, газа, предметов и тепла и имеет соответствующую трубу для передачи каждого из них."
+				""
+				"Их настройка осуществляется с помощью Конфигуратора, который сам по себе имеет несколько режимов. Используйте Sneak + колесо прокрутки, чтобы изменить текущий режим."
+				""
+				"В режиме гаечного ключа нажатие «Скрытность» + щелчок правой кнопкой мыши немедленно поднимет любую машину или трубу Меканизма."
+				""
+				"В любом из режимов настройки Конфигуратор будет переключать различные аспекты трубы. Дополнительные сведения см. в следующих разделах."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "mekanism:configurator"
+				tag: {
+					mekData: {
+						EnergyContainers: [
+							{
+								Container: 0b
+								stored: "60000"
+							}
+						]
+					}
+				}
+			}
+			id: "06ABB5AAF6BEDC06"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "4E6A4987E188A34D"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "503D71FFC12F066F"
+					item: "mekanism:configurator"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Logistics and Storage"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"Помещая предметы под большое давление, в них можно смешать другие материалы."
+				""
+				"Камера впрыска химикатов, часто используемая в качестве этапа в более крупных технологических цепочках, также является очень удобным инструментом для автоматизации более утомительных задач, таких как заливка бетона или доведение медных лестниц до нужного уровня окисления перед использованием их в крыше. ."
+				""
+				"Не забудьте установить обновления газа, чтобы сделать подачу газа более эффективной!"
+			]
+			hide_dependency_lines: true
+			id: "2A029FF13CC8072B"
+			rewards: [
+				{
+					id: "71CFB0EC8091E0AF"
+					item: "mekanism:upgrade_gas"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3F9BD229E827C77F"
+					title: "Epic Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "74C26C9ED32C3063"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:chemical_injection_chamber"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_injecting_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_injecting_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_injecting_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_injecting_factory"
+								}
+							]
+						}
+					}
+					title: "Chemical Injection Chamber"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"Все части можно модернизировать, чтобы усилить энергетический щит и добавить защиту от радиации."
+				""
+				"Другие заметные обновления:"
+				""
+				"Шлем"
+				""
+				"● Автоматическая подача"
+				"● Ночное видение"
+				"● Солнечная зарядка"
+				"● Подводное дыхание"
+				"● Защита от магического урона"
+				"● Защита от статуса"
+				""
+				"Бронежилет"
+				""
+				"● Творческий полет"
+				"● Полет надкрылий"
+				"● Радиационное отслеживание"
+				"● Распределение энергии"
+				""
+				"Брюки"
+				""
+				"● Повышение скорости бега."
+				""
+				"Сапоги"
+				""
+				"● Увеличение высоты прыжка."
+				"● Магнитное обновление"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "mekanism:mekasuit_helmet"
+				tag: {
+					mekData: {
+						EnergyContainers: [
+							{
+								Container: 0b
+								stored: "16000000"
+							}
+						]
+					}
+				}
+			}
+			id: "6E480CFB4EB48E71"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "3CB100DC1C534B42"
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "222D45DF4BF00BC2"
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "1B429878EA149C2F"
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "48E391547CA0B9FE"
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "The Only Thing They Fear... Is You."
+			tasks: [
+				{
+					id: "52DEDB7389CF027D"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "3A0F1CA49AFCE8A8"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "146A47DDB3624E78"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "5B0CE25726B003A6"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["06ABB5AAF6BEDC06"]
+			description: [
+				"Базовые химические хранилища, в них можно хранить любой нерадиоактивный газ, суспензию, инфузионный тип или пигмент."
+				""
+				"Их можно вставлять непосредственно в машины для подачи материалов или настроить на автоматический вывод на соседние машины."
+				""
+				"Они также будут функционировать как мусорный контейнер переполнения, если для них будет установлен режим «Сбросить излишки»."
+			]
+			id: "7471BAAE8A81DBA2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3237A18C32BE6F14"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7BEFF1CA0FC0612B"
+					item: "mekanism:basic_chemical_tank"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06ABB5AAF6BEDC06"]
+			description: ["Базовое хранилище жидкости, их можно автоматически вывести вниз, если прокрасться + щелкнуть правой кнопкой мыши по нижней грани в Конфигураторе."]
+			id: "10371E1C04CA6673"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7F95A852BA445BB5"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "02E592C1CE9FB64A"
+					item: "mekanism:basic_fluid_tank"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06ABB5AAF6BEDC06"]
+			dependency_requirement: "one_started"
+			description: [
+				"Крупномасштабное хранилище газа или жидкости. Динамические резервуары могут быть любого размера от 3x3x3 до 18x18x18. Структурное стекло можно использовать вместо блоков Dynamic Tank где угодно, кроме краев и углов."
+				""
+				"{\"текст\": \"Mekanism Wiki: Dynamic Tank\", \"color\": \"blue\", \"подчёркнуто\": \"true\", \"clickEvent\":{\" action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Dynamic_Tank\"}}"
+			]
+			id: "684B120D89102381"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "65A247D76D57636D"
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1E9AAE22BA9F3FB5"
+					item: "mekanism:dynamic_tank"
+					type: "item"
+				}
+				{
+					id: "1453F79AA63C84DD"
+					item: "mekanism:dynamic_valve"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: ["Все необходимые витамины, минералы и аминокислоты аккуратно сконденсированы в удобную жевательную пасту. Ням."]
+			hide_dependency_lines: true
+			id: "52B63C31B6522EBF"
+			rewards: [
+				{
+					id: "2FD336CE679DF10F"
+					item: "mekanism:canteen"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "6D14EA132AC6D0B8"
+					title: "Epic Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "49252566B6D91021"
+					item: "mekanism:nutritional_liquifier"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F22D2DB89CB9225"]
+			description: ["Меканизм предлагает ряд очень полезных инструментов, брони и вспомогательных устройств."]
+			hide_dependency_lines: true
+			id: "01E97C3D888A1677"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5E370E815E04D56C"
+					item: "mekanism:cardboard_box"
+					title: "Tools and Utility"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"Мощный инструмент «все в одном», способный поддерживать несколько обновлений."
+				""
+				"Заметные обновления"
+				""
+				"● Блок усиления атаки"
+				"● Группа расширения раскопок"
+				"● Подразделение по добыче жил"
+				"● Шелковый сенсорный блок"
+				"● Блок телепортации"
+				"● Фермерская единица"
+			]
+			hide_dependency_lines: true
+			id: "3B271D8FF74A7F73"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "6646042C11EB98C5"
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Rip and Tear"
+			tasks: [
+				{
+					id: "0290DC2A227A55BA"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Mekanism — технологический мод на научно-фантастическую тематику с акцентом на экстремальность. Он фокусируется на повышении эффективности, будь то в форме увеличения добычи руд или усовершенствованных термоядерных реакторов для питания вашей базы."
+				""
+				"Его системы действительно нацелены на определенную степень реализма с определенными уступками для улучшения игрового процесса. В контексте мода игроку необходимо будет освоить выработку электроэнергии, управление теплом и радиацией, и все это в поисках наиболее эффективного пути."
+				""
+				"Помимо этих квестов, в игре нет руководства по Меканизму. Однако очень подробную официальную вики можно найти здесь:"
+				""
+				"{\"text\": \"Mekanism Wiki\", \"color\": \"blue\", \"подчеркнуто\": \"true\", \"clickEvent\": {\"action\" :\"open_url\",\"value\":\"https://wiki.aidancbrady.com\"}}"
+			]
+			hide: true
+			icon: "mekanism:teleportation_core"
+			id: "2F22D2DB89CB9225"
+			rewards: [
+				{
+					id: "18CA99642BE84CA5"
+					item: {
+						Count: 1b
+						id: "mekanism:configurator"
+						tag: {
+							mekData: {
+								EnergyContainers: [
+									{
+										Container: 0b
+										stored: "60000"
+									}
+								]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					icon: "minecraft:raw_copper"
+					id: "2D65E0EFE062AF87"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials"
+						}
+					}
+					title: "Mekanism"
+					type: "item"
+				}
+			]
+			title: "Mekanism"
+			x: 1.5d
+			y: -3.0d
+		}
+	]
+	title: "Mekanism"
+}

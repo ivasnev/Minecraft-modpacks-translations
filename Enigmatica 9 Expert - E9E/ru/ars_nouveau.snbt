@@ -1,0 +1,2571 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau"
+	group: "5A8B89F87F77CF4C"
+	icon: "ars_nouveau:source_gem"
+	id: "00000000000003AB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E45018D600614BA"]
+			description: [
+				"С Ars Nouveau вы научитесь использовать скрытую энергию, заключенную во всех вещах, чтобы творить мощные заклинания, управлять загадочными механизмами и даже наделять силой некоторых милых друзей."
+				""
+				"Эти квесты проведут вас через мод, но не забывайте регулярно обращаться к руководству для получения дополнительной информации."
+				""
+				"~Немой Тифлинг"
+			]
+			hide: true
+			icon: "ars_nouveau:creative_spell_book"
+			id: "00000000000003AC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "03F44B1EF1267DE4"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "66CCD91201C3921D"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+			]
+			title: "Ars Nouveau"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00000000000003D0"]
+			description: [
+				"Заклинательная турель — это усовершенствованное устройство, используемое для произнесения заклинаний на импульсе красного камня. Источник заклинания будет предоставлен автоматически из ближайших банок с источниками."
+				""
+				"Чтобы установить заклинание, напишите пергамент заклинания и щелкните его правой кнопкой мыши на турели. В заклинании он может использовать формы касания или снаряда."
+			]
+			id: "00000000000003B2"
+			rewards: [
+				{
+					id: "00000000000005F5"
+					item: "ars_nouveau:glyph_aoe"
+					title: "Glyph: AOE"
+					type: "item"
+				}
+			]
+			subtitle: "T-U-R-R-E-T, Turret"
+			tasks: [
+				{
+					id: "00000000000003F6"
+					item: "ars_nouveau:basic_spell_turret"
+					type: "item"
+				}
+			]
+			title: "Spell Turret"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D0CB5D53030494C"]
+			description: [
+				"Источник можно найти в любом живом существе, поэтому неудивительно, что он может конденсироваться из большинства живых существ. В естественном цикле Источник, содержащийся в живом, просто передается от растения к животному и обратно. Однако ближайшую ссылку на источник можно использовать для перенаправления этой эфемерной росы в специально подготовленные банки с источником, сохраняя ее для дальнейшего использования."
+				""
+				"У каждой исходной ссылки есть свои требования, которые подробно описаны в Worn Notebook. Все они полезны по-своему, часто лучший выбор определяется тем, какие еще виды деятельности уже происходят в данном районе."
+				""
+				"● Агрономия поглощает источники растущих растений. Каждый раз, когда близлежащее растение переходит на стадию роста, вырабатывается некоторый Источник. Некоторые магические растения производят больше Источника."
+				""
+				"● Алхимия повторно поглощает конденсированный Источник, присутствующий в Зельях. Любое полезное заклинание, хранящееся в соседней банке с зельем, будет поглощено, создав Источник. Больше производится из более сильных зелий."
+				""
+				"● Мицелий потребляет продукты питания, помещенные в соседние пьедесталы. Хотя все продукты питания богаты источником, те, которые производятся из ягод источника, как правило, содержат больше всего этого вещества."
+				""
+				"● Виталик поглощает жизненную силу существ, умирающих поблизости."
+				""
+				"● Вулканик поглощает большую часть горючего с соседних пьедесталов. Уголь, длинные окаменелые деревья, производят небольшое количество, в то время как бревна Пылающего арчвуда производят более значительные количества."
+				""
+				"● Жидкость поглощает определенные жидкости из резервуаров, расположенных под ней, превращая их в Источник с разной скоростью."
+			]
+			icon: "emendatusenigmatica:source_gem"
+			id: "00000000000003B6"
+			min_width: 300
+			rewards: [
+				{
+					id: "37E9B1F2599F872E"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0F9F1DDF26525F9B"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Source Preserves"
+			tasks: [
+				{
+					id: "5440D53DC1A4FC1C"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:agronomic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:volcanic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:alchemical_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:vitalic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:mycelial_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "starbunclemania:fluid_sourcelink"
+								}
+							]
+						}
+					}
+					title: "Sourcelinks"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00000000000003D0"]
+			description: [
+				"Какая польза от магии, если мы не можем заставить ее работать на нас?"
+				""
+				"Вместо этого сэкономьте немного усилий и впечатайте заклинания в руну. Каждый раз, когда сущность встречает его, заклинание срабатывает. Источник заклинания будет предоставлен автоматически из ближайших банок с источниками."
+				""
+				"Чтобы использовать рунический мел, начните с щелчка правой кнопкой мыши по земле, чтобы нарисовать руну. Теперь щелкните правой кнопкой мыши по руне с подготовленным пергаментом для заклинаний. Действительные пергаменты заклинаний должны начинаться с формы касания."
+			]
+			id: "00000000000003CE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "00000000000005FB"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Chalk it up to Experience"
+			tasks: [
+				{
+					id: "00000000000003CF"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:runic_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5D01DE4C7D24440C"
+				"00000000000003D5"
+			]
+			description: [
+				"Приложив немного усилий, можно сделать обычную бумагу лучшим вместилищем магии. После применения эти письменные заклинания можно использовать различными способами."
+				""
+				"Чтобы подготовить пергамент с заклинанием, сначала создайте заклинание в Книге заклинаний. Затем поместите пергамент на стол писца и щелкните правой кнопкой мыши по столу с книгой заклинаний, чтобы перенести выбранное заклинание на пергамент."
+				""
+				"Пергаменты можно использовать повторно, хотя может оказаться полезным сохранить библиотеку исписанных пергаментов, чтобы иметь возможность быстро повторно применить заклинание."
+			]
+			hide_dependency_lines: true
+			id: "00000000000003D0"
+			subtitle: "Jousting Snails"
+			tasks: [
+				{
+					id: "00000000000003D3"
+					item: "ars_nouveau:spell_parchment"
+					type: "item"
+				}
+			]
+			title: "Spell Parchment"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["00000000000003AC"]
+			description: [
+				"Магический Цветок находится на границе между мирским и тайным. Оно растет, как любое другое растение, но его корни проникают сквозь завесу, впитывая еще больше Источника, наполняющего землю."
+				""
+				"Их выращивание послужит начинающему практикующему двум целям:"
+				""
+				"Во-первых, при выращивании они производят больше Источника, чем любые обычные растения."
+				""
+				"Во-вторых, их можно вплести в ткань, которая при близком ношении будет служить личным аккумулятором для Источника."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:magebloom"
+			id: "00000000000003D5"
+			rewards: [
+				{
+					id: "00000000000005F4"
+					item: "ars_nouveau:glyph_harvest"
+					title: "Glyph: Harvest"
+					type: "item"
+				}
+			]
+			subtitle: "Putting Down Roots"
+			tasks: [
+				{
+					id: "00000000000003D6"
+					item: "ars_nouveau:magebloom_crop"
+					type: "item"
+				}
+				{
+					id: "138A7CF8826F30CD"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00000000000003B6"]
+			description: [
+				"Собственный резервуар Источника ограничен: плоть может вместить лишь определенное количество. Для этого существуют определенные магические материалы, но для их изготовления требуется доступ к более крупным резервуарам."
+				""
+				"Поэтому требуется внешний аппарат, чтобы хранить реагенты для таких творческих усилий и помогать безопасно направлять в них Источник."
+				""
+				"Чтобы построить зачаровывающий аппарат, поместите Чародейное ядро ​​и зачаровывающий аппарат поверх него. Пьедесталы должны быть размещены в пределах трех блоков от Ядра. Если в рецепте указана стоимость источника, рядом также необходимо поставить заполненную банку с источником."
+				""
+				"Для работы с Аппаратом сначала разместите реагенты на пьедесталах и фокусе в самом Зачаровывающем Аппарате. Все предметы будут израсходованы во время крафта."
+				""
+				"Устройство для зачарования также можно использовать для наложения определенных чар на инструменты и броню, упрощая процесс наложения определенных чар на предмет снаряжения. Эти рецепты перечислены только в Потертой тетради."
+			]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "00000000000003D7"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "00000000000005FC"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "The Spirit is Willing but the Flesh is Spongy and Bruised"
+			tasks: [
+				{
+					id: "00000000000003DB"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					id: "00000000000003DC"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "00000000000003DD"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+			]
+			title: "Enchanting Apparatus"
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00000000000003D7"]
+			dependency_requirement: "all_started"
+			description: [
+				"Исходный код — штука непостоянная, и хранить его в одном месте достаточно долго для использования может быть в лучшем случае непростой задачей. Начинающие практикующие могут очень долго испытывать трудности с ченнелингом Источника. Помимо магических аксессуаров, сотканных из волокон маны, некоторые другие материалы можно превратить в полезные безделушки, которые послужат расширением собственных запасов."
+				""
+				"Обратитесь к разделу «Потертого блокнота», посвященному магическому снаряжению, где вы найдете рецепты и другие полезные диковинки."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:amulet_of_mana_regen"
+			id: "00000000000003DE"
+			rewards: [
+				{
+					id: "00000000000009FA"
+					item: "ars_nouveau:void_jar"
+					title: "Jar of Voiding"
+					type: "item"
+				}
+			]
+			subtitle: "Draw me like your French girls"
+			tasks: [
+				{
+					id: "00000000000003DF"
+					item: "ars_nouveau:amulet_of_mana_regen"
+					type: "item"
+				}
+				{
+					id: "00000000000003E2"
+					item: "ars_nouveau:ring_of_lesser_discount"
+					type: "item"
+				}
+			]
+			title: "Curious Trinkets"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00000000000003D7"]
+			description: [
+				"Источник пронизывает все вещи. Предоставленный самому себе, он распространяется и проникает в организм, но редко собирается. Связывание его в банках — отличный способ сохранить исходный код для дальнейшего использования, но перемещение его с места на место может оказаться щекотливой темой."
+				""
+				"Исходные реле служат этой цели. Они обеспечивают контролируемый канал для потока Источника, не рассеиваясь обратно в мир. Реле источника могут быть связаны с другими реле, а также с банками, чтобы обеспечить безопасный переход из одного места в другое."
+				""
+				"Используйте Жезл Доминиона, чтобы установить связи."
+			]
+			id: "00000000000003EB"
+			rewards: [
+				{
+					id: "00000000000003EF"
+					item: "ars_nouveau:dominion_wand"
+					title: "Dominion Wand"
+					type: "item"
+				}
+			]
+			subtitle: "Witches Abroad"
+			tasks: [
+				{
+					id: "00000000000003EC"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["00000000000003EB"]
+			description: [
+				"Реле-сплиттеры способны как отправлять, так и получать сигналы от нескольких других ретрансляторов-источников."
+				""
+				"Например, несколько ферм источников могут быть объединены для передачи через одну линию реле, или могут быть созданы филиалы для поставки источника в разные места для турелей или крафта."
+				""
+				"Они имеют те же ограничения по радиусу действия, что и обычные реле, но, объединив их, сеть Источника можно легко распределить по всей территории, сделав ее доступной везде, где это необходимо."
+			]
+			id: "00000000000003ED"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "00000000000005FE"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Equal Rites"
+			tasks: [
+				{
+					id: "00000000000003EE"
+					item: "ars_nouveau:relay_splitter"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: ["Дружелюбные существа с сильной потребностью в самоорганизации, Bookwyrms играют центральную роль в использовании системы управления предметами Ars Nouveau, которая позволяет связывать множество инвентарей в единую точку доступа."]
+			id: "00000000000003F0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "00000000000009EC"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Boop the Snoot"
+			tasks: [
+				{
+					id: "00000000000003F1"
+					item: "ars_nouveau:bookwyrm_charm"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"Звездчатки — любопытные лесные твари, обожающие все блестящее. Золото, в частности. С ними можно подружиться, бросив им небольшое количество золота. Подружившись, они будут помогать, собирая предметы и перемещая их в инвентарь."
+				""
+				"Их можно проинструктировать, что делать, используя Жезл Доминиона. Их поведение можно дополнительно изменить, подарив им очки Starbuncle или шляпу Викси."
+				""
+				"Обратитесь к «Изношенному блокноту» для получения подробного руководства по использованию Starbuncles."
+				""
+				"Эти твари могут быть необычным зрелищем даже в древних лесах. Если их не удалось найти, подумайте о том, чтобы вызвать их с помощью Алтаря Рождения."
+			]
+			id: "00000000000003F2"
+			rewards: [
+				{
+					id: "64CA76A752005B44"
+					item: "starbunclemania:star_saddle"
+					type: "item"
+				}
+				{
+					id: "1C13B3BD5E9A90CD"
+					item: "starbunclemania:star_bin"
+					type: "item"
+				}
+			]
+			subtitle: "In Search of the Golden Acorn"
+			tasks: [
+				{
+					id: "00000000000003F3"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:starbuncle_charm"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"Водовороты — хранители леса, помогающие процветать новым побегам. Они охотно пойдут с вами, если вы окажете им честь, посадив вместо них дерево. Подружившись, Веточка будет ухаживать за небольшой территорией и дарить вам свою награду. Сажайте деревья, сельскохозяйственные культуры, цветы и другие природные объекты, и со временем Веточка вырастет их больше и предложит их вам."
+				""
+				"Обратитесь к «Изношенному блокноту» для получения подробного руководства по использованию веточек."
+				""
+				"В последнее время количество диких веточек сократилось. Если их не удалось найти, подумайте о том, чтобы вызвать их с помощью Алтаря Рождения."
+			]
+			id: "00000000000003F4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000602"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "0AC24D43ED187EBE"
+					item: "minecraft:bamboo"
+					title: "Bamboo"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A7B725DE75256E3"
+					item: "minecraft:pumpkin_seeds"
+					title: "Pumpkin Seeds"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "307E04AA8AC5B992"
+					item: "minecraft:dark_oak_sapling"
+					title: "Dark Oak Sapling"
+					type: "item"
+				}
+			]
+			subtitle: "Whispering Winds"
+			tasks: [
+				{
+					id: "00000000000003F5"
+					item: "ars_nouveau:whirlisprig_charm"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00000000000003AC"]
+			description: ["Не все задачи поддаются выполнению с помощью простых автоматов вроде турели или руны. В этом мире существуют определенные волшебные существа, которые охотно помогут начинающему практикующему, если его вежливо попросить."]
+			hide_dependency_lines: true
+			id: "00000000000009ED"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000CAD"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					id: "25A7B73646586F3B"
+					item: "ars_nouveau:allow_scroll"
+					type: "item"
+				}
+				{
+					id: "7113FACE4C7A9D2F"
+					item: "ars_nouveau:deny_scroll"
+					type: "item"
+				}
+			]
+			subtitle: "Auto-magically"
+			tasks: [
+				{
+					id: "678A401205BCA8C5"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:drygmy_shard"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:whirlisprig_shards"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:siren_shards"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:starbuncle_shards"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:wixie_shards"
+								}
+							]
+						}
+					}
+					title: "Familiar Shards"
+					type: "item"
+				}
+			]
+			title: "Familiar Friends"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"Разве не было бы полезно подержать руку на верстаке? Кто-то, кто сможет передать вам это или принести то? Или, может быть, они могли бы просто выполнить эту работу за вас, пока вы продолжаете изучать тайную науку?"
+				""
+				"Викси — тот друг, которого вы ищете. Связанные применением Рассеивания на Ведьме с низким уровнем здоровья, Викси вызываются с помощью своего Очарования на стандартном Котле, превращая его в Котёл Викси."
+				""
+				"Чтобы указать, что Викси должна изготовить, просто создайте один из предметов самостоятельно и щелкните его правой кнопкой мыши на ее котле. Она позаботится о сборе необходимых предметов из близлежащих инвентарей. Однако для поддержания продуктивности ей понадобится банка с Источником поблизости."
+			]
+			icon: "ars_nouveau:wixie_charm"
+			id: "0BC6D824A7A10356"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7C201B55C9F00AD3"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Wyrd Sisters"
+			tasks: [
+				{
+					id: "5A68031815311494"
+					item: "ars_nouveau:wixie_charm"
+					type: "item"
+				}
+				{
+					id: "67D65A1F1B80B28B"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0BC6D824A7A10356"]
+			description: [
+				"Простое изготовление предметов — не единственное, что эти хитрые дамы спрятали в рукавах. Они также весьма искусны в пивоварении, варят зелья всех типов."
+				""
+				"Как и в случае с обычным крафтом, Wixies потребуются дополнительные возможности. Банка с источником, банка с зельем и инвентарь ингредиентов."
+				""
+				"Каждый Викси может одновременно готовить только один тип зелий. Тип определяется путем заваривания его традиционным способом и, с зельем в руке, щелкните правой кнопкой мыши по ее котлу, чтобы установить рецепт. Она приступит к работе, как только все будет готово. Как и традиционное пивоварение, зелья нужно готовить поэтапно. Один Викси приготовит Неуклюжее зелье с бородавкой Пустоты, следующий добавит золотую морковь, чтобы сделать зелье ночного видения, а третий может добавить Редстоун, чтобы расширить его."
+				""
+				"Рекомендуется взять это зелье и немедленно поместить его в банку, чтобы банку с зельем можно было зафиксировать для этого типа. Подкрадитесь + щелкните правой кнопкой мыши по банке с Жезлом Доминиона, чтобы закрепить в ней зелье этого типа. Это удобно, когда несколько Wixie работают в одной области."
+			]
+			id: "4DC7DC466B1F2D0B"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3B92D3705AEB3AA2"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Nanny Ogg's Cookbook"
+			tasks: [
+				{
+					id: "38EA6B9C79DD69C5"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4DC7DC466B1F2D0B"]
+			description: [
+				"Умный арканист находит способы сэкономить время, и нет ничего более бесполезного, чем выпить пять разных зелий перед боем. Почему бы не смешать их и не выпить все сразу?"
+				""
+				"Это именно то, что делает Potion Melder."
+				""
+				"Для приготовления зелий нужны две банки с зельями в качестве входных данных и третья в качестве выходных."
+				""
+				"Используя Жезл Доминиона, соедините две банки с зельями с Сплавителем. Они будут служить входными данными. Затем соедините Melder с последней банкой с зельями, чтобы принять смешанный напиток."
+				""
+				"В процессе используется некоторый источник из ближайшей банки с источником, но производятся зелья, сочетающие в себе все эффекты двух входов. Этот процесс можно объединить в цепочку для создания зелий с несколькими эффектами."
+			]
+			icon: "ars_nouveau:potion_melder"
+			id: "22CD0875E6AFD43E"
+			rewards: [
+				{
+					id: "3775F901374943C8"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:long_absorption"
+						}
+					}
+					title: "Potion of Absorption"
+					type: "item"
+				}
+				{
+					id: "77257BF40CBAC438"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					title: "Potion of Fire Resistance"
+					type: "item"
+				}
+			]
+			subtitle: "Subtle Infusions"
+			tasks: [
+				{
+					id: "094638F810C5F8C4"
+					item: "ars_nouveau:potion_melder"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4D548D5C01D56188"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DC7DC466B1F2D0B"]
+			description: [
+				"Несколько доз упакованы в бутылки и готовы к употреблению в экологически чистой упаковке многоразового использования."
+				""
+				"Каждая колба может содержать до восьми доз зелий и даже может быть зачарована, чтобы увеличить эффективность или продолжительность действия зелий внутри."
+			]
+			id: "4B150C43E143F401"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "13A4D5D0FB6AAF30"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0AD6FC05A8659F5D"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:potion_flask"
+						tag: {
+							Damage: 8
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000003D0"]
+			description: [
+				"На Кастинговом жезле, довольно традиционном тайном фокусе, можно написать одно заклинание, почти так же, как и на пергаменте."
+				""
+				"Однако, в отличие от других методов сотворения, для заклинания, созданного в Книге Заклинаний, не требуется форма. Все заклинания, произнесенные из Кастинговой палочки, автоматически бесплатно получают форму снаряда, а также уровень ускорения."
+				""
+				"Это означает дополнительные слоты для добавления эффектов или дополнений, что делает их идеальными для специализированных инструментов."
+				""
+				"Существуют и другие чародейские фокусы, дающие аналогичные преимущества, такие как Зеркало Чародея и Меч Чародея. В Worn Notebook рассказывается об этом и многом другом."
+			]
+			id: "6EE073C749AE697F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "185995ACE655011B"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Cast Wide, Your Net"
+			tasks: [
+				{
+					id: "04C35BF0605E9EA6"
+					item: "ars_nouveau:wand"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D0CB5D53030494C"]
+			description: [
+				"Ничто так не говорит о «Магии», как сжигание реагентов на костре!"
+				""
+				"Благодаря специально созданному планшету для управления процессом и дополнительным реагентам для его усиления Ритуальная жаровня способна производить самые разнообразные эффекты."
+				""
+				"Чтобы начать, щелкните правой кнопкой мыши по жаровне с помощью любого планшета. Если требуются дополнительные материалы, их следует бросить в пламя, чтобы они сгорели. Как только все будет готово, еще раз щелкните правой кнопкой мыши пустой рукой, чтобы завершить ритуал."
+			]
+			hide_dependency_lines: true
+			id: "5ED080DAA2A7E19A"
+			rewards: [
+				{
+					id: "37237F9CB81E3546"
+					item: "ars_nouveau:ritual_burrowing"
+					type: "item"
+				}
+			]
+			subtitle: "I Love the Smell of Napalm in the Morning"
+			tasks: [
+				{
+					id: "729AECF6F582CCBA"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Убийство монстров может оказаться… грязным делом. Почему бы не отбросить эту проблему и просто не извлечь из них самую суть?"
+				""
+				"Из монстров, убитых с помощью этого ритуала, выпадают драгоценные камни опыта, которые стоят примерно вдвое больше опыта, чем обычно. Но при этом все капли теряются."
+			]
+			icon: "ars_nouveau:ritual_disintegration"
+			id: "1DF20BDED102423B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0E0F5F21781358A3"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "XP = MC Squared "
+			tasks: [
+				{
+					id: "688576970974E9C1"
+					item: "ars_nouveau:ritual_disintegration"
+					type: "item"
+				}
+				{
+					id: "219D304E19730D2B"
+					item: "ars_nouveau:experience_gem"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Иногда кажется, что дождь никогда не утихнет. Он пропитал вашу броню, затопил вашу пещеру, разъедал все те причудливые схемы, которые, как вам говорили, решат ваши проблемы."
+				""
+				"Но решили ли они дождь? Нет. А теперь давайте устраним этот дождь."
+			]
+			id: "5225FAAF4623B6D0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "55CCE0392547A82F"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Here Comes the Rain Again, Falling On My Head Like a Memory"
+			tasks: [
+				{
+					id: "67AB5005F89FC564"
+					item: "ars_nouveau:ritual_cloudshaping"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Ваши дни слишком коротки? Не хватает времени на ночные занятия?"
+				""
+				"Подумайте о том, чтобы изменить время и пространство, чтобы снова вернуть солнце или луну, чтобы получить дополнительный заряд энергии, или закончить нанесение на карту тех созвездий, которые вы считаете такими интересными."
+				""
+				"Неужели из этого не может выйти ничего плохого?"
+			]
+			id: "5DDAEAD762E63EAB"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "658E6A4D80FA8301"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Ain't nobody got time for that!"
+			tasks: [
+				{
+					id: "741FD9A5813C870E"
+					item: "ars_nouveau:ritual_sunrise"
+					type: "item"
+				}
+				{
+					id: "3FFE686263CB82B2"
+					item: "ars_nouveau:ritual_moonfall"
+					type: "item"
+				}
+			]
+			title: "Celestial Manipulation"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Все вы, скромные грабители, опустошительные воздаятели и призыватели сомнительных заслуг, официально приглашены для участия в предстоящих турнирах!"
+				""
+				"Вызывает рейд грабителей к вашей задней двери, как раз вовремя!"
+			]
+			id: "392EA2D4DE9EAFAB"
+			rewards: [
+				{
+					id: "203CECCC321A0C3D"
+					item: "minecraft:emerald_block"
+					type: "item"
+				}
+			]
+			subtitle: "Hear Ye, Hear Ye"
+			tasks: [
+				{
+					id: "776E3AC22361BA3E"
+					item: "ars_nouveau:ritual_challenge"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Если вам грустно по жизни – употребляйте глутамат натрия. Если вы счастливы в жизни – употребляйте глутамат натрия. Добавьте туда глутамат натрия, будет лучше. Ты только что родила ребенка? Дайте глутамат натрия ребенку, станьте умнее."
+				""
+				"Магия творит чудеса, когда дело касается выращивания сельскохозяйственных культур и разведения животных. Объедините эти два ритуала, чтобы ваш скот был занят и быстро рос."
+			]
+			id: "54B7E584C433DC5B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "37131D5E140365A2"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Magically Sustained Gestation"
+			tasks: [
+				{
+					id: "28404A71FAAED79D"
+					item: "ars_nouveau:ritual_fertility"
+					type: "item"
+				}
+				{
+					id: "7B8A119F2B3E0B6A"
+					item: "ars_nouveau:ritual_overgrowth"
+					type: "item"
+				}
+			]
+			title: "Fertility and Growth"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000003D5"]
+			description: [
+				"Направляясь куда-либо?"
+				""
+				"Прежде чем отправиться в путь, возьмите с собой припасы, так как быстрый путь туда и обратно может быть очень удобен."
+				""
+				"Свиток деформации можно привязать к определенному месту с помощью щелчка правой кнопкой мыши, а затем использовать снова позже, чтобы вернуть игрока именно в это место. Однако свиток расходуется при использовании."
+				""
+				"Альтернативно, портал может быть построен с использованием любого типа Исходного камня прямоугольной формы.  Поместите рядом заполненную банку с источником и бросьте связанный свиток деформации через рамку, чтобы поджечь его, привязав его к координатам из свитка. Предметы, мобы и даже заклинания могут проходить через эти порталы, но они не способны переходить между измерениями."
+				""
+				"Ghostweave, Mirrorweave и Falseweave также можно использовать для рамок порталов, что обеспечивает бесконечную настройку!"
+			]
+			id: "19C9AC76B4E2B19D"
+			rewards: [
+				{
+					count: 8
+					id: "530B702E2689DE28"
+					item: "ars_nouveau:warp_scroll"
+					type: "item"
+				}
+			]
+			subtitle: "A Wizard Did It!"
+			tasks: [
+				{
+					count: 14L
+					icon: "ars_nouveau:sourcestone"
+					id: "59AD7879702E702B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:sourcestone"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:sourcestone_small_bricks"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_sourcestone"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:sourcestone_mosaic"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_sourcestone_basketweave"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_sourcestone_small_bricks"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:sourcestone_basketweave"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_sourcestone_mosaic"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_sourcestone_alternating"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:sourcestone_alternating"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:sourcestone_large_bricks"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_sourcestone_large_bricks"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_gilded_sourcestone_basketweave"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_gilded_sourcestone_alternating"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:gilded_sourcestone_alternating"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:gilded_sourcestone_basketweave"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:gilded_sourcestone_mosaic"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_gilded_sourcestone_small_bricks"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_gilded_sourcestone_large_bricks"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:smooth_gilded_sourcestone_mosaic"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:gilded_sourcestone_small_bricks"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:gilded_sourcestone_large_bricks"
+								}
+							]
+						}
+					}
+					title: "Sourcestone"
+					type: "item"
+				}
+			]
+			title: "Warp Portals"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"Дригмеи, встречающиеся практически везде, где бродят дикие звери, — это духи, привязанные к земле и пасущие свое стадо. С помощью своей магии они могут собирать предметы со всех видов зверей, не причиняя им никакого вреда. Их можно соблазнить работать на вас, показав им символ их заклятых врагов: Защитников дикой природы."
+				""
+				"Обратитесь к «Изношенному блокноту» для получения подробного руководства по использованию Drygmies."
+				""
+				"В последнее время численность диких дригмеев сократилась. Если их не удалось найти, подумайте о том, чтобы вызвать их с помощью Алтаря Рождения."
+			]
+			id: "4599C1B5F2048691"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "096125B9A6DA61DE"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run summon minecraft:chicken ~ ~2 ~"
+					icon: "minecraft:egg"
+					id: "6F26AB1474F756FC"
+					title: "Summon Chicken"
+					type: "command"
+				}
+			]
+			subtitle: "Very A-moose-ing."
+			tasks: [
+				{
+					id: "2DE5518E628456D5"
+					item: "ars_nouveau:drygmy_charm"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Сначала ты вынешь Святую Булавку. Потом сосчитай до трех, ни больше, ни меньше…"
+				""
+				"Полезно для призыва Вильдена любого размера. Когда Уилден-Химера дополнена частями тел каждого из меньших Уилденов, он появится, чтобы отомстить за своих собратьев."
+			]
+			icon: "ars_nouveau:ritual_wilden_summon"
+			id: "6AB291FBD63076A3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "4C18E35BD71FC9C6"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "The Beast of Caerbannog"
+			tasks: [
+				{
+					id: "31F14D278A887427"
+					item: "ars_nouveau:ritual_wilden_summon"
+					type: "item"
+				}
+				{
+					id: "50C9BE6CE1193935"
+					item: "ars_nouveau:wilden_tribute"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00000000000003EB"]
+			description: [
+				"Если исходные реле обычно ограничены извлечением или отправкой в ​​один связанный исходный Jar, эти специализированные реле будут автоматически извлекать или отправлять в любые близлежащие jar-файлы без привязки."
+				""
+				"Таким образом, Депонатор является отличным инструментом для хранения кувшинов, наполненных для других целей, например, для создания варп-порталов. Совместное использование коллектора и депозитора также обеспечивает удобные средства автоматизации передачи исходного кода. Наполняйте банки в одном месте, подбирайте их и сливайте в другом месте."
+			]
+			id: "35575BA75AA92E49"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "32BD6621BA65DF4F"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Ebb and Flow"
+			tasks: [
+				{
+					id: "0294A1F8CCC0D906"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:relay_collector"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:relay_deposit"
+								}
+							]
+						}
+					}
+					title: "Source Relays: Collectors and Depositors"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["00000000000003EB"]
+			description: [
+				"Варп-реле служат источником дальнего действия. Соединив их вместе, Источник можно перенести на любое расстояние в одном и том же измерении."
+				""
+				"Небольшое количество Источника используется для стабилизации этого соединения на больших расстояниях."
+			]
+			id: "7A20D43F4D535200"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3C644C0B2495BC36"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "650E082BF111565C"
+					item: {
+						Count: 2b
+						id: "ars_nouveau:relay_warp"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Единственное, что удерживает этих милых тварей от того, чтобы они стали лакомством для более крупных хищников, — это их быстрые маленькие лапки. Силу, которую они с радостью одолжат за цену дружбы."]
+			id: "3E84BCD316870360"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "5A6342EB078DF159"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Don't You Crittersize Me!"
+			tasks: [
+				{
+					id: "0529231F83AA9DF1"
+					item: "ars_nouveau:familiar_starbuncle"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Хотя викси приятно находиться в более домашней обстановке, они, как известно, весьма находчивы в бою, бросая туда и сюда опасные напитки, чтобы отразить нападение."]
+			id: "07E7E9443C4FD9EF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5C7AAD35F5713448"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "A Spoonful of Sugar Helps the Medicine Go Down..."
+			tasks: [
+				{
+					id: "43F1E038F8424697"
+					item: "ars_nouveau:familiar_wixie"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Могущественные духи земли, умеющие находить вещи, дригмеи передают свои знания своим друзьям, усиливая магию и получая дополнительную добычу."]
+			id: "7BD59789808E69D2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "32B10294788455A9"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "As Luck Would Hoove It"
+			tasks: [
+				{
+					id: "19106E3C1E5AEBD0"
+					item: "ars_nouveau:familiar_drygmy"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Имея глубокую связь с Источником, Bookwyrms становятся отличными союзниками, собирая все, что они найдут, и принося это вам."]
+			id: "699DD621303B1301"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "3F826BECBAC65089"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "I Will Dewey Decimate You"
+			tasks: [
+				{
+					id: "10D37175AB7E066E"
+					item: "ars_nouveau:familiar_bookwyrm"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Разнообразие – это пряность жизни, и никто не знает этого лучше, чем жители Сильваны. Когда они рядом, все становится вкуснее."]
+			id: "5D0E0E5116239033"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "5DD6D62E0C457716"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "The Queen of Sauce"
+			tasks: [
+				{
+					id: "02FA381E42107A74"
+					item: "ars_nouveau:familiar_whirlisprig"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"На протяжении веков колдуны дружили с самыми разными существами, чтобы помочь им в работе. Эта дружба глубока, образуя симбиотическое партнерство, которое дарует существу невероятное долголетие и мощные способности колдуну."
+				""
+				"Выполните Ритуал Связывания рядом с податливым существом, чтобы показать свое желание установить с ним связь. Если он согласится, он предоставит жетон, который можно будет добавить в книгу заклинаний, чтобы вызвать их в любое время."
+				""
+				"Каждый фамильяр дает уникальные бонусы, подробно описанные в Потертой тетради. Исследуйте каждого, чтобы найти подходящего друга."
+			]
+			hide_dependency_lines: true
+			id: "33F9C7DCBA952F1E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6DB8DF770C37C6FF"
+					title: "Ars Nouveau Rare Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Friendship is Magic"
+			tasks: [
+				{
+					id: "3AA728ECE363A96A"
+					item: "ars_nouveau:ritual_binding"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00000000000003AC"]
+			description: [
+				"Источник — это движущая энергия каждого заклинания и тайного устройства в Ars Nouveau, но его необходимо конденсировать из мира, чтобы использовать его для чего-то помимо простейшего использования. С этой целью мы начнем с камеры наполнения."
+				""
+				"Сама камера наполнения требует для работы Источника, но может медленно извлекать часть из окружающей среды для простых поделок; Самый простой из них — Камень-Источник. Как только это станет возможным, поместите рядом заполненную банку с источником, чтобы значительно повысить скорость крафта."
+				""
+				"Предмет в центре рецепта необходимо вставить в саму Комнату, а все предметы, окружающие его, следует разместить на близлежащих Пьедесталах. Предметы на Пьедесталах действуют как ключи и никогда не расходуются, а центральный предмет преобразуется в результат."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "4D0CB5D53030494C"
+			rewards: [
+				{
+					id: "2CFB7DD91ABA7530"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:dowsing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Like Sweet Morning Dew"
+			tasks: [
+				{
+					id: "7DF90F119B616AF2"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					icon: "emendatusenigmatica:source_gem"
+					id: "7278A14A3C304E2C"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/source"
+						}
+					}
+					title: "Source Gem"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Source Gems"
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["00000000000003AC"]
+			description: [
+				"И новичок, и мастер много времени посвящают искусству создания заклинаний, будь то подготовка и изучение новых символов, зачарование личных тайных фокусов или подготовка символов заклинаний или турелей."
+				""
+				"Все эти действия сосредоточены вокруг стола писца."
+				""
+				"Новые глифы можно написать, щелкнув правой кнопкой мыши по столу писца с книгой заклинаний, чтобы открыть Кодекс всех глифов, известных или неизвестных."
+				""
+				"Чтобы написать глиф, просто найдите и выберите его в Кодексе. Следуйте за этим, бросив необходимые ингредиенты на стол, чтобы завершить поделку. Наконец, изучите глиф, щелкнув его правой кнопкой мыши в воздухе."
+				""
+				"Примечание. Глифы хранятся в проигрывателе, а не в Книге заклинаний. Таким образом, потеря Книги Заклинаний не означает потерю изученных символов."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:scribes_table"
+			id: "5D01DE4C7D24440C"
+			rewards: [
+				{
+					id: "2D833FFD1219F1B2"
+					item: "ars_nouveau:glyph_light"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6B416F69ADB0ABF8"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+				{
+					id: "6E8C0C0D126E4C78"
+					item: "ars_elemental:glyph_conjure_terrain"
+					type: "item"
+				}
+			]
+			title: "Spellcasting"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2614A201594A632C"]
+			description: [
+				"Нити можно вплести в прорезь для нитей на соответствующей броне с помощью Таблицы изменений."
+				""
+				"Снаряжение следует разместить с правой стороны, после чего на пергаменте слева отобразятся доступные слоты."
+				""
+				"Чтобы применить Нить, щелкните ее правой кнопкой мыши на стороне с пергаментом. Нити накладываются сверху вниз. Однако их можно удалить в любой момент и применить повторно, и они не теряются при удалении. Щелчок правой кнопкой мыши пустой рукой удалит их сверху вниз."
+				""
+				"Обратите внимание, что некоторые потоки имеют разные или более сильные эффекты при применении в слотах потоков более высокого уровня. Некоторые из них, например Нить скольжения, вообще требуют наличия определенного уровня слота. Применение одного и того же потока более одного раза, как правило, не имеет никакого эффекта."
+			]
+			icon: "ars_nouveau:blank_thread"
+			id: "0C982C7F2F76D05D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "4D5943A28084DA51"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Tailor Made"
+			tasks: [
+				{
+					id: "5E8A27546CC79AC6"
+					item: "ars_nouveau:alteration_table"
+					type: "item"
+				}
+				{
+					id: "4C4E4BC3125E83F7"
+					item: "ars_nouveau:blank_thread"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"Хотя к ним часто относятся с недоверием и называют зверями-людоедами (это был всего лишь один раз, ок?), на самом деле сирены заинтересованы только в сборе блестящих вещей. Подружившись, сирены будут медленно собирать сокровища из своих водных домов и убирать их для безопасного хранения. Чем красивее их окружающая среда, тем больше вероятность, что они поделятся этими сокровищами со своими друзьями."
+				""
+				"Обратитесь к «Изношенному блокноту» для получения подробного руководства по использованию сирен."
+				""
+				"В последнее время численность диких сирен сократилась. Если их не удалось найти, подумайте о том, чтобы вызвать их с помощью Алтаря Рождения."
+			]
+			id: "14E70FC0AA2BCE75"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "10635CFA99A607DE"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Darlin' it's better, down where it's wetter"
+			tasks: [
+				{
+					id: "6F4E5A968BB51BFF"
+					item: "ars_elemental:siren_charm"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4B150C43E143F401"]
+			description: [
+				"Пушка-флакон — это простое устройство, предназначенное для дальнейшего использования в качестве оружия вредоносных зелий. Любое зелье, добавленное в него, можно бросить, как если бы оно было сварено в виде брызгового зелья."
+				""
+				"В сочетании с флаконами они могут стать мощным оружием в бою."
+			]
+			id: "36901289970EA177"
+			rewards: [
+				{
+					id: "0C284ED2ABFB615F"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:potion_flask_amplify"
+						tag: {
+							Damage: 0
+							an_potion_flask: {
+								PotionData: {
+									CustomPotionEffects: [
+										{
+											Ambient: 0b
+											Amplifier: 1b
+											CurativeItems: [
+												{
+													Count: 1b
+													id: "minecraft:milk_bucket"
+												}
+											]
+											Duration: 432
+											Id: 19
+											ShowIcon: 1b
+											ShowParticles: 1b
+											"forge:id": "minecraft:poison"
+										}
+									]
+									Potion: "minecraft:strong_harming"
+								}
+								count: 8
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "49466D69EE033979"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:splash_flask_cannon"
+						tag: {
+							potion_launcher: {
+								amountLeft: 0
+								lastDataForRender: {
+									Potion: "minecraft:empty"
+								}
+								lastSlot: 0
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4DC7DC466B1F2D0B"]
+			description: [
+				""
+				"Распылитель зелий значительно повышает эффективность зелий, применяя одну дозу ко всем существам в области действия с увеличенной продолжительностью."
+			]
+			id: "294E71B3E39FC5B9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "097A6D19CCF1D16F"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Potpourri for the Soul "
+			tasks: [
+				{
+					id: "667E7C768D84A46F"
+					item: "ars_nouveau:potion_diffuser"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B150C43E143F401"]
+			description: [
+				"Волшебнику в бою некогда беспокоиться о таких мелочах, как выпить зелье. Корона Алхимика сделает это за них."
+				""
+				"Открыв круговое меню и выбрав одно из зелий, обнаруженных в инвентаре, Корона алхимика автоматически повторно применит это зелье всякий раз, когда его срок действия закончится. Имея под рукой несколько фляг, можно добиться того, чтобы эффект зелья длился довольно долго, без необходимости пить повторно."
+			]
+			id: "288B47EABE02F591"
+			rewards: [
+				{
+					id: "11F7CB14332635F5"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:potion_flask"
+						tag: {
+							Damage: 0
+							an_potion_flask: {
+								PotionData: {
+									CustomPotionEffects: [
+										{
+											Ambient: 0b
+											Amplifier: 0b
+											CurativeItems: [
+												{
+													Count: 1b
+													id: "minecraft:milk_bucket"
+												}
+											]
+											Duration: 9600
+											Id: 13
+											ShowIcon: 1b
+											ShowParticles: 1b
+											"forge:id": "minecraft:water_breathing"
+										}
+									]
+									Potion: "minecraft:long_strength"
+								}
+								count: 8
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4804A0522EEDE4A8"
+					item: "ars_nouveau:alchemists_crown"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Поистине незаменимый спутник при исследовании глубин. Сирены дадут своим друзьям бонус к водным заклинаниям, а также даруют им Милость Дельфина во время плавания."]
+			id: "49AB7D1579EB428D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "49268BE6F3E1218B"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Flippin' your fins really will get you far"
+			tasks: [
+				{
+					id: "3A36EE387B1CF4B9"
+					item: "ars_elemental:siren_familiar"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Будучи близким спутником, Flarecannon наделит своих друзей некоторой силой, усиливая магию огня и предоставляя временное сопротивление огню."]
+			id: "3CD361FECB4375DE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "708695DC518FA6AA"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Burninate the land"
+			tasks: [
+				{
+					id: "75E50048B128DE1D"
+					item: "ars_elemental:firenando_familiar"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"Эти мощные тайные конструкции, эти големы, известные как сигнальные пушки, служат для защиты и сжигания всего враждебного, что попадается в их радиус действия."
+				""
+				"Обратитесь к «Изношенному блокноту» для получения подробного руководства по использованию ракетницы."
+			]
+			id: "44D58981DC694690"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "20587DF83A9CDEE2"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Five-Alarm Fire"
+			tasks: [
+				{
+					id: "487DF54B7E3B5CF1"
+					item: "ars_elemental:firenando_charm"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00000000000003D5"]
+			description: [
+				"Эти магически усиленные облачения — идеальное снаряжение для преданного волшебника — предлагают больше, чем просто защиту."
+				""
+				"В первую очередь они действуют как личная батарея для Источника, давая заклинателю больше возможностей для использования в бою. Однако в них также могут быть вплетены специальные Нити, предлагающие более уникальные и индивидуальные дары."
+				""
+				"Каждый комплект брони можно улучшить в Чародейском аппарате на три разных уровня. На каждом уровне они получают больше слотов для приема потоков. Рецепт повышения уровня показан в Потертой тетради."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:apprentice_hood"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2614A201594A632C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "054C8C6E78EF9712"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "I shall wear midnight"
+			tasks: [
+				{
+					id: "43F2181E17E92B5D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_hood"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_hood"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_hood"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magical Headgear"
+					type: "item"
+				}
+				{
+					id: "1A1B4607B350FBE9"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_robes"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_robes"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_robes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magical Robes"
+					type: "item"
+				}
+				{
+					id: "77522A6DC5108548"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_leggings"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_leggings"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_leggings"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magical Pants"
+					type: "item"
+				}
+				{
+					id: "289D357A8157C9AE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Magical Boots"
+					type: "item"
+				}
+			]
+			title: "Magical Vestments"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Големы издавна использовались людьми, обладающими колдовскими способностями, для помощи им в их работе. С помощью Таблички пробуждения опытный маг может привнести разум в Арчвуд и Расцветающий аметист. Получившиеся в результате существа известны как Weald Walkers и Amethyst Golems соответственно."
+				""
+				"Уилдские ходоки выступают в роли стражей, сдерживая враждебных существ своей зверской силой."
+				""
+				"Аметистовые големы, между тем, более привередливы по своей природе, бережно ухаживая и собирая аметист из близлежащего расцветающего аметиста. Обычные блоки аметиста, находящиеся в их заряде, можно даже заставить прорастать и расти больше."
+			]
+			icon: "ars_nouveau:ritual_awakening"
+			id: "22969E8FB09F66D1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "597B10860B9F7082"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0E7FDC5948AB7296"
+					item: "ars_nouveau:ritual_awakening"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5ED080DAA2A7E19A"]
+			description: [
+				"Работа с другими может оказаться грязным делом. Волшебники старины тратили много времени и усилий, пытаясь уберечь своих друзей-дригмеев и сельских жителей от вреда. Контейнерные банки предлагают современное решение этой извечной проблемы."
+				""
+				"Любое существо, находящееся под действием Ритуала Сдерживания, будет автоматически втянуто в ближайшую пустую Сосуду Сдерживания."
+				""
+				"Однако с содержащимися существами по-прежнему можно взаимодействовать. Сельские жители, у которых есть работа, продолжат торговать, коров можно будет доить, а дригмеи продолжат собирать с них урожай."
+				""
+				"Естественно, это также является отличным средством транспортировки, поскольку банки можно свободно поднимать и перемещать. Чтобы высвободить существо из Банки, просто примените к нему Dispel."
+			]
+			id: "3E5FAD31B6ED058C"
+			rewards: [
+				{
+					count: 4
+					id: "2BCE50D9E8B36411"
+					item: "ars_nouveau:mob_jar"
+					type: "item"
+				}
+			]
+			subtitle: "Modern problems require modern solutions"
+			tasks: [
+				{
+					id: "7F268681D7AB59BD"
+					item: "ars_nouveau:ritual_containment"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000003D7"]
+			description: [
+				"Когда волшебник решает специализироваться на определенной школе магии, он часто инвестирует в Фокус, чтобы улучшить выбранную школу."
+				""
+				"Каждый фокус, установленный в специальном слоте для сувениров, дает школе уникальные дары, которые подробно описаны в Потертой тетради."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:summon_focus"
+			id: "6A8D28FEED0CB148"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "5FBCFC8E2A3A9F7F"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Focus Pocus"
+			tasks: [
+				{
+					id: "5913EA80944F3A87"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_fire_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_water_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_air_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_earth_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:shapers_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:fire_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:water_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:air_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:earth_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:necrotic_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:summon_focus"
+								}
+							]
+						}
+					}
+					title: "Spell Focuses"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00000000000003D7"]
+			description: [
+				"Иногда может быть весьма полезно иметь возможность заглянуть в какую-то местность, не находясь там лично. Особенно в средах, которые могут представлять опасность для человека."
+				""
+				"Oculus Scryer позволяет волшебнику осуществлять именно такой мониторинг на большом расстоянии."
+				""
+				"Поместите Кристалл Предвидения в место, которое нужно отслеживать, щелкните его правой кнопкой мыши с помощью чистого пергамента, чтобы записать местоположение, и поместите полученный Свиток Провидца на пьедестал рядом с Окулусом. При приближении Окулус позволяет Волшебнику выбрать любой из близлежащих свитков, чтобы просмотреть местоположение."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:scryers_oculus"
+			id: "4D5B41D89738D3EE"
+			rewards: [
+				{
+					count: 8
+					id: "522970FC21CE5DC5"
+					item: "ars_nouveau:blank_parchment"
+					type: "item"
+				}
+			]
+			subtitle: "You Lookin’ at Me Lookin’ at You"
+			tasks: [
+				{
+					id: "230D1D953C4803DD"
+					item: "ars_nouveau:scryers_oculus"
+					type: "item"
+				}
+				{
+					id: "568C6F40B6FE17D0"
+					item: "ars_nouveau:scryers_crystal"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00000000000003F2"]
+			description: [
+				"Помимо транспортировки предметов и стильного внешнего вида, Starbunkles могут получить несколько дополнительных аксессуаров, которые еще больше улучшат их способности."
+				""
+				"Настройка мест получения и выдачи остается такой же, как и для предметов; используя Жезл Доминиона после оснащения соответствующим аксессуаром."
+				""
+				"Нужны ли им доступ к определенной стороне? Используйте прокрутку направления, чтобы установить предпочтительную сторону. Они устанавливаются, если посмотреть в нужном направлении и нажать «Скрытность» + щелкнуть по ним правой кнопкой мыши. Затем используйте свиток на Звездном пузыре."
+			]
+			icon: "ars_nouveau:starbuncle_shards"
+			id: "355D6EAEA6130932"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "554D391BC7B04832"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					id: "0ADB1DD209B4DFEB"
+					item: "starbunclemania:direction_scroll"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "01C1E69E6C4CCEB7"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:starbuncle_charm"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Starbuncle Logistics"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["355D6EAEA6130932"]
+			description: ["Крошечный рюкзак для перевозки FE с места на место."]
+			id: "2C2F387B685BACBF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "25797A58CD3FB9E7"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Watt is love? Baby don't hertz me, n-ohm-ore"
+			tasks: [
+				{
+					id: "20A1A2ACEC44F67B"
+					item: "starbunclemania:star_battery"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["355D6EAEA6130932"]
+			description: ["Герметичный для предотвращения разливов, Starbucket позволяет Starbuncle транспортировать любую жидкость."]
+			id: "58E16327E88CA425"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6AB5D94A72FBBE3B"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Looking a little sloshed"
+			tasks: [
+				{
+					id: "5E0EAB7D7348A4EA"
+					item: "starbunclemania:star_bucket"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["355D6EAEA6130932"]
+			description: ["Имея на буксире Звездный шар, Звездный пучок может транспортировать газы Меканизма с места на место."]
+			id: "1F46F472B7FB88D5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "71EE3CB169F23535"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Let's not get carried away"
+			tasks: [
+				{
+					id: "31155BF4A36825BD"
+					item: "starbunclemania:star_balloon"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DC7DC466B1F2D0B"]
+			description: [
+				"Хотя банки для жидкости подходят для любой жидкости, они особенно полезны для работы с зельями."
+				""
+				"Когда жидкие зелья, созданные другими модами, такими как Create, Hexerei, Thermal или Immersive Engineering, хранятся в защитной банке, они автоматически помещаются в банку с зельями, установленную поверх нее. Это означает, что любое зелье можно легко преобразовать для использования в таких устройствах, как зельеварки или другие алхимические инструменты, предлагаемые Ars Nouveau."
+			]
+			id: "0F76D6C074F7AEE1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "74DC74F14E5469F2"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2B5E1A2D4929EA45"
+					item: "starbunclemania:fluid_jar"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000003B6"]
+			description: ["Простое устройство, используемое для преобразования Источника в его естественной форме в более... текучее состояние, позволяющее перемещать его по трубам или другим средствам передвижения."]
+			id: "4CD2D0DB2782D7B8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7AC95168237AF555"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Source Reserves"
+			tasks: [
+				{
+					id: "20AEA58BC06C38B1"
+					item: "starbunclemania:source_condenser"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["00000000000003B6"]
+			description: [
+				"Когда-то считавшиеся совершенно отдельными, магические энергии, известные как Источник, Аура и FE, на самом деле являются гранями одной и той же энергии. Используя специальные кристаллы, становится возможным легко переключаться между ними."
+				""
+				"Пульсирующие кристаллы работают, поглощая Источник из близлежащих сосудов с источником и превращая его в пригодный для использования FE. Если в области содержится достаточно Ауры, она также будет поглощена, что значительно увеличит генерируемую FE."
+				""
+				"Резонирующие кристаллы, с другой стороны, создают внутренний резонанс с FE, превращая его обратно в Источник или Ауру. Если исходный Jar находится достаточно близко, он отправит его туда. Если банки нет или она заполнена на 100%, Резонирующий кристалл вместо этого преобразует входящий FE в Ауру и рассеивает его в атмосферу."
+			]
+			hide_dependency_lines: true
+			id: "24D38853A31F4AA6"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7CE9FDA5D58E4515"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "17973FDD702DDDC8"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "enigmaticunity:dim_source_generator"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:bright_source_generator"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:iridescent_source_generator"
+								}
+							]
+						}
+					}
+					title: "Pulsating Crystals"
+					type: "item"
+				}
+				{
+					id: "63B60CDE0259A851"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "enigmaticunity:dim_source_producer"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:bright_source_producer"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:iridescent_source_producer"
+								}
+							]
+						}
+					}
+					title: "Resonating Crystals"
+					type: "item"
+				}
+			]
+			title: "Energy Conversion"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00000000000003F0"]
+			description: [
+				"Storage Lectern — это центральная точка доступа к хранилищу на базе Bookwyrm. Поместите один в любом месте и щелкните правой кнопкой мыши по одному или нескольким чарам Книжного змея, чтобы привязать их к кафедре."
+				""
+				"Книжные змеи отвечают за перемещение предметов, и каждый из них может управлять до восьми инвентарями. Таким образом, кафедра с двумя прикрепленными к ней Буквирмами может быть привязана к 16 близлежащим инвентарям."
+				""
+				"Чтобы привязать инвентарь к кафедре, сначала прокрадитесь правой кнопкой мыши по инвентарю с помощью Жезла Доминиона, затем щелкните правой кнопкой мыши по кафедре. На кафедре можно снова щелкнуть правой кнопкой мыши с помощью Жезла Доминиона, чтобы выделить все прикрепленные инвентари и Книжных змей."
+				""
+				"Эта система очень хорошо сочетается с большими контейнерами для хранения, такими как ящики, хранилища предметов и приводы пространственного хранения, создавая возможности плотного хранения с использованием меньшего количества подключений Bookwyrm."
+				""
+				"Кафедры также могут быть объединены в цепочку для обеспечения удаленного доступа к центральному хранилищу. Поместите новую кафедру в любом месте в пределах 30 блоков от основной кафедры, щелкните правой кнопкой мыши новую кафедру с помощью палочки, затем щелкните правой кнопкой мыши основную с помощью палочки. Новая кафедра теперь будет иметь доступ ко всем инвентарям первой. Просто продолжайте соединять таким образом столько, сколько захотите, чтобы терминалы были по всему дому!"
+				""
+				"Примечание. К цепным кафедрам не могут быть привязаны Книжные черви или инвентарь. Это приведет к разрыву соединения с основной сетью и созданию новой отдельной сети."
+				""
+				"Наконец, следует отметить, что любой несвязанный инвентарь, размещенный непосредственно рядом с кафедрой, будет служить входом для всей системы. Любые предметы, попадающие в этот инвентарь, будут автоматически отсортированы Bookwyrms по связанным инвентарям. Это работает и для удаленных кафедр. Предметы также можно загружать непосредственно в кафедру через бункеры или другую автоматизированную логистику."
+			]
+			id: "3F58A461A0322846"
+			min_width: 300
+			rewards: [
+				{
+					count: 9
+					id: "770A155A795A779F"
+					item: "create:item_vault"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "46A80C1104FFAE5A"
+					item: "ars_nouveau:storage_lectern"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3F58A461A0322846"]
+			description: [
+				"Хранилище — это специальный блок, который может вместить до двойного сундука в одном блоке. Однако, в отличие от стандартного сундука, они сохраняют свое имя, когда их ломают. Это хорошо сочетается с другой особенностью кафедры: именованными вкладками."
+				""
+				"Любые именованные инвентари, привязанные к кафедре, будут отображаться на специальной вкладке интерфейса. Все инвентари с одинаковыми именами используют одну вкладку, и содержимое всех этих инвентарей сгруппировано вместе. Это позволяет организовать некоторую ручную организацию, например, поместить все драгоценные камни в один набор инвентарей или специальное оборудование в другой. Думайте об этом как о группе поиска, обеспечивающей быстрый доступ ко всем элементам одним щелчком мыши."
+				""
+				"Эта функция работает с любым инвентарем, которому можно дать имя на наковальне, однако лучше всего она работает с теми, которые сохраняют свое имя при получении, чтобы избежать необходимости переименовывать их. Некоторые другие примеры включают шалкеровые ящики, умные сундуки, усиленные сундуки, деревянные ящики для хранения и усиленные ящики для хранения, и это лишь некоторые из них."
+			]
+			id: "6712F0284D3B20A9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "2E298084349A0FDF"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "010B09FADC08000C"
+					item: "ars_nouveau:repository"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3F58A461A0322846"]
+			description: [
+				"Витрины — это простое устройство Redstone для чтения содержимого инвентаря. Они могут быть связаны с любым инвентарем или даже с кафедрой хранения и могут выдавать сигнал, когда настроенный элемент выше или ниже определенного порога."
+				""
+				"Выберите инвентарь, чтобы связать его с помощью Жезла Доминиона. Скрытно щелкните правой кнопкой мыши для обычных инвентарей или просто щелкните правой кнопкой мыши для кафедры, затем щелкните правой кнопкой мыши размещенную витрину, чтобы привязать ее."
+				""
+				"Чтобы настроить элемент для отслеживания, просто щелкните его правой кнопкой мыши в ящике. Это также работает со свитками предметов."
+				""
+				"Чтобы установить количество, пустой рукой щелкните корпус правой кнопкой мыши, чтобы увеличить, и щелкните левой кнопкой мыши, чтобы уменьшить. Sneak Click будет увеличиваться или уменьшаться в пределах восьми."
+				""
+				"Чтобы инвертировать сигнал, прокрадитесь правой кнопкой мыши по футляру Жезлом Доминиона."
+			]
+			id: "68921D838C07EFE7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6B0B1FC4330D47D7"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "230D088EC2109D10"
+					item: "ars_nouveau:item_detector"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4D5B41D89738D3EE"]
+			description: [
+				"Далеко от дома и вам нужно еще несколько зелий, чтобы пополнить запасы? Глаз Чародея позволяет удаленно направлять заклинание в фиксированное место, если оно привязано к Кристаллу Провидца, или в несколько мест с помощью Свитков Провидца."
+				""
+				"В качестве простого примера того, насколько это может быть полезно, кристалл Предвидения, помещенный напротив кафедры-хранилища, позволит следующей форме заклинания получить удаленный доступ к кафедре:"
+				""
+				"&5Прикоснуться&r > &2Взаимодействовать&r"
+				""
+				"Добавление «Чувствительности» к форме заклинания позволит удаленно наполнять флягу. Просто держите колбу в левой руке и убедитесь, что Кристалл Предвидения установлен лицом к банке с зельем:"
+				""
+				"&5Прикосновение&r > &2Взаимодействие&r > &6Чувствительный&r"
+			]
+			id: "4B6B442259091E1C"
+			rewards: [
+				{
+					count: 2
+					id: "257A6006929C3193"
+					item: "ars_nouveau:scryers_crystal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "12E8A3624A6491C9"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:enchanters_eye"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["19C9AC76B4E2B19D"]
+			description: [
+				"Как и стандартные свитки деформации, стабилизированные свитки деформации можно использовать для создания порталов. Однако они имеют два преимущества."
+				""
+				"Во-первых, свиток можно использовать для привязки к координатам в других измерениях, что позволяет перемещаться между измерениями."
+				""
+				"Во-вторых, его можно использовать в блоке в любое время для создания временного портала к связанным координатам. Это не потребляет свиток."
+			]
+			id: "506FD0059E6BA5F2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "65B241E708BDD124"
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6AB01F1B52E5A89C"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:stable_warp_scroll"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["Благодаря своей глубокой связи с землей, аметистовые големы становятся могущественными фамильярами, которые укрепляют связь с землей."]
+			id: "0C5EBDAAB1D22839"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "253EEBCD3C0EBE2C"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Don't Be Shy, Be a Little Boulder!"
+			tasks: [
+				{
+					id: "00184C48F93739DB"
+					item: "ars_nouveau:familiar_amethyst_golem"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"Эти стойкие маленькие существа испытывают ненасытную жажду кристаллов всех видов. Дайте Аметистовому голему расцветающий кристалл, и он не только ускорит его рост, но и поможет вам собрать урожай."
+				""
+				"Аметистовые големы будут работать с любым блоком «Расцветающий кристалл» в наборе. Однако их способность превращать блоки в расцветающие блоки ограничена Аметистом."
+			]
+			id: "648E7D7013E1D487"
+			rewards: [
+				{
+					id: "43AFFE8A65B64DB3"
+					item: "chimes:amethyst_chimes"
+					type: "item"
+				}
+			]
+			subtitle: "It's Geo Time!"
+			tasks: [
+				{
+					id: "3E56ECA8F0D20395"
+					item: "ars_nouveau:amethyst_golem_charm"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 0.0d
+		}
+	]
+	title: "Ars Nouveau"
+}

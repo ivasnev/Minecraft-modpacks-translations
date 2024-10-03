@@ -1,0 +1,2190 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "72A9465344128AF9"
+	icon: "create:cogwheel"
+	id: "0000000000000C3F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E45018D600614BA"]
+			description: [
+				"Добро пожаловать в Создание! По своей сути Create преследует ту же основную цель, что и Vanilla Redstone: давать игроку предметы, позволяющие создавать причудливые творения."
+				""
+				"Что за творения, спросите вы? Ну, почти что угодно. Создавайте поезда, на которых можно ездить, туннели, огромные функциональные ветряные мельницы или даже работающий кубик Рубика!"
+				""
+				"Ваше воображение — это предел."
+				""
+				"Естественно, учитывая такой большой объем работы, эти квесты не будут исчерпывающими. Вместо этого цель будет состоять в том, чтобы познакомить вас с базовыми концепциями Create, чтобы дать вам прочную основу для самостоятельного экспериментирования."
+			]
+			hide: true
+			icon: "create:wrench"
+			id: "0000000000000C40"
+			min_width: 250
+			rewards: [
+				{
+					id: "0000000000000CB9"
+					item: "create:wrench"
+					title: "Wrench"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "5A269EA65E5B42CE"
+					item: "minecraft:andesite"
+					title: "Create"
+					type: "item"
+				}
+			]
+			title: "Create"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			description: [
+				"Как и во многих системах, требуется питание. Для Create это обычно означает вращение чего-либо. Конечно, есть несколько способов сделать это, но давайте кратко рассмотрим некоторые основы."
+				""
+				"Во-первых, есть генераторы и потребители. Естественно, Генераторы будут заставлять вещи вращаться, а Потребители работают с предоставленным Вращением. Но не все Генераторы и Потребители равны."
+				""
+				"Каждый генератор способен выдавать заданное количество единиц стресса, которые распределяются между всеми подключенными потребителями. Если потребителям потребуется больше SU, чем выпускается, вся система остановится."
+				""
+				"Чем быстрее работает Потребитель, тем выше его влияние и тем больше SU он использует."
+				""
+				"Чтобы получить представление о том, сколько SU генерируется или потребляется, наденьте очки инженера, глядя на блок."
+				""
+				"И последнее замечание: хотя у Create нет внутриигрового руководства, у него есть система Ponder, которая показывает, как все работает, с помощью коротких игровых анимационных последовательностей. Наведите указатель мыши на большинство элементов и нажмите клавишу «Обдумать», показанную во всплывающей подсказке, чтобы просмотреть их."
+			]
+			hide_dependency_lines: true
+			icon: "create:goggles"
+			id: "0000000000000CBA"
+			min_width: 300
+			rewards: [
+				{
+					id: "0000000000000D66"
+					item: "create:goggles"
+					title: "Engineer's Goggles"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Some Assembly Required"
+			tasks: [
+				{
+					id: "7BC4BA5631C46DB8"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:andesite_casing"
+								}
+								{
+									Count: 1b
+									id: "create:brass_casing"
+								}
+								{
+									Count: 1b
+									id: "create:copper_casing"
+								}
+							]
+						}
+					}
+					title: "Getting Started: Rotational Power"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Возможно, первое изобретение, состоящее из нескольких частей, — это ветряная мельница. Это генератор High SU, способный работать на высоких оборотах. Создание большего количества SU и более высокой скорости — это просто функция добавления в структуру большего количества парусов или блоков шерсти."
+				""
+				"С чего начать? Поместите подшипник ветряной мельницы. На липкой зеленой стороне будет построена остальная часть конструкции. Сила выйдет с противоположного конца. Обратите внимание, что они могут быть построены в любой ориентации."
+				""
+				"Затем прикрепите радиальное шасси к липкой стороне подшипника. Радиальное шасси здесь действует как ось ветряной мельницы, от которой будут выходить лопасти."
+				"Шасси можно сделать липким, щелкнув правой кнопкой мыши по шарику слизи (слизь не потребляется), и большинство декоративных блоков можно прикрепить к границе подключения ветряной мельницы."
+				""
+				"Чтобы просмотреть текущий радиус соединения шасси, держите гаечный ключ и посмотрите на шасси. Выделенные блоки будут частью конструкции. Радиус можно регулировать с помощью колеса прокрутки."
+				""
+				"Обратите внимание, что клей необходим только для соединения блоков, которые не захватываются шасси, например, если блоки выступают перед ветряной мельницей. Клей вообще не нужен, если паруса прикреплены непосредственно к шасси, но тогда какой в ​​этом смысл? Сделайте это Красиво!"
+			]
+			icon: "create:white_sail"
+			id: "0000000000000CBD"
+			min_width: 300
+			rewards: [
+				{
+					id: "0000000000000CC0"
+					item: {
+						Count: 1b
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Super Glue"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D75"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Batteries Not Included"
+			tasks: [
+				{
+					id: "0000000000000CBE"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					id: "0000000000000CBF"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+				{
+					count: 32L
+					icon: "create:white_sail"
+					id: "0000000000000CC1"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:white_sail"
+								}
+								{
+									Count: 1b
+									id: "create:sail_frame"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "forge:wool"
+									}
+								}
+							]
+						}
+					}
+					title: "Sails"
+					type: "item"
+				}
+			]
+			title: "Windmill"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Водяное колесо, хотя и значительно проще в настройке, чем ветряная мельница, также производит гораздо меньше энергии и работает с гораздо меньшей скоростью."
+				""
+				"Это полезно для приложений, где небольшой размер важнее скорости. Например, когда делаете необычную дверь на свою базу."
+				""
+				"Чтобы заставить его работать, просто позвольте воде течь мимо него."
+			]
+			id: "0000000000000CC2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0000000000000D74"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Like A Record, Baby"
+			tasks: [
+				{
+					id: "0000000000000CC3"
+					item: "create:water_wheel"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Неотъемлемая часть любой фабрики. Закрытый вентилятор можно использовать как для крафта, так и для перемещения предметов или мобов."
+				""
+				"Чтобы использовать вентилятор для крафта, его необходимо настроить на продувание лавы, воды, огня или огня души. Предметы, упавшие в поток воздуха на дальней стороне, будут переплавлены, помыты, копчены или подвергнуты привидениям соответственно."
+				""
+				"Поток воздуха может проходить через определенные блоки, такие как железные решетки и люки, что позволяет безопасно удерживать лаву и воду."
+				""
+				"Следует отметить, что вентилятор можно использовать для обработки предметов непосредственно на складе или на ленте, однако предметы на ленте не перестают двигаться во время обработки."
+				""
+				"Чтобы эффективно использовать систему вентилятора и ремня, направьте поток воздуха по всей длине ремня. Более высокие скорости вращения означают, что поток воздуха дует дальше. Это также позволяет вентилятору обрабатывать несколько стопок одновременно."
+			]
+			hide_dependency_lines: true
+			icon: "create:propeller"
+			id: "0000000000000CC4"
+			min_width: 300
+			rewards: [
+				{
+					id: "0000000000000CCA"
+					item: "create:analog_lever"
+					title: "Analog Lever"
+					type: "item"
+				}
+				{
+					id: "0C159F1488C9CC3B"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+			]
+			subtitle: "I'm a Big Fan"
+			tasks: [
+				{
+					id: "0000000000000CC5"
+					item: "create:encased_fan"
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Создание красивой ветряной мельницы, вероятно, не единственная причина, по которой вы здесь. Скорее всего, вам бы хотелось, чтобы эта штука действительно сделала что-нибудь полезное, но она где-то там, а мы здесь…"
+				""
+				"На самом деле передать вращательную силу довольно просто. Валы можно использовать для линейной передачи мощности, а зубцы — для изменения направления и скорости."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CCC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D79"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "0000000000000D80"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+			]
+			subtitle: "Shut Yo Mouth"
+			tasks: [
+				{
+					count: 16L
+					id: "0000000000000CCD"
+					item: "create:shaft"
+					type: "item"
+				}
+			]
+			title: "Shaft"
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Устали от неприглядных дыр в вашей базе? Дрожите от сквозняков уплотнений вала? Не смотрите дальше."
+				""
+				"Щелкните правой кнопкой мыши корпус на валу или шестерне, чтобы закрыть его. Идеально подходит для тех случаев, когда вал проходит сквозь стены или полы."
+				""
+				"Закрытие зубчатого колеса также предотвратит соединение его вала с соседними блоками, если его не вывернуть. Существующие соединения не отключаются при применении корпуса."
+				""
+				"Они также отлично смотрятся под механическими ремнями."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CCE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D78"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "That's Below the Belt"
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000CCF"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:brass_casing"
+								}
+								{
+									Count: 1b
+									id: "create:andesite_casing"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Casings"
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Это у тебя длинный вал. Кажется, немного не поддерживается, нет?"
+				""
+				"Кронштейны могут быть прикреплены к валам или зубцам и являются полностью декоративными. Хотя они действительно делают вещи лучше!"
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CD0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D77"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Brace Yourselves"
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000CD1"
+					item: "create:wooden_bracket"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000D8B"
+					item: "create:metal_bracket"
+					type: "item"
+				}
+			]
+			title: "Brackets"
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Коробки передач, немного более дорогие, чем пара зубчатых колес, служат той же цели, что и перпендикулярные зубчатые колеса, - изменяют направление линии вала."
+				""
+				"Однако у них есть небольшое преимущество: их можно использовать для разделения мощности в двух направлениях. У них также есть вертикальный вариант, позволяющий прокладывать линию вала вверх или вниз."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CD4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D83"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Let's Try a Change in Tack"
+			tasks: [
+				{
+					id: "0000000000000CD5"
+					item: "create:gearbox"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Тот факт, что наша ветряная мельница работает немного медленно, не означает, что все остальное должно работать так же. Скорость вращения системы можно увеличить (или уменьшить) с помощью простых передаточных чисел."
+				""
+				"Например, предположим, что ваша сила вращает маленькое зубчатое колесо. Соединение зубьев с зубьями большого зубчатого колеса приведет к тому, что вал большего зубчатого колеса будет вращаться со скоростью вдвое меньшей скорости ведущего вала."
+				""
+				"Точно так же большое зубчатое колесо, сцепленное с зубьями маленького зубчатого колеса, заставит вал этого зубчатого колеса вращаться с удвоенной скоростью."
+				""
+				"Эти эффекты могут быть взаимосвязанными, но имейте в виду, что чем быстрее работают потребители в этой системе, тем выше стоимость SU."
+				""
+				"Кроме того, два больших зубчатых колеса можно сблокировать перпендикулярно, чтобы вал мог менять направление. Полезно для прохождения поворотов или снижения мощности сверху."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CD6"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D81"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Spacely's Sprockets"
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000CD7"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "48C68E5C0B154689"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			title: "Cogwheels"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Как и многие вещи в Create, Механический пояс — многофункциональный предмет."
+				""
+				"Его основная цель — транспортировка предметов, и он может переносить предметы по горизонтали, а также вверх и вниз по склонам под углом 45 градусов."
+				""
+				"Однако он также может передавать мощность от одного вала к другому. Это может быть отличным способом привести в действие несколько параллельных валов, сохраняя при этом направление вращения."
+				""
+				"Один ремень может растягиваться до 20 блоков, и при необходимости каждое пространство блоков можно прикрепить к другому валу."
+				""
+				"Чтобы прикрепить их к валу, просто поместите два вала, а затем щелкните правой кнопкой мыши по каждому, держа ремень в руке. Щелкните правой кнопкой мыши вал в существующем ремне, чтобы добавить соединение."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CD8"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D7A"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "You're On a Roll Now"
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000CD9"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			title: "Mechanical Belts"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Цепные приводы в корпусе можно использовать так же, как ремни, соединяя перпендикулярные валы вместе."
+				""
+				"Их также можно использовать для изменения направления мощности, разместив несколько из них в ряд и повернув их на 90 градусов друг от друга."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CE0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D7B"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Working on the Chain Gang"
+			tasks: [
+				{
+					id: "0000000000000CE1"
+					item: "create:encased_chain_drive"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Не всегда практично подключать сотни шестерен для достижения точной нужной скорости. Введите контроллер скорости вращения. Поместите большое зубчатое колесо в верхний слот и включите его."
+				""
+				"Контроллер автоматически адаптируется к любому числу оборотов на двух выходных валах. Установите скорость с помощью колеса прокрутки."
+			]
+			hide_dependency_lines: true
+			icon: "create:rotation_speed_controller"
+			id: "0000000000000CE2"
+			rewards: [
+				{
+					id: "0000000000000D5B"
+					item: "create:large_cogwheel"
+					title: "Large Cogwheel"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000D5C"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Kick It Into Overdrive"
+			tasks: [
+				{
+					id: "0000000000000CE3"
+					item: "create:rotation_speed_controller"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Воронки служат как для входа в запасы, так и для извлечения из них."
+				""
+				"Например, воронка, прикрепленная к сундуку, может быть извлечена из сундука и выброшена на соседнюю линию Пояса. Аналогичным образом, лента, подаваемая в воронку, будет перемещать предметы в прикрепленный инвентарь."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CE5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D7C"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Bit of a Slippery Slope"
+			tasks: [
+				{
+					id: "0000000000000CE6"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "5BE1CD3E55579812"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Желоб — это простой, но быстрый способ перемещения предметов вниз. Просто бросьте их сверху, и они выйдут снизу."
+				""
+				"Преимущество желобов перед простым бросанием предмета в мир заключается в том, что они могут перемещать предметы под углом 45 градусов, а несколько желобов могут сходиться в один желоб, что позволяет лучше контролировать, где окажется предмет."
+				""
+				"Желоба также можно использовать для перемещения предметов вверх. Если прямо над желобом установлен вентилятор, его можно использовать для снятия предметов с пояса. Конечно, для извлечения этого предмета требуется какой-то способ извлечения из желоба, например, с помощью воронки."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CE7"
+			min_width: 250
+			rewards: [
+				{
+					id: "0000000000000CF1"
+					item: "create:encased_fan"
+					title: "Encased Fan"
+					type: "item"
+				}
+			]
+			subtitle: "Learning To Take Things in Slide"
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000CE8"
+					item: "create:chute"
+					type: "item"
+				}
+			]
+			title: "Chutes"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Туннели — это не просто чехлы для механических ремней, они служат полезной цели при разделении предметов."
+				""
+				"Когда стопка предметов проходит через андезитовый туннель, она автоматически берет один предмет из стопки и помещает его на соседние пояса или склады."
+				""
+				"Латунные туннели работают немного иначе, чем андезитовые туннели. Вместо того, чтобы разделяться на соседние ленты, можно сформировать линию туннелей вдоль нескольких параллельных лент."
+				""
+				"Когда предметы попадают в один туннель, они будут равномерно распределены между всеми подключенными туннелями на другой стороне."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CE9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D7D"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Double Slit Experiment"
+			tasks: [
+				{
+					id: "0000000000000CEA"
+					item: "create:andesite_tunnel"
+					type: "item"
+				}
+				{
+					id: "6390D6D6C12B0373"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Простой буфер элементов."
+				""
+				"На складах будет храниться одна стопка предметов, но они также будут взаимодействовать с рецептами промывки, струйной обработки, копчения и призраков в корпусе, а также с прессом для пластин."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CF2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D7E"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Buffer Allocation Failed"
+			tasks: [
+				{
+					id: "0000000000000CF3"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Механические руки служат передовым транспортом предметов на короткие расстояния. Они могут быть связаны с несколькими точками одновременно для операций извлечения и вставки."
+				""
+				"Связывание выполняется до размещения руки: просто щелкните правой кнопкой мыши по разрешенным типам инвентаря, таким как склады, воронки или ремни. Щелкните правой кнопкой мыши еще раз, чтобы переключиться между режимами ввода и вывода."
+				""
+				"Механическая рука может достигать в общей сложности до четырех блоков."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CF4"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000D58"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Number 5 is Alive"
+			tasks: [
+				{
+					id: "0000000000000CF5"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Жернова использовались на протяжении веков и представляют собой одну из наших старейших технологий, которые все еще используются. Они гораздо эффективнее, чем измельчать вещи вручную."
+				""
+				"Create’s Millstone — отличный ранний способ еще немного растянуть материалы."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CFC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D72"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "You Know What Really Grinds My Gears?"
+			tasks: [
+				{
+					id: "0000000000000CFD"
+					item: "create:millstone"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Дробильные колеса — это старший брат жерновов, используемых до сих пор. В целом они справляются со своей задачей лучше, производя больше за единицу сырья, чем жернов."
+				""
+				"Их более твердая поверхность также способна справляться с материалами, с которыми не справляется жернов."
+				""
+				"Установка пары дробящих колес потребует немного сообразительности, поскольку оба колеса должны вращаться в противоположных направлениях, а верхние части должны вращаться внутрь к точке, где два колеса встречаются."
+				""
+				"Поместите колеса так, чтобы между ними был зазор в один блок. Предметы можно либо бросать сверху, либо вставлять более контролируемым образом, направляя их в пространство «блока», где встречаются два колеса."
+				""
+				"Дробильные колеса также можно размещать горизонтально, что позволяет им удобно взаимодействовать с ленточной системой."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000CFE"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000D54"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "It's Crunch Time"
+			tasks: [
+				{
+					count: 2L
+					id: "0000000000000CFF"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+			]
+			title: "Crushing Wheels"
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Полезный как для крафта, так и для других задач автоматизации, Deployer найдет применение во многих творениях."
+				""
+				"Предмет можно вставить в Deployer с помощью ленты, воронки, бункера или любого другого метода транспортировки предмета. При включении он будет постоянно пытаться щелкнуть правой кнопкой мыши удерживаемый предмет на любом объекте перед ним, будь то предмет или моб."
+				""
+				"Щелчок правой кнопкой мыши по руке с гаечным ключом переключит Deployer в режим левого щелчка, позволяя ему атаковать мобов с помощью оружия или иным образом взаимодействовать с вещами, на которые необходимо щелкнуть левой кнопкой мыши."
+			]
+			hide_dependency_lines: true
+			icon: "create:brass_hand"
+			id: "0000000000000D00"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D6F"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Getting Down to Brass Tacks"
+			tasks: [
+				{
+					id: "0000000000000D01"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "0000000000000D21"
+					item: {
+						Count: 1b
+						id: "create:sand_paper"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			description: ["Имея за плечами базовую мощь и логистику, пришло время испачкать руки и заняться делом. Create предлагает несколько новых механик крафта, которые важно понимать для работы с модом."]
+			hide_dependency_lines: true
+			icon: "create:whisk"
+			id: "0000000000000D04"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000D68"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Just a Little Something I Whipped Up"
+			tasks: [
+				{
+					id: "74699E3BBDD7CF8B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:andesite_casing"
+								}
+								{
+									Count: 1b
+									id: "create:brass_casing"
+								}
+								{
+									Count: 1b
+									id: "create:copper_casing"
+								}
+							]
+						}
+					}
+					title: "Getting Started: Material Processing"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Механический пресс — отличный способ сгладить предметы, которые нужно разбить. Он также уплотняет материалы в сочетании с тазом, например, создавая слитки из самородков."
+				""
+				"Для пластин пресс может быть установлен над лентой, складом или любым другим блоком."
+				""
+				"Если разместить его над ремнем, это автоматически приведет к остановке ремня во время работы пресса."
+				""
+				"Когда он находится над складом, он будет работать аналогичным образом, как только обнаружит элемент ниже, который необходимо нажать."
+				""
+				"Однако в случае любого другого блока для его запуска требуется сигнал красного камня."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000D06"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D71"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Boil 'em, Mash 'em, Stick 'em in a Stew"
+			tasks: [
+				{
+					id: "0000000000000D07"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Механический миксер помогает смешивать твердые и жидкие вещества в более полезные формы: варить зелья, заваривать чай или создавать современные сплавы — миксер делает все это. Требуется таз под смесителем."
+				""
+				"Обратите внимание, что некоторые рецепты требуют нагрева, его можно обеспечить с помощью огненной горелки."
+				""
+				"Если склад или слив предметов расположен рядом и на один блок ниже бассейна, рецепты будут автоматически выводиться. Небольшой носик появится в бассейне, если склад или слив предметов будут размещены правильно."
+			]
+			hide_dependency_lines: true
+			icon: "create:mechanical_mixer"
+			id: "0000000000000D08"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D70"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "There's Been a Mix-Up, Officer"
+			tasks: [
+				{
+					id: "0000000000000D09"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "0000000000000D0A"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Когда требуются высокие температуры, нет ничего лучше палящего жара Пустоты. Почему бы не взять его с собой домой?"
+				""
+				"Горелки Пламени создаются щелчком правой кнопкой мыши по пустой горелке либо на Пламени (поглощает моба), либо на генераторе Пламени (не потребляет генератор). Они будут гореть жарко, но не вечно."
+				""
+				"Кормите их углем или другим горючим материалом, чтобы они снова разозлились, если остынут."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000D0B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D5E"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Dat Ash Tho"
+			tasks: [
+				{
+					id: "0000000000000D0C"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000D0B"]
+			description: [
+				"Что значит недостаточно жарко? Ну и пусть едят торт!"
+				""
+				"Когда рецепт требует супернагрева, пламенный пирог нужен для подпитки пламенной горелки."
+				""
+				"Создание Blaze Cake действительно проверит ваши навыки, поскольку оно сочетает в себе множество различных механик. Как далеко вы можете зайти в своей автоматизации?"
+			]
+			id: "0000000000000D0D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000D55"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Forbidden Snacks"
+			tasks: [
+				{
+					id: "0000000000000D0E"
+					item: "create:blaze_cake"
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Так же, как перемещение предметов не является бесплатным, для перекачивания жидкостей и работы с ними требуется определенная вращательная сила."
+				""
+				"Механический насос принимает мощность от шестерни, создавая давление на участок трубы, заставляя жидкость течь в том или ином направлении, в зависимости от направления вращения."
+				""
+				"Блок имеет удобный небольшой индикатор направления, помогающий визуализировать поток. Один насос может создать давление на большой участок трубы, поэтому обязательно распределите их."
+			]
+			hide_dependency_lines: true
+			icon: "create:mechanical_pump"
+			id: "0000000000000D0F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D84"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Archimedean Screw"
+			tasks: [
+				{
+					id: "0000000000000D10"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "4AA6E10AD83F435A"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: ["Клапаны для жидкости можно открывать и закрывать, применяя некоторую вращательную силу, например, с помощью ручки клапана."]
+			hide_dependency_lines: true
+			icon: "create:fluid_valve"
+			id: "0000000000000D13"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D86"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Shut The Front Door"
+			tasks: [
+				{
+					id: "0000000000000D14"
+					item: "create:fluid_valve"
+					type: "item"
+				}
+				{
+					id: "0000000000000D19"
+					item: "create:copper_valve_handle"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: ["Совершить невозможное — это всего лишь еще один вторник в моде. Интеллектуальные трубопроводы для жидкости действуют как фильтр жидкости, контролируя либо то, что разрешено забирать из подключенного резервуара, либо то, что разрешено продолжать в дальнейшем."]
+			hide_dependency_lines: true
+			id: "0000000000000D15"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000D5A"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Reverse Osmosis Filter"
+			tasks: [
+				{
+					id: "0000000000000D16"
+					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Резервуары для жидкости — это тематический многоблочный резервуар для всех ваших потребностей в хранении жидкости."
+				""
+				"Хотя игрок не может взаимодействовать с ними напрямую, поскольку им нужны трубы для добавления и извлечения жидкостей, они сливаются с соседними резервуарами, образуя большие мультиблоки для хранения больших объемов."
+				"Они могут иметь основание 1x1, 2x2 или 3x3 и могут выдвигаться вертикально."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000D17"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D89"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Unfathomably Deep"
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000D18"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Fluid Tanks"
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Для тех случаев, когда простой сетки 3x3 недостаточно, есть Mechanical Crafter. Или, точнее, Ремесленники. Эти взаимосвязанные блоки соединяются, образуя большой интерфейс крафта. Каждый блок принимает по одному предмету для крафта."
+				""
+				"Некоторые продвинутые предметы можно создать только таким образом."
+				""
+				"Обратите внимание при размещении самих ремесленников, поскольку там будет стрелка, указывающая на блок, по которому щелкнули, чтобы разместить его. Эта стрелка указывает, в каком направлении будут перемещаться предметы во время работы ремесленников, и все стрелки должны быть связаны с одним ремесленником."
+				""
+				"Например, если разместить первого крафтера на земле, стрелка укажет вниз, это и будет результат. Ремесленника, стоящего сбоку от первого, нужно будет разместить напротив борта так, чтобы его стрелка указывала на первую, образуя канал."
+				""
+				"Крышки слотов Crafter можно использовать для отключения определенного слота, который необходим для любого корабля, в котором есть пустые места. Например, при создании сундука с сеткой Mechanical Crafters 3x3 средний слот должен быть закрыт."
+				""
+				"Предметы могут быть вставлены с помощью бункеров, лент и воронок, механических рычагов и т. д. Экспериментируйте, чтобы увидеть, что у вас получится!"
+			]
+			hide_dependency_lines: true
+			icon: "create:mechanical_crafter"
+			id: "0000000000000D1A"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D6E"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000D1B"
+					item: "create:mechanical_crafter"
+					type: "item"
+				}
+				{
+					id: "0000000000000D1C"
+					item: "create:crafter_slot_cover"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: ["Излив соединяется со депо, размещая его над депо. Он попытается заполнить любой предмет, появляющийся на складе. Например, налить ведра с водой, наполнить бутылки с зельями или приготовить вкусный чай!"]
+			hide_dependency_lines: true
+			id: "0000000000000D23"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "2C441D0D6266C526"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Spouting Off Nonsense"
+			tasks: [
+				{
+					id: "0000000000000D24"
+					item: "create:spout"
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			description: [
+				"Модульные приспособления — это многоблочные конструкции, которые можно построить самостоятельно, и их возможности практически безграничны."
+				""
+				"Их можно либо зафиксировать на месте и перемещать, используя вращательную силу, либо прикрепить к вагонетке и передвигать бесплатно, требуя только рельсов с электроприводом, чтобы поддерживать движение тележки."
+				""
+				"Ниже приведены некоторые специализированные блоки, которые можно использовать для этих изобретений."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "create:minecart_contraption"
+				tag: {
+					Contraption: {
+						Actors: [ ]
+						Anchor: {
+							X: 108
+							Y: 84
+							Z: -93
+						}
+						Blocks: [
+							{
+								Block: {
+									Name: "create:minecart_anchor"
+									Properties: {
+										axis: "z"
+									}
+								}
+								Pos: {
+									X: 0
+									Y: 0
+									Z: 0
+								}
+							}
+							{
+								Block: {
+									Name: "minecraft:spruce_planks"
+								}
+								Pos: {
+									X: 0
+									Y: 1
+									Z: 0
+								}
+							}
+						]
+						BoundsFront: [
+							0.0f
+							0.0f
+							0.0f
+							1.0f
+							2.0f
+							1.0f
+						]
+						FluidStorage: [ ]
+						Passengers: [ ]
+						RotationMode: "ROTATE"
+						Seats: [ ]
+						Stalled: 0b
+						Storage: [ ]
+						SubContraptions: [ ]
+						Superglue: [ ]
+						Type: "mounted"
+					}
+					display: { }
+				}
+			}
+			id: "0000000000000D2B"
+			rewards: [
+				{
+					id: "0000000000000D65"
+					item: "minecraft:minecart"
+					title: "Minecart"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "10A1593A5F3B4532"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			title: "Modular Contraptions"
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			description: [
+				"Когда дело доходит до перемещения приспособлений, механические поршни могут стать отличным началом."
+				""
+				"В качестве простого примера того, где их можно использовать, представьте себе длинное поле сельскохозяйственных культур. Механический поршень можно было использовать для периодического перемещения уборочной машины вперед и назад по полю для сбора урожая."
+			]
+			icon: "create:mechanical_piston"
+			id: "0000000000000D2D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D69"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+				{
+					count: 8
+					id: "0000000000000D8C"
+					item: "create:piston_extension_pole"
+					title: "Piston Extension Pole"
+					type: "item"
+				}
+			]
+			subtitle: "Engineering Outreach Program"
+			tasks: [
+				{
+					id: "0000000000000D2E"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:mechanical_piston"
+								}
+								{
+									Count: 1b
+									id: "create:sticky_mechanical_piston"
+								}
+							]
+						}
+					}
+					title: "Mechanical Piston"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			description: [
+				"Сборщики тележек используются для создания приспособлений, предназначенных для езды на шахтной тележке."
+				""
+				"Это изобретение должно быть построено поверх Ассемблера. После подготовки передача ассемблеру сигнала Redstone преобразует все связанные блоки в один объект."
+				""
+				"Затем всю тележку можно поднять, используя гаечный ключ, что позволяет легко транспортировать устройство."
+				""
+				"Отличным примером приспособления на базе шахтной тележки может быть горнодобывающая машина для туннельных проходок. Его можно настроить таким образом, чтобы он прокладывал перед собой собственный путь и прокладывал путь позади него. Он мог бы даже построить собственные мосты, чтобы избежать оврагов!"
+			]
+			id: "0000000000000D2F"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D6A"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Putting the Cart Before the Horse"
+			tasks: [
+				{
+					id: "0000000000000D30"
+					item: "create:cart_assembler"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			description: [
+				"Подобно подшипникам ветряной мельницы, механические подшипники можно использовать для создания вращающихся приспособлений."
+				""
+				"Например, можно построить длинную мощную вооруженную штуковину, которая будет перемещаться по лесной ферме, срубая все встреченные деревья."
+			]
+			id: "0000000000000D31"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D6B"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Getting Out of an Unbearable Situation"
+			tasks: [
+				{
+					id: "0000000000000D32"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"0000000000000D2D"
+				"0000000000000D2F"
+				"0000000000000D31"
+				"0000000000000D45"
+				"62D9A1A16024C3CD"
+				"573DDDE5ABD70C21"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Блоки шасси служат основой для более крупных творений."
+				""
+				"Линейные шасси соединяются друг с другом по темному краю и автоматически рассматриваются как «целая» деталь, к которой могут быть приклеены другие части."
+				"Они также захватят линию блоков, прикрепленных к более светлой стороне, если на само шасси нанести клей."
+				""
+				"Аналогичным образом, радиальное шасси может захватывать блоки в круговой плоскости, если все они соприкасаются, а тот, который соприкасается со светлой стороной шасси, приклеен на место."
+				""
+				"Это приводит к возможности создавать очень большие приспособления с очень небольшим количеством клея. Однако они не обязательны. Вместо этого блоки можно просто склеить вместе, чтобы сформировать более крупный кусок неправильной формы."
+				""
+				"Не волнуйтесь: как только конструкция будет сформирована, следы клея станут невидимыми, что позволит создавать очень эстетичные конструкции."
+				""
+				"Используйте колесо прокрутки, удерживая гаечный ключ и глядя на шасси, чтобы настроить диапазон захвата."
+				""
+				"Примечание. Шарик слизи можно использовать бесконечно, чтобы наносить клейкие отметки на сами блоки шасси. Щелкните правой кнопкой мыши шариком слизи, чтобы нанести его на одну сторону. Дважды щелкните правой кнопкой мыши, чтобы применить ко всем сторонам."
+			]
+			id: "0000000000000D33"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D64"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000D34"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+				{
+					id: "0000000000000D35"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+			]
+			title: "Chassis"
+			x: 7.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			description: ["Умный комбайн, который бережно собирает только зрелые культуры."]
+			id: "0000000000000D3A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D60"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Outstanding In Its Field"
+			tasks: [
+				{
+					id: "0000000000000D3B"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			description: ["Мобильная или стационарная механическая дрель служит эффективным горнодобывающим оборудованием."]
+			id: "0000000000000D3C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D61"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Nothing to See Here, Just a Boring Machine"
+			tasks: [
+				{
+					id: "0000000000000D3D"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			description: [
+				"Вспахивать поля – тяжелая работа. Сделайте машину, которая сделает это за вас!"
+				""
+				"Механический плуг полезен не только для простого обслуживания фермы, но и может стать отличным дополнением к движущейся вагонетке, позволяя протягивать за ней дополнительные гусеницы."
+			]
+			id: "0000000000000D3E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D63"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "A Groundbreaking Innovation"
+			tasks: [
+				{
+					id: "0000000000000D3F"
+					item: "create:mechanical_plough"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			description: [
+				"От рубки деревьев до резьбы по камню — эта пила повидала все."
+				""
+				"В стационарном состоянии и с питанием он может служить как для распиловки бревен на доски, так и для любого рецепта камнетеса. Рецепты камнереза ​​будут давать случайный результат, если на самой пиле не установлен фильтр."
+				""
+				"Прикрепленный к движущейся машине, он одним махом рубит целые деревья. Удобно для простой фермы деревьев."
+			]
+			id: "0000000000000D40"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D62"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Cutting Edge Technology"
+			tasks: [
+				{
+					id: "0000000000000D41"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			description: [
+				"Во многих случаях инструменты, которые можно прикрепить к движущемуся приспособлению, также будут автоматически подбирать собираемые предметы, если на устройстве достаточно места для хранения."
+				""
+				"Достаточно просто приклеить сундук на место, чтобы обеспечить место для хранения, но вытащить предметы обратно — другое дело."
+				""
+				"Интерфейсы действуют как прокси для инвентарных запасов на движущихся машинах. Всякий раз, когда портативный интерфейс устройства встречает интерфейс, находящийся в мире, устройство на короткое время останавливается, создавая соединение."
+				""
+				"Если что-то настроено на получение или передачу на этот интерфейс, машина будет оставаться в режиме паузы до тех пор, пока через интерфейс ничего не будет проходить. Как только поток остановится, он будет двигаться дальше."
+				""
+				"Чтобы предотвратить эту паузу или прервать ее раньше, на интерфейс фиксированного положения можно подать сигнал Redstone."
+			]
+			id: "0000000000000D42"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D5F"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Plug and Play"
+			tasks: [
+				{
+					id: "0000000000000D43"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+				{
+					id: "0000000000000D44"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "3584467653F3C39B"
+					item: "createaddition:portable_energy_interface"
+					type: "item"
+				}
+			]
+			title: "Portable Interfaces"
+			x: 7.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			description: [
+				"Нуждается в подъеме?"
+				""
+				"Создайте свой собственный с помощью веревочного шкива, прикрепив собственную платформу."
+				""
+				"Используйте механизм переключения передач, чтобы легко изменить направление движения."
+			]
+			id: "0000000000000D45"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D6C"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "It Has It's Ups and Downs"
+			tasks: [
+				{
+					id: "0000000000000D46"
+					item: "create:rope_pulley"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Регулируемое цепное переключение передач, обеспечивающее чуть более точный контроль, чем возня с передаточными числами, использует сигнал Redstone для установки переменной скорости, в два раза превышающей входную скорость."
+				""
+				"Рассмотрите возможность использования аналогового рычага, чтобы легко установить фиксированную скорость."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000D47"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000D5D"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Shifting Into Higher Gear"
+			tasks: [
+				{
+					id: "0000000000000D48"
+					item: "create:adjustable_chain_gearshift"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			dependency_requirement: "one_completed"
+			description: [
+				"С помощью шлангового шкива жидкости можно перекачивать в окружающий мир или из него. Создавайте огромные озера или осушайте их, чтобы ваша фабрика росла!"
+				""
+				"Очень большие тела, такие как океаны или массивные лавовые озера в Пустоте, будут считаться бездонными, поэтому, если вы хотите осушить что-то вроде памятника океану, все равно может потребоваться построить подпорные стены, чтобы разрушить все это."
+				""
+				"Обратите внимание: шланговый шкив не качает воду сам по себе. Опустите шланг в корпус жидкости и установите механический насос, который сделает всю работу за вас."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000D49"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000D88"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Well, There's an Upside and a Downside"
+			tasks: [
+				{
+					id: "0000000000000D4A"
+					item: "create:hose_pulley"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Нужно изменить направление? Тогда Gearshift – это то, что вам нужно."
+				""
+				"Подача сигнала Redstone на блок приведет к тому, что выходная сторона начнет вращаться в противоположном направлении относительно стороны привода."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000D4B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0000000000000D82"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Time to Switch Things Up"
+			tasks: [
+				{
+					id: "0000000000000D4C"
+					item: "create:gearshift"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Действительно, довольно простое устройство. Муфта отключает мощность на линии вала, обеспечивая простой переключатель включения/выключения."
+				""
+				"Это также может быть полезно для более продвинутых изобретений, которым также требуется точное время."
+			]
+			hide_dependency_lines: true
+			id: "0000000000000D4D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6E8C331AB8382D16"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Going to Have to Stop You Right There"
+			tasks: [
+				{
+					id: "0000000000000D4E"
+					item: "create:clutch"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000D0B"]
+			description: [
+				"Засиделись допоздна, попивая чай, как будто сейчас 1773 год? Вам нужно немного больше транквилизатора в вашей жизни?"
+				""
+				"Попробуйте Строительный чай! Подготовка не займет много времени."
+			]
+			id: "0000000000000D52"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "0000000000000D56"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Hello Brew-TEA-Full!"
+			tasks: [
+				{
+					id: "0000000000000D53"
+					item: "create:builders_tea"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Слив предметов полезен для слива жидкостей из любых предметов, содержащих жидкость, таких как ведра или бутылки. Это также очень удобно для извлечения жидкости из бассейна."
+				""
+				"Он имеет небольшой внутренний резервуар, из которого по трубам можно получить доступ к жидкостям."
+			]
+			hide_dependency_lines: true
+			id: "28D17B54F4DE4D86"
+			min_width: 225
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "4DF5697B73CC2E0D"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Bless the Drains Down in Africa"
+			tasks: [
+				{
+					id: "251340C776442923"
+					item: "create:item_drain"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Имея источник тепла, воды и закрытое пространство, можно изготовить паровую машину для производства огромного количества SU."
+				""
+				"Базовая установка котла требует четырех резервуаров с жидкостью, расположенных в квадрате, и как минимум одного прикрепленного парового двигателя. Наполнив резервуары водой и обеспечив под ними источник тепла, все будет в порядке. Нажмите на вал напротив парового двигателя, чтобы отключить питание системы."
+				""
+				"Котлы можно пассивно нагревать любым костром или блоком магмы, однако, активно нагревая их с помощью огненной горелки, они достигают гораздо более высоких температур и, следовательно, производят больше SU. В любом случае им понадобится постоянный запас воды, и по мере увеличения количества двигателей за операцию будет расходоваться больше воды."
+			]
+			icon: "create:steam_engine"
+			id: "5B54E008C558007F"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "1B26E3707C1728A2"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+				{
+					id: "766A6943FD89D2FA"
+					item: "create:steam_whistle"
+					type: "item"
+				}
+			]
+			subtitle: "A Newcomen on the Block"
+			tasks: [
+				{
+					id: "7D00F9504A3F354F"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "20A4498D3BC9D9C1"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			description: [
+				"Будь то простая перевозка грузов или людей или обеспечение энергией движущегося карьера, поезда предлагают элегантное решение."
+				""
+				"Поезда — это большие мобильные устройства, которые можно автоматизировать с помощью железнодорожных станций, расписаний поездов и сигналов поездов. Они будут перемещаться по незагруженным кускам, что делает возможной транспортировку материалов на большие расстояния; необходимо загрузить только станцию. Однако дрели и другие машины не будут работать на незагруженных участках."
+				""
+				"Строительство поездов начинается с железнодорожного вокзала. Из-за сложности этой функции настоятельно рекомендуется просмотреть обдумывание каждой из частей оборудования поезда."
+			]
+			icon: "create:track"
+			id: "62D9A1A16024C3CD"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "50DD42ECCFA5F58A"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Watch Your Step"
+			tasks: [
+				{
+					count: 16L
+					id: "6EB910AAB970DD49"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "46ED06FFF6481B08"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "51F37EEA49A25A12"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "5B5472A962BB6A24"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			title: "Trains"
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			description: ["Половина радости Create — видеть, как все движется, и возможности логистики не разочаровывают. От лент, отображающих их содержимое, до труб, показывающих текущие через них жидкости, Create предлагает способы перемещения практически всего."]
+			hide_dependency_lines: true
+			id: "45CBD91076EAD50D"
+			shape: "hexagon"
+			subtitle: "From Here to There, Funny Things Were Everywhere"
+			tasks: [
+				{
+					id: "4C69D9C9883B2747"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:andesite_casing"
+								}
+								{
+									Count: 1b
+									id: "create:brass_casing"
+								}
+								{
+									Count: 1b
+									id: "create:copper_casing"
+								}
+							]
+						}
+					}
+					title: "Getting Started: Logistics and Storage"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Как и транспортные ящики, которые они копируют, хранилища предметов могут содержать огромное количество предметов в каждом блоке. Однако они не допускают ручного взаимодействия, поэтому элементы необходимо вставлять или извлекать с помощью автоматизации."
+				""
+				"Хранилища можно объединять в многоблочный контейнер для хранения. Основание должно оставаться квадратным и может быть расширено до 3х3, а длина может быть до 3х диаметра для максимального размера 3х3х9."
+			]
+			hide_dependency_lines: true
+			id: "0FEC8B6C5EBF0D99"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "71903E436C628975"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Hoarder's Dream"
+			tasks: [
+				{
+					id: "6EC36FA1B3FEB0D3"
+					item: "create:item_vault"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			description: [
+				"Эти простые электродвигатели являются отличным и компактным источником СУ."
+				""
+				"Подайте питание от любого источника FE, чтобы они раскрутились и установили рабочую скорость сзади. Более быстрое вращение позволяет им обеспечить больше SU, но с увеличением стоимости FE. Для приложений с высоким SU и низкой скоростью обязательно соедините их с контроллером скорости вращения."
+			]
+			id: "6A689A7721191B5F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "06E0FA67CB6CC271"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Getting Wired Up"
+			tasks: [
+				{
+					id: "1C58028FCB2E6601"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D0B"]
+			description: [
+				"Кто знал, что Блейз может испытывать жажду? Вода их, конечно, не интересует, но другие горючие жидкости, кажется, вполне подходят."
+				""
+				"Предоставление Blaze соломинки позволяет им вместо этого принимать жидкое топливо. Проверьте использование соломенной горелки или горелки, чтобы узнать, какое топливо подходит."
+			]
+			id: "37476D4C70355E26"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "618ED2BF01169851"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "A Quantum of Solace "
+			tasks: [
+				{
+					id: "775FCD3643073FEC"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: ["Прокатный стан хорошо подходит для раскатки чистых стержней или экструзии проволоки, подходящей для использования в электронике. Их можно использовать вручную или вместе с ленточными конвейерами как часть более крупного завода."]
+			hide_dependency_lines: true
+			id: "286B9D8843E3B768"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "613E951A3993ECB9"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Keep them ingots rollin'"
+			tasks: [
+				{
+					id: "4F39C95F04932DE3"
+					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			description: [
+				"Мощное электрическое устройство, способное заряжать объекты по беспроводной сети с помощью индуцированных токов, катушка Теслы может оказаться весьма полезной на любом заводе."
+				""
+				"При размещении над поясом или складом и обеспечении достаточной мощности катушка Теслы будет передавать заряд предметам на поясе или складе. Это работает не только с рецептами крафта, но и для зарядки оборудования, такого как инструменты и батареи."
+				""
+				"Катушку можно использовать и для более разрушительных целей, разместив ее и предоставив в дополнение к мощности сигнал красного камня. В этом режиме он наносит урон близлежащим объектам."
+			]
+			hide_dependency_lines: true
+			id: "467D1EB30C521A20"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "3A6CBAD9FE3C2776"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Assault and Battery"
+			tasks: [
+				{
+					id: "352DB990B46388DA"
+					item: "createaddition:tesla_coil"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45CBD91076EAD50D"]
+			description: [
+				"Работая по тем же принципам, что и электродвигатели, генераторы переменного тока фактически работают в обратном направлении. При вращении вала в катушках индуцируется ток, который можно использовать для питания устройств."
+				""
+				"Чем быстрее они вращаются, тем больше SU они будут использовать и FE они будут производить."
+			]
+			hide_dependency_lines: true
+			icon: "createaddition:alternator"
+			id: "4693EAC2CFBB6FB1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "18498D3FE01276FC"
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Spin Me Right Round"
+			tasks: [
+				{
+					id: "06AFE505EFF7F9BB"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "69F4626FAE4CB0D6"
+					item: "createaddition:modular_accumulator"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			description: [
+				"Размещенные перед рельсовым приспособлением, механические катки можно использовать для выравнивания местности или заполнения промежутков под приспособлением."
+				""
+				" "
+				""
+				"Этому можно найти большое применение с помощью приспособления, предназначенного для прокладки пути на большом расстоянии."
+			]
+			id: "6E45E116BED181D2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4B9B8B214639B964"
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "608E399C89740766"
+					item: "create:mechanical_roller"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			description: ["Более совершенная форма веревочного шкива, позволяющая интеллектуально управлять полом как лифтом. Лифт можно вызвать с любого этажа и отправить на любой этаж без остановки."]
+			id: "573DDDE5ABD70C21"
+			rewards: [
+				{
+					count: 4
+					id: "2438C69AE1D01ED7"
+					item: "create:elevator_contact"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3993263B6EDEA388"
+					item: "create:elevator_pulley"
+					type: "item"
+				}
+				{
+					id: "2E2793EF913F925F"
+					item: "create:contraption_controls"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 11.0d
+		}
+	]
+	title: "Create"
+}

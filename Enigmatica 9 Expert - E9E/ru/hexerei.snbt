@@ -1,0 +1,895 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hexerei"
+	group: "5A8B89F87F77CF4C"
+	icon: "hexerei:crow_ankh_amulet"
+	id: "717A8D0B0054F209"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5CBE4B1409CA3DB1"]
+			description: ["Облачение Ведьмы выходит за рамки простой мирской защиты. Их ношение посылает другим ведьмам сигнал отступить, а также обеспечивает надежную защиту от темных искусств."]
+			icon: {
+				Count: 1b
+				id: "hexerei:witch_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "135494AEBA82B7A7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "1E0DFFC73941A14F"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4FB8BBEE3A960D17"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Rags to Witches"
+			tasks: [
+				{
+					id: "4FF2360FE475822C"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6603E2C062B26E0B"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "714A3AD5F90F9916"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Witch's Vestments"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["68D1B646B4C5921A"]
+			description: [
+				"Сам Котел — это освященная веками традиция среди ведьм, используемая для приготовления пищи, приготовления зелий и более продвинутой магии. Это универсальный инструмент для любого практикующего."
+				""
+				"Жидкости можно подавать по трубам любой формы или доставлять вручную ведрами или бутылками. Точно так же их можно выбросить, хотя в случае с зельями их, вероятно, проще всего удалить вручную, щелкнув правой кнопкой мыши по бутылке."
+				""
+				"Предметы также могут быть переданы через любую автоматизацию, а также сброшены сверху."
+			]
+			hide_dependency_lines: true
+			id: "48627087020E059F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "039ACBE8A55777ED"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3218C1F002704552"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "What a Brew-tiful Sight"
+			tasks: [
+				{
+					id: "714B5D15806E5AE1"
+					item: "hexerei:mixing_cauldron"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Cauldron Crafting"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0E45018D600614BA"]
+			description: ["Изучите искусство колдовства, исследуя все, что может предложить Хексерай: от милых друзей до летающих метел. Этот мод заставит вас почувствовать себя настоящей ведьмой."]
+			hide: true
+			icon: "hexerei:belladonna_flowers"
+			id: "68D1B646B4C5921A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "5F87C71456C2B384"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "4A53F18E742B9636"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "hexerei:herbs"
+						}
+					}
+					title: "Hexerei"
+					type: "item"
+				}
+			]
+			title: "Hexerei"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5CBE4B1409CA3DB1"]
+			description: ["Проживание в доме с троллями научит Ведьму кое-чему, например, ценности тяжелого предмета, которым можно разбить головы. Отлично подходит и для размягчения стейков!"]
+			id: "39BB530B6057DA94"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "17FBE554BB08FC90"
+					title: "Miner's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3D780F0BB9395E99"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Payback's a Witch"
+			tasks: [
+				{
+					id: "5B64EBF3D22DECD9"
+					item: {
+						Count: 1b
+						id: "hexerei:warhammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["54FB7C791B5492DF"]
+			description: [
+				"Имея в руках прекрасный выбор трав и подготовленный небольшой сад, может начаться настоящее волшебство колдовства."
+				""
+				"Когда дело доходит до трав и кулинарии, свежие, безусловно, лучше всего. Но иногда определенные свойства проявляются только после того, как растение высушено. Для начала повесьте одну-две сушилки."
+				""
+				"Предметы можно повесить вручную, щелкнув правой кнопкой мыши, и снова удалить, щелкнув правой кнопкой мыши. Их также можно вставлять через бункер или другую автоматику, а сушильная стойка удобно предотвратит их вынимание до завершения процесса. Каждая стойка вмещает до девяти предметов одновременно."
+			]
+			id: "6834E2403EA77413"
+			rewards: [
+				{
+					count: 5
+					id: "4B92E1A0497F65C8"
+					item: {
+						Count: 1b
+						id: "hexerei:herb_jar"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7C4A5CEF72FA19B0"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "High and Dry"
+			tasks: [
+				{
+					icon: "hexerei:herb_drying_rack"
+					id: "1BA14B4A6E3CE766"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:herb_drying_rack"
+								}
+								{
+									Count: 1b
+									id: "hexerei:mahogany_drying_rack"
+								}
+								{
+									Count: 1b
+									id: "hexerei:willow_drying_rack"
+								}
+								{
+									Count: 1b
+									id: "hexerei:witch_hazel_drying_rack"
+								}
+							]
+						}
+					}
+					title: "Drying Rack"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6834E2403EA77413"]
+			description: [
+				"Сушеный шалфей обладает рядом целебных свойств, но, пожалуй, более удивительным является его способность защищать территорию от вторжений монстров. Идеально подходит для ведьмы, которая хочет расслабиться и сварить дома немного пива, не беспокоясь об этом."
+				""
+				"Поместите сушеный шалфей на тарелку и подожгите его кремнем и сталью. Область будет наполнена легким дымом, который предотвратит появление мобов. Щелчок правой кнопкой мыши по пластине пустой рукой будет переключать ее различные режимы, позволяя при желании полностью отключить облачные визуальные эффекты."
+				""
+				"Сушеный шалфей можно вставить через бункер или другую автоматику, а пластину можно зажечь с помощью Deployer, что позволяет полностью автоматизировать пластину для сжигания шалфея."
+			]
+			icon: "hexerei:sage"
+			id: "69E94721C3668CCE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0BA444C12A4208F7"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "6066E7AA064A4A84"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Turning Over a New Leaf"
+			tasks: [
+				{
+					id: "631BBC361863C126"
+					item: {
+						Count: 1b
+						id: "hexerei:dried_sage_bundle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DA45AE07AED2CDF"
+					item: "hexerei:sage_burning_plate"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["753F45812A0A4754"]
+			description: [
+				"Настоящая Ведьма знает, что далеко не только простые источники света, она знает, как наделить Свечи мощной магией, заставляя близлежащие растения быстро расти, превращать погоду из ненастной в ясное небо или даже наделять ближайших монстров такими эффектами, как Яд или Медлительность."
+				""
+				"Свечи имеют ограниченный срок действия и их необходимо периодически заменять. Однако в одном блоке можно разместить до четырех свечей, и каждая зажигается индивидуально."
+				""
+				"Наконец, свечи можно покрасить, объединив их с красителями на верстаке."
+			]
+			id: "3659D0540E05DE94"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "66F8B950553302ED"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "6E805DAF31BF8B2F"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "... And Now You're Mine"
+			tasks: [
+				{
+					id: "699E1CF96C5EEB0F"
+					item: "hexerei:candle"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48627087020E059F"]
+			description: [
+				"Ковш — это аппарат, расположенный на вершине Котла. Когда Котел заполнен салом и в Ковш помещено до трех нитей, он приступит к окунанию веревки и самостоятельно сделает свечи."
+				""
+				"Нить может быть подана в Dipper с помощью бункера или другой системы автоматизации. Однако необходимо будет использовать некоторую форму фильтра, чтобы предотвратить слишком раннее извлечение строки."
+				""
+				"Примечание: при плавке предметов для сала в котле должна быть вода."
+			]
+			id: "753F45812A0A4754"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "6046E95DF2F2CE3C"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "084995A471301D0B"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "I Put a Spell On You ..."
+			tasks: [
+				{
+					id: "317445E703CFA8A5"
+					item: "hexerei:candle_dipper"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5CBE4B1409CA3DB1"]
+			description: [
+				"Метла, без сомнения, самый важный инструмент в арсенале любой ведьмы, позволяет быстро и точно летать, чтобы избежать встречи с тварями во время сбора трав, или просто подняться на крышу, чтобы безопасно заделать тлеющую дыру, оставленную молнией."
+				""
+				"При работе с метлами требуется некоторый уход и уход, так как их щетки не будут служить вечно. Хотя их можно зачаровать Нерушимостью, чтобы продержаться немного дольше."
+				""
+				"Чтобы оседлать Метлу, щелкните правой кнопкой мыши, чтобы разместить ее в мире, а затем еще раз, чтобы запрыгнуть на нее. Он управляется так же, как лодка, но также может менять высоту."
+				""
+				"Когда вы не ездите на ней, прокрадитесь правой кнопкой мыши на метле, чтобы получить доступ к ее меню, где можно установить обновления или заменить щетки."
+				""
+				"На кончике метлы можно украсить простыми украшениями, подвешивая их на цепочке, или более функциональными наконечниками, которые позволяют метле безопасно проходить через лаву или воду."
+				""
+				"Свяжите метлу со свистком, чтобы вам было легче вспомнить метлу. Чтобы это сработало, Метла должна находиться относительно близко."
+			]
+			id: "2427E2062E71E3C7"
+			min_width: 300
+			rewards: [
+				{
+					id: "1008549AFC5BA985"
+					item: {
+						Count: 1b
+						id: "hexerei:broom_whistle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "17B9E2556914F03E"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Gonna Take My Broom to the Old Swamp Road"
+			tasks: [
+				{
+					id: "3A2C7E4DF750C249"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:witch_hazel_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "hexerei:mahogany_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "hexerei:willow_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "ars_scalaes:archwood_broom"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "Witch's Broom"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2427E2062E71E3C7"]
+			description: ["Метлы также могут быть оснащены сумками разных размеров, которые являются идеальным местом для хранения запасных частей, зелий или всего, что может понадобиться для длительных экскурсий."]
+			id: "3D0BF6FF68EE43FC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "126BDC3ABFDCB2E8"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "1C912EEB2ADBC94C"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Gonna Fly Till I Can't No More"
+			tasks: [
+				{
+					id: "7ED27F05A6087868"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:small_satchel"
+								}
+								{
+									Count: 1b
+									id: "hexerei:medium_satchel"
+								}
+								{
+									Count: 1b
+									id: "hexerei:large_satchel"
+								}
+							]
+						}
+					}
+					title: "Satchels"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D0BF6FF68EE43FC"]
+			description: ["Волшебный мешочек, прикрепляемый к сундуку Эндера, что делает его идеальным дополнением для забывчивых ведьм, которые часто теряют свои метлы. По крайней мере, они не потеряют содержимое!"]
+			id: "2AE5ED341C735EB0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "102164B44FAAE49A"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "5AE710FB7FB5283B"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "For Better or For Warts"
+			tasks: [
+				{
+					id: "122338C63082ED70"
+					item: "hexerei:ender_satchel"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3D0BF6FF68EE43FC"]
+			description: ["Это не простая сумка для хранения, сумка-заменитель автоматически заменяет щетки по мере их износа, позволяя летать дольше без перерыва."]
+			id: "39893761085CE2A3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "6A715E8A2FF7A4F5"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4D9EACBE361B48B3"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "No Rest for the Wicca'd"
+			tasks: [
+				{
+					id: "696814E3084CCD5E"
+					item: "hexerei:replacer_satchel"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["68D1B646B4C5921A"]
+			description: [
+				"Мудрая Ведьма знает свойства каждого растения в своих владениях, и нет никого более знающего, чем те, кто называет Болота своим домом. Найдите болото и попытайтесь собрать образцы трав для личного сада."
+				""
+				"Древняя практика лозоходства использовалась для всего: от поиска грунтовых вод и драгоценных камней до могил и злых духов. Лозоходный жезл Хексереи идеально приспособлен для того, чтобы вести владельца к близлежащим болотам и джунглям, а листья меняют цвет с ярко-зеленого, если его направить в правильном направлении, на тускло-коричневый, если смотреть в сторону от цели."
+				""
+				"Природный компас также является полезным инструментом для поиска болот. А для менее предприимчивых ведьм, скорее всего, будет достаточно остановки у ближайшего рыночного прилавка."
+			]
+			hide_dependency_lines: true
+			icon: "hexerei:herb_drying_rack_full"
+			id: "54FB7C791B5492DF"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "6CF6DDE26468F7CA"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0B6657C33AECA812"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Sage Advice"
+			tasks: [
+				{
+					icon: "hexerei:dowsing_rod"
+					id: "6BE2D12FBBC4BD5E"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:dowsing_rod"
+								}
+								{
+									Count: 1b
+									id: "naturescompass:naturescompass"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "Locate a Swamp"
+					type: "item"
+				}
+				{
+					id: "3EADCEE6A534FEB9"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:sage_seed"
+								}
+								{
+									Count: 1b
+									id: "hexerei:mandrake_flower"
+								}
+								{
+									Count: 1b
+									id: "hexerei:mugwort_bush"
+								}
+								{
+									Count: 1b
+									id: "hexerei:yellow_dock_bush"
+								}
+								{
+									Count: 1b
+									id: "hexerei:belladonna_flower"
+								}
+							]
+						}
+					}
+					title: "Herbs"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Herb Lore"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"48627087020E059F"
+				"68D1B646B4C5921A"
+			]
+			description: [
+				"Конечно, одеваться для роли необязательно, но стиль никогда не следует упускать из виду."
+				""
+				"Следуйте инструкциям, чтобы открыть для себя некоторые очень полезные инструменты в арсенале ведьмы."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:crow_blank_amulet"
+				tag: { }
+			}
+			id: "5CBE4B1409CA3DB1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "1DAEF5BD5864A7A6"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "01A521B4A99F153C"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Witch Upon a Star"
+			tasks: [
+				{
+					id: "60016AD4BEE7351E"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:mahogany_log"
+								}
+								{
+									Count: 1b
+									id: "hexerei:willow_log"
+								}
+							]
+						}
+					}
+					title: "Witchy Woods"
+					type: "item"
+				}
+			]
+			title: "Tools and Utility"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["48627087020E059F"]
+			description: [
+				"Кровь — мощный магический реагент, и мудрая ведьма старается предоставить другому магу доступ к своей крови."
+				""
+				"Чтобы получить Кровь для изготовления, поместите Символ Крови в верхний левый слот Котла, затем запрыгивайте в него. Каждый прыжок приведет к попаданию небольшого количества крови в Котел."
+				""
+				"Конечно, нигде не сказано, что кровь должна быть своя. Попробуйте подбросить деревенского жителя и посмотреть, что произойдет. А еще лучше посмотреть, можно ли автоматизировать этот процесс…"
+			]
+			icon: "hexerei:blood_bottle"
+			id: "596DF36CE2F66524"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "7F63F43AC11BCF99"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "5EA1F6B798CC3A78"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Life's a Witch and Then You Die"
+			tasks: [
+				{
+					id: "45454E94DC5517DF"
+					item: "hexerei:blood_sigil"
+					type: "item"
+				}
+				{
+					id: "1876BF29217CE460"
+					item: "hexerei:blood_bottle"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["59ACE37EED9E8CF5"]
+			description: [
+				"Ведьм часто изображают дружелюбными к животным: от кошек и мышей до змей и ящериц. Однако ведьмы этих болот имеют особую привязанность к местным Воронам."
+				""
+				"Будучи особенно умным видом птиц, Вороны способны выполнять множество задач от имени своих друзей-ведьм. Смешайте некоторые из их любимых семян и подарите друзьям. Либо бросьте смесь семян на землю поблизости, либо предложите семена вручную."
+				""
+				"Вороны — очень социальные существа, и поэтому у них не будет проблем с тем, чтобы вокруг было больше представителей их вида, приручайте столько, сколько захотите!"
+				""
+				"После приручения прокрадитесь по ним правой кнопкой мыши, чтобы открыть меню, в котором им можно назначить задание или оснастить их безделушками, шляпами или оружием, например Вархаммером!"
+				""
+				"=============================================="
+				""
+				"При командовании убийством ворон незаменимым инструментом становится Воронья флейта. Подкрадитесь. Щелкните правой кнопкой мыши по флейте, чтобы получить доступ к меню. Для начала нажмите кнопку «Выбрать», а затем щелкните правой кнопкой мыши каждую ворону, которой будет командовать флейта. Подумайте о том, чтобы создать новую флейту для каждой группы ворон, которыми нужно командовать, чтобы избежать путаницы с командами."
+				""
+				"С помощью флейты можно выбрать несколько ворон и приказать им выполнить свои действия: собрать урожай поблизости, собрать близлежащие предметы или совершить карманную кражу у жителей близлежащей деревни."
+				""
+				"Флейты также являются единственным способом направить Ворону к Окуню в определенном месте. Например, сидя на Сундуке, Ворона-Собиратель автоматически складывает свои предметы в Сундук."
+				""
+				"Примечание о карманных кражах: у ворон есть фиксированный список предметов, которые они выбирают из любой профессии, и этот список не основан на доступных профессиях этого жителя."
+			]
+			id: "02339F3C9A699876"
+			min_width: 300
+			rewards: [
+				{
+					id: "1A3B0AA55642D5F1"
+					item: {
+						Count: 1b
+						id: "hexerei:crow_flute"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4AB4040559B83C3E"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "For the Birds"
+			tasks: [
+				{
+					id: "28B0B140426D4A56"
+					item: "hexerei:seed_mixture"
+					type: "item"
+				}
+			]
+			title: "Crows"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["54FB7C791B5492DF"]
+			description: [
+				"Скромный пестик и ступка, обычное явление в аптеках и на кухнях в старину, веками использовались для измельчения и смешивания ингредиентов."
+				""
+				"Предметы можно помещать в пестик и ступку вручную, щелкнув правой кнопкой мыши, и готовый продукт можно получить аналогичным образом."
+				""
+				"Кроме того, предметы можно подавать по трубопроводу с помощью автоматизации, а Пестик и Ступка будут удерживать их до завершения, позволяя извлечь только конечный продукт."
+			]
+			id: "59ACE37EED9E8CF5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "1C75F799457CB9FE"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "32CDF56407E67438"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Keeping It Grounded"
+			tasks: [
+				{
+					id: "79AC6121D2D26A35"
+					item: "hexerei:pestle_and_mortar"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["02339F3C9A699876"]
+			description: [
+				"Хотя он также служит простым в изготовлении шалкеровым ящиком, сундук в первую очередь добавляет полезности воронам в режиме сбора урожая. В зависимости от того, как переключена кнопка «Ворона» в графическом интерфейсе, «Ворона» либо поместит все, что найдет, либо поместит только те предметы, которые уже существуют в сундуке, что позволит ей действовать как фильтр."
+				""
+				"Сундук можно быстро подобрать одним щелчком мыши."
+			]
+			id: "5C2021524CEC2DB4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "7F24002EAAA4E329"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7C6758B634970F76"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Do You Be-leaf in Magic?"
+			tasks: [
+				{
+					id: "2FAB9325EE7E79AF"
+					item: {
+						Count: 1b
+						id: "hexerei:coffer"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 2.5d
+		}
+	]
+	title: "Hexerei"
+}

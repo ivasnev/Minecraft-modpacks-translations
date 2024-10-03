@@ -1,0 +1,1712 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "natures_aura_expert"
+	group: "5A8B89F87F77CF4C"
+	icon: "naturesaura:gold_leaf"
+	id: "073D8C9BCEF4C979"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.0d
+			hover: [ ]
+			image: "#FFFFFF"
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.0d
+			hover: [ ]
+			image: "#FFFFFF"
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.0d
+			hover: [ ]
+			image: "#FFFFFF"
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Nature's Aura — это магический мод на друидскую тематику, который использует вездесущую «ауру» для получения своей силы."
+				""
+				"Имейте в виду, что Аура — это ограниченный ресурс, которым необходимо управлять и пополнять его, чтобы не нарушить естественный порядок вещей. Слишком большой слив может привести к тяжелым последствиям."
+				""
+				"Эти квесты проведут вас через мод, но не забывайте регулярно обращаться к руководству для получения дополнительной информации. Главы будут открываться по мере выполнения этих квестов и связанных с ними достижений."
+			]
+			hide: true
+			icon: "naturesaura:aura_bloom"
+			id: "2DED8E4FA6DCD410"
+			min_width: 250
+			rewards: [
+				{
+					id: "730C37B154C65FBC"
+					item: {
+						Count: 1b
+						id: "superiorshields:bronze_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1CA151483E2C22BB"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+					title: "Nature's Aura"
+					type: "item"
+				}
+			]
+			title: "Nature's Aura"
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2735E47A2A965FEE"]
+			description: [
+				"Лесной Ритуал — основа всей будущей магии. В центре приносят в жертву дерево, чтобы обеспечить энергию для ритуала."
+				""
+				"Каждый из предметов снаружи рецепта должен быть помещен на деревянную подставку; порядок не имеет значения, и товары могут быть размещены вручную или автоматически."
+				""
+				"Как только реагенты будут готовы, поместите и вырастите нужный саженец. Золотой порошок будет израсходован вместе с предметами и деревом после завершения ритуала."
+				""
+				"Обратитесь к Книге естественной ауры за конкретными инструкциями по построению ритуала."
+			]
+			hide_dependency_lines: true
+			id: "699BC5534C19FC5E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "36808DD105A48BCC"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "753CD2F44D63188D"
+					item: "naturesaura:gold_powder"
+					type: "item"
+				}
+			]
+			subtitle: "Tire-toi une bûche"
+			tasks: [
+				{
+					icon: "naturesaura:wood_stand"
+					id: "05714B3C0C99E55B"
+					observe_type: 0
+					timer: 0L
+					title: "Wooden Stand"
+					to_observe: "naturesaura:wood_stand"
+					type: "observation"
+				}
+			]
+			title: "Ritual of the Forest"
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			description: [
+				"Чтобы начать путь натуралиста, необходимо вплести блестящее волокно в листья деревьев. Там они превратят листья в красивый золотистый оттенок."
+				""
+				"Создайте одно или несколько блестящих волокон и щелкните их правой кнопкой мыши на любых листьях. Эффект распространится на ближайшие листья, поэтому при осторожном обращении создание большего количества блестящих волокон не потребуется."
+				""
+				"Золотой лист упадет всякий раз, когда полностью трансформированные листья будут сломаны. Поместите свежие листья рядом с оставшимися трансформированными листьями, чтобы начать их преобразование."
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:gold_fiber"
+			id: "2735E47A2A965FEE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "1B3CC9578B9BF05D"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "4D3CDE28F69D202C"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "The threads that bind us"
+			tasks: [
+				{
+					id: "0E8F119E16CC852B"
+					item: "naturesaura:gold_fiber"
+					type: "item"
+				}
+				{
+					id: "6700A70D6F3F011C"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Rituals"
+			x: -4.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2735E47A2A965FEE"]
+			description: [
+				"Достигнув достаточно высокого уровня навыков, натуралисты могут напрямую общаться с богами, прося дары в обмен на подношения. Однако будьте внимательны, поскольку боги временами мелочны, независимо от того, какое приношение им предлагается."
+				""
+				"Поместите подношения в чашу, а затем бросьте туда Духа призыва, чтобы завершить ритуал. В чаше можно разместить несколько предметов, и для полной партии потребуется только один Дух."
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:offering_table"
+			id: "37D084A5FD96EACA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "366B1FFE22EBE4E5"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Just nod if you can hear me"
+			tasks: [
+				{
+					id: "061AD10825E1993F"
+					item: "naturesaura:offering_table"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			dependency_requirement: "all_started"
+			description: [
+				"Естественный Алтарь — это сердце двух ритуальных практик; один, чтобы вселить жизнь в объекты, а другой, чтобы вселить смерть."
+				""
+				"Обратитесь к разделу «Книги естественной ауры», посвященному Естественному алтарю и Багровому алтарю, для предварительного просмотра необходимой структуры."
+				""
+				"Для его изготовления можно использовать любые виды досок."
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:nature_altar"
+			id: "465085DE51A72E73"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "097F8CAD66BB44FC"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "The duality of life and death"
+			tasks: [
+				{
+					id: "7EBAAE8549A91C6D"
+					item: "naturesaura:nature_altar"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "4DD75E6EBA654D12"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Any #minecraft:planks"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3EA6FF0E4235DB44"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "12D60736A8AF5AAB"
+					item: "naturesaura:gold_brick"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "03E99236300A5FFD"
+					item: "minecraft:chiseled_stone_bricks"
+					type: "item"
+				}
+			]
+			title: "Harnessing Aura: Automation"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			description: [
+				"Говорят, что самые ранние натуралисты открыли Ауру, наблюдая за этими древними деревьями. Они обнаружили, что их корни укоренились глубоко, вытягивая Ауру из глубин и рассеивая ее в окружающей среде."
+				""
+				"Поняв, что Ауру можно обновить, они приступили к разработке еще более сложных способов ее использования и пополнения. Однако те, кто зашел слишком далеко, дорого заплатили."
+				""
+				"Деревья, выращенные из древних саженцев, служат двум основным целям:"
+				""
+				"Во-первых, они помогут пополнить Ауру в районе, где они установлены, хотя и медленно. При этом листья отмирают и разлагаются.  Не волнуйтесь, существуют более эффективные методы пополнения Ауры."
+				""
+				"Во-вторых, древесина особенно полезна, когда дело касается тайной магии, поскольку она пропитана магической энергией Ауры. Это прекрасная основа для многих загадочных орудий."
+			]
+			hide_dependency_lines: true
+			id: "58438574716487D7"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "5C2B4E261DE782E4"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+				{
+					count: 32
+					id: "1A4E4A4713072598"
+					item: "naturesaura:ancient_log"
+					title: "Ancient Log"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Give And Take"
+			tasks: [
+				{
+					id: "6EF9F130AE0F37FD"
+					item: "naturesaura:ancient_sapling"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Generating Aura"
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Катализатор трансмутации усиливает Естественный и Багровый алтари, позволяя им выполнять дальнейшие трансформации."
+				""
+				"Поместите его на любую из четырех коротких колонн, окружающих Алтарь, чтобы активировать его."
+			]
+			id: "2D92C208DD310E86"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7B473B34257E6C77"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "To obtain, something equal must be lost"
+			tasks: [
+				{
+					id: "431A924319567586"
+					item: "naturesaura:conversion_catalyst"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Рушающийся катализатор усиливает Естественный и Багровый алтари, позволяя им выполнять дальнейшие трансформации."
+				""
+				"Поместите его на любую из четырех коротких колонн, окружающих Алтарь, чтобы активировать его."
+			]
+			id: "37B44865CE6DEB8E"
+			rewards: [
+				{
+					count: 32
+					id: "7E5EAD13F8837458"
+					item: "naturesaura:gold_leaf"
+					title: "Gold Leaf"
+					type: "item"
+				}
+			]
+			subtitle: "For ivy climbs the crumbling hall"
+			tasks: [
+				{
+					id: "6420AC075A3ECCBF"
+					item: "naturesaura:crushing_catalyst"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["25AA7A1A041FAA0C"]
+			description: [
+				"Каждое устройство, генерирующее Ауру, ограничено в степени, в которой оно может пополнять Ауру. Однако можно раздвинуть эту границу и затопить область с избытком Ауры."
+				""
+				"Поместите Катализатор Созидания под любой Генератор Ауры, чтобы снять ограничение его генерации и достичь такой пышности, какой не наблюдалось с первых дней творения."
+			]
+			id: "6C1C63E372ECFEDC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7459B50D34DCEBD6"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "An explosion of life to match the primordial age"
+			tasks: [
+				{
+					id: "5157C6BD4F309FF4"
+					item: "naturesaura:generator_limit_remover"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: ["Многие устройства имеют определенный диапазон, который можно увидеть, только щелкнув по ним правой кнопкой мыши с помощью мистической лупы. Это ценный инструмент для любого ботаника-натуралиста."]
+			hide_dependency_lines: true
+			id: "11556E9D40C6EC4C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3CFF3CA727552A59"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Relax, I'll need some information first"
+			tasks: [
+				{
+					id: "73A094D6919E1D91"
+					item: "naturesaura:range_visualizer"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Неподготовленные глаза могут заметить более явные признаки Ауры в каком-либо месте, едва уловимые светящиеся огни и пышный рост растений."
+				""
+				"Экологический глаз еще больше оттачивает видение натуралиста, позволяя глубже понять ауру, наполняющую ландшафт."
+				""
+				"На этом этапе может быть полезно найти область с более высокой, чем обычно, аурой, поскольку некоторая часть ауры будет израсходована для создания аппаратов, необходимых для ее обновления."
+			]
+			hide_dependency_lines: true
+			id: "111065FF35D1189F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "1E7F02A4791EFC1D"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "It's still magic even if you know how it's done"
+			tasks: [
+				{
+					id: "4A0A71CAE8332012"
+					item: "naturesaura:eye"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			description: [
+				"Портативный источник ауры, который можно эффективно использовать с помощью различных инструментов."
+				""
+				"Обратитесь к разделу «Природные инструменты» Книги естественной ауры, чтобы узнать о возможном использовании."
+			]
+			hide_dependency_lines: true
+			id: "4081F393EAB01CBE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "11F0298FC3689734"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Geo-caching 101"
+			tasks: [
+				{
+					id: "588C80AFF089BC0A"
+					item: "naturesaura:aura_cache"
+					type: "item"
+				}
+			]
+			title: "Harnessing Aura: Tools of the Trade"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["111065FF35D1189F"]
+			description: ["Усовершенствованная версия естественного глаза, которая дает владельцу возможность видеть еще более точные детали ауры вокруг себя."]
+			id: "6B065FDF3EA4EB78"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "49064FB70F4C89F2"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Open your eyes, then open your eyes again"
+			tasks: [
+				{
+					id: "3F9F4B01BE056CDC"
+					item: "naturesaura:eye_improved"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"Более высокая емкость, чем у Aura Cache."
+				""
+				"Обратитесь к разделу «Природные инструменты» Книги естественной ауры, чтобы узнать о возможном использовании."
+				""
+				"Примечание. При ношении они могут заполняться не полностью. Чтобы получить полный заряд или даже автоматизировать их заполнение, их можно поместить в Природный алтарь до максимальной вместимости."
+			]
+			id: "3DB84F7840BACBFF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4E8906F53D1A0AB0"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Thy cup runneth over"
+			tasks: [
+				{
+					id: "1F1ED271AC9302C6"
+					item: "naturesaura:aura_trove"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Самые влиятельные натуралисты обнаружили, что в сочетании с редким катализатором можно управлять течением самого времени."
+				""
+				"Этот процесс приведет к быстрому ускорению времени за счет огромных затрат Ауры. Будьте осторожны, не позволяйте Ауре упасть слишком далеко!"
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:time_changer"
+			id: "05CB261DC6E9F041"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "30A356076A18628A"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "From dusk, to dawn"
+			tasks: [
+				{
+					id: "5349956ADF68A295"
+					item: "naturesaura:clock_hand"
+					type: "item"
+				}
+				{
+					id: "3CAF0F4C5100B399"
+					item: "naturesaura:time_changer"
+					type: "item"
+				}
+			]
+			title: "Shifting Sundial"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Простой аппарат, помогающий содержать домашний скот и других животных. Существа, находящиеся в радиусе действия этого блока, не смогут выйти за его пределы."
+				""
+				"Для создания этого эффекта не расходуется аура."
+				""
+				"Диапазон зависит от силы подаваемого сигнала красного камня."
+			]
+			hide_dependency_lines: true
+			id: "454A0F0E48005FFE"
+			rewards: [
+				{
+					id: "768D554686743991"
+					item: "create:analog_lever"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "1979E756D0AF7475"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "A line in the sand"
+			tasks: [
+				{
+					id: "56626DE3C9E9BE87"
+					item: "naturesaura:animal_container"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2735E47A2A965FEE"]
+			description: [
+				"Ритуал, который использует силы самого творения, позволяя его пользователю создать новую жизнь из малейших следов материала."
+				""
+				"После постройки просто бросьте реагенты на алтарь. Если ауры достаточно, ритуал пройдёт автоматически."
+				""
+				"Обратитесь к Книге естественной ауры за конкретными инструкциями по построению ритуала."
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:animal_spawner"
+			id: "13986C2B6CB6272E"
+			min_width: 250
+			rewards: [
+				{
+					id: "2DB4B63FBFDFB240"
+					item: "naturesaura:pet_reviver"
+					type: "item"
+				}
+			]
+			subtitle: "Crossing the threshold"
+			tasks: [
+				{
+					id: "1773B426491B9FCE"
+					item: "naturesaura:animal_spawner"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7AC7D86119B588A1"
+					item: "naturesaura:infused_brick"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0D397E94580AFC81"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2BEBFBB45AFD2A45"
+					item: "naturesaura:ancient_planks"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Незаметный строитель помогает в сложных задачах автоматизации, беря блоки из близлежащих инвентарей и размещая их."
+				""
+				"Укажите, где следует размещать блоки, поместив пример в рамку элемента в самом конструкторе."
+				""
+				"Обратитесь к Книге естественной ауры за конкретными инструкциями."
+			]
+			hide_dependency_lines: true
+			id: "1AE73DC4CC5A7C6F"
+			rewards: [
+				{
+					id: "3CB75006420EC5A1"
+					item: "minecraft:item_frame"
+					title: "Item Frame"
+					type: "item"
+				}
+				{
+					id: "577AB47A801DB8DA"
+					item: "naturesaura:farming_stencil"
+					title: "Farming Stencil"
+					type: "item"
+				}
+			]
+			subtitle: "Constructive interference"
+			tasks: [
+				{
+					id: "15ABF90EC87A9A88"
+					item: "naturesaura:placer"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Когда два Создателя Поля Ауры связаны друг с другом, они образуют между собой разрушительную зону, которая быстро разрушает блоки за счет некоторого количества Ауры."
+				""
+				"Чтобы связать их, просто щелкните правой кнопкой мыши один, а затем другой. Подайте сигнал Redstone любому из них, чтобы включить систему. После небольшой задержки они начнут рисовать Ауру и разбивать блоки."
+				""
+				"Рамку элемента также можно использовать для изменения их поведения:"
+				""
+				"Примечание. Создатель поля ауры будет использовать любой инструмент, представленный в кадре, включая любые чары или специальные свойства разрушения инструмента. Ножницы срезают листья, лопаты собирают снег, Уважают Фортуну и Шелковое прикосновение."
+			]
+			hide_dependency_lines: true
+			id: "1EA9C29C8955827D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "230DB717CFF25F0B"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Destructive interference"
+			tasks: [
+				{
+					count: 2L
+					id: "4AF95515F94B8839"
+					item: "naturesaura:field_creator"
+					type: "item"
+				}
+			]
+			title: "Aura Field Creators"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"При размещении на печи, доменной печи или коптильне посторонний поджигатель притягивает близлежащую ауру, преобразуя ее в тепло для плавки и приготовления пищи."
+				""
+				"Хотя этот процесс происходит намного быстрее, чем сжигание угля или других горючих материалов, у него есть тот недостаток, что он может истощить Ауру до опасного уровня. Для усиления эффекта можно даже установить несколько."
+			]
+			hide_dependency_lines: true
+			id: "4D68B5141952C6A6"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "563C2C460079661B"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Maxwell's demon, hard at work"
+			tasks: [
+				{
+					id: "0F892FF01C192955"
+					item: "naturesaura:furnace_heater"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Кажется, что всё поле Ауры каким-то образом связано, даже в разных измерениях. Хотя измеримые эффекты имеют тенденцию быть более локализованными, один блестящий натуралист смог найти способ использовать тонкую рябь в переплетении для перемещения материи на невообразимое расстояние."
+				""
+				"Ящики Эндера можно назначить каналу на Наковальне, одновременно переименовав их и объединив с Глазом Эндера. Одному и тому же каналу можно в любое время назначить больше ящиков, присвоив им одно и то же имя."
+				""
+				"Аналогичным образом, Ender Oculars может быть назначен канал для обеспечения личного доступа к тому же инвентарю. Идеально подходит для того, чтобы оставить трофеи, полученные в ходе исследования, находясь вдали от дома."
+				""
+				"Небольшое количество Ауры используется каждый раз, когда предмет перемещается в ящик или из него. Поэтому крайне важно, чтобы Аура генерировалась по обе стороны соединения."
+			]
+			hide_dependency_lines: true
+			id: "6B336E008C4B58C5"
+			rewards: [
+				{
+					id: "0F8D483E6F7371A5"
+					item: "naturesaura:ender_access"
+					title: "Ender Ocular"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2AFDC4D29F3C05D5"
+					item: "minecraft:ender_eye"
+					title: "Eye of Ender"
+					type: "item"
+				}
+			]
+			subtitle: "Abaddon's gate"
+			tasks: [
+				{
+					id: "4515752CE8CF34B4"
+					item: "naturesaura:ender_crate"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["385927686A412EA6"]
+			description: [
+				"При размещении на бункере адепта или ванильном бункере улучшение бункера позволяет собирать блоки на расстоянии до семи блоков. Очень полезный инструмент в любом автоматизированном устройстве."
+				""
+				"При использовании с бункером адепта любой набор фильтров будет учитываться улучшением бункера."
+			]
+			id: "1D37E396D04A74AD"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "023260B9B7374F59"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "It reaches out nothing answers and it reaches out"
+			tasks: [
+				{
+					id: "6DE026A64A7BEFF3"
+					item: "naturesaura:hopper_upgrade"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Одно из немногих природных устройств, которые не потребляют ауру для работы, Adept’s Hoppers — это фильтруемый бункер, который перемещает предметы немного быстрее, чем обычный бункер."
+				""
+				"Поместите рамку элемента сбоку и вставьте в нее любой элемент или блок, чтобы установить фильтр."
+			]
+			hide_dependency_lines: true
+			id: "385927686A412EA6"
+			rewards: [
+				{
+					count: 4
+					id: "1877981636A0F2C0"
+					item: "minecraft:item_frame"
+					title: "Item Frame"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "470293D0FB403EA6"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Filtering through the morass"
+			tasks: [
+				{
+					id: "25F9A4238632D661"
+					item: "naturesaura:grated_chute"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["58438574716487D7"]
+			description: [
+				"Процесс приготовления зелий превращает магическую энергию, присутствующую во всей жизни, в компактную и портативную форму. Те же самые энергии могут быть высвобождены снова в виде ауры с помощью соответствующего аппарата."
+				""
+				"Затяжной поглотитель втянет эти энергии, повторно рассеивая их в виде ауры. Просто разбейте Затяжные зелья по центральному блоку, и он позаботится обо всем остальном."
+				""
+				"Помимо прочего, зелья можно раздавать с помощью раздатчика."
+			]
+			id: "25AA7A1A041FAA0C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "139066FD1275A723"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Do. Or do not. There is no try."
+			tasks: [
+				{
+					id: "4C6D3095E8F582DF"
+					item: "naturesaura:potion_generator"
+					title: "Lingering Absorber"
+					type: "item"
+				}
+			]
+			title: "Esoteric Ecology"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["699BC5534C19FC5E"]
+			description: [
+				"Lush Aura имеет множество побочных эффектов, которые могут быть желательны или нежелательны в любой момент времени. Порошки существуют для того, чтобы контролировать, когда и где возникают эти эффекты."
+				""
+				"● Пустоши — предотвратите образование травы на Незерраке."
+				""
+				"● Устойчивый рост. Аура больше не будет стимулировать рост сельскохозяйственных культур, растений и цветов."
+				""
+				"● Плодородие. Пассивные животные будут размножаться, когда смогут."
+				""
+				"● Нет хранилища — ваш тайник или сокровищница ауры не будет заряжаться в этом районе."
+			]
+			hide_dependency_lines: true
+			id: "578B0B5E74FEAC97"
+			min_width: 250
+			rewards: [
+				{
+					id: "1626124D88199034"
+					item: "naturesaura:powder_placer"
+					title: "Powder Manipulator"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "1E29E1E01DA699F1"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Dust in the wind"
+			tasks: [
+				{
+					id: "0139B77473805166"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:nether_grass"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3454E74CF4BE75A5"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:plant_boost"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "015C350A93439B0D"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:animal"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21D23B7891E68030"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:cache_recharge"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Effect Powders"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: ["Когда Аура проходит через это устройство, тепло в этой области быстро рассеивается, понижая локальную температуру и вызывая образование снега и льда."]
+			hide_dependency_lines: true
+			id: "228F799A45B48D70"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7A33E6109905AF66"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "She sounds like she's in a flurry"
+			tasks: [
+				{
+					id: "5E4F851471B1F091"
+					item: "naturesaura:snow_creator"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"Точно так же, как Глаза Края могут помочь в определении местоположения Крепостей, они также помогают в определении местонахождения других важных сооружений."
+				""
+				"● Око грабителя определит местонахождение аванпостов грабителей."
+				""
+				"● Око Пламени определит местонахождение Крепостей Пустоты."
+				""
+				"● Глаз Шалкера определит местонахождение Краевых Городов."
+			]
+			hide_dependency_lines: true
+			id: "033BE52CE2FD3347"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "455236A2B705B554"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "The eyes have it"
+			tasks: [
+				{
+					id: "2595740F68610F84"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:outpost_finder"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:fortress_finder"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:end_city_finder"
+								}
+							]
+						}
+					}
+					title: "Eyes in the Dark"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Закрытая система, предотвращающая любую потерю ауры, это небольшое устройство служит отличным таймером, выпускающим импульс красного камня всякий раз, когда аура внутри полностью испаряется и снова конденсируется. Чем больше Ауры, тем дольше длится этот процесс."
+				""
+				"Щелкните правой кнопкой мыши испаритель Aura с аурой в бутылке, чтобы определить время на часах. Щелкните правой кнопкой мыши пустой рукой, чтобы получить все, что было установлено ранее."
+				""
+				"Каждая бутылка солнечного света соответствует одной секунде времени. Одна бутылка призраков, одна минута. Одна бутылка тьмы, один час."
+			]
+			hide_dependency_lines: true
+			id: "59ECE9FF654CA492"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "4429099A540470BF"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "307B82D5D8385AD7"
+					item: "naturesaura:aura_timer"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Хотя правда, что воду легко получить другими способами, Вечный источник обеспечивает удобное место для подключения трубы для питания другого оборудования."
+				""
+				"Источник дает воду за небольшое количество ауры."
+			]
+			hide_dependency_lines: true
+			id: "24F34D3F5B186B51"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "20B45C4EAD3FE4CA"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0480B58CE324B5CD"
+					item: "naturesaura:spring"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Держать враждебных существ подальше от чувствительных приспособлений может быть весьма важно. Последнее, что кому-то нужно, это неожиданный визит Крипера."
+				""
+				"За мизерные затраты на содержание Лампа Святилища будет подавлять появление естественных мобов в зоне своего влияния, дальность действия которой определяется силой принимаемого ею сигнала Редстоуна."
+			]
+			hide_dependency_lines: true
+			id: "7829AB43D56BA11F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "691D2626544B7801"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "64A9C3C426E11115"
+					item: "naturesaura:spawn_lamp"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["385927686A412EA6"]
+			description: ["Довольно простое устройство, но тем не менее мощное. Распределитель предметов перемещает предметы из инвентаря над ним и равномерно распределяет их по соседним инвентарям."]
+			id: "67EDDAD97465EEF0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "7212F8AC7AC84191"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4661053FF7AEF153"
+					item: "naturesaura:item_distributor"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: ["Настоящее чудо для тех, кто какое-то время трудился на земле в поисках ресурсов. Если жетон Эйра прикреплен к инструменту, он просто перестанет работать, а не сломается при низкой прочности."]
+			hide_dependency_lines: true
+			id: "712E3B21060DB19C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "28CC27FC10BC0B9B"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4721EF89824DD695"
+					item: "naturesaura:break_prevention"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: ["Если держать Кольцо Последнего Шанса где-нибудь в инвентаре, оно предотвращает смертельный удар, разрушаясь, а не позволяя своему владельцу соскользнуть с этой смертной оболочки."]
+			hide_dependency_lines: true
+			id: "127A0B252CBF60C1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "1B9403D8A20F2898"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7401EDCC5CD5093C"
+					item: "naturesaura:death_ring"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"Снаряжение Ботаника предлагает пользователю несколько уникальных преимуществ, помимо базового использования брони и инструментов каждого типа."
+				""
+				"● Все детали можно отремонтировать с помощью Ауры, просто пробравшись с помощью Тайника Ауры или Сокровища Ауры."
+				""
+				"● Кирка ботаника: можно использовать для наполнения материалов аурой путем щелчка правой кнопкой мыши."
+				""
+				"● Топор ботаника: очень быстро разрезает листья."
+				""
+				"● Лопата ботаника: преобразует грязь в траву и создает в траве грязевые дорожки 3х3."
+				""
+				"● Мотыга ботаника: случайным образом производит семена при обработке сельскохозяйственных угодий."
+				""
+				"● Клинок ботаника: замедляет цель."
+				""
+				"● Доспехи ботаника: при ношении полного комплекта накладывает эффект «Иссушение» на атакующих врагов."
+			]
+			icon: {
+				Count: 1b
+				id: "naturesaura:infused_iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "221AF0ABFEB4F736"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "44955606B0E1C7B5"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "732BF42DDF8E3C04"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Botanist's Tools"
+					type: "item"
+				}
+				{
+					id: "3DF384030CD7214E"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Botanist's Armor"
+					type: "item"
+				}
+			]
+			title: "Botanist's Equipment"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"Снаряжение Skyseeker предлагает пользователю несколько уникальных преимуществ, помимо базового использования брони и инструментов каждого типа."
+				""
+				"● Все детали можно отремонтировать с помощью Ауры, просто пробравшись с помощью Тайника Ауры или Сокровища Ауры."
+				""
+				"● Кирка Skyseeker: мгновенно телепортирует добытые блоки в инвентарь пользователя."
+				""
+				"● Ручной топор Skyseeker: способен рубить целые деревья за одно действие."
+				""
+				"● Лопата Skyseeker: при щелчке правой кнопкой мыши заменяет целевой блок любым блоком, который находится в левой руке."
+				""
+				"● Мотыга Skyseeker: обрабатывает большую площадь земли, уничтожая при этом высокую траву и другую растительность."
+				""
+				"● Клинок Небесного Искателя: вызывает левитацию у цели."
+				""
+				"● Броня Небесного Искателя: при ношении полного комплекта дает бонус к скорости и возможность планировать, как если бы вы носили надкрылья."
+			]
+			icon: {
+				Count: 1b
+				id: "naturesaura:sky_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C4D668C5FB91906"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "2927D64D54B5FDD6"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3CCFA329B5099EA4"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Skyseeker's Tools"
+					type: "item"
+				}
+				{
+					id: "532B0B84B31F2DCD"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Skyseeker's Armor"
+					type: "item"
+				}
+			]
+			title: "Skyseeker's Equipment"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: ["Вытягивая ауру из потертого тайника или клада, эти посохи помогают находить различные объекты; они могут быть весьма полезны как дома, так и во время путешествий за границу."]
+			hide_dependency_lines: true
+			id: "0F179A3EBF0587B8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "38D4D46D3976D5D6"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "76B216E795F6C3FE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:loot_finder"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:netherite_finder"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:cave_finder"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:light_staff"
+								}
+							]
+						}
+					}
+					title: "Staves of Power"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"Используется при создании нескольких объектов силы, а создание бутылочной ауры легко автоматизируется с помощью раздатчика."
+				""
+				"Просто поместите бутылку и пробку в диспенсер и дайте импульс красного камня. Если в этом районе достаточно Ауры, будет произведена бутылка местного типа Ауры."
+			]
+			hide_dependency_lines: true
+			id: "2F618EF3A3976CD3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0CC83443C0E4A90D"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2F4C36ECF8500535"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:aura_bottle"
+									tag: {
+										stored_type: "naturesaura:overworld"
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:aura_bottle"
+									tag: {
+										stored_type: "naturesaura:nether"
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:aura_bottle"
+									tag: {
+										stored_type: "naturesaura:end"
+									}
+								}
+							]
+						}
+					}
+					title: "Bottled Aura"
+					type: "item"
+				}
+			]
+			title: "Bottled Aura"
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"Когда-то считавшиеся совершенно отдельными, магические энергии, известные как Источник, Аура и FE, на самом деле являются гранями одной и той же энергии. Используя специальные кристаллы, становится возможным легко переключаться между ними."
+				""
+				"Пульсирующие кристаллы работают, поглощая Источник из близлежащих сосудов с источником и превращая его в пригодный для использования FE. Если в области содержится достаточно Ауры, она также будет поглощена, что значительно увеличит генерируемую FE."
+				""
+				"Резонирующие кристаллы, с другой стороны, создают внутренний резонанс с FE, превращая его обратно в Источник или Ауру. Если исходный Jar находится достаточно близко, он отправит его туда. Если банки нет или она заполнена на 100%, Резонирующий кристалл вместо этого преобразует входящий FE в Ауру и рассеивает его в атмосферу."
+			]
+			hide_dependency_lines: true
+			id: "7C701D8BF9539E0C"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7FE6DA1A9A33BC3F"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0BB9E13D7D12A340"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "enigmaticunity:dim_source_generator"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:bright_source_generator"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:iridescent_source_generator"
+								}
+							]
+						}
+					}
+					title: "Pulsating Crystals"
+					type: "item"
+				}
+				{
+					id: "6523D564D0C06A9D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "enigmaticunity:dim_source_producer"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:bright_source_producer"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:iridescent_source_producer"
+								}
+							]
+						}
+					}
+					title: "Resonating Crystals"
+					type: "item"
+				}
+			]
+			title: "Energy Conversion"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"Хотя об этом часто думают в терминах газов, это не совсем точно."
+				""
+				"По правде говоря, у Ауры есть собственная сила притяжения, которая заставляет ее скапливаться в регионах, а не полностью рассеиваться. Это можно использовать, создавая более мощную силу притяжения и перетаскивая ее большие скопления из одного места в другое, эффективно перемещая Ауру туда, где она необходима."
+				""
+				"Этот процесс ни в коем случае не идеален, и Аура останется позади по мере движения тележки, реинтегрируясь в регион. Некоторые даже считают это положительным моментом, поскольку это позволяет Ауре распространяться на большой площади, не обязательно помещая ее в одно место."
+			]
+			hide_dependency_lines: true
+			id: "06BAE98B1543EBFC"
+			rewards: [
+				{
+					count: 32
+					id: "2D9AC743F4E418A2"
+					item: "minecraft:rail"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "798941F146979F79"
+					item: "minecraft:activator_rail"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "473100E7D4F400CE"
+					item: "minecraft:powered_rail"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6CFFD908E1209AF5"
+					item: "naturesaura:mover_cart"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -1.5d
+		}
+	]
+	title: "Nature's Aura"
+}

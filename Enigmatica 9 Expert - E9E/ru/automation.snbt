@@ -1,0 +1,1674 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:hopper"
+	id: "00000000000002AB"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Модульные маршрутизаторы — очень мощные инструменты автоматизации. Это единый блок, который можно расширить, чтобы выполнять множество задач, например разбивать блоки, сортировать предметы, помещать предметы в удаленные инвентари или все вышеперечисленное одновременно и многое другое!"
+				""
+				"Все модули/обновления/дополнения в модульных маршрутизаторах имеют информационные всплывающие подсказки. Просто удерживайте «i», удерживая на них указатель мыши в JEI или в вашем инвентаре, чтобы получить подсказки о том, как они работают."
+				"(подсказки не будут работать, если открыто окно рецептов JEI)"
+				""
+				"Существует также руководство по модам «Руководство по модульным маршрутизаторам», в котором обо всем будет подробно рассказано."
+			]
+			hide_dependency_lines: true
+			id: "15E49A6B00BE744C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0000000000000968"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Have you tried turning it off and on again?"
+			tasks: [
+				{
+					id: "366C08F8F32D7E4B"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+			]
+			title: "Item Router"
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"xNet действует как программируемый логистический интерфейс, который может адаптироваться к внешним условиям на основе запрограммированной логики. В дополнение к своим логическим возможностям он может быстро и в точных количествах передавать предметы, жидкости, газы и энергию."
+				""
+				"Для начала все, что требуется, — это контроллер, несколько кабелей и разъемов того же цвета. Для работы самого контроллера также требуется небольшое количество энергии."
+				""
+				"Разместите разъемы рядом с машинами или устройствами Redstone, а затем используйте обычные кабели, чтобы подключить их обратно к контроллеру. На контроллере также требуется другой разъем."
+				""
+				"Все программирование выполняется внутри самого контроллера: сначала создаются каналы, а затем выбираются разъемы в графическом интерфейсе для программирования того, что они будут делать. Настоятельно рекомендуется просмотреть несколько видеороликов по этому вопросу, поскольку без визуальных руководств этому нелегко научиться."
+			]
+			hide_dependency_lines: true
+			icon: "xnet:controller"
+			id: "559D7D60CDDE5596"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000A5D"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "204956F05E407E82"
+					item: "xnet:controller"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "79D951766C0A6EF5"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "xnet:netcable_red"
+								}
+								{
+									Count: 1b
+									id: "xnet:netcable_green"
+								}
+								{
+									Count: 1b
+									id: "xnet:netcable_blue"
+								}
+								{
+									Count: 1b
+									id: "xnet:netcable_yellow"
+								}
+							]
+						}
+					}
+					title: "Any XNet cable"
+					type: "item"
+				}
+				{
+					id: "4B2CE60937C00CCE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "xnet:connector_red"
+								}
+								{
+									Count: 1b
+									id: "xnet:connector_green"
+								}
+								{
+									Count: 1b
+									id: "xnet:connector_blue"
+								}
+								{
+									Count: 1b
+									id: "xnet:connector_yellow"
+								}
+							]
+						}
+					}
+					title: "Any XNet Connector"
+					type: "item"
+				}
+			]
+			title: "XNet Controller"
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			description: ["Модификации привносят много пользы, когда дело доходит до использования красного камня. От кабеля, который может передавать 16 различных сигналов одновременно, компактных одноблочных таймеров или защелок или просто беспроводных межпространственных соединений — обязательно найдется решение для ваших потребностей в красном камне."]
+			icon: "minecraft:comparator"
+			id: "3468E652B4FE85FA"
+			rewards: [
+				{
+					id: "0DFBD5289D4AFCA0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "61B85B234D1E9F5E"
+					type: "checkmark"
+				}
+			]
+			title: "Redstone and Logic"
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			description: ["Модули представляют собой базовое программирование маршрутизатора; по крайней мере один необходим, чтобы Маршрутизатор мог вообще что-либо делать. В один маршрутизатор можно установить до девяти модулей, и каждый из них будет активироваться слева направо при каждой активации маршрутизатора."]
+			hide_dependency_lines: true
+			id: "21B266F6556271EB"
+			rewards: [
+				{
+					count: 2
+					id: "04E2CB365714CFFD"
+					item: "modularrouters:blank_module"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "428BD8D12FB203C8"
+					item: "modularrouters:blank_module"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["60A72B4FC2AFD9C3"]
+			description: [
+				"Модули-распределители функционируют так же, как отправители и съемники MK2, и привязываются к блоку таким же образом. Однако Дистрибьютор может быть привязан к восьми различным сторонам или блокам."
+				""
+				"Откройте графический интерфейс модуля, чтобы настроить его для передачи либо на маршрутизатор, либо на выход, а также установить стратегию распределения, например, по круговому или случайному принципу."
+			]
+			id: "1956D60143703C16"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "239155FDD340ECAF"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6F60B6D7143847D6"
+					item: {
+						Count: 1b
+						id: "modularrouters:distributor_module"
+						tag: {
+							modularrouters: {
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: ["Модуль Breaker разбивает блоки, прилегающие к маршрутизатору. Он использует свойства кирки, использованной для его изготовления, включая чары, уровень разрушения и другие специальные функции, поэтому обязательно создайте модуль с помощью подходящей кирки."]
+			id: "108E174F5672BF48"
+			rewards: [
+				{
+					id: "1277D5B23BCA8923"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:silk_touch"
+									lvl: 1s
+								}
+							]
+							RepairCost: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "614539807F15E23E"
+					item: {
+						Count: 1b
+						id: "modularrouters:breaker_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"Модули активатора будут пытаться щелкнуть правой кнопкой мыши блоки или объекты, содержащие элемент в своем буфере."
+				""
+				"Их также можно использовать для атаки объектов, если им предоставлено оружие и установлен режим атаки."
+			]
+			id: "27C9B26FB5FF10E1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "3922A588208AF529"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "462755624D5FE2DE"
+					item: {
+						Count: 1b
+						id: "modularrouters:activator_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"Вакуумные модули — мощные средства автоматизации, позволяющие поднимать предметы с земли на основе сложных фильтров."
+				""
+				"Если они дополнены вакуумом опыта, их можно даже использовать для сбора сфер опыта и преобразования их в совместимые жидкости опыта или бутылки с зачарованием."
+			]
+			id: "322583CAAD093EE4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "3C512C78B12406AA"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "56280F9C61952290"
+					item: {
+						Count: 1b
+						id: "modularrouters:vacuum_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"Модули жидкости работают либо как съемник, либо как отправитель, передавая жидкости в маршрутизатор или из него. Обратите внимание, что маршрутизатор не имеет встроенного резервуара для жидкости, поэтому он должен быть предусмотрен. Ведро или большинство модифицированных танков будут работать нормально, просто поместите их в буфер маршрутизатора."
+				""
+				"Он будет взаимодействовать либо с резервуаром, либо с жидкостью в мире, позволяя при желании размещать и собирать жидкость в пространстве блоков."
+				""
+				"Вариант MK1 может взаимодействовать только с пространством блоков, непосредственно прилегающим к маршрутизатору. Направление можно задать в графическом интерфейсе модуля."
+				""
+				"Вариант MK2 должен быть связан с пространством блока, щелкнув правой кнопкой мыши модуль на нужном блоке."
+			]
+			id: "56234AA9ED3E8324"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "30E1EC30981D6B46"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6F58BD0AC1F29AD4"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:fluid_module"
+									tag: {
+										modularrouters: {
+											Direction: "NONE"
+											FluidDir: 0b
+											MaxTransfer: 1000
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:fluid_module_2"
+									tag: {
+										modularrouters: {
+											FluidDir: 0b
+											MaxTransfer: 1000
+											ModuleFilter: { }
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "Fluid Modules"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Красная ручка и перо могут «рисовать» красную пыль с любой стороны блока с полным ручным контролем соединений. Просто щелкните правой кнопкой мыши, чтобы начать рисовать! Просто наличие заряженного пути, проходящего через блок, не приведет к включению блока, но вы можете сделать это, щелкнув пером правой кнопкой мыши в центре пути красного тона."
+				""
+				"Перо использует красную пыль из вашего инвентаря, а версия с ручкой заряжена красным камнем и не нуждается в нем из вашего инвентаря. Создайте ручку из пыли или блоков, чтобы перезарядить ее. Перо также повторно поглощает красный камень, когда вы очищаете участок пути, щелкнув по нему левой кнопкой мыши."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "redstonepen:pen"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "44070C90619D14E6"
+			rewards: [
+				{
+					count: 16
+					id: "5EEDBF4F50558BA8"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4DCA07CD21BD3977"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "redstonepen:quill"
+								}
+								{
+									Count: 1b
+									id: "redstonepen:pen"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Either Redstone Pen"
+					type: "item"
+				}
+			]
+			title: "Redstone Pen"
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Дешевый беспроводной редстоун, с неограниченным количеством каналов и хорошим, но не неограниченным радиусом действия."
+				""
+				"Для подробного объяснения того, как это использовать, используйте функцию «размышлять», наведя указатель мыши на предмет в JEI или инвентаре и удерживая клавишу «размышлять» (по умолчанию: w)."
+			]
+			hide_dependency_lines: true
+			id: "28A8C7959A7EEBAE"
+			rewards: [
+				{
+					id: "6F390DC46A49341F"
+					item: "create:redstone_link"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1C4826588F57C889"
+					item: "create:redstone_link"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["28A8C7959A7EEBAE"]
+			description: [
+				"Можно удаленно активировать подключенные ссылки Redstone."
+				""
+				"Для подробного объяснения того, как это использовать, используйте функцию «размышлять», наведя указатель мыши на предмет в JEI или инвентаре и удерживая клавишу «размышлять» (по умолчанию: w)."
+			]
+			id: "21E4D556E8AE724E"
+			rewards: [
+				{
+					id: "21EC369B48E4317E"
+					item: "minecraft:lectern"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "161C3B3F56665A92"
+					item: "create:linked_controller"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Установите выход сигналом сзади и сбросьте выход сигналом сбоку. Идеально подходит для автоматического переключения выработки электроэнергии."
+				""
+				"Для подробного объяснения того, как это использовать, используйте функцию «размышлять», наведя указатель мыши на предмет в JEI или инвентаре и удерживая клавишу «размышлять» (по умолчанию: w)."
+			]
+			hide_dependency_lines: true
+			id: "1042C49086A29CE2"
+			rewards: [
+				{
+					id: "3AA02F6637A04AD3"
+					item: "minecraft:comparator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6A55E19410163485"
+					item: "create:powered_latch"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["559D7D60CDDE5596"]
+			description: [
+				"При попытке прочитать сигналы Redstone из неванильных источников часто требуется блок прокси. Их следует разместить так, чтобы источник Redstone указывал на прокси-сервер, а затем соединитель xNet располагался напротив самого прокси-сервера."
+				""
+				"В некоторых случаях также требуется обновление блока. Для этого используйте блок Redstone Proxy (обновление)."
+			]
+			id: "34D8561D229A3122"
+			rewards: [
+				{
+					id: "6A693F43E60B3E3B"
+					item: "xnet:connector_blue"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7A89EF5C6B8A8132"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "xnet:redstone_proxy"
+								}
+								{
+									Count: 1b
+									id: "xnet:redstone_proxy_upd"
+								}
+							]
+						}
+					}
+					title: "Redstone Proxies"
+					type: "item"
+				}
+			]
+			title: "Redstone Proxy (Update)"
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: ["Действует как пыль из красного камня, но в виде твердых блоков. Легкая вертикальная передача!"]
+			hide_dependency_lines: true
+			id: "359D48635F222076"
+			rewards: [
+				{
+					count: 2
+					id: "45E59A0B45A70321"
+					item: "supplementaries:cog_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "59DB7B4DA871079D"
+					item: "supplementaries:cog_block"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["44070C90619D14E6"]
+			description: [
+				"Простые реле, которые можно разместить на любой стороне блока. В подсказках объясняется, как работает каждый из них."
+				""
+				"При размещении щелкните правой кнопкой мыши ту сторону грани блока, к которой должна быть обращена выходная сторона."
+			]
+			icon: "redstonepen:inverted_relay"
+			id: "28F791EC21444045"
+			rewards: [
+				{
+					count: 2
+					id: "38EDFE0071A6B262"
+					item: "redstonepen:relay"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1B0B720B736296F8"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "redstonepen:relay"
+								}
+								{
+									Count: 1b
+									id: "redstonepen:inverted_relay"
+								}
+								{
+									Count: 1b
+									id: "redstonepen:bistable_relay"
+								}
+								{
+									Count: 1b
+									id: "redstonepen:pulse_relay"
+								}
+								{
+									Count: 1b
+									id: "redstonepen:bridge_relay"
+								}
+							]
+						}
+					}
+					title: "Any RS Pen Relay"
+					type: "item"
+				}
+			]
+			title: "RS Pen Relays"
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			description: ["Обновления устанавливаются в сам Маршрутизатор и улучшают его работу, например ускоряют его или делают невосприимчивым к взрывным повреждениям."]
+			hide_dependency_lines: true
+			id: "7CD587747CC14268"
+			rewards: [
+				{
+					count: 2
+					id: "3E55636E26686CC0"
+					item: "modularrouters:blank_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3FD6609BE4F80DAD"
+					item: "modularrouters:blank_upgrade"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			description: ["Дополнения устанавливаются в отдельные модули и применяются только к этому модулю, изменяя его работу."]
+			hide_dependency_lines: true
+			id: "7CA354074FCF8447"
+			rewards: [
+				{
+					count: 2
+					id: "35F7F3293209E5BA"
+					item: "modularrouters:augment_core"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "175A67867F65B8C0"
+					item: "modularrouters:augment_core"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Отправляет импульс через заданное время после получения сигнала"
+				""
+				"Для подробного объяснения того, как это использовать, используйте функцию «размышлять», наведя указатель мыши на предмет в JEI или инвентаре и удерживая клавишу «размышлять» (по умолчанию: w)."
+			]
+			hide_dependency_lines: true
+			id: "26365967FDE026B6"
+			rewards: [
+				{
+					id: "2E26D4A73E250301"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1E9609D8328D536F"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+			]
+			x: -12.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1042C49086A29CE2"]
+			description: [
+				"Использует входной импульс для переключения выхода. Используйте повторитель для отправки импульса с выхода обратно на вход с задержкой, чтобы сделать удлинитель импульса."
+				""
+				"Для подробного объяснения того, как это использовать, используйте функцию «размышлять», наведя указатель мыши на предмет в JEI или инвентаре и удерживая клавишу «размышлять» (по умолчанию: w)."
+			]
+			id: "2013BF98F905223C"
+			rewards: [
+				{
+					id: "46DC8CD903DE448A"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "0EA944B40AA81DC1"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "39E71AF33C273C4C"
+					item: "create:powered_toggle_latch"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["559D7D60CDDE5596"]
+			description: [
+				"Фильтр RF Tools совместим с xNet и необходим для фильтрации тегов."
+				""
+				"Вставьте фильтр в один из 4 слотов в верхней части пользовательского интерфейса и выберите, какой фильтр будет использовать соединитель, с помощью кнопки «Индекс фильтра» справа."
+			]
+			id: "0597A437596EABC1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "7E251F2D83DBC6E3"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3DFB959BAC0FAAFF"
+					item: {
+						Count: 1b
+						id: "rftoolsbase:filter_module"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: [
+				"Дополнения регулятора действуют по-разному в зависимости от того, в каком модуле они установлены. В общем, они устанавливают условие, когда модуль может действовать. Для отправителя они будут отправлять только в том случае, если в целевом инвентаре меньше элементов, чем установлено."
+				""
+				"Проверьте запись в Руководстве по модульным маршрутизаторам, чтобы узнать, как меняется каждый модуль."
+			]
+			id: "0163571DC8F997F5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "621F32F72099BE12"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "143E9C1A894A8972"
+					item: "modularrouters:regulator_augment"
+					type: "item"
+				}
+			]
+			title: "The Regulator Augment"
+			x: -15.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: [
+				"Обновления скорости и стека помогают контролировать скорость работы маршрутизатора."
+				""
+				"Установите дополнительные обновления скорости, чтобы маршрутизатор чаще запускал свою программу."
+				""
+				"С другой стороны, обновления стека позволяют маршрутизатору перемещать больше элементов за одну операцию. Например, перемещение полной стопки предметов каждые несколько секунд обычно более эффективно, чем перемещение одного предмета за тик."
+				""
+				"И то, и другое, конечно, можно объединить для достижения желаемой цели."
+			]
+			id: "3D7E621374741748"
+			rewards: [
+				{
+					count: 3
+					id: "1BAB8612F63CCCC9"
+					item: "modularrouters:stack_upgrade"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "38A7373CD75CD65E"
+					item: "modularrouters:speed_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7CABBEFEA29A5692"
+					item: "modularrouters:stack_upgrade"
+					type: "item"
+				}
+				{
+					id: "797528A2459D22B8"
+					item: "modularrouters:speed_upgrade"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["Делает маршрутизатор полностью взрывозащищенным, делая его невосприимчивым как к TnT, так и к Уизерсу, что делает их ценным обновлением для работы с взрывами или создания Уизерса."]
+			id: "27F2EAA313795208"
+			rewards: [
+				{
+					id: "2DA82C3A16F3ACB1"
+					item: "modularrouters:blast_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "61DD5DD42B8E1C8E"
+					item: "modularrouters:blast_upgrade"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"Модули отправителя и съемника отправляют предметы в удаленные склады или извлекают их из них соответственно."
+				""
+				"Варианты MK1 могут работать только по прямой, но прямая видимость не требуется. Таким образом, Puller MK1 мог извлекать предметы из сундука на другой стороне стены. Однако они будут взаимодействовать только с первым инвентарем в радиусе действия."
+				""
+				"Варианты MK2 отказались от прямой линии и вместо этого взаимодействуют с определенной стороной блока. Подкрадитесь. Щелкните правой кнопкой мыши модуль на стороне блока, с которым он должен взаимодействовать, чтобы привязать его. Например, чтобы получить выходную мощность печи, ее необходимо привязать к нижней грани печи."
+				""
+				"Отправители MK3 идут еще дальше, позволяя маршрутизатору отправлять сообщения на любое расстояние, даже в разные измерения. Удаленный инвентарь, конечно, должен быть загружен. В противном случае они привязаны к стороне инвентаря так же, как варианты MK2."
+			]
+			id: "60A72B4FC2AFD9C3"
+			rewards: [
+				{
+					count: 3
+					id: "38C6E5FA80C00A29"
+					item: {
+						Count: 1b
+						id: "modularrouters:sender_module_1"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "54ADA65D38042D89"
+					item: {
+						Count: 1b
+						id: "modularrouters:puller_module_1"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6BE2EDE7B7976DDA"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_1"
+									tag: {
+										modularrouters: {
+											Direction: "NONE"
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_2"
+									tag: {
+										modularrouters: {
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_3"
+									tag: {
+										modularrouters: {
+											ModuleFilter: { }
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "Sender Modules"
+					type: "item"
+				}
+				{
+					id: "580FE19F371CABA6"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:puller_module_1"
+									tag: {
+										modularrouters: {
+											Direction: "NONE"
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:puller_module_2"
+									tag: {
+										modularrouters: {
+											ModuleFilter: { }
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "Puller Modules"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"Модули вывода и распределения энергии позволяют маршрутизатору подавать питание на близлежащие блоки."
+				""
+				"Если модуль вывода энергии может передавать энергию только на соседние блоки, то модуль распределения может отправлять сигнал на восемь удаленных блоков в пределах радиуса действия."
+				""
+				"В любом случае необходим некоторый источник энергии. Это может быть элемент, содержащий энергию, в буфере маршрутизатора или из внутреннего энергетического буфера маршрутизатора, если установлены улучшения энергии."
+			]
+			icon: {
+				Count: 1b
+				id: "modularrouters:energy_distributor_module"
+				tag: {
+					modularrouters: {
+						Direction: "NONE"
+						ModuleFilter: { }
+					}
+				}
+			}
+			id: "2AB330A73BD6447C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "27AFD476C3E9CE35"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "79300CFD6BA43948"
+					item: {
+						Count: 1b
+						id: "modularrouters:energy_distributor_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D322C9809E07CCA"
+					item: {
+						Count: 1b
+						id: "modularrouters:energy_output_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["Предоставляет маршрутизатору некоторое количество энергии, позволяя маршрутизатору одновременно обрабатывать как предметы, так и энергию."]
+			id: "5A7512AA919309E5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "56004BEDB4624F96"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0CF6F9BAA4502A0E"
+					item: "modularrouters:energy_upgrade"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["При установке в модули, работающие на расстоянии, они регулируют рабочую зону. Например, дальность действия вакуумного модуля может быть уменьшена, чтобы предотвратить сбор предметов для какой-либо другой автоматизации, или дальность действия отправителя может быть увеличена для достижения дополнительных запасов."]
+			id: "5769B2F6C1C41BF9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "16F20BC236C77741"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4E92C9FC29427BD1"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:range_down_augment"
+								}
+								{
+									Count: 1b
+									id: "modularrouters:range_up_augment"
+								}
+							]
+						}
+					}
+					title: "Range Augments"
+					type: "item"
+				}
+			]
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["Скрытно щелкните их правой кнопкой мыши на другом блоке, а затем установите его в маршрутизатор, чтобы улучшить его внешний вид. Сделайте маршрутизатор похожим практически на что угодно, даже на цветы!"]
+			id: "58F3471ACCC0F86A"
+			rewards: [
+				{
+					id: "54186C7FFD7F0FE0"
+					item: "minecraft:allium"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "035E21B5DBD9BD35"
+					item: "modularrouters:camouflage_upgrade"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"Модуль экструдера может оказаться полезным во многих ситуациях, будь то автоматизация, выдвижные разводные мосты или необычные двери."
+				""
+				"Вариант MK1 будет помещать блоки из буфера маршрутизатора при высоком сигнале Redstone, а затем снова извлекать их при низком сигнале. Имейте в виду, что модуль Breaker, используемый для его создания, должен быть создан с использованием кирки достаточно высокого уровня, чтобы разбивать любые извлекаемые блоки."
+				""
+				"В сочетании с некоторой внешней логикой они могут быть полезны для сбора блоков внутримировых преобразований, таких как окисленная медь."
+				""
+				"Вариант MK2 в основном предназначен только для эстетических целей, таких как мосты или двери. Все блоки, которые он размещает, являются «призрачными» блоками и позволяют игроку ходить по ним или препятствовать их прохождению."
+				""
+				"При установленном мимическом дополнении блоки сохраняют некоторые свойства целевого блока, такие как уровень освещенности и твердость."
+				""
+				"Если установлен Pushing Augment, экструдер будет выталкивать объекты по мере выдавливания блоков."
+				""
+				"При совместном использовании нескольких экструдеров функция Sync Upgrade может помочь обеспечить их одновременную работу."
+			]
+			id: "3CB129682BA3399A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "67EA54AB859657A6"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0F3A18E0B4440919"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:extruder_module_1"
+									tag: {
+										modularrouters: {
+											Direction: "NONE"
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:extruder_module_2"
+									tag: {
+										modularrouters: {
+											Direction: "NONE"
+											ModuleFilter: { }
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "Extruder Module"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: ["Нужны более продвинутые фильтры? Или просто фильтр побольше? Модульные маршрутизаторы имеют множество элементов фильтров, которые можно использовать в слотах фильтров всех модулей, что обеспечивает некоторые действительно расширенные возможности."]
+			icon: "modularrouters:bulk_item_filter"
+			id: "795B13C31D41A45D"
+			rewards: [
+				{
+					id: "2E3F82B6A759073B"
+					item: "modularrouters:bulk_item_filter"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5B47A042CE63665C"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:bulk_item_filter"
+								}
+								{
+									Count: 1b
+									id: "modularrouters:inspection_filter"
+								}
+								{
+									Count: 1b
+									id: "modularrouters:mod_filter"
+								}
+								{
+									Count: 1b
+									id: "modularrouters:regex_filter"
+								}
+							]
+						}
+					}
+					title: "Any Filter"
+					type: "item"
+				}
+			]
+			title: "More Filtering"
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["26365967FDE026B6"]
+			description: [
+				"Удерживает сигнал красного камня указанное время после удаления исходного сигнала."
+				""
+				"Для подробного объяснения того, как это использовать, используйте функцию «размышлять», наведя указатель мыши на предмет в JEI или инвентаре и удерживая клавишу «размышлять» (по умолчанию: w)."
+			]
+			id: "3C349C559F88A363"
+			rewards: [
+				{
+					id: "074C3282498DCE8D"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "58CA3C3C515AC16B"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+			]
+			x: -12.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["Обновления для передачи жидкости действуют примерно так же, как обновления стека для жидкостей, позволяя маршрутизатору обрабатывать больше жидкости за одну активацию. Ставки по-прежнему необходимо будет устанавливать в модуле жидкости."]
+			id: "41C71AEDF8E9A5C7"
+			rewards: [
+				{
+					count: 3
+					id: "4A8892A8E8CEC447"
+					item: "modularrouters:fluid_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "69CAF3EA62DE4B0E"
+					item: "modularrouters:fluid_upgrade"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["Расширения циклического перебора фильтров изменяют природу фильтра модулей, превращая его вместо этого в список с циклическим перебором. Каждый раз, когда модуль активируется, он переходит к следующему элементу фильтра и действует только в соответствии с ним. Это может быть очень полезно в тех случаях, когда Маршрутизатор должен подбирать другой предмет каждый раз при активации."]
+			id: "43D0BB5727B18AB3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "08DE601136922190"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4B21087E1243B4B2"
+					item: "modularrouters:filter_round_robin_augment"
+					type: "item"
+				}
+			]
+			x: -15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["Увеличения задержки подбора, используемые в метателях и дропперах, не позволяют игроку немедленно подобрать выпавший или брошенный предмет. Каждый из них добавляет десятисекундную задержку."]
+			id: "64E9FD4632B92843"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "2243774A0B86BB25"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6832B2DCB3C58AAF"
+					item: "modularrouters:pickup_delay_augment"
+					type: "item"
+				}
+			]
+			x: -13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["Улучшения быстрого подбора используются в вакуумных модулях и заставляют модуль игнорировать любую задержку подбора предмета, подбирая его как можно скорее."]
+			id: "460F55C357B8DF7F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "2AD1A7E7FBED5577"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "56F47D4A4F411979"
+					item: "modularrouters:fast_pickup_augment"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: [
+				"Расширение Redstone позволяет отключать или включать один модуль в зависимости от сигнала Redstone, который получает маршрутизатор."
+				""
+				"Однако для того, чтобы это работало, маршрутизатор все еще должен работать. Поэтому для него должен быть установлен режим Redstone: всегда, пока он установлен в модуле, что позволяет отключать или включать определенные модули."
+			]
+			id: "6C80F938921271DC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "27427773186BCFB8"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "25EBD2A311AC0930"
+					item: "modularrouters:redstone_augment"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: [
+				"Расширения стека просто увеличивают размер стека для данного модуля независимо от других модулей."
+				""
+				"Например, съемнику можно дать два расширения стека, чтобы он мог извлекать четыре предмета одновременно, а затем можно использовать четыре отправителя для равномерного распределения этих четырех предметов по четырем различным инвентарям."
+			]
+			id: "189E11ADA3E5BF23"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "5DA8602DB0ED0DF3"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "735E20DC0126C844"
+					item: "modularrouters:stack_augment"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"Флингеры и дропперы — отличный способ доставить предметы в мир."
+				""
+				"В то время как Droppers просто бросают предмет прямо вниз, Flingers могут придавать некоторую скорость, как ванильный дозатор. Однако скорость и направление настраиваются."
+				""
+				"При настройке скорости начните с малого и экспериментируйте; Flinger довольно мощный. Скорость 1,0 и шаг 45,0 позволяют запускать предметы на расстояние около 18 блоков. На максимальной скорости предметы больше никогда не будут видны."
+			]
+			id: "67591F9B9E23D5C3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "36E4235895E38D38"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "41C41E19ECBFFA03"
+					item: {
+						Count: 1b
+						id: "modularrouters:flinger_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+								Pitch: 0.0f
+								Speed: 0.0f
+								Yaw: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29E5F81F70524360"
+					item: {
+						Count: 1b
+						id: "modularrouters:dropper_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Redstone Wiring представляет собой достижение в технологии Redstone, позволяющее специальному инженеру создавать сложные логические схемы, менее подверженные сбоям традиционной Redstone Dust. Система каналов с цветовой кодировкой также позволяет одной небольшой сети взаимодействовать с несколькими независимыми машинами."
+				""
+				"Провода Redstone можно протягивать между разъемами проводов Redstone, разъемами зондов или интерфейсными разъемами. Они передают сигнал Redstone без затухания сигнала."
+				""
+				"Соединители проводов Redstone действуют как точки ввода и вывода сигнала и могут быть размещены непосредственно на блоке. Для них необходимо установить режим и цветовой канал с помощью отвертки."
+				""
+				"Соединители зондов Redstone действуют очень похоже на компараторы с несколькими дополнительными встроенными функциями. Большинство машин Immersive Engineering выдают специальные сигналы компаратора, которые также могут быть прочитаны этим соединителем. Подробную информацию о каждой машине см. в Руководстве инженера."
+				""
+				"Соединители интерфейса Redstone используются в сочетании со специальными блоками, такими как дозаторы элементов и логические единицы, что позволяет считывать сигналы, используемые этими блоками."
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:wirecoil_redstone"
+			id: "0F3213C2D5485E07"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "21186E3E79CE729E"
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "77D958D9ACA92218"
+					item: "immersiveengineering:wirecoil_redstone"
+					type: "item"
+				}
+				{
+					id: "40C7CD15412A3979"
+					item: "immersiveengineering:connector_redstone"
+					type: "item"
+				}
+				{
+					id: "1DB826C14C8462EF"
+					item: "immersiveengineering:connector_probe"
+					type: "item"
+				}
+				{
+					id: "67FBAA5C931FC761"
+					item: "immersiveengineering:connector_bundled"
+					type: "item"
+				}
+			]
+			title: "Redstone Wiring"
+			x: -9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Logic Unit представляет собой компактный и потенциально очень сложный компьютер Redstone Logic. Внутри необходимо запрограммировать и разместить до десяти логических схем, а снаружи подключить интерфейсный разъем Redstone."
+				""
+				"Всякий раз, когда входящий сигнал изменяется, Устройство один раз циклически проходит через каждую из установленных цепей, выполняя каждую операцию, позволяя применять к сигналу несколько логических вентилей или даже несколько цветовых кодов, которые будут использоваться в качестве входных и выходных сигналов."
+			]
+			hide_dependency_lines: true
+			id: "1FF9CA3EE7F4278A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "50603CD292ADFE2D"
+					title: "Epic Immersive Engineering Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "22883C7BA3DD8EE6"
+					item: "immersiveengineering:logic_unit"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1FF9CA3EE7F4278A"]
+			description: [
+				"Сами логические схемы создаются в Таблице инженерных цепей."
+				""
+				"Для этого верстака требуется питание, которое подается сзади, а также некоторое количество рунических протоплат, свинцового провода и электронных ламп. Для разных логических операций потребуются разные количества."
+				""
+				"Схемы программируются с помощью оператора, а также цветов входа и выхода."
+				""
+				"Когда все будет готово, завершенная схема выводится из правой части графического интерфейса."
+				""
+				"Входы и выходы цепей можно перепрограммировать, поместив их обратно в верхний слот, но оператор блокируется при первом создании."
+			]
+			icon: "immersiveengineering:logic_circuit"
+			id: "2159567BA78E0A96"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "59C423C8FAA91053"
+					title: "Epic Immersive Engineering Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "43B1CA89D91A0DB6"
+					item: "immersiveengineering:circuit_table"
+					type: "item"
+				}
+				{
+					id: "73437E9CDD9D1202"
+					item: "immersiveengineering:circuit_board"
+					type: "item"
+				}
+				{
+					id: "5540EFDC98885D11"
+					item: "immersiveengineering:wire_lead"
+					type: "item"
+				}
+				{
+					id: "0B46E2BDE09FED63"
+					item: "immersiveengineering:electron_tube"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Модули Redstone используются для чтения и вывода сигналов Redstone путем их передачи по трубопроводной сети. Каждый модуль может быть настроен на цветовой канал, что позволяет передавать до 16 различных сигналов по одной и той же сети ламп."
+				""
+				"Для этого не требуется воздух, и сигнал не ухудшается с расстоянием."
+				""
+				"Установив карту расширения модуля в модуль в режиме приема, ее можно настроить на поведение точно так же, как обычный компаратор, получая сигнал от блоков, которые выдают специальные значения для компараторов, таких как нефтеперерабатывающий завод."
+				""
+				"При установке такой карты в модуль в режиме излучения становится доступным несколько функций. Например, используя цветовые каналы, он может работать как логический элемент И, логический элемент ИЛИ, сравнивать с другим каналом или с постоянным значением и многое другое. Соединив их вместе, можно создать по-настоящему компактную логику Redstone."
+			]
+			hide_dependency_lines: true
+			id: "1B0B9D271A013CB1"
+			min_width: 300
+			rewards: [
+				{
+					count: 2
+					id: "580C270FD6B9EF4B"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+			]
+			subtitle: "Redstone Evolution"
+			tasks: [
+				{
+					count: 2L
+					id: "332907C9101D2A78"
+					item: "pneumaticcraft:redstone_module"
+					type: "item"
+				}
+			]
+			title: "Redstone Modules"
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Универсальный датчик — это мощный блок, который выдает сигнал красного камня в зависимости от различных условий, таких как обнаружение ближайшего игрока, когда игрок щелкает правой кнопкой мыши по блоку, наличие блоков, уровень освещенности или даже текущая температура блока. ."
+				""
+				"При считывании тепла попробуйте направить его на тепловую трубку или машину PNC:R, а не на инвентарь с тепловой рамкой."
+			]
+			hide_dependency_lines: true
+			id: "0D01781386CC5EEE"
+			rewards: [
+				{
+					id: "78E81C6649951023"
+					item: "pneumaticcraft:block_tracker_upgrade"
+					title: "Block Tracker Upgrade"
+					type: "item"
+				}
+				{
+					id: "4A857F82E1E65B98"
+					item: "pneumaticcraft:gps_tool"
+					title: "GPS Tool"
+					type: "item"
+				}
+			]
+			subtitle: "Under the Radar"
+			tasks: [
+				{
+					id: "189A3C683392323F"
+					item: "pneumaticcraft:universal_sensor"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -6.0d
+		}
+	]
+	title: "Redstone and Logic"
+}

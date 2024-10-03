@@ -1,0 +1,633 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "villagers"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:emerald"
+	id: "4DFD666F4AAF1C11"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Оружейники предлагают разнообразные зачарованные доспехи, которые могут оказаться весьма полезными на ранних этапах. Они также могут быть удобным источником колоколов."]
+			id: "2A215BD43EDD9749"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "647F0610EA3206AD"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3FA2954E2EE3D440"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+			]
+			title: "Armorer"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Мясники в основном покупают сырое мясо и продают приготовленное мясо. Однако немногим счастливчикам может быть доступна кроличья лапка для обмена."]
+			id: "7646D6584E71AA3B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "7D551D76A1C3C105"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "70FFBC4860DFECFC"
+					item: "minecraft:smoker"
+					type: "item"
+				}
+			]
+			title: "Butcher"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Возможно, наиболее известные своими картами близлежащих сокровищ и памятников, картографы также предлагают ряд интересных предметов, таких как узоры на баннерах или старинные чернила, которые придают картам причудливый выцветший вид в декоративных целях."]
+			id: "76C71DD1757FD494"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "067359D0E85D8EAC"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0F8B6F1135F1E8DF"
+					item: "minecraft:cartography_table"
+					type: "item"
+				}
+			]
+			title: "Cartographer"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Священники покупают и продают множество драгоценных материалов, таких как золото и лазурит. Однако они также могут быть отличным источником жемчуга Края, без необходимости боя."]
+			id: "3C14CF7CA1F9DD9A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "6E3D8216B0D43FAB"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "649DC2016CB8DBE0"
+					item: "minecraft:brewing_stand"
+					type: "item"
+				}
+			]
+			title: "Cleric"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Фермеры будут покупать и продавать различные культуры. Они также могут продавать подозрительные рагу и другие лакомства."]
+			id: "0FBEB1E726D60475"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "57A4C718E9577EF9"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5A5E33236045FBE0"
+					item: "minecraft:composter"
+					type: "item"
+				}
+			]
+			title: "Farmer"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Есть запасная рыба на продажу? Рыбаки будут покупать сырую рыбу и продавать приготовленную. Они также предложат зачарованные удочки."]
+			id: "3EC4F1E762ED8B26"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "4267FF60EA57321D"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2512363CEE80074D"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+			]
+			title: "Fisherman"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Нужен лук или арбалет? Может быть, просто несколько стрел без необходимости убивать цыплят? Флетчеры - это ответ. Иногда они даже продают зачарованное снаряжение."]
+			id: "7B283F0A19CB22F7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "2B45A46D7A9BB397"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6E66D5AAC1F38952"
+					item: "minecraft:fletching_table"
+					type: "item"
+				}
+			]
+			title: "Fletcher"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Кожевники — отличный источник кожаных изделий, таких как доспехи или седла."]
+			id: "17FA753207AD0010"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "4A36446F83198A3E"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0D937F4178D270CC"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+			]
+			title: "Leatherworker"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: [
+				"Библиотекари, всегда классические, хорошо известны, среди прочего, своей склонностью продавать зачарованные книги. Следует отметить, что были предприняты некоторые усилия по сокращению количества чар, которые будут появляться в их сделках, чтобы избежать необходимости постоянно перебрасывать броски, чтобы получить желаемое зачарование."
+				""
+				"Доступные чары:"
+				""
+				"● Защита"
+				"● Противопожарная защита"
+				"● Взрывозащита"
+				"● Защита от снарядов"
+				"● Падающее перо"
+				"● Светоотражающая защита"
+				"● Бич разбойников"
+				"● Поразить"
+				"● Уничтожение"
+				"● Разделение"
+				"● Душевный"
+				"● Холдинг"
+				"● Емкость"
+				"● Бесконечность"
+				"● Восстановление природы"
+				"● Гребенчатый резак"
+				"● Искушение"
+				"● Приманка"
+			]
+			id: "484B56B135F7BBF7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "53258046C5E506CF"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "06AB246F8B272FC1"
+					item: "minecraft:lectern"
+					type: "item"
+				}
+			]
+			title: "Librarian"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Покупая и продавая различные камни и кирпичи, каменщики особенно полезны в качестве источника кварцевых блоков."]
+			id: "5DEA1F9E14CCC6B0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "26F83CEFA1D37BA4"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0B275566F6A9290D"
+					item: "minecraft:stonecutter"
+					type: "item"
+				}
+			]
+			title: "Stone Mason"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["В основном торгуя шерстью и красками, Пастухи обладают творческой стороной и иногда также продают картины."]
+			id: "1DA15B4B1FD3CDBD"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "17C25CFD5C10A9AF"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5524159C47C5B5E4"
+					item: "minecraft:loom"
+					type: "item"
+				}
+			]
+			title: "Shepherd"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Кузнецы-инструментальщики предоставляют множество зачарованных инструментов, которые могут оказаться весьма полезными на ранних этапах. Они также могут быть удобным источником колоколов."]
+			id: "4A128533C5039B61"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "56C09E74F4C04953"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "38CB770BBEAF6878"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+			]
+			title: "Toolsmith"
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Оружейники предлагают разнообразное зачарованное оружие, которое может оказаться весьма полезным на ранних этапах. Они также могут быть удобным источником колоколов."]
+			id: "2BEB1752185EEE02"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "4392DF4D0E221A53"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "27CBC92133F5718E"
+					item: "minecraft:grindstone"
+					type: "item"
+				}
+			]
+			title: "Weaponsmith"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Компания Fluix Researchers может стать отличным первоначальным источником Certus Quartz и Sky Stone, а также продавать печатные машины для нанесения надписей без необходимости выходить на поиски упавшего метеора."]
+			id: "2D997E47FA436BAA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "6BC33728C5D8D0D8"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "04C6E510393451A7"
+					item: "ae2:charger"
+					type: "item"
+				}
+			]
+			title: "Fluix Researcher"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Компания «Механика давления» продает широкий выбор пневматических устройств, специализированных боеприпасов для миниганов и даже печатных плат."]
+			id: "2CEB9CD172B21EE5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "316A4A9FFCA2A234"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5B21592BFFB3878C"
+					item: "pneumaticcraft:charging_station"
+					type: "item"
+				}
+			]
+			title: "Pressure Mechanic"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Собиратели купят множество запасных грибов, которые могут у вас лежать."]
+			id: "4DC6ACC638614AF5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "1A3C78B0ED00AA55"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4CC9D0A6F75D7C17"
+					item: "byg:foragers_table"
+					type: "item"
+				}
+			]
+			title: "Forager"
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Торгуя всевозможными тайными товарами, Теневые Волшебники особенно полезны для получения ритуальных табличек, знакомых осколков и даже редких фолиантов заклинателей."]
+			id: "5BE517A357449C20"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "24D908FD3162B3A4"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3A39C5F5A14976CC"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			title: "Shady Wizard"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Инженеры в основном покупают и продают строительные материалы, такие как бетон и строительные леса. Однако они будут продавать карты месторождений полезных ископаемых на высоких уровнях."]
+			id: "592C390D79E3C244"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "374E53F3C57E58EF"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "23A9BA9EC78EF271"
+					item: "immersiveengineering:turntable"
+					type: "item"
+				}
+			]
+			title: "Engineer"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Машинисты, пожалуй, наиболее полезны для предоставляемых ими чертежей, поскольку они являются одним из единственных надежных источников чертежей электродов для дуговых печей. Они также продают инструменты, сверлильные головки и различные детали машин."]
+			id: "014B79B20F471E92"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "5E267462A0C76C1A"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "71580CB31D830B92"
+					item: "immersiveengineering:craftingtable"
+					type: "item"
+				}
+			]
+			title: "Machinist"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Электрики предлагают разнообразные провода и электрические компоненты, а также броню Фарадея, чтобы обезопасить вас от открытых проводов."]
+			id: "6F05BC0A109D417A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0FFCBB51F1110EA5"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "02EE19388A0F634A"
+					item: "immersiveengineering:circuit_table"
+					type: "item"
+				}
+			]
+			title: "Electrician"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: ["Оружейники, торгующие деталями оружия и боеприпасами, могут оказать неоценимую помощь в создании мощного револьвера, поскольку они предлагают уникальные детали с особыми свойствами, такими как повышенная удача или скорострельность."]
+			id: "613E019B7F966FD2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "1537AFD0D27EB5C7"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "082CC56B0E9342DD"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+			]
+			title: "Gunsmith"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26BC59AAFA4069BE"]
+			description: [
+				"Одна из незнакомых рабочих станций деревенских жителей, Immersive Engineering Outfitter, требует размещения баннера на полу (а не на стене) с применением любого шейдера. Применить шейдер так же просто, как щелкнуть правой кнопкой мыши по размещенному баннеру с шейдером."
+				""
+				"Затем они будут продавать различные шейдерные сумки, предоставляя легкий доступ ко множеству случайных шейдеров, которые можно применить к совместимым предметам, таким как револьверы, горные буры и многое другое."
+			]
+			icon: "minecraft:white_banner"
+			id: "538912EFED719BA8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "1D2310A4FC9D436D"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "092EF53572E9802F"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_common"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_uncommon"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_rare"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_epic"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_ie_masterwork"
+								}
+							]
+						}
+					}
+					title: "Any Shader"
+					type: "item"
+				}
+				{
+					id: "46A62FE3592FE3BC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:banners"
+						}
+					}
+					title: "Banner"
+					type: "item"
+				}
+			]
+			title: "Outfitter"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0E45018D600614BA"]
+			description: [
+				"Несколько модов добавляют жителей, и не всегда легко понять, какая рабочая станция подходит к какому жителю."
+				""
+				"Следующие квесты охватывают рабочие станции, используемые каждым жителем деревни, и пытаются дать краткое описание того, какие профессии можно найти."
+			]
+			hide: true
+			id: "26BC59AAFA4069BE"
+			shape: "gear"
+			tasks: [
+				{
+					icon: "minecraft:emerald_block"
+					id: "11E3F432C71D1B70"
+					stat: "minecraft:talked_to_villager"
+					title: "Talk to a Villager"
+					type: "stat"
+					value: 1
+				}
+			]
+			title: "Villagers"
+			x: -3.5d
+			y: -4.0d
+		}
+	]
+	title: "Villagers"
+}

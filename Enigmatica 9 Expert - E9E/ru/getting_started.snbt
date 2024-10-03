@@ -1,0 +1,345 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:nether_star"
+	id: "0000000000000044"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Добро пожаловать в Enigmatica 9, мы рады вас видеть! :D"
+				" "
+				"Квесты делятся на два типа:"
+				""
+				"● Открытие"
+				"● Обучающие моды"
+				""
+				"Подробнее о каждом типе вы можете узнать ниже."
+				""
+			]
+			icon: "minecraft:oak_sapling"
+			id: "0000000000000045"
+			min_width: 260
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000A93"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					icon: "minecraft:oak_sapling"
+					id: "0000000000000046"
+					type: "checkmark"
+				}
+			]
+			title: "Welcome!"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"Цель квестовой линии Discovery — показать, что доступно в наборе."
+				""
+				"Эти главы — отличное место для начала, если вы новичок в модифицированном Minecraft или вам нужно вдохновение."
+				""
+				"На данный момент в нем имеются следующие главы:"
+				""
+				"● Приключение"
+				"● Здание"
+				"● Оборудование"
+				"● Редстоун и логика"
+				"● Хранение"
+				"● Жители деревни"
+			]
+			id: "00000000000002AC"
+			rewards: [
+				{
+					id: "00000000000002B4"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					icon: "minecraft:compass"
+					id: "00000000000002AD"
+					title: "Discovering Enigmatica"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"Главы «Обучающие моды» предназначены для того, чтобы помочь вам начать работу с модами с большим контентом, и разбиты на разделы «Техника» и «Магия». Они примерно объяснят, как продвигаться и как работать с блоками и концепциями, присутствующими в моде."
+				""
+				"Эти главы охватывают много вопросов, но они не охватывают всего. Поэтому обязательно изучите руководства к тем модам, у которых они есть."
+			]
+			icon: "minecraft:writable_book"
+			id: "00000000000002AE"
+			rewards: [
+				{
+					id: "00000000000002B2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "00000000000002AF"
+					title: "Learning Mods"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"Если вы новичок в модифицированном Minecraft, вам может быть немного сложно разобраться, что к чему."
+				""
+				"Вот почему мы написали книгу, чтобы подвести итог основам и дать вам прочную основу для начала вашего модного путешествия!"
+			]
+			id: "00000000000006E9"
+			rewards: [
+				{
+					id: "00000000000006EB"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "patchouli:modded_for_dummies"
+						}
+					}
+					title: "Modded for Dummies"
+					type: "item"
+				}
+			]
+			subtitle: "Hey, listen!"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "patchouli:modded_for_dummies"
+						}
+					}
+					id: "00000000000006EA"
+					title: "Hey, listen!"
+					type: "checkmark"
+				}
+			]
+			title: "Modded for Dummies"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"Огромное хранилище знаний у вас на ладони. В этот том уже включены руководства для каждого мода, поэтому они всегда под рукой."
+				""
+				"● Щелкните правой кнопкой мыши, чтобы открыть меню, и выберите"
+				"книга. После выбора Эксцентричный том"
+				"трансформируется и становится этой книгой, для всех"
+				"намерения и цели."
+				""
+				"● Щелкните левой кнопкой мыши по воздуху, чтобы вернуть его обратно в исходное состояние."
+				"Эксцентричный том."
+				""
+				"● После трансформации подкрадитесь и нажмите «Бросить», чтобы"
+				"удалить данную книгу."
+				""
+				"● Создайте том с книгой, чтобы объединить их один раз."
+				"более."
+				""
+				"Потеряли книгу? Просто создайте новый, он будет уже заполнен руководствами."
+			]
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "1F5D6018C2E35C3D"
+			min_width: 250
+			rewards: [
+				{
+					id: "68C0A864D96B2AC8"
+					item: {
+						Count: 1b
+						id: "eccentrictome:tome"
+						tag: {
+							"eccentrictome:mods": {
+								ae2: {
+									0: {
+										Count: 1.0d
+										id: "ae2:guide"
+									}
+								}
+								apotheosis: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "apotheosis:apoth_chronicle"
+										}
+									}
+								}
+								ars_nouveau: {
+									0: {
+										Count: 1.0d
+										id: "ars_nouveau:worn_notebook"
+									}
+								}
+								engineersdecor: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "engineersdecor:engineersdecor_manual"
+										}
+									}
+								}
+								ftbquests: {
+									0: {
+										Count: 1.0d
+										id: "ftbquests:book"
+									}
+								}
+								immersiveengineering: {
+									0: {
+										Count: 1.0d
+										id: "immersiveengineering:manual"
+									}
+								}
+								industrialforegoing: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "industrialforegoing:industrial_foregoing"
+										}
+									}
+								}
+								littlelogistics: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "littlelogistics:guide"
+										}
+									}
+								}
+								modonomicon: {
+									0: {
+										Count: 1.0d
+										id: "modonomicon:modonomicon"
+										tag: {
+											"modonomicon:book_id": "theurgy:the_hermetica"
+										}
+									}
+								}
+								modularrouters: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "modularrouters:book"
+										}
+									}
+								}
+								naturesaura: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "naturesaura:book"
+										}
+									}
+								}
+								occultism: {
+									0: {
+										Count: 1.0d
+										id: "occultism:dictionary_of_spirits"
+										tag: {
+											"modonomicon:book_id": "occultism:dictionary_of_spirits"
+										}
+									}
+								}
+								pneumaticcraft: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "pneumaticcraft:book"
+										}
+									}
+								}
+								powah: {
+									0: {
+										Count: 1.0d
+										id: "powah:book"
+									}
+								}
+								rftoolsbase: {
+									0: {
+										Count: 1.0d
+										id: "rftoolsbase:manual"
+									}
+								}
+								sushigocrafting: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "sushigocrafting:sushigocrafting"
+										}
+									}
+								}
+								thermal: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "thermal:guidebook"
+										}
+									}
+								}
+							}
+							"eccentrictome:version": 1.0d
+						}
+					}
+					only_one: true
+					title: "Full Eccentric Tome"
+					type: "item"
+				}
+			]
+			subtitle: "Don't Panic"
+			tasks: [
+				{
+					id: "7781E2B735D79B56"
+					item: "minecraft:book"
+					type: "item"
+				}
+			]
+			title: "Eccentric Tome"
+			x: -1.5d
+			y: -6.0d
+		}
+	]
+	title: "Getting Started"
+}

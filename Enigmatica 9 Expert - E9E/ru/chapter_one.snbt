@@ -1,0 +1,2940 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_one"
+	group: "2FE70BF4886F08F4"
+	icon: "naturesaura:ancient_sapling"
+	id: "2E4E08D773CFD9CF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"В Уайлден-Гроув практиковалась особая форма друидской магии, которая медленно вытягивала материалы из глубины земли в насыпи, откуда их можно было легко извлечь с минимальным вредом для земли."
+				""
+				"Несомненно, многие из этих курганов сохранились. Ищите их, но будьте осторожны: в отсутствие Рощи другие могли заявить права на эти места."
+				""
+				"================================"
+				""
+				"Обработка металлов сильно индивидуализирована: многие металлы имеют уникальные методы получения. Обязательно внимательно изучите JEI!"
+			]
+			hide: true
+			id: "1075F3BAA03841EF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "60A777DE4B85ED0F"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "661311DE367A692A"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					id: "2BF19C51CB184E04"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+				{
+					id: "17CF16620C377879"
+					item: "emendatusenigmatica:raw_silver"
+					type: "item"
+				}
+				{
+					id: "6C4462B5BE32C471"
+					item: "emendatusenigmatica:raw_tin"
+					type: "item"
+				}
+			]
+			title: "Basic Metallurgy"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Странный. Когда-то это болото принадлежало Роще Уилдена, кругу друидов, поклявшихся охранять и охранять окружающие дикие земли. Однако никаких признаков не осталось, и существа, подобные этой Наге, теперь терроризируют земли."
+				""
+				"После его поражения Фейри, считающие это место своим домом, несомненно, выразят свою благодарность."
+				""
+				"================================"
+				""
+				"Найдите и убейте Нагу."
+				""
+				"Он должен находиться где-то неподалеку, в большом каменном дворе. Несмотря на свою скорость, Наги не отличаются своим интеллектом, и в слепой ярости от них легко увернуться. Держитесь на некотором расстоянии и цельтесь в голову."
+				""
+				"Как только дело будет сделано, в центре арены появится сундук. Обязательно возьмите содержимое."
+				""
+				"Обратите внимание, что система развития «Сумеречный лес» отключена в Enigmatica 9: Expert. С этого момента области можно исследовать в любом порядке."
+			]
+			hide: true
+			id: "73CDA6ED2393DE42"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "74F868CAED853121"
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07FEE1BA2045C7FC"
+					table_id: 3385184300630852421L
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Fear is the Mind-Killer"
+			tasks: [
+				{
+					id: "34B9CD591F64D0B0"
+					item: "twilightforest:naga_trophy"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["66A59B3CD77FB54A"]
+			description: [
+				"Путем дистилляции различных натуральных ингредиентов можно легче использовать их энергию."
+				""
+				"Зелья всех типов можно варить из удивительно распространенных ингредиентов. Обязательно проверьте, что можно варить, поскольку зелья окажутся незаменимыми в борьбе с менее дружелюбными существами, которые сейчас бродят по землям."
+				""
+				"Используйте котел для смешивания, чтобы сварить зелья древних знаний или любые другие зелья, которые вам интересны. После приготовления их можно разлить в бутылки, щелкнув правой кнопкой мыши по котлу в стеклянных бутылках."
+				""
+				"================================"
+				""
+				"Обратите внимание, что жидкости для зелий Hexerei не отображаются в JEI. Самый простой способ найти рецепты — посмотреть на ванильное зелье, а затем проверить применение ингредиентов. Все ингредиенты зелий в обеих системах одинаковы."
+			]
+			id: "66585A158F41DE44"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "7447FA9138D4E94E"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: "hexerei:mixing_cauldron"
+					id: "4BA040966CFE1DC8"
+					observe_type: 0
+					timer: 0L
+					title: "Mixing Cauldron"
+					to_observe: "hexerei:mixing_cauldron"
+					type: "observation"
+				}
+			]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["438EA01F776992AD"]
+			description: [
+				"Эти земли процветали на протяжении тысячелетий под управлением Рощи, и, несмотря на их отсутствие, здесь по-прежнему сосредоточена великая сила."
+				""
+				"Ключ к сбору этой энергии начинается с деревьев. Изготовьте блестящее волокно в ступке и вплетите его в листья любого дерева. Когда он приживется, листья преобразятся, что позволит собирать Золотой лист."
+			]
+			hide_dependency_lines: true
+			id: "69D302194D4262C6"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "4C4DBF8114CB2E51"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2DA048F9BCBFD749"
+					item: "naturesaura:gold_fiber"
+					type: "item"
+				}
+				{
+					id: "1F57FC2A2FF93F98"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["69D302194D4262C6"]
+			description: [
+				"Прокрадитесь и щелкните правой кнопкой мыши по золотым листьям на любом бревне, чтобы превратить его в деревянные подставки, необходимые для лесного ритуала."
+				""
+				"Обратитесь к «Книге естественной ауры» за визуальным представлением этой структуры и объяснением ее использования."
+			]
+			id: "7224985826C6E047"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "0BF68F0E91094483"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: "naturesaura:wood_stand"
+					id: "25F71D67CED16E2E"
+					observe_type: 0
+					timer: 0L
+					title: "Wooden Stand"
+					to_observe: "naturesaura:wood_stand"
+					type: "observation"
+				}
+			]
+			title: "Ritual of the Forest"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7224985826C6E047"
+				"00FB8D9041ED6D73"
+			]
+			description: [
+				"Семена, травы и саженцы, найденные среди останков Наги, пришло время, так сказать, укорениться и разбить сад."
+				""
+				"Кажется, что Древо Жизни и рощи Арчвуда, поддерживаемые Уайлденской рощей, исчезли с этой земли с момента их ухода. Их восстановление будет иметь решающее значение, поскольку они составляют основу всей сосредоточенной здесь магии."
+				""
+				"Используйте Ритуал леса, чтобы получить каждый из саженцев Арчвуда и начать выращивать их вместе с другими полученными семенами и растениями."
+				""
+				"Плоды в мешочке можно выращивать на стволах арчвуда почти так же, как какао-бобы. Каждый фрукт растет только на своем определенном типе дерева Archwood."
+				""
+				"С помощью этого ритуала также можно получить Древнее и Старое Саженцы, оба из которых предлагают уникальные преимущества."
+				""
+				"Древесина Древнего дерева концентрирует в себе магическую энергию, что делает ее полезной для определенных устройств. Между тем, плоды Великолепного Бузинного дерева, кажется, несут в себе воспоминания о тех, кто жил раньше."
+			]
+			id: "66A59B3CD77FB54A"
+			min_width: 300
+			rewards: [
+				{
+					count: 3
+					id: "7BE2B86F33268C1A"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:knowledge"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C7C143A9FAD1DF6"
+					item: "naturesaura:eye"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "39B68CC0E19837B6"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3E9ED412320D7C44"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:red_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:yellow_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:green_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:purple_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:blue_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:ancient_sapling"
+								}
+								{
+									Count: 1b
+									id: "quark:ancient_sapling"
+								}
+							]
+						}
+					}
+					title: "Magic Saplings"
+					type: "item"
+				}
+			]
+			title: "Druidic Roots"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["66A59B3CD77FB54A"]
+			description: [
+				"Хотя поначалу камера напитывания будет медленной, она окажет большую помощь в восстановлении Древа Жизни. Не только для конденсации Исходных Драгоценностей, которые имеют множество собственных применений, но и для получения Элементальных Эссенций; Овладение этими сущностями позволит дереву вырасти заново."
+				""
+				"Предметы фокусировки, размещенные на пьедесталах поблизости, никогда не расходуются и действуют просто как ключ для определения результата."
+				""
+				"Источник из Jar не является обязательным. Без него камера пропитывания будет работать нормально, хотя и медленнее."
+			]
+			id: "4830632A0E6E9651"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "6F2498DE79248A40"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					count: 3
+					id: "643EF395119756CD"
+					item: "ars_nouveau:arcane_platform"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					icon: "ars_nouveau:imbuement_chamber"
+					id: "559BB247F6674A56"
+					observe_type: 0
+					timer: 0L
+					title: "Imbuement Chamber"
+					to_observe: "ars_nouveau:imbuement_chamber"
+					type: "observation"
+				}
+			]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DBB9A9F698FA7B9"]
+			description: [
+				"Алхимическая ссылка на источник позволит преобразовывать зелья в более сдержанную и портативную магическую энергию, Источник, которую можно довольно легко передавать и манипулировать, что делает ее идеальной для многих целенаправленных магических занятий."
+				""
+				"Поместите банку с зельем непосредственно рядом со ссылкой на источник, и она выполнит преобразование, помещая источник в любые ближайшие банки с источником."
+				""
+				"Обязательно отправьте немного в банку с источником рядом с камерой наполнения, чтобы она тоже работала быстрее!"
+				""
+				"=============================================="
+				""
+				"На следующей странице описаны способы добавления зелий в банки с зельями."
+				"{@разрыв страницы}"
+				"&nНаполнение баночек с зельями&r"
+				""
+				"Зелья можно поместить в банки с зельями следующими способами:"
+				""
+				"● Wixies: зелья, сваренные Wixies, автоматически"
+				"вставляется в ближайшие банки с зельями."
+				""
+				"● Звездные пузыри: если надеть шляпу Викси, Звездные пузыри"
+				"может использоваться для транспортировки зелий из одной банки в"
+				"другой."
+				""
+				"● Банки для хранения жидкости: в них подается любое жидкое зелье."
+				"Банки будут автоматически вставлены в банку с зельем."
+				"помещен поверх него. Это можно использовать для конвертации зелий из"
+				"Создание, иммерсивная инженерия, Hexerei и Thermal в"
+				"Банка с зельями Зелья для использования в алхимических источниках."
+				""
+				"● «Слив предметов». Создание «Слив предметов» будет истощать бутылки с зельями,"
+				"переводя их в жидкую форму. Это может сочетаться с"
+				"Банки для хранения жидкости."
+				""
+				"● Вручную: бутылки с зельями можно щелкнуть правой кнопкой мыши на"
+				"Банку с зельем, чтобы вставить их."
+			]
+			icon: "ars_nouveau:alchemical_sourcelink"
+			id: "4BC2557232FAAC68"
+			min_width: 300
+			rewards: [
+				{
+					count: 4
+					id: "1D87D734DBE1C1C5"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E0A8F950EC660CC"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5414F5E5DBF5FCA4"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7E588C3E5E9F189A"
+					item: "ars_nouveau:alchemical_sourcelink"
+					type: "item"
+				}
+				{
+					id: "01B64EB17008EF24"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+			]
+			title: "Straight from the Source"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["66585A158F41DE44"]
+			description: ["Обработка железа невероятно сложна, и для правильного извлечения чистого железа из руды потребуется гораздо более совершенное тайное оборудование. Однако, сплавив его в живую амальгаму, известную как Железное дерево, его можно использовать в различных магических целях."]
+			id: "6DBB9A9F698FA7B9"
+			rewards: [
+				{
+					id: "40282E6227B9E924"
+					item: "twilightforest:ironwood_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "16597A295DCF16BB"
+					item: "twilightforest:ironwood_ingot"
+					type: "item"
+				}
+			]
+			title: "Ironwood"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6DBB9A9F698FA7B9"]
+			description: [
+				"Получите сусальное золото и прокрадитесь + щелкните правой кнопкой мыши блок железного дерева, чтобы превратить его в природный алтарь."
+				""
+				"Обязательно постройте и остальную часть необходимой конструкции. Можно использовать любую деревянную доску."
+			]
+			icon: "naturesaura:nature_altar"
+			id: "4B874AA448FF4C7A"
+			rewards: [
+				{
+					count: 64
+					id: "01CFFD55A90494A9"
+					item: "naturesaura:gold_powder"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "10897A1810BFBEAD"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+				{
+					icon: "naturesaura:nature_altar"
+					id: "58B970D39285FE82"
+					observe_type: 0
+					timer: 0L
+					title: "Natural Altar"
+					to_observe: "naturesaura:nature_altar"
+					type: "observation"
+				}
+			]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4830632A0E6E9651"]
+			description: [
+				"Уравновешивая внешнюю силу Ауры и внутреннее сокрушение этого заклинания, мы можем достичь стабильного равновесия, которое будет достаточно прочным и долговечным, чтобы помочь в продвинутой металлургии: Сжатом камне."
+				""
+				"Следующая форма заклинания сокрушит блоки, расположенные в мире:"
+				""
+				"&5Touch&r > &aCrush&r"
+				""
+				"Примечание: «Чувствительность» не требуется для дробления блоков."
+			]
+			id: "79B755D0BDB6A8B7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0E5BD92301912FBE"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "03C5CEE9CEF3B241"
+					item: "pneumaticcraft:compressed_stone"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: [
+				"Блиц привязан к этому устройству посредством Вечного Принуждения Гитии и использует подаваемую магическую энергию для создания огромных объемов воздуха."
+				" "
+				"Однако помните о тепле, которое выделяет устройство, поскольку для эффективной работы Blitz должен оставаться холодным."
+			]
+			icon: "pneumaticcraft:flux_compressor"
+			id: "0DB07D1C824BFEA8"
+			rewards: [
+				{
+					count: 4
+					id: "7C2B69BE8651EC03"
+					item: "pneumaticcraft:volume_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "438CB309DA6F1D4D"
+					item: "pneumaticcraft:flux_compressor"
+					type: "item"
+				}
+				{
+					id: "42ABEC342B377FCE"
+					item: "pneumaticcraft:heat_sink"
+					type: "item"
+				}
+				{
+					id: "21267160D037E938"
+					item: "kubejs:ritual_summon_bound_blitz"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DB07D1C824BFEA8"]
+			description: [
+				"Барокамера — это важнейшая тайная конструкция, используемая во многих сферах: от извлечения алюминия из каолиновой глины до создания мощных зачарованных снарядов и многих других."
+				""
+				"================================"
+				""
+				"Обратите особое внимание на кристаллы расширения модулей, используемые в этом ремесле. Их можно вставить в большинство ламповых модулей, чтобы улучшить их возможности."
+				""
+				"Например, использование одного из них на модуле трубки манометра значительно упростит управление компрессором."
+				""
+				"Между тем, использование одного из них на модуле трубки регулятора позволяет точно настроить величину давления, пропускаемого через систему трубок."
+			]
+			icon: "pneumaticcraft:pressure_chamber_interface"
+			id: "75C38D71F1A04EB4"
+			rewards: [
+				{
+					count: 4
+					id: "0B334D75FD80C81D"
+					item: "pneumaticcraft:speed_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "50FD357FF5C33713"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
+				}
+				{
+					id: "0DE304F85997C797"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4B874AA448FF4C7A"
+				"7B81F422E3A14DE2"
+			]
+			description: [
+				"Пульсирующие кристаллы Enigmatic Unity служат основой для создания большинства FE, хотя доступны и другие методы."
+				""
+				"Им требуется поблизости кувшин с источником, из которого они периодически будут черпать определенное количество источника, превращая его в FE. Если в этот момент присутствует какая-либо Аура, часть Ауры также будет израсходована, генерируя при этом гораздо больше FE."
+			]
+			id: "3B372F597A05E777"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "63EC6BE1C18F9E9A"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
+					icon: "kubejs:aura_leaf"
+					id: "38C17BE6339B21BC"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "77D74CEE62130A5B"
+					item: "enigmaticunity:dim_source_generator"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0BAE6EBFEA3026B9"]
+			description: [
+				"Когда Certus Quartz будет очищен и выращен, может начаться настоящая работа. При зарядке Пульсирующим Кристаллом внутри его решетки создается тайное поле, которое можно использовать для переноса материи и энергии на большие расстояния как мгновенно, так и очень контролируемым и направленным образом."
+				""
+				"================================"
+				""
+				"Постройте специальную МЕ-сеть, состоящую из приемника энергии, МЕ-терминала для изготовления и одной или нескольких МЕ-шин хранения, соединенных МЕ-стеклянным кабелем."
+				""
+				"Рассмотрите возможность объединения их с контроллерами функционального или сложного хранилища, чтобы максимально эффективно использовать ограниченное количество каналов."
+			]
+			icon: "ae2:energy_acceptor"
+			id: "4FEF700D65A68CFB"
+			rewards: [
+				{
+					count: 16
+					id: "276AFA8EBC23CC5C"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "566B531B87A61061"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4202AA34977E0F17"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "303B7F620DD08842"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "5B68DE27253EC4C9"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+				{
+					id: "6C362370090CF12E"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "Applied Energistics"
+			x: -10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Что такое ведьма без метлы?"
+				""
+				"Изготовление метлы для передвижения может помочь избежать еще некоторых… смертельных препятствий."
+				""
+				"Получите необходимую Кровь, создав Символ Крови и установив его в Смесительный котел. Прыгайте вверх и вниз внутри, чтобы наполнить Котел собственной кровью и разлить ее по бутылкам, щелкнув правой кнопкой мыши стеклянной бутылкой."
+				""
+				"================================"
+				""
+				"Подумайте о создании кисти для метлы «Магический цвет». Для достаточно сильного мага они никогда не сломаются, восстанавливаясь за счет маны владельца."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:willow_broom"
+				tag: { }
+			}
+			id: "67A48CCEDA5C6AF3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "5CD17C5FC1E99147"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "227E258AA45F15CD"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:willow_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "ars_scalaes:archwood_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "hexerei:witch_hazel_broom"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "Basic Brooms"
+					type: "item"
+				}
+				{
+					id: "173DC23E5B15EBE3"
+					item: "hexerei:blood_sigil"
+					type: "item"
+				}
+			]
+			title: "Learning to Fly"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7AD5D1665CA3DF4F"]
+			description: ["Мудрая ведьма будет использовать все имеющиеся в ее распоряжении инструменты, а превосходные щиты станут мощной защитой при исследовании этих земель."]
+			hide_dependency_lines: true
+			id: "7C58B3E61A83C628"
+			rewards: [
+				{
+					id: "01CB66007B462CFF"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [
+								{
+									id: "superiorshields:capacity"
+									lvl: 1s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "7BBEB1DDBE230A5C"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "superiorshields:bronze_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:electrum_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:constantan_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:ironwood_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:steeleaf_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:knightmetal_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "superiorshields:enchanter_shield"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Superior Shields"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["30547CCA38EC3A0D"]
+			description: [
+				"Для создания этого устройства необходимо будет вызвать Пламя и связать его с соответствующими материалами. К счастью, при наличии контроля над стихиями вызов одного Пламени окажется тривиальной задачей."
+				""
+				"Каждый тип элементаля можно вызвать с помощью Вечных заклинаний Гитии. Эти элементали будут вызваны с отключенным ИИ и добычей."
+			]
+			icon: "create:blaze_burner"
+			id: "5038FC4A51F51F31"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "29AD14E62D652876"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					id: "118314732B168F3D"
+					item: "createaddition:straw"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "6BEDB6EB5F5DD15C"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "377114D7550BC0D8"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "5A0D8A4117EF4915"
+					item: "kubejs:ritual_summon_bound_blaze"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75C38D71F1A04EB4"]
+			description: [
+				"Странный процесс изготовления алюминия начнется с превращения глины в каолиновую глину."
+				""
+				"Узнайте об остальной части процесса через JEI."
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:ingot_aluminum"
+			id: "345CBD118EAA0C09"
+			rewards: [
+				{
+					id: "3AE51D9B0D130B36"
+					item: "emendatusenigmatica:aluminum_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					icon: "emendatusenigmatica:aluminum_ingot"
+					id: "29BB4507855ECBB7"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/aluminum"
+						}
+					}
+					title: "Aluminum"
+					type: "item"
+				}
+				{
+					id: "48662443C3B62783"
+					item: "kubejs:kaolin_clay"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["73CDA6ED2393DE42"]
+			description: ["Возможно, посещение местной башни магов даст больше информации или, по крайней мере, более полезных инструментов, которые помогут восстановить Древо Жизни?"]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:novice_spell_book"
+			id: "370C40BCC3A6A055"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "181F9F12E4654AC3"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3452A9AC39B219A4"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7D67B1A9AC1F4445"]
+			description: ["При наличии стабильных запасов античных чернил наконец-то можно создавать глифы. Конечно, использование глифов более высокого уровня все равно потребует дальнейшего ремонта Книги Заклинаний."]
+			id: "7507572BD048B6C9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "0CEB7353C721EF23"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "711069D305E66D19"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Часто первая стихийная сущность, освоенная друидами Рощи, Воздух требует дара пера от их ближайших союзников, Воронов, а также проверки боевого мастерства друида."
+				""
+				"================================"
+				""
+				"Получение блиц-частиц:"
+				""
+				"Ищите в мире спавнеров и ломайте их. У них есть шанс вызвать разрыв в пространстве, позволяющий пройти существам всех типов, включая Блица и других элементалей."
+				""
+				"Победите их, чтобы получить частицы Blitz и закрыть разлом, если сможете."
+			]
+			hide_dependency_lines: true
+			id: "1C6BF5FE58C49456"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "368322B66A743C01"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "43B5455E97D1AB02"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6AB326583DEF4915"
+					item: "ars_nouveau:air_essence"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Пережить холод и получить мех от Альфа Йети считалось настоящим подвигом силы духа. Войдите в логово йети в заснеженном лесу и сразитесь с этими свирепыми существами, чтобы получить мех."
+				""
+				"================================"
+				""
+				"Получение кубиков Blizz:"
+				""
+				"Ищите в мире спавнеров и ломайте их. У них есть шанс вызвать разрыв в пространстве, позволяющий пройти существам всех типов, включая Близза и других элементалей."
+				""
+				"Победите их, чтобы получить Blizz Cubes и закрыть разлом, если сможете."
+			]
+			hide_dependency_lines: true
+			id: "605D0EC9ABE8595E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "51CCBDE9F54731C8"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "35079413F0D062FB"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2C9FC97C9F2B625B"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Проверка хитрости для молодых друидов: получение Волшебных бобов включает в себя пробраться в логово троллей и скрыться с их священными бобами."
+				""
+				"Найти их логово часто бывает самой сложной задачей, поскольку они живут глубоко под землей в высокогорье. Однако говорят, что почва над их берлогами особенно плодородна. Возможно, поиск этого маркера поможет их найти."
+				""
+				"================================"
+				""
+				"Получение осколков Базальза:"
+				""
+				"Ищите в мире спавнеров и ломайте их. У них есть шанс вызвать разрыв в пространстве, позволяя существам всех типов пройти сквозь него, включая Базальза и других элементалей."
+				""
+				"Победите их, чтобы получить осколки Базальза и закрыть разлом, если сможете."
+			]
+			hide_dependency_lines: true
+			id: "272C349F5CF92FA0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "3C9CCE31C80E1348"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "11B3DE3B0795BA69"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1FB74CF06AD39276"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Друиды Рощи обычно носили с собой жетоны «Чары Жизни», чтобы помочь предотвратить свою безвременную кончину, столкнувшись с некоторыми опасными существами, с которыми они имели дело. Хотя смерть является частью естественного цикла, они не возражали против продления жизни с помощью лекарств и других подобных чар."
+				""
+				"Нежить, с другой стороны, была для них отвратительна, и особенно жестоко то, что их почитаемые мертвецы, похоже, были реанимированы и использованы для нечестивых целей. Отыщите башню мага и посмотрите, можно ли найти там какие-нибудь ответы."
+			]
+			hide_dependency_lines: true
+			id: "30DB748747B58442"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "61B34E18FBDA8BE6"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "06804245F30E2149"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "477CD97ADFBFC51B"
+					item: "ars_elemental:anima_essence"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"К счастью, несмотря на ветхое состояние книги заклинаний, глифы Crush выглядят целыми и в пригодном для использования состоянии. Многим другим потребуется ремонт, но этот пока послужит."
+				""
+				"Некоторые предполагают, что чары Тома Смерти были разработаны для защиты знаний, хранящихся в древних томах заклинаний, но с тем же успехом это могло быть сделано и для того, чтобы досадить библиотекарям, которые их хранили. В любом случае, из них все же можно извлечь полезные символы, несмотря на их опасную природу."
+				""
+				"Выполните этот ритуал, чтобы вызвать убийство Томов Смерти. Они станут отличным способом дополнить недостающие символы в этой новой книге заклинаний."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:death_tome_gate_large"
+				}
+			}
+			id: "28A304E0F1600640"
+			rewards: [
+				{
+					id: "5029C286520E55B1"
+					item: "ars_nouveau:glyph_sensitive"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3D0287DCD0BE94E2"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:death_tome_gate_small"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "occultism:occultism/undefined"
+					criterion: ""
+					id: "1397737665563059"
+					type: "advancement"
+				}
+			]
+			title: "Summon Death Tome"
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Уилден-Гроув когда-то подружился и приручил гидр, которые называют Огненное Болото своим домом. Как они это сделали, остается загадкой… Кажется, сейчас есть только один способ добыть кровь одного из них. Не подходите слишком близко, иначе вы наверняка станете его следующей едой."
+				""
+				"================================"
+				""
+				"Получение пылающих жезлов:"
+				""
+				"Ищите в мире спавнеров и ломайте их. У них есть шанс вызвать разрыв в пространстве, позволяя существам всех типов пройти сквозь него, включая Блейза и других элементалей."
+				""
+				"Победите их, чтобы получить Пылающие жезлы и закрыть разлом, если сможете."
+			]
+			hide_dependency_lines: true
+			id: "7A3B33287BFF4CB1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "07DDF6CFF702FA3E"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "1411C2FA9E44E9AE"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "700787ED503D9218"
+					item: "ars_nouveau:fire_essence"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"605D0EC9ABE8595E"
+				"1C6BF5FE58C49456"
+				"272C349F5CF92FA0"
+				"7A3B33287BFF4CB1"
+			]
+			description: [
+				"Когда элементы освоены, остается только одна задача, прежде чем Древо Жизни может быть восстановлено: Царство Зимы должно закончиться."
+				""
+				"Отправляйтесь к холодным ледникам и победите Снежную Королеву, чтобы получить минусовые кристаллы."
+				""
+				"================================"
+				""
+				"С помощью естественной магии трансмутации, заложенной в кирке ботаника, можно будет очистить Слабый кристалл и заставить его расти."
+			]
+			hide_dependency_lines: true
+			id: "729E9D41A28D0E4D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "624D22F8BB99AF09"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "River of Memory"
+			tasks: [
+				{
+					id: "0FC4B74A9A5ACFFC"
+					item: "byg:subzero_crystal_shard"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["66585A158F41DE44"]
+			description: [
+				"Огненный металл, родом из стихийного плана огня, особенно подходит для сдерживания огненных элементалей."
+				""
+				"Хотя он не встречается в природе на этом плане, его можно создать путем тщательного применения Эссенции Огня и других материалов."
+			]
+			id: "30547CCA38EC3A0D"
+			rewards: [
+				{
+					id: "331A0CC3C988D124"
+					item: "twilightforest:fiery_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "449066CA51EE1BF6"
+					item: "twilightforest:fiery_ingot"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: ["Колдовство — это навык, которым рано овладели друиды Дикой Рощи, и для изготовления и выращивания семян Магического Цветения требуются лишь базовые алхимические знания."]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:conjuration_essence"
+			id: "087CFEB4B77FAE9B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "75C613BBF99219CD"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "5B324D5035FAA45D"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5A391AC753037129"
+					item: "ars_nouveau:conjuration_essence"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7AD5D1665CA3DF4F"]
+			description: [
+				"Одинокая ведьма – занятая ведьма."
+				""
+				"Со всеми зельями, крафтом, сбором и другой беготней, которую нужно сделать за день, несколько рук помощи наверняка будут оценены по достоинству, не так ли?"
+				""
+				"К счастью, теперь, когда наги исчезли с дороги, нет недостатка в Фейри, готовых помочь всем, чем могут."
+				""
+				"================================"
+				""
+				"Нарисуйте пентакль, известный как «Дружеское соглашение Боли», который подробно описан в «Словаре духов»."
+				""
+				"Можно вызвать избранных тварей Оккультизма, Хексереев и Арс Нуво; исследование использования Mindful Trance Blend, чтобы увидеть, что доступно."
+			]
+			hide_dependency_lines: true
+			id: "7CFD3DFD4C593EB5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5986A05AFF7B5081"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "05F83955C4E12297"
+					item: "hexerei:mindful_trance_blend"
+					type: "item"
+				}
+			]
+			title: "Familiar Friends"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79B755D0BDB6A8B7"]
+			description: [
+				"Для более совершенных устройств потребуются более деликатно обработанные материалы, чем те, которые можно легко сделать вручную."
+				""
+				"Эти прочные механические устройства справятся с этой задачей."
+				""
+				"● Жернов – способен измельчать."
+				"материалы гораздо более мелко, чем можно"
+				"быть достигнуто вручную, Жернов будет"
+				"иногда производят вторичные"
+				"материалы, которые могут оказаться весьма полезными,"
+				"такие как свинец и кварц."
+				""
+				"● Прокатный стан – работа из слитков,"
+				"Прокатный стан может создавать прекрасные стержни"
+				"и провода, необходимые многим"
+				"продвинутые устройства."
+				""
+				"● Механический пресс – мощное устройство."
+				"достаточно, чтобы расплющить слитки в пластины"
+				"всего за несколько ударов. Определенно стоит"
+				"усилия по его настройке."
+			]
+			id: "44B02A5817C4144A"
+			rewards: [
+				{
+					id: "0FC05A9E5B974922"
+					item: "ars_creo:starbuncle_wheel"
+					type: "item"
+				}
+				{
+					id: "36C648094A71AC39"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7E269B72F57C62D3"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "1A61D7D0519A6615"
+					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					id: "00BD1D8A00CAB755"
+					item: "create:millstone"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: ["Модернизация базовой печи, использовавшейся до сих пор. Это простое устройство просто направляет энергию во внешний поджигатель для производства тепла. Грубо, но эффективно."]
+			id: "505DBC92B7AC1AFE"
+			rewards: [
+				{
+					id: "61B93BE9DF0FEBC9"
+					item: {
+						Count: 1b
+						id: "thermal:upgrade_augment_2"
+						tag: {
+							AugmentData: {
+								BaseMod: 4
+								Type: "Upgrade"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7C7C33FFD852E5A8"
+					item: "thermal:machine_furnace"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1075F3BAA03841EF"]
+			description: [
+				"Ковка металлов требует специальных инструментов и процессов, ни один из которых не доступен."
+				""
+				"Однако, приложив немного усилий, из руды можно получить более простые материалы. Создайте пестик и ступку, чтобы начать их измельчать, и доменную печь, чтобы расплавить их до полезной формы."
+				""
+				"Пестик и ступка легко автоматизируются с помощью всего лишь бункера, никаких ручных усилий не требуется."
+				""
+				"Начнем с того, что простые металлы, такие как медь, можно превратить в слиток путем дробления, струйной обработки, дробления и струйной обработки в последний раз. Более эффективные методы станут доступны позже."
+			]
+			id: "438EA01F776992AD"
+			rewards: [
+				{
+					count: 4
+					id: "374D86C82113C057"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "45F86B71FC1BA4F4"
+					item: "naturesaura:furnace_heater"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6DE620F66FF61F90"
+					item: "hexerei:pestle_and_mortar"
+					type: "item"
+				}
+				{
+					id: "37D34D2AA1C71252"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["438EA01F776992AD"]
+			description: ["Для легирования требуется тонко измельченные металлы, смешанные с флюсом, который помогает скрепить и удалить примеси, прежде чем нагревать все это для получения качественного слитка. На данный момент пестик и ступка вполне подойдут."]
+			id: "0FE800BE7F220F36"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "5C4A1E2E0AC85142"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7FCF40CA690E02B4"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "emendatusenigmatica:electrum_ingot"
+								}
+								{
+									Count: 1b
+									id: "emendatusenigmatica:bronze_ingot"
+								}
+							]
+						}
+					}
+					title: "Alloying"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Поддержание порядка — это рутина, на которую ни у кого нет времени. Никто, кроме Буквирмов."
+				""
+				"Однако с помощью всего лишь нескольких из них и разумного использования больших контейнеров для хранения Bookwyrms может предоставить вам легкий доступ ко всем вашим предметам в одном удобном месте."
+				""
+				"Подробную информацию о том, как это работает, можно найти в квестах Ars Nouveau и в Потертой тетради."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:bookwyrm_charm"
+			id: "585E9984E9D6D09C"
+			rewards: [
+				{
+					count: 8
+					id: "0DD0D672A19E586E"
+					item: "ars_nouveau:repository"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "11AB85F4A8D711C2"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1EB98DDEF71EC000"
+					item: "ars_nouveau:bookwyrm_charm"
+					type: "item"
+				}
+				{
+					id: "3778AA9ABF10601C"
+					item: "ars_nouveau:storage_lectern"
+					type: "item"
+				}
+			]
+			title: "Keeping Organized with Bookwyrms"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Когда дело доходит до приготовления зелий, Wixies являются одними из лучших. Обязательно призовите нескольких, чтобы поддерживать течение Источника."
+				""
+				"Чтобы Викси знала, какие зелья варить, поместите несколько сваренных зелий на чародейские пьедесталы или платформы рядом с ее котлом. Их можно получить, заварив котел и щелкнув по нему правой кнопкой мыши стеклянными бутылками."
+				""
+				"Чтобы она выполняла свою работу, должна присутствовать вся цепочка. Итак, чтобы сварить Зелье древних знаний, ей понадобится пьедестал с Неудобным зельем и еще один с Зельем древних знаний. Для каждого шага ей также понадобится банка с зельем. Несколько Wixies могут работать вместе, каждый из которых выполняет следующий шаг в цепочке."
+				""
+				"Более подробную информацию можно найти в Изношенном блокноте."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:wixie_charm"
+			id: "60ECF7DD8B262631"
+			rewards: [
+				{
+					count: 8
+					id: "7FD354CD076A2619"
+					item: "ars_nouveau:abjuration_essence"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5D0ACAACAA68E0CD"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "01EA0EF25D997350"
+					item: "ars_nouveau:wixie_charm"
+					type: "item"
+				}
+				{
+					id: "701592B5C2CFF255"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "05D27686E86156A8"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+			]
+			title: "Autocrafting with Wixies"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Разносторонне талантливому и дружелюбному Звездному пузырю можно поручить передвигать предметы, жидкости, газы, энергию и даже зелья."
+				""
+				"Они достаточно умны, чтобы автоматизировать множество первоначальных задач, таких как перенос трав на сушилку для сушки, возврат сушеных трав в хранилище, заполнение печи, перемещение зелий с места на место и многое другое."
+				""
+				"Для выполнения каждой из этих задач им понадобится некоторое оборудование, поэтому не забудьте снабдить их соответствующим образом.  Найдите оборудование Starbuncle в JEI, чтобы найти все, что им можно использовать."
+			]
+			hide_dependency_lines: true
+			id: "0C1D8DEC8ACB56AC"
+			rewards: [
+				{
+					id: "53407B1C5DA8EBAE"
+					item: "ars_nouveau:starbuncle_shades"
+					type: "item"
+				}
+				{
+					id: "75BF9711B018CC11"
+					item: "starbunclemania:direction_scroll"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "11443A06230EBBDC"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1321FD497583DDCC"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:starbuncle_charm"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Starbuncle Logistics"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Хотя список ниже и не является исчерпывающим, он подчеркивает некоторые преимущества, которые можно получить, подружившись с этими Фамильярами. Одновременно может быть вызвано более одного."
+				""
+				"Для получения полной информации об этих и других фамильярах обратитесь к Словарю духов в разделе «Фамильярные ритуалы»."
+				""
+				"Бой"
+				"● Мумия – борется за вас."
+				"● Бехолдер – стреляет магическими лазерами из глаз."
+				""
+				"Полезность"
+				"● Страж – ходячий Тотем Бессмертия."
+				"● Жадный – собирает предметы, как магнит."
+				"● Бобр – помогает быстрее ломать дрова."
+				""
+				"Баффы"
+				"● Drikwing – обеспечивает многократный прыжок, ускорение прыжка и медленное падение."
+				"● Дракон – увеличивает получаемый опыт."
+				"● Летучая мышь – дает ночное видение."
+				"● Ктулху – дает водное дыхание."
+				"● Олень – дает повышение прыжка."
+				"● Дьявол – дает сопротивление огню."
+				""
+				"Другой"
+				"● Кузнец – ремонтирует оборудование и применяет улучшения к нему."
+				"других фамильяров, улучшая их множеством способов."
+				""
+				"Примечание: Фамильяры защищены от дружественного огня, поэтому сражаться рядом с ними, как правило, безопасно. Кроме того, некоторые из боевых существ были усилены, чтобы помочь им выжить."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						hasFamiliar: 0b
+					}
+				}
+				id: "occultism:familiar_ring"
+				tag: {
+					familiar: {
+						hasFamiliar: 0b
+					}
+				}
+			}
+			id: "72B2DCE0BDCE548F"
+			min_width: 300
+			rewards: [
+				{
+					id: "32CA91154A0B0B68"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								hasFamiliar: 0b
+							}
+						}
+						id: "occultism:familiar_ring"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5961092F4097FD3E"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "occultism:ritual_dummy/custom_ritual"
+					id: "3BFD0AAF1A00BC7C"
+					observe_type: 6
+					timer: 0L
+					title: "Observe an Occultism Familiar"
+					to_observe: "#occultism:familiars"
+					type: "observation"
+				}
+			]
+			title: "Combat Assistance - Familiars"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Аметистовые големы, прилежные существа, когда-то работавшие в Уайлден-Гроув, вероятно, были ключом к их высококачественному производству аметиста."
+				""
+				"Несмотря на свое название, они с удовольствием будут работать с другими многообещающими кристаллами, помимо аметиста."
+			]
+			hide_dependency_lines: true
+			id: "5A9F370B2DA197C9"
+			rewards: [
+				{
+					id: "01A0DA4C928250F9"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "56ACF42C5D91BAF5"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "14E135F0E762732D"
+					item: "ars_nouveau:amethyst_golem_charm"
+					type: "item"
+				}
+			]
+			title: "Budding Crystal Harvesting"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Хотя Уилден-Гроув был известен работавшими у них Воронами, было немало тех, кто предпочитал дружить с меньшим, хотя и столь же умным, Вороном."
+				""
+				"Выполните этот ритуал, чтобы вызвать прирученную ворону. Эти полезные твари могут быть оснащены оружием и шляпой и будут защищать своих друзей до смерти. Они также являются исключительными помощниками в выращивании сельскохозяйственных культур: они могут собирать, пересаживать и собирать множество полезных растений."
+				""
+				"Узнайте больше о Воронах в главе квеста Хексереи."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:crow_spawn_egg"
+				tag: {
+					display: {
+						Lore: ["{\"translate\":\"item.kubejs.ritual_summon_crow.tooltip\"}"]
+						Name: "{\"translate\":\"item.kubejs.ritual_summon_crow\"}"
+					}
+				}
+			}
+			id: "7DC3B92B7722D2EB"
+			rewards: [
+				{
+					id: "24BD267ED65B77CB"
+					item: {
+						Count: 1b
+						id: "hexerei:crow_flute"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5177B763DE66FC8D"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "hexerei:crow_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_crow.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_crow\"}"
+							}
+						}
+					}
+					id: "0F6AF050D2340F55"
+					item: "kubejs:ritual_summon_crow"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "174E4CF2D19C2143"
+					item: "hexerei:seed_mixture"
+					type: "item"
+				}
+			]
+			title: "Crow Assisted Crop Harvesting"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Манипуляция, одна из самых простых для освоения эссенций, связана с трансмутацией и взаимодействиями на больших расстояниях."
+				""
+				"Все необходимое для его изготовления должно быть легко выкопано из земли."
+			]
+			hide_dependency_lines: true
+			id: "511EF28B97B74DA9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "0BD0FAEB5CF42323"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "4F929950817CCC3E"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6D5F8903CDAEFA40"
+					item: "ars_nouveau:manipulation_essence"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4830632A0E6E9651"]
+			description: [
+				"Роща Уилден была хорошо известна благодаря высококачественному аметисту, который они добывали из земли и использовали для производства Исходных драгоценных камней."
+				""
+				"Несомненно, некоторых из них можно найти в руинах своих домов или среди оставленных ими рудных холмов."
+			]
+			id: "11AB47232D9F5D6D"
+			rewards: [
+				{
+					count: 2
+					id: "477B37812787254C"
+					item: "emendatusenigmatica:source_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2C7B6B3C361553D4"
+					item: "emendatusenigmatica:source_gem"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["729E9D41A28D0E4D"]
+			description: [
+				"Восстановление Древа Жизни во всей его красе будет непростой задачей. Используйте полученные знания, чтобы вырастить Изначальное Семя. Со временем и жертвами он станет сильнее."
+				""
+				"Выберите место для ритуала, в котором достаточно места, чтобы дать дереву достаточно места, чтобы оно укоренилось. Выполнение этого ритуала немедленно вырастет дерево, сосредоточенное на ритуальном пентакле."
+				""
+				"================================"
+				""
+				"Примечание: Древо Жизни будет обращено на север, с небольшим входом, ведущим в камеру пентакля. Это вращение невозможно изменить."
+				""
+				"Эта структура имеет размеры 23x23 и простирается как в землю, так и в небо. Когда он вырастет, он перезапишет блоки рядом с ним. Вас предупредили."
+			]
+			icon: "kubejs:tree_of_life_1"
+			id: "33BCDA0A76E2523C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "389C33B783F1A41E"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "75A370CD9D47EE45"
+					item: "kubejs:tree_of_life_1"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "78442FB8ED137BFF"
+					item: "kubejs:shard_of_renewal"
+					type: "item"
+				}
+			]
+			title: "Tree of Life"
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Подобно тому, как Алхимическая ссылка на источник может перегонять магические сущности из Зелий в Источник, Затяжной поглотитель — это структура, которая помогает перенаправить эти энергии обратно в окружающую среду в виде Ауры."
+				""
+				"Это большая многоблочная структура, поэтому обязательно ознакомьтесь с Книгой естественной ауры, чтобы просмотреть ее, чтобы помочь в ее построении."
+				""
+				"=============================================="
+				""
+				"Чтобы использовать эту структуру для создания Ауры, потребуется приготовить зелья задержки и бросить их на золотой крест на Поглотителе. Использование зелий более высокого качества, большей силы и продолжительности действия приведет к увеличению ауры."
+				""
+				"Важно отметить, что Викси, какими бы хитрыми они ни были, не способны создавать зелья задержки или брызг. Однако их легко автоматизировать с помощью пивоваренной системы Create, а также с помощью Potion Brewer от Industrial Foregoing."
+			]
+			icon: "naturesaura:potion_generator"
+			id: "16E90BC107468EC2"
+			min_width: 300
+			rewards: [
+				{
+					id: "56A596BFA05198BA"
+					item: "naturesaura:mover_cart"
+					type: "item"
+				}
+				{
+					id: "7A958A675ABC4536"
+					item: "naturesaura:generator_limit_remover"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "150E44FC952BB995"
+					item: "naturesaura:potion_generator"
+					type: "item"
+				}
+			]
+			title: "Aura Generation"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4B874AA448FF4C7A"]
+			description: [
+				"Возникли проблемы с Аурой? Нужен быстрый импульс?"
+				""
+				"Выполните этот ритуал, чтобы превратить трофеи боссов Сумеречного леса в большой заряд ауры."
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:aura_leaf"
+			id: "32B066B03F861D56"
+			optional: true
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6F7D8E0C230D3026"
+					item: "kubejs:aura_leaf"
+					optional_task: true
+					title: "Emergency Aura"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Ритуальная магия — еще один аспект мистического искусства и принимает множество форм: от рисования мелом тайных кругов на земле до сжигания специально приготовленных табличек с заклинаниями."
+				""
+				"Ритуальная жаровня открывает множество возможностей для автоматизации и защиты. Узнайте, на что способен каждый планшет, и посмотрите, для каких целей его можно использовать."
+			]
+			icon: "ars_nouveau:ritual_brazier"
+			id: "324073603AF6FB29"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "65C797E604B3DA0F"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					id: "2B400407B6D2D2BD"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5E75899DC12B686C"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: [
+				"Магия – это гораздо больше, чем просто эффектное движение пальцами и создание блестящих огней. Действительно, очень многое можно сделать с помощью тайных искусств, используя подходящие материалы и процессы."
+				""
+				"Давным-давно специалисты по трансмутации и колдовству обнаружили способы создания обширных сетей кристаллических каналов, способных совершать чудеса. Они хранили массу материалов в пространственных массивах и могли использовать их для создания практически чего угодно по своей прихоти."
+				""
+				"На данный момент все это кажется недостижимым, но простой транспорт, по крайней мере, кажется жизнеспособным."
+				""
+				"======================================"
+				""
+				"Начните с поиска немного Certus Quartz; Уилден-Гроув, несомненно, оставил кого-то в своих рудных курганах."
+				""
+				"С помощью естественной магии трансмутации, заложенной в кирке ботаника, можно будет очистить Цертус-Кварц и заставить его расти."
+			]
+			hide_dependency_lines: true
+			id: "0BAE6EBFEA3026B9"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5BAC9CC4EA1BAEEC"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "76259CE881312220"
+					item: "ae2:quartz_block"
+					type: "item"
+				}
+			]
+			title: "Certus Farming"
+			x: -9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Целебные свойства меда хорошо известны ведьмам и веками использовались для лечения бесчисленных недугов. Приложив немного магии, его можно даже превратить в мощное вещество, известное как Дыхание Сумерек."
+				""
+				"К сожалению, пчелы, похоже, покинули это место. Возможно, их можно заманить обратно теперь, когда рядом есть кто-то, кто о них позаботится?"
+				""
+				"================================"
+				""
+				"Обыщите разрушенные дома в лесу, найдите оставшиеся соты и используйте их, чтобы построить подходящее жилище для пчел."
+				""
+				"Сами пчелы можно призвать с помощью Алтаря Рождения, просто принесите им вкусные цветы!"
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:animal_spawner"
+			id: "3A7AEB067C49F899"
+			rewards: [
+				{
+					id: "72DE8D6EDF9F6515"
+					item: "thermal:device_hive_extractor"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "096F98097551C561"
+					item: "naturesaura:animal_spawner"
+					type: "item"
+				}
+				{
+					id: "7EE58C8ECCAA505E"
+					item: "minecraft:beehive"
+					type: "item"
+				}
+				{
+					id: "6ABD82F025EAE011"
+					item: "minecraft:bee_spawn_egg"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C63D330A4BFB305"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"Хотя создание самых мощных заклинаний может оказаться невозможным сразу, глифы первого уровня все равно могут быть достаточно мощными."
+				""
+				"Следует отметить глиф «Рассеивание», который может быстро снять мощные эффекты зелий, которые появляются на многих более сильных мобах."
+				""
+				"Обязательно потратьте некоторое время на эксперименты с Книгой Заклинаний, поскольку в руках опытной ведьмы это одно из самых мощных оружий."
+			]
+			id: "508748A195DE2C10"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "46B73E0A24DE5D55"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6D5621B8BF6A9C18"
+					item: "ars_nouveau:glyph_dispel"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7AD5D1665CA3DF4F"]
+			description: [
+				"Магию можно найти повсюду для человека с острым зрением и открытым сердцем. Ведьмы варились с незапамятных времен, используя скрытые силы земли, чтобы помочь себе в своих поисках."
+				""
+				"Доступ к нужному зелью в нужное время может иметь решающее значение для выживания."
+				""
+				"================================"
+				""
+				"Было добавлено множество рецептов пользовательских зелий, что делает их доступными довольно рано. Действительно, пивоварение окажется весьма важным для дальнейшего продвижения вперед."
+				""
+				"Сила может очень помочь при столкновении с закаленными монстрами, а быстрота и невидимость помогут полностью их избежать. Кроме того, Ars Nouveau позволяет смешивать зелья и хранить их во флаконах, чтобы быстро принять одну дозу и применить несколько эффектов."
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:potion_melder"
+			id: "4682D4537535937C"
+			rewards: [
+				{
+					id: "2301E26C33533490"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:potion_flask"
+						tag: {
+							Damage: 8
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "2136A5B6580847A6"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2EB943DDAA4C39F8"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+				{
+					id: "00984709DEA11344"
+					item: "ars_nouveau:potion_melder"
+					type: "item"
+				}
+			]
+			title: "Potions"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["66585A158F41DE44"]
+			description: [
+				"Храбрая ведьма — мертвая ведьма, по крайней мере, так гласит поговорка. Чтобы выжить в этом мире, наполненном смертоносными монстрами, требуется нечто большее, чем просто грубая сила; хитрый ум и быстрые ноги гораздо важнее."
+				""
+				"Умная ведьма знает, когда нужно убежать."
+				""
+				"Конечно, иногда драка неизбежна. В конце концов, мир несправедлив. Итак, когда кажется, что все жаждет крови, помните, что это происходит в обе стороны: сражайтесь грязно."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:witch_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7AD5D1665CA3DF4F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "44AF536691C6AFC3"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "512F931B7ED46E5C"
+					item: "hexerei:mixing_cauldron"
+					type: "item"
+				}
+			]
+			title: "Survival Essentials"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4682D4537535937C"]
+			description: [
+				"Подобно Короне алхимика, чары зелья служат для сохранения эффекта гораздо дольше, чем обычно. Например, зелье-амулет, созданный из трехминутных зелий, будет длиться 8 секунд на единицу прочности."
+				""
+				"Даже без зачарования они прослужат значительно дольше, чем зелья, использованные для их создания."
+			]
+			hide_dependency_lines: true
+			id: "1B214D5A289CD17A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "13E73AB24BADDF67"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "minecraft:long_water_breathing"
+						}
+					}
+					id: "6DCBDBFF2F899881"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Potion Charms"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4682D4537535937C"
+				"7AD5D1665CA3DF4F"
+			]
+			description: [
+				"Скелеты часто используют стрелы с наконечниками, что является рецептом плохого дня, если кого-то застанут врасплох."
+				""
+				"Стрелы с наконечниками можно легко создать, щелкнув правой кнопкой мыши по стрелке на банке с зельями, никаких зелий не требуется! Взрывные стрелы — особенно опасное оружие, полезное как против живых, так и против мертвых."
+			]
+			hide_dependency_lines: true
+			id: "15C6FD1F5AD1C530"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "6D4844BFC44CD5D5"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "minecraft:tipped_arrow"
+						tag: {
+							Potion: "minecraft:harming"
+						}
+					}
+					id: "1CE5E04BB5956BD2"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:arrows"
+						}
+					}
+					title: "Tipped Arrows"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4682D4537535937C"]
+			description: [
+				"Зелья, конечно, не хранятся долго, и выпить больше вручную не всегда легко. Обязательно ознакомьтесь с Короной алхимика, чтобы узнать, как проще сохранять зелья активными дольше."
+				""
+				"Особый интерес представляет то, что Корона будет черпать из фляг с зельями, а это означает, что смешанные зелья можно легко поддерживать в активном состоянии."
+			]
+			hide_dependency_lines: true
+			id: "7376270A390D6A3C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "5C504E7B50DF72CA"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "633962F5F4F1548E"
+					item: "ars_nouveau:alchemists_crown"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"Обычно Crush можно использовать только на блоках, размещенных в мире. Например, при создании Сжатого камня."
+				""
+				"Однако, дополнив его Чувствительностью, он может нацеливаться на предметы, брошенные на землю, а также позволяет ему работать и с сырой рудой."
+				""
+				"Следующая форма заклинания раздавит предметы на земле:"
+				""
+				"&5Снаряд&r > &aСокрушение&r > &6Чувствительный&r"
+			]
+			icon: "ars_nouveau:glyph_crush"
+			id: "618CFB7745031AF6"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "53223E0F43F27F71"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0623BA2C11B158BF"
+					item: "ars_nouveau:glyph_crush"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "003F24BD5E1DBA07"
+					item: "ars_nouveau:glyph_sensitive"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["345CBD118EAA0C09"]
+			description: [
+				"Практика гадания зародилась столетиями, и для фокуса использовались самые разные материалы, от чайных листьев до внутренностей."
+				""
+				"Хотя эти методы, безусловно, эффективны, некоторые предпочитали их просто ради зрелища; для настройки ума на выполнение задачи можно использовать все что угодно."
+			]
+			hide_dependency_lines: true
+			id: "37A128B304BAC0EC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "0278C7667B0EC3FE"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "38BBFF1EA9A911FD"
+					item: {
+						Count: 1b
+						id: "theurgy:divination_rod_t3"
+						tag: {
+							Damage: 0
+							"theurgy:divination.setting.allow_attuning": 1b
+							"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t4_allowed_blocks"
+							"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t4_disallowed_blocks"
+							"theurgy:divination.setting.duration": 40.0d
+							"theurgy:divination.setting.max_damage": 512.0d
+							"theurgy:divination.setting.range": 96.0d
+							"theurgy:divination.setting.tier": "minecraft:netherite"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66A59B3CD77FB54A"]
+			description: [
+				"Один из немногих оставшихся хранителей этих земель, Ищущий Баран поселяется в Зачарованном Лесу."
+				""
+				"Найдите их и выполните задание. Сомнительно, что они точно знают, что произошло, но у них могут быть знания, жизненно важные для восстановления Древа Жизни."
+				""
+				"================================"
+				""
+				"Получите шерсть каждого цвета и дайте ее Барану."
+				""
+				"С помощью естественной магии трансмутации, заложенной в кирке ботаника, можно будет очистить Териум и заставить его расти."
+			]
+			id: "032D29DD7D946EDB"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "69D3102DD62060D9"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "0BE9EBECF0414FE5"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "45865EFBDFC3E239"
+					item: "byg:therium_crystal_shard"
+					type: "item"
+				}
+			]
+			title: "Questing Ram"
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["032D29DD7D946EDB"]
+			description: [
+				"Ищущий Баран согласился помочь в обновлении Древа Жизни, предоставив необходимые знания для воссоздания Изначального Семени. Однако для этого им понадобится некоторая помощь."
+				""
+				"Призовите элементальных духов этой земли, чтобы наполнить их энергией Семя."
+			]
+			hide: true
+			id: "1DC39E690B6178EF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "67BBB8A5B92C7AE7"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "6A9DEFBAF39BE8C7"
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "heart"
+			tasks: [
+				{
+					id: "644F047CE0367F5A"
+					item: "kubejs:primordial_seed"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["16E90BC107468EC2"]
+			description: [
+				"С повышенными способностями к произнесению заклинаний появляется возможность улучшить некоторую автоматизацию с помощью турелей заклинаний."
+				""
+				"В качестве практического примера, следующая форма заклинания позволит турели заклинаний вытягивать стандартное зелье из соседней банки с зельем, превращать его в задерживающееся и бросать туда, где приземлится снаряд."
+				""
+				"&5Снаряд&r > &aВливание&r > &6Продлить время&r"
+				""
+				"Эти зелья длительного действия будут работать точно так же, как и их созданная разновидность, с целью использования Затяжного поглотителя без необходимости создавать что-то большее, чем базовое зелье."
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:lingering_potion"
+				tag: {
+					Potion: "minecraft:strong_leaping"
+				}
+			}
+			id: "7619B458914F41FF"
+			rewards: [
+				{
+					id: "58831BD248E42B45"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:spell_parchment"
+						tag: {
+							"ars_nouveau:caster": {
+								current_slot: 0
+								flavor: ""
+								hidden_recipe: ""
+								is_hidden: 0b
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Lingering Potions"
+										recipe: {
+											part0: "ars_nouveau:glyph_projectile"
+											part1: "ars_nouveau:glyph_infuse"
+											part2: "ars_nouveau:glyph_extend_time"
+											size: 3
+										}
+										sound: {
+											pitch: 0.01f
+											soundTag: {
+												id: "ars_nouveau:tempestry_family"
+											}
+											volume: 0.4f
+										}
+										spellColor: {
+											b: 255
+											g: 71
+											r: 1
+											type: "ars_nouveau:rainbow"
+										}
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3716441EC6ACD043"
+					item: "ars_nouveau:basic_spell_turret"
+					type: "item"
+				}
+			]
+			title: "Lingering Absorber Automation"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["345CBD118EAA0C09"]
+			description: ["Мощный ритуал, дающий час полета пяти существам. Полезно для исследования вдали от дома. Обязательно возьмите с собой материалы для повторной отливки в случае необходимости."]
+			icon: "ars_nouveau:ritual_flight"
+			id: "6952D7AD61181E37"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "64D8345AD1B57F8B"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5623626CB05FAC41"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+				{
+					id: "39C158A69FF4C6FE"
+					item: "kubejs:ritual_of_enduring_flight"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C6BF5FE58C49456"]
+			description: [
+				"Культ Ур-Гаста, какими бы глупыми они ни были, не отставал в своих исследованиях. Карминит имеет превосходный тайный резонанс, но красный камень, с которым они его соединили, оказался слишком сильным модератором. Возникшая в результате сверхизлучательная нестабильность быстро стала невыносимой для их устройства."
+				""
+				"С другой стороны, объединение его с Камнями Источника, по-видимому, правильно направляет тайные поля. Однако эти первые попытки кажутся несовершенными."
+				""
+				"Процесс нуждается в доработке."
+				""
+				"================================"
+				""
+				"Для выполнения рецептов направления молнии требуется источник молнии. Для наших целей получить заряд молнии достаточно просто."
+				""
+				"Бросьте ингредиенты, показанные в EMI, а затем используйте на них заряд молнии. Обязательно заберите результаты как можно скорее, прежде чем они сгорят!"
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:dim_arcanite_crystal"
+			id: "7B81F422E3A14DE2"
+			rewards: [
+				{
+					count: 4
+					id: "78903A53A1D3DCB6"
+					item: "kubejs:dim_arcanite_crystal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4E14EF97F7450D8D"
+					item: "kubejs:dim_arcanite_crystal"
+					type: "item"
+				}
+				{
+					id: "687390DE5F3C74DF"
+					item: "thermal:lightning_charge"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Постройте его, и они придут, по крайней мере, так было сказано. Эти крошечные рыночные прилавки когда-то были обычным явлением в местах бизнеса, торговли и сельского хозяйства и служили способом делать подношения фейским существам, бродящим по землям."
+				""
+				"Поскольку в наши дни происходит так мало предложений, выставление одного из них наверняка привлечет какую-нибудь полезную компанию."
+				""
+				"================================"
+				""
+				"Рынок во многих случаях является единственным источником семян и саженцев и поэтому неоценим. Его создание настоятельно рекомендуется для получения недостающих растений, которые могут вам понадобиться."
+			]
+			hide_dependency_lines: true
+			id: "37F045F66CCA1389"
+			rewards: [
+				{
+					count: 7
+					id: "2C4B9277BDBFC583"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2B53987B276A6521"
+					item: "farmingforblockheads:market"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["517271C3858C43FE"]
+			description: [
+				"Маршрутизаторы способны выполнять действительно впечатляющие задачи и незаменимы для начинающей ведьмы. Однако их способность передавать власть часто упускается из виду."
+				""
+				"Например, один маршрутизатор может получать питание от пульсирующих кристаллов со всех шести сторон, одновременно передавая по беспроводной сети на 72 устройства в радиусе 48 блоков."
+				""
+				"Один из них может легко служить центральным распределителем энергии для умеренной области крафта, снабжая все магической энергией, необходимой для продолжения работы."
+			]
+			icon: {
+				Count: 1b
+				id: "modularrouters:energy_distributor_module"
+				tag: {
+					modularrouters: {
+						Direction: "NONE"
+						ModuleFilter: { }
+					}
+				}
+			}
+			id: "6C9DDEF61EAD7D3E"
+			rewards: [
+				{
+					count: 8
+					id: "7AD7EC515B2C999D"
+					item: "modularrouters:energy_upgrade"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6CEC2425EC1A3984"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					id: "3BCA95773F8C5CAD"
+					item: {
+						Count: 1b
+						id: "modularrouters:energy_distributor_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Energy Transfer"
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75C38D71F1A04EB4"]
+			description: [
+				"С помощью некоторых алхимических манипуляций и трансмутационных уловок простые растения могут быть преобразованы в этот впечатляющий материал."
+				""
+				"Освоение его создания на ранней стадии окажется полезным."
+				""
+				"================================"
+				""
+				"Следуйте рецептам из Liquid Plastic, следя за машинами PneumaticCraft, такими как смеситель жидкостей и установка термопневматической обработки."
+				""
+				"Этот процесс требует нескольких шагов, но его легко выполнить, проявив немного ведьминской изобретательности."
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:plastic"
+			id: "517271C3858C43FE"
+			rewards: [
+				{
+					count: 4
+					id: "1C6C3FA76D8A6461"
+					item: "pneumaticcraft:speed_upgrade"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "57052EFBDA7102DE"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+					type: "item"
+				}
+				{
+					id: "6ADB1BA954E32542"
+					item: "pneumaticcraft:fluid_mixer"
+					type: "item"
+				}
+				{
+					id: "2F6A22E42013A16D"
+					item: "pneumaticcraft:plastic"
+					type: "item"
+				}
+			]
+			title: "Plastic"
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73CDA6ED2393DE42"]
+			description: [
+				"Жизнь в дороге имеет свои взлеты и падения, но хорошая теплая палатка, которую можно назвать домом, может сгладить многие трудные моменты такого образа жизни."
+				""
+				"================================"
+				""
+				"Nomadic Tents — это портативный дом, который может стать прекрасной базой для работы на раннем этапе. Их можно не только легко перемещать, но и обновлять, сохраняя при этом свое содержимое."
+				""
+				"Подумайте об установке внутри кровати, основного места для хранения вещей и нескольких необходимых рабочих мест!"
+				""
+				"● Щелкните правой кнопкой мыши и удерживайте палатку на"
+				"землю для установки рамы."
+				""
+				"● Щелкните правой кнопкой мыши молотком по каждому кадру."
+				"чтобы сформировать этот раздел."
+				""
+				"Золотой молоток сформирует весь"
+				"палатка сразу!"
+				""
+				"● Щелкните правой кнопкой мыши или войдите в дверь, чтобы"
+				"войти и выйти."
+				""
+				"● Щелкните правой кнопкой мыши дверь снаружи."
+				"с молотком, чтобы собрать палатку, как"
+				"пункт."
+			]
+			id: "00FB8D9041ED6D73"
+			rewards: [
+				{
+					id: "4C3A6668078E18B6"
+					item: {
+						Count: 1b
+						id: "nomadictents:mallet"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 3s
+								}
+							]
+							display: {
+								Name: "{\"text\":\"Sturdy Tent Mallet\"}"
+							}
+							"quark:RuneAttached": 1b
+							"quark:RuneColor": {
+								Count: 1b
+								id: "quark:blank_rune"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2CE21FBACA8A8DEA"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^nomadictents:(tiny|small|medium|large|giant|mega)"
+						}
+					}
+					title: "Any Tent"
+					type: "item"
+				}
+			]
+			title: "Nomadic Life"
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["28A304E0F1600640"]
+			description: [
+				"Хотя можно найти множество символов и использовать их для ремонта книги заклинаний, их также можно создать из подходящих материалов."
+				""
+				"Однако найти подходящие чернила для заклинаний может оказаться довольно сложно, поскольку их необходимо специально подготовить с помощью процесса, который может занять годы."
+				""
+				"Когда-то им активно торговали мореплаватели, специализировавшиеся на его создании. Возможно, некоторые из них можно будет поймать с помощью старого доброго траления."
+			]
+			icon: "supplementaries:antique_ink"
+			id: "7D67B1A9AC1F4445"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "3647C7DB6CC3E944"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1FF77511CCF22E34"
+					item: "thermal:device_fisher"
+					type: "item"
+				}
+				{
+					id: "479957F36710ECBC"
+					item: "thermal:junk_net"
+					type: "item"
+				}
+				{
+					id: "4AC9100D64D9A852"
+					item: "supplementaries:antique_ink"
+					type: "item"
+				}
+			]
+			title: "Antique Ink"
+			x: -9.0d
+			y: 1.5d
+		}
+	]
+	title: "Chapter One"
+}

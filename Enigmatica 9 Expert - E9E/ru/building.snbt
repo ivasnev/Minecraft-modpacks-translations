@@ -1,0 +1,923 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:scaffolding"
+	id: "0000000000000096"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Добро пожаловать в главу о строительстве"
+				""
+				"В этом разделе содержится список модов, основанных на строительстве и декорировании, а также несколько инструментов, которые помогут вам выполнить работу и помогут вам стать опытным строителем."
+			]
+			icon: "minecraft:scaffolding"
+			id: "058D3BEB64C74E27"
+			optional: true
+			rewards: [
+				{
+					id: "3C390EFCC5489351"
+					item: "minecraft:stonecutter"
+					type: "item"
+				}
+				{
+					id: "4E93367F3DC60C27"
+					item: "hexerei:mahogany_woodcutter"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Dirt Hut No More"
+			tasks: [
+				{
+					id: "4A2592C4467CEAF6"
+					title: "Builder"
+					type: "checkmark"
+				}
+			]
+			title: "Decoration"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: ["Connected Glass добавляет дополнительные стеклянные блоки и панели со связанными текстурами. Разумеется, это касается прозрачного стекла и всех 16 типов окрашенного стекла от Vanilla."]
+			icon: "connectedglass:clear_glass"
+			id: "66099AFAA1A6043F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "73CEB3BC6963B644"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "I can see all obstacles in my way"
+			tasks: [
+				{
+					id: "7E626988261D7522"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "connectedglass"
+						}
+					}
+					title: "Connected Glass"
+					type: "item"
+				}
+			]
+			title: "Connected Glass"
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"Название мода действительно говорит само за себя. Это просто мод на освещение."
+				""
+				"Но не позволяйте названию обмануть вас. Simply Light предлагает широкий выбор светильников, которые сделают вашу базу стильной."
+			]
+			icon: "simplylight:illuminant_block_on"
+			id: "42FB32CC99E66E3F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "7E2D7FEE20672C9D"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Let there be light"
+			tasks: [
+				{
+					count: 16L
+					id: "1EFA47BC6E4EC782"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "simplylight"
+						}
+					}
+					title: "Any 16x Simply Lights"
+					type: "item"
+				}
+			]
+			title: "Simply Light"
+			x: -0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"Вы ищете стеклянную лестницу? или, может быть, дверь Незерита? Как насчет Знака Краевого Камня? Ну, не ищите дальше."
+				""
+				"Framed Blocks представляет собой пустой шаблон различных форм и блоков, который имитирует текстуру блока, нажатого на них."
+				""
+				"Их даже можно заставить светиться, щелкнув по ним правой кнопкой мыши светящимся камнем!"
+			]
+			icon: "framedblocks:framed_cube"
+			id: "0798D5139479A837"
+			rewards: [
+				{
+					id: "7A45DC96F03CA232"
+					item: "framedblocks:framed_hammer"
+					type: "item"
+				}
+				{
+					id: "1C5FD3A8CD3424C0"
+					item: "framedblocks:framed_wrench"
+					type: "item"
+				}
+			]
+			subtitle: "Sky is the limit"
+			tasks: [
+				{
+					count: 4L
+					id: "6D98E195282468AF"
+					item: "framedblocks:framed_cube"
+					type: "item"
+				}
+			]
+			title: "Framed Blocks"
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"Вам надоел этот дубовый ящик, который торчит, как больной палец, в середине вашего здания и совершенно не соответствует вашей строительной палитре?"
+				""
+				"Ящики с рамкой предоставляют вам пустой шаблон, который вы можете комбинировать на верстаке с различными блоками, чтобы вместо этого использовать их текстуру, будь то передняя часть, боковые стороны или отделка. Эти Ящики с рамкой легко настраиваются визуально."
+				""
+				"Излишне говорить, что Functional Storage имеет больше, чем просто шаблон стиля одного ящика, в нем фактически есть шаблон для каждого типа ящика, будь то 1x2, 2x2 или даже уплотняемый ящик."
+			]
+			icon: "functionalstorage:framed_1"
+			id: "473BE440ECB1CEDF"
+			min_width: 250
+			rewards: [
+				{
+					id: "799AB9D93C124D6F"
+					item: "functionalstorage:netherite_upgrade"
+					type: "item"
+				}
+				{
+					id: "006783158FEE960D"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Build-a-Drawer"
+			tasks: [
+				{
+					id: "130291F7FD5C22C4"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "functionalstorage:framed_1"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:framed_2"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:framed_4"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:compacting_framed_drawer"
+								}
+							]
+						}
+					}
+					title: "Any Framed Drawer"
+					type: "item"
+				}
+			]
+			title: "Framed Drawers"
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"Если вам нравится индустриальный вид Immersive Engineering, то вам, вероятно, понравится Engineer’s Decor."
+				""
+				"Этот мод добавляет несколько декоративных блоков, которые должны чувствовать себя как дома на вашей базе Immersive Engineering. То ли это ОПАСНОСТЬ! знак или промышленные платформы и опорные балки, компания Engineer's Decor поможет вам."
+			]
+			icon: "engineersdecor:steel_catwalk_stairs"
+			id: "68E143E444AF44C2"
+			rewards: [
+				{
+					count: 2
+					id: "3C8E7414A7A4C3C0"
+					item: "engineersdecor:sign_hotwire"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			subtitle: "Immersive Decorating"
+			tasks: [
+				{
+					count: 12L
+					id: "3962CC2A503F48BE"
+					item: "engineersdecor:metal_bar"
+					type: "item"
+				}
+			]
+			title: "Engineer's Decor"
+			x: -1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"Если вам нравятся средневековые или деревенские постройки, будь то замок на скале, хижина в лесу или уютная таверна для утомленного путешественника, в «Декоративных блоках» найдутся блоки, которые соответствуют вашему стилю."
+				""
+				"Компания «Декоративные блоки» предлагает множество красиво текстурированных и хорошо продуманных блоков для ваших строительных нужд."
+			]
+			icon: "decorative_blocks:oak_support"
+			id: "03D0B336BB7CEFE1"
+			rewards: [
+				{
+					id: "3305966DAE15A384"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "2A80F9273B5F083C"
+					item: "the_bumblezone:sugar_water_bottle"
+					type: "item"
+				}
+				{
+					id: "6EF2696BD9DA2B0F"
+					item: "farmersdelight:milk_bottle"
+					type: "item"
+				}
+			]
+			subtitle: "Stay a while and listen..."
+			tasks: [
+				{
+					id: "36159E7E842C9962"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "decorative_blocks"
+						}
+					}
+					title: "Decorative Blocks"
+					type: "item"
+				}
+			]
+			title: "Decorative Blocks"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Рим не был построен за один день, но с такими инструментами это, безусловно, могло быть построено."
+				""
+				"Читайте дальше, чтобы узнать о некоторых удобных инструментах, позволяющих значительно сократить время, необходимое для реализации крупномасштабных проектов."
+			]
+			icon: "framedblocks:framed_hammer"
+			id: "5411C8D2344CC2F1"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "215C050F84460976"
+					item: "minecraft:scaffolding"
+					random_bonus: 16
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "The right tools for the job"
+			tasks: [
+				{
+					id: "48834CDA218F71E0"
+					title: "Building Tools"
+					type: "checkmark"
+				}
+			]
+			title: "General Building Tools"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"Он режет, шлифует, зубилом, полирует и даже готовит и чистит!"
+				""
+				"Вся мощь камнереза ​​теперь в компактном портативном формате и в вашем изысканном рюкзаке или сундуке!"
+				""
+				"Отказ от ответственности: на самом деле не будет готовить или убирать. Не для коммерческого использования."
+				""
+				"Предупреждение: Беречь от детей, животных, придурков. Не кладите руку на лезвие во время движения. Длительное использование может привести к усталости и потере зрения."
+			]
+			icon: "minecraft:stonecutter"
+			id: "085A8424875A2B23"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "31F796972A4B7369"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "It's like the Chisel, but fatter"
+			tasks: [
+				{
+					id: "0F45B05043BCCBE6"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedbackpacks:stonecutter_upgrade"
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:stonecutter_upgrade"
+								}
+							]
+						}
+					}
+					title: "Stonecutter Upgrade"
+					type: "item"
+				}
+			]
+			title: "Portable Stonecutter"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"Усовершенствованное строительное устройство с несколькими режимами, позволяющее быстро возводить стены, лестницы и платформы."
+				""
+				"Скрытно щелкните правой кнопкой мыши по блоку, чтобы выбрать блок, из которого он будет строиться. Используйте клавишу меню настроек строительных гаджетов [по умолчанию: g] для доступа к расширенным функциям."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_building"
+				tag: {
+					state: {
+						data: { }
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+					}
+				}
+			}
+			id: "0F06CA2A45323C4C"
+			rewards: [
+				{
+					id: "651CFE821154BBC8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "It builds stuff"
+			tasks: [
+				{
+					id: "5DB4EE8F264A9453"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_building"
+						tag: {
+							state: {
+								data: { }
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Building Gadget"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"Быстро меняйте местами блоки в области без необходимости ломать и размещать каждый из них вручную. Зачаруйте Silk Touch, чтобы работать с хрупкими блоками, такими как стекло."
+				""
+				"Скрытно щелкните правой кнопкой мыши по блоку, чтобы выбрать блок, из которого он будет строиться. Используйте клавишу меню настроек строительных гаджетов [по умолчанию: g] для доступа к расширенным функциям."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_exchanging"
+				tag: {
+					state: {
+						data: { }
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+					}
+				}
+			}
+			id: "25E1DB1C3F184D4C"
+			rewards: [
+				{
+					id: "2A430B36A4ECDB29"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "It exchanges stuff"
+			tasks: [
+				{
+					id: "0031DADEE3BD0089"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_exchanging"
+						tag: {
+							state: {
+								data: { }
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Exchange Gadget"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"Мощный инструмент, который позволяет копировать большие площади и мгновенно перестраивать их в другом месте, быстро повторяя большие части конструкции, например, повторяющийся рисунок стен, или украшая территорию несколькими разными сборными домами."
+				""
+				"Скрытно щелкните правой кнопкой мыши по блоку, чтобы выбрать блок, из которого он будет строиться. Используйте клавишу меню настроек строительных гаджетов [по умолчанию: g] для доступа к расширенным функциям."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_copy_paste"
+				tag: {
+					mode: 0b
+					template_id: [I;
+						-937522451
+						-1230682587
+						-1166065172
+						-847433661
+					]
+				}
+			}
+			id: "2E5F1C7B4B293531"
+			rewards: [
+				{
+					id: "56EDEB3CE12B8C19"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "It copies and pastes stuff"
+			tasks: [
+				{
+					id: "6AB9C0357788BA56"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_copy_paste"
+						tag: {
+							mode: 0b
+							template_id: [I;
+								-937522451
+								-1230682587
+								-1166065172
+								-847433661
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Copy-Paste Gadget"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"Для тех случаев, когда вы просто хотите расчистить дыру для строительства и не особо заботитесь о том, что произойдет с блоками, которые там находились."
+				""
+				"Будьте осторожны: этот инструмент уничтожает все блоки, которые он удаляет!"
+				""
+				"Подкрадитесь ПКМ в воздухе, чтобы очистить область. Используйте клавишу меню настроек строительных гаджетов [по умолчанию: g] для доступа к расширенным функциям."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_destruction"
+				tag: {
+					fuzzy: 1b
+					overlay: 1b
+				}
+			}
+			id: "095108AB50598C04"
+			rewards: [
+				{
+					id: "61F9F3D49C389940"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "Guess what it does .."
+			tasks: [
+				{
+					id: "1441EAF1EDC3AFDF"
+					item: {
+						Count: 1b
+						id: "buildinggadgets:gadget_destruction"
+						tag: {
+							fuzzy: 1b
+							overlay: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Destruction Gadget"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"Классическая модификация «Строительная палочка» просто расширяет блоки, которые уже размещены в мире. Это облегчит постройку стены: сначала заложите фундамент, а затем наращивайте ее с помощью палочки."
+				""
+				"В этой версии также есть несколько дополнительных функций, таких как возможность разрушать блоки, размещать их в воздухе или даже размещать случайные блоки из тех, что находятся на вашей горячей панели."
+				""
+				"Ctrl Поднимите палочку в воздух, чтобы получить доступ к меню с расширенными параметрами, или удерживайте колесо прокрутки Ctrl, чтобы быстро переключаться между режимами строительства."
+			]
+			id: "26B88D08862EA1AE"
+			rewards: [
+				{
+					count: 16
+					id: "214C2A82D3E5941A"
+					item: "minecraft:scaffolding"
+					random_bonus: 16
+					type: "item"
+				}
+			]
+			subtitle: "Accio"
+			tasks: [
+				{
+					id: "131EB02FBDE8DC98"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "constructionwand:diamond_wand"
+									tag: {
+										Damage: 0
+										wand_options: { }
+									}
+								}
+								{
+									Count: 1b
+									id: "constructionwand:infinity_wand"
+									tag: {
+										wand_options: { }
+									}
+								}
+							]
+						}
+					}
+					title: "Construction Wands"
+					type: "item"
+				}
+			]
+			title: "Construction Wands"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"Extendo Grip увеличивает расстояние досягаемости, позволяя размещать и разбивать блоки на большем расстоянии."
+				""
+				"Чтобы использовать Extendo Grip, поместите его в левую руку, а затем используйте блоки или инструменты в основной руке, как обычно."
+				""
+				"При ношении медного баллона Extendo Grip не теряет прочности и вместо этого использует часть давления воздуха, накопленного в баллоне."
+			]
+			icon: {
+				Count: 1b
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "34F00196E2D0B4B0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "384957F4FCE7BC6A"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "BOING! BOING!"
+			tasks: [
+				{
+					id: "36A419607017EA31"
+					item: {
+						Count: 1b
+						id: "create:extendo_grip"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Extendo Grip"
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"«Жезл симметрии» не разочарует тех, кто любит немного симметрии в своей жизни."
+				""
+				"Этот инструмент автоматически размещает блоки в зеркальных положениях вокруг центральной точки, что упрощает реализацию больших проектов."
+				""
+				"Для начала щелкните правой кнопкой мыши блок на земле, чтобы выбрать центральную точку. После выбора нажмите правую кнопку мыши, чтобы открыть графический интерфейс конфигурации и выбрать тип плоскости и ось зеркального отражения."
+			]
+			hide_dependency_lines: true
+			icon: "create:wand_of_symmetry"
+			id: "147B701C5BCF2424"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "01870BF5EE173AB5"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Lay your weary OCD to rest"
+			tasks: [
+				{
+					id: "0A989C0C09502289"
+					item: "create:wand_of_symmetry"
+					type: "item"
+				}
+			]
+			title: "Wand of Symmetry"
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			description: [
+				"Quark — такой массивный мод, и хотя он мог бы иметь собственный раздел или даже быть частью основного раздела «Здания», мы чувствовали, что лучше использовать его как отдельный информационный квест. Хотя было бы практически невозможно описать все, что может предложить Quark, ниже приведены некоторые основные моменты, которые помогут строителям немного облегчить свою жизнь."
+				""
+				"- Декоративные блоки: Quark предлагает множество блоков, как созданных как тематические сундуки, так и собранных со всего мира, таких как блоки кристалла корунда."
+				""
+				"- Мастерок: этот инструмент позволяет рандомизировать размещение блоков. При использовании он выбирает блоки для вашей панели быстрого доступа."
+				""
+				"Для получения дополнительной информации о том, что еще Quark может предложить вам как строителю, посетите их официальный сайт."
+				""
+				"{\"текст\": \"Quark Wiki\", \"цвет\": \"синий\", \"подчёркнутый\": \"истина\", \"clickEvent\":{\"action\" :\"open_url\",\"value\":\"https://quarkmod.net/#features\"}}"
+			]
+			icon: {
+				Count: 1b
+				id: "quark:trowel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "73696B8EC7BB92C7"
+			rewards: [
+				{
+					id: "2577A6FCCC09B07B"
+					item: "quark:abacus"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Jack of all Trades"
+			tasks: [
+				{
+					id: "5B29C3C71D617D0A"
+					title: "Quark"
+					type: "checkmark"
+				}
+			]
+			title: "Quark"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: ["Нужна измерительная лента? А как насчет счетов? Этот малыш быстро подсчитает количество блоков между точками А и Б, что идеально подходит для планирования больших построек. Просто щелкните правой кнопкой мыши по земле в начале и идите к конечной точке."]
+			id: "45A99E75C9AFCFC5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0A09BABD778C97C2"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2F6A3A84B2EBFABD"
+					item: "quark:abacus"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: ["Простой датчик, который можно разместить над любой дверью. Когда игрок приближается, дверь откроется автоматически. Их вертикальный диапазон обнаружения можно регулировать с помощью ключа Redstone, что позволяет им работать с дверями большего размера."]
+			id: "17F29DFB161A6D1E"
+			rewards: [
+				{
+					id: "2606C21488212483"
+					item: "manyideas_core:redstone_key"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "73B6B9FD71519D5C"
+					item: "manyideas_doors:player_door_sensor"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: ["Зачарованные ножницы, которые при использовании на радужной овце позволяют получить радужную шерсть."]
+			id: "7F8E9CAAF204E1F3"
+			tasks: [
+				{
+					id: "50B8BB361CE34B8A"
+					item: {
+						Count: 1b
+						id: "manyideas_core:mysterious_shears"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Create имеет набор инструментов, предназначенных для сохранения схем структур и их копирования."
+				""
+				"Схема и перо позволят вам сохранить схему существующей конструкции. Эта сохраненная схема позволит вам построить конструкцию в другом месте."
+				""
+				"1) Щелкните правой кнопкой мыши, чтобы выбрать два противоположных угла конструкции, которую вы хотите сохранить."
+				"2) Наведите указатель мыши на грань выбранной области и прокрутите, удерживая клавишу CTRL, чтобы отрегулировать эту сторону."
+				"3) Щелкните правой кнопкой мыши, чтобы назвать и сохранить схему."
+				""
+				"На Create GitHub есть вики-страница с примерами сохранения схем:"
+				""
+				"{\"text\": \"Сохранение схемы\", \"color\": \"blue\", \"подчеркнуто\": \"true\", \"clickEvent\": {\"action\ ":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\"}}"
+			]
+			hide_dependency_lines: true
+			id: "225DD8C72B11FFE3"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "5596D763FED920E0"
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Archetecture 101"
+			tasks: [
+				{
+					id: "5A9DC446B30DBFA0"
+					item: "create:schematic_and_quill"
+					type: "item"
+				}
+			]
+			title: "Saving Schematics"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["225DD8C72B11FFE3"]
+			description: [
+				"Для того, чтобы разместить сохраненные конструкции, вам необходимо создать Схема – это делается в Таблице схемы."
+				""
+				"Выберите схему, которую хотите создать, наведя указатель мыши на поле в середине графического интерфейса и прокрутив его. Поместите пустую схему в левую ячейку стола. Щелкните галочку, чтобы распечатать схему — при этом она загружается на сервер, а для очень больших схем может потребоваться некоторое время. Вы можете закрыть таблицу, пока этот процесс завершится, и вернуться позже. Нажатие кнопки «Открыть папку» откроет папку «Схемы» в вашем экземпляре, а нажатие «Обновить» обновит список доступных схем."
+				""
+				"Схема в руках, вы можете поместить ее в мир, щелкнув правой кнопкой мыши. Экранный интерфейс предоставляет возможности настройки схемы: перемещение, вращение или переворачивание. Щелчок правой кнопкой мыши по схеме, удерживая клавишу Shift, также позволит вам редактировать размещение и вращение/зеркальное отображение. Вы можете использовать это как руководство по сборке, но есть и более эффективные применения..."
+				""
+				"Примечание. Схемы для обычных мультиблоков включены по умолчанию. Вы можете использовать кнопку «Открыть папку», чтобы переместить все схемы, которые вы не используете, а затем обновить список."
+				""
+				"На Create GitHub есть вики с примерами загрузки схем:"
+				""
+				"{\"текст\": \"Загрузка схемы\", \"цвет\": \"синий\", \"подчеркнутый\": \"истина\", \"clickEvent\":{\"действие\ ":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic\"}}"
+			]
+			id: "7B4FBC9CC07C6E28"
+			min_width: 300
+			rewards: [
+				{
+					id: "03CCD8A592938743"
+					item: "create:empty_schematic"
+					title: "Empty Schematic"
+					type: "item"
+				}
+			]
+			subtitle: "Filing for Building Permits"
+			tasks: [
+				{
+					id: "1D0625DD24276142"
+					item: "create:schematic_table"
+					type: "item"
+				}
+			]
+			title: "Placing Schematics"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7B4FBC9CC07C6E28"]
+			description: [
+				"Schematicannon — это то, как вы собираетесь строить свои структуры. Он использует порох в качестве топлива и берет блоки из соседних инвентарей."
+				""
+				"Возьмите только что размещенную схему и загрузите ее в Schematicannon. Загрузите порох в левом верхнем углу — пушка будет использовать по одному на каждые 400 блоков. Нажмите кнопку «Воспроизвести» в центре интерфейса, чтобы начать размещать блоки!"
+				""
+				"По умолчанию пушка остановится, если у нее нет необходимого блока, и заменит все блоки на пути, но защитит объекты плитки (например, сундуки и тому подобное). Замененные блоки не падают и не теряются — пушка НЕ ​​карьерный инструмент! Этими настройками можно управлять, нажав кнопку в левом нижнем углу."
+				""
+				"Примечание. Пушка не очень быстрая, но можно разделить рабочую нагрузку между несколькими пушками, и «Время в бутылке» творит с ней чудеса!"
+				""
+				"На Create GitHub есть вики с примерами печати схем:"
+				""
+				"{\"текст\": \"Печать схемы\", \"цвет\": \"синий\", \"подчеркнутый\": \"истина\", \"clickEvent\":{\"действие\ ":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic\"}}"
+			]
+			id: "55FBBB1108757907"
+			min_width: 300
+			rewards: [
+				{
+					count: 16
+					id: "454017D41CFDE042"
+					item: "minecraft:gunpowder"
+					title: "Gunpowder"
+					type: "item"
+				}
+			]
+			subtitle: "Constructive Detonation"
+			tasks: [
+				{
+					id: "26823569074F6FA3"
+					item: "create:schematicannon"
+					type: "item"
+				}
+			]
+			title: "Printing Schematics"
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+	title: "Building"
+}

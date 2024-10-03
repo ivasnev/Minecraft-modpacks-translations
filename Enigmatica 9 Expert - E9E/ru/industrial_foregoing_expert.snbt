@@ -1,0 +1,767 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing_expert"
+	group: "72A9465344128AF9"
+	icon: "industrialforegoing:latex_processing_unit"
+	id: "2861645F43F7DAA3"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: ["Industrial Foregoing предлагает широкий спектр машин для автоматизации различных задач, связанных с сельским хозяйством. От выращивания растений и разведения животных до дублирования мобов и добычи ресурсов."]
+			hide: true
+			icon: "industrialforegoing:plastic"
+			id: "7F5A622EA197C0FE"
+			rewards: [
+				{
+					id: "7DDDD5D43A796F70"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					icon: "minecraft:raw_copper"
+					id: "35E13A443EB4BC9E"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials"
+						}
+					}
+					title: "Industrial Foregoing"
+					type: "item"
+				}
+			]
+			title: "Industrial Foregoing"
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Растворение твердых веществ в жидкостях, безусловно, является распространенной задачей как в быту, так и в промышленности."
+				""
+				"Камера растворения продвигает этот процесс несколько дальше, растворяя материалы вместе, а затем систематически восстанавливая из супа что-то совершенно новое."
+			]
+			hide_dependency_lines: true
+			id: "3E89C56A496461D9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "379E1DF360B71C28"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Extreme Measures"
+			tasks: [
+				{
+					id: "4DE2685012E5A8D2"
+					item: "industrialforegoing:dissolution_chamber"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Дополнения к машинам делятся на четыре категории: скорость, эффективность, обработка и дальность действия."
+				""
+				"Скорость: увеличивает рабочую скорость машины."
+				""
+				"Эффективность: снижает энергопотребление машины."
+				""
+				"Обработка: позволяет машине выполнять несколько операций за процесс."
+				""
+				"Диапазон: Увеличивает рабочую зону машины."
+				""
+				"Не все машины могут принимать все дополнения."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "industrialforegoing:range_addon11"
+				tag: {
+					TitaniumAugment: {
+						Range: 11.0f
+					}
+				}
+			}
+			id: "4CC162048F792C86"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6719F2C0C0E7FB2B"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "In the Cards"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "industrialforegoing:range_addon11"
+						tag: {
+							TitaniumAugment: {
+								Range: 11.0f
+							}
+						}
+					}
+					id: "70080631CE03AAC2"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "industrialforegoing:.*_addon"
+						}
+					}
+					title: "Any Addon"
+					type: "item"
+				}
+			]
+			title: "Addons"
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Эта машина представляет собой универсальный цех по обработке булыжника."
+				""
+				"Он может генерировать булыжник из лавы и воды, а затем выполнять до четырех последовательных операций: плавку, дробление, крафт 2х2 или крафт 3х3, чтобы получить различные конечные результаты."
+				""
+				"Например, булыжник можно было измельчить до гравия, затем песка и, наконец, переплавить в стекло."
+			]
+			hide_dependency_lines: true
+			id: "74A44328C7E9FAF8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3EF8435392E86386"
+					title: "Epic Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Rocks and Shoals"
+			tasks: [
+				{
+					id: "23694575C3ECC943"
+					item: "industrialforegoing:material_stonework_factory"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Бур, способный вырабатывать очень большие площади, идеально подходит для длительных сеансов добычи полезных ископаемых."
+				""
+				"Нажмите правой кнопкой мыши, чтобы установить параметры."
+				""
+				"Щелкните правой кнопкой мыши резервуар с Abyssaline, чтобы заполнить его."
+			]
+			hide_dependency_lines: true
+			id: "41E4A38DBA6DE6A7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "35FD9DE9C1AE9790"
+					title: "Epic Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0FA22DD447DAE6C6"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:infinity_drill"
+						tag: {
+							CanCharge: 1b
+							Energy: 9223372036854775807L
+							Fluid: {
+								Amount: 0
+								FluidName: "biofuel"
+							}
+							Selected: "ARTIFACT"
+							Special: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: ["Автоматически внося удобрения или костную муку, удобрение для растений значительно ускоряет рост сельскохозяйственных культур в рабочей зоне."]
+			hide_dependency_lines: true
+			id: "08142040D5D8815C"
+			rewards: [
+				{
+					count: 16
+					id: "0C51BC0086C07E6B"
+					item: "industrialforegoing:fertilizer"
+					title: "Fertilizer"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "076765969F37C975"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Second Chances"
+			tasks: [
+				{
+					id: "5BC241B5CA44B54C"
+					item: "industrialforegoing:plant_fertilizer"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Более мощный трезубец, способный нанести урон множеству мобов, где бы он ни приземлился. В него встроены чары «Верность», «Быстрота» и «Направление», которые можно переключать по желанию."
+				""
+				"Нажмите правой кнопкой мыши, чтобы установить параметры."
+				""
+				"Щелкните правой кнопкой мыши резервуар с Abyssaline, чтобы заполнить его."
+			]
+			hide_dependency_lines: true
+			id: "63A495A27778E61B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "5C407B1EF44A000F"
+					title: "Epic Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7BF1222DDFC15890"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:infinity_trident"
+						tag: {
+							CanCharge: 1b
+							Channeling: 0b
+							Energy: 9223372036854775807L
+							Fluid: {
+								Amount: 0
+								FluidName: "biofuel"
+							}
+							Loyalty: 0
+							Riptide: 0
+							Selected: "ARTIFACT"
+							Special: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Идеальный инструмент для очистки обширных участков земли от деревьев любой формы. Эта пила работает в отличие от большинства инструментов тем, что она работает вниз с верхушки дерева."
+				""
+				"Нажмите правой кнопкой мыши, чтобы установить параметры."
+				""
+				"Щелкните правой кнопкой мыши резервуар с Abyssaline, чтобы заполнить его."
+			]
+			hide_dependency_lines: true
+			id: "255410094C4D7875"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "55819A4D04CED075"
+					title: "Epic Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "I'm Still Worthy!"
+			tasks: [
+				{
+					id: "4B57CA7C3F20BDE7"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:infinity_hammer"
+						tag: {
+							Beheading: 0
+							CanCharge: 1b
+							Energy: 9223372036854775807L
+							Fluid: {
+								Amount: 0
+								FluidName: "biofuel"
+							}
+							Selected: "ARTIFACT"
+							Special: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Электрифицируя это сомнительное вещество, известное как Жидкое мясо, Механическая Грязь может быстро генерировать мобов, обитающих в местном биоме. Требования к освещенности соблюдаются, поэтому мобы не будут спавниться на нем, если в комнате слишком светло."
+				""
+				"Энергия и жидкое мясо распределяются по всем соседним блокам Механической грязи, что позволяет одному соединению для каждого управлять большой сеткой Механической грязи."
+			]
+			hide_dependency_lines: true
+			id: "2E391C1331D1C854"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6C27923990829FB4"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "A Blight Upon the Land"
+			tasks: [
+				{
+					id: "02831806736BC87A"
+					item: "industrialforegoing:mechanical_dirt"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7F5A622EA197C0FE"]
+			description: ["Industrial Foregoing поставляется с различными машинами, помогающими упростить выращивание сельскохозяйственных культур."]
+			hide_dependency_lines: true
+			icon: "minecraft:wheat"
+			id: "10C9F0F84BF69D0A"
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "minecraft:wheat_seeds"
+					id: "20D9B3D97BB89D52"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:seeds"
+						}
+					}
+					title: "Any Seeds"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Farm Management"
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7F5A622EA197C0FE"]
+			description: ["Industrial Foregoing — это не просто машины, а целый ряд полезных инструментов для удовлетворения многих потребностей."]
+			hide_dependency_lines: true
+			icon: "industrialforegoing:meat_feeder"
+			id: "3A4F484FD23B29BA"
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "minecraft:raw_copper"
+					id: "6151856A474E9DD0"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials"
+						}
+					}
+					title: "Any Raw Materials"
+					type: "item"
+				}
+			]
+			title: "Tools and Utility"
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Транспортеры — это небольшие модули, которые можно использовать для транспортировки предметов или жидкостей между соседними инвентарями. Их радиус действия ограничен, но они могут быть очень быстрыми. А поскольку в одном пространстве блока может находиться более одного блока, их можно использовать для легкого разделения и сортировки результатов работы машины по другим инвентарям."
+				""
+				"Модули скорости заставят транспортеры работать быстрее, а аддоны эффективности позволят им перемещаться больше за одну операцию."
+			]
+			hide_dependency_lines: true
+			id: "230C4DBDBA945EF5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "2CF35E56988649E5"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "The Darkness and the Light"
+			tasks: [
+				{
+					id: "50EBA69B08622D27"
+					item: "industrialforegoing:item_transporter_type"
+					type: "item"
+				}
+				{
+					id: "7507AE46BCF8747A"
+					item: "industrialforegoing:fluid_transporter_type"
+					type: "item"
+				}
+				{
+					id: "6E3F7CC015126663"
+					item: "industrialforegoing:world_transporter_type"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Transporters"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"Отличное дополнение к любой пассивной животноводческой ферме. Канализационная система будет медленно генерировать жидкие сточные воды от животных в ее рабочей зоне."
+				""
+				"Канализация также может собирать сферы опыта и превращать их непосредственно в эссенцию."
+			]
+			hide_dependency_lines: true
+			id: "0D2046CE317CC921"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "131B8F1A1F1FE1FC"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "What You Leave Behind"
+			tasks: [
+				{
+					id: "0A39421A5A792EFA"
+					item: "industrialforegoing:sewer"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: ["Простое устройство, позволяющее превратить нечистоты во что-то более полезное: удобрение."]
+			hide_dependency_lines: true
+			id: "52764EBC333BE812"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "58FC0103111007F7"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "A Matter of Perspective"
+			tasks: [
+				{
+					id: "18186923CB301AAB"
+					item: "industrialforegoing:sewage_composter"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"Plant Gatherer быстро соберет все культуры в своей рабочей зоне, простирающейся перед машиной. При сборе урожая он удаляет весь урожай, поэтому ключевым моментом является соединение его с сеялкой."
+				""
+				"Во время сбора урожая он также будет производить небольшое количество ила, который необходимо будет переработать."
+				""
+				"Предоставление ему небольшого количества эфирного газа позволит ему автоматически пересаживаться при сборе урожая."
+			]
+			hide_dependency_lines: true
+			id: "3A75AA5CC54B57CF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "0DB5BF86FD75C324"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Reaping the Rewards"
+			tasks: [
+				{
+					id: "37ECEAF58C0961EB"
+					item: "industrialforegoing:plant_gatherer"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"Удобное приспособление для пересадки культур на участке. Он сажает семена над собой, позволяя спрятать их под землей."
+				""
+				"Каждый входной слот можно заблокировать для определенного типа семени, сначала поместив семя в слот, а затем нажав кнопку блокировки. Каждый слот соответствует одному из цветных слотов слева от интерфейса и цветным точкам в верхней части машины. Это указывает, на какой площади будут размещены семена, при этом одна сеялка легко обрабатывает до девяти уникальных участков сельскохозяйственных культур."
+			]
+			hide_dependency_lines: true
+			id: "1FBB65CA305699EA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "56424275050ABFF4"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Sow Many Plants, Sow Little Time"
+			tasks: [
+				{
+					id: "7DE2B1DD0A9C4018"
+					item: "industrialforegoing:plant_sower"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"Гидропоника использовалась для облегчения роста различных растений с момента ее создания, позволяя выращивать более сильные и богатые питательными веществами продукты."
+				""
+				"Гидропонная грядка действует как любая сельскохозяйственная земля, позволяя сажать на ней большинство сельскохозяйственных культур. Однако, если добавить немного энергии и воды, это значительно ускорит рост урожая."
+				""
+				"Предоставляя небольшое количество эфирного газа, он даже автоматически собирает урожай, который выращивает."
+			]
+			hide_dependency_lines: true
+			id: "052EA866FC2E143E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3463EB949B33CDA9"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "671363BB149F467C"
+					item: "industrialforegoing:hydroponic_bed"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: ["Перерабатывая ил, полученный Сборщиком растений, можно получить ряд блоков, таких как глина, песок и песок душ."]
+			hide_dependency_lines: true
+			id: "5E518FE797F99F6F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "788C3E2A822F3CD0"
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "The Plot Thickens..."
+			tasks: [
+				{
+					id: "202E7CC257BC8DA2"
+					item: "industrialforegoing:sludge_refiner"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			hide_dependency_lines: true
+			icon: "industrialforegoing:fluid_laser_base"
+			id: "56A313EA5C3D6A59"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "356398A4898C5D98"
+					title: "Epic Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "If Memory Serves"
+			tasks: [
+				{
+					id: "695ABC9BF36D0A72"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "industrialforegoing:.*_laser_base"
+						}
+					}
+					title: "Laser Base"
+					type: "item"
+				}
+				{
+					id: "22F1AAB9CBAABCB3"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+			]
+			title: "Laser Drilling"
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Абсолютное оружие, способное уничтожить что угодно и кого угодно на огромной территории."
+				""
+				"Вас предупредили."
+				""
+				"Нажмите правой кнопкой мыши, чтобы установить параметры."
+				""
+				"Щелкните правой кнопкой мыши резервуар с Abyssaline, чтобы заполнить его."
+				""
+				"================================"
+				""
+				"Чтобы взорвать:"
+				""
+				"1. Разместите его где-нибудь подальше"
+				"ничего важного."
+				""
+				"2. Щелкните правой кнопкой мыши, чтобы поставить его на охрану. Корпус"
+				"закроется."
+				""
+				"3. Подожгите его кремнем и сталью."
+				""
+				"4. Бегите."
+			]
+			hide_dependency_lines: true
+			id: "18BB0AEB0616ED46"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "770DD847637FC248"
+					title: "Epic Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0B8F6AF714283187"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:infinity_nuke"
+						tag: {
+							CanCharge: 1b
+							Energy: 9223372036854775807L
+							Fluid: {
+								Amount: 0
+								FluidName: "biofuel"
+							}
+							Selected: "ARTIFACT"
+							Special: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"Идеальный инструмент для очистки обширных участков земли от деревьев любой формы. Эта пила работает в отличие от большинства инструментов тем, что она разбивает блоки от верхушки дерева вниз по направлению к месту использования. Он очищает древесину и листья в районе, где он используется, независимо от того, связаны ли эти деревья с распиливаемым или нет."
+				""
+				"Нажмите правой кнопкой мыши, чтобы установить параметры."
+				""
+				"Щелкните правой кнопкой мыши резервуар с Abyssaline, чтобы заполнить его."
+			]
+			hide_dependency_lines: true
+			id: "6D2D4406B69A437B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "5C632F4FB5098CA3"
+					title: "Epic Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "126DC872A6482962"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:infinity_saw"
+						tag: {
+							CanCharge: 1b
+							Energy: 9223372036854775807L
+							Fluid: {
+								Amount: 0
+								FluidName: "biofuel"
+							}
+							Selected: "ARTIFACT"
+							Special: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -2.0d
+		}
+	]
+	title: "Industrial Foregoing"
+}

@@ -1,0 +1,1945 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumaticcraft_repressurized_expert"
+	group: "72A9465344128AF9"
+	icon: "pneumaticcraft:pressure_gauge_module"
+	id: "528DEAC4CBA79B23"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"PneumaticCraft: Repressurized — это логистика, автоматизация и вообще взрывы с целью получения прибыли. Освоение сжатого воздуха и тепла станет началом вашего пути."
+				""
+				"Эти квесты проведут вас через мод, но не забывайте регулярно обращаться к руководству для получения дополнительной информации. Главы будут открываться по мере выполнения этих квестов и связанных с ними достижений."
+			]
+			hide: true
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			id: "6E942B6AC4460725"
+			rewards: [
+				{
+					id: "26FC0CB6FE55E311"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_wrench"
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+					title: "Pneumatic Wrench"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					icon: "pneumaticcraft:compressed_iron_block"
+					id: "75B5665CA0C8FECE"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials"
+						}
+					}
+					title: "PneumaticCraft: Repressurized"
+					type: "item"
+				}
+			]
+			x: -16.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: [
+				"Центральное место в мастерской любого механика давления занимает барокамера, которая служит одновременно функциональной машиной для крафта и воздушной батареей, позволяющей компенсировать скачки нагрузки в системе. Он построен в виде полого куба 3x3x3, 4x4x4 или 5x5x5. Рекомендуется начинать с небольшой камеры, так как для заполнения больших камер потребуется гораздо больше времени."
+				""
+				"Сжатый воздух будет поступать через клапан, а предметы для крафта — через интерфейс. Элементы нельзя вставлять в интерфейс вручную. Вместо этого они будут вводиться через бункер или трубу. Для каждого передаваемого предмета используется определенное количество воздуха, то есть для передачи стопки потребуется в 64 раза больше воздуха. Если стек предметов не хочет переноситься, рассмотрите возможность добавления дополнительных обновлений тома."
+				""
+				"=============================================== ==============="
+				""
+				"Воздух под давлением обычно работает аналогично реальной жизни: воздух хочет течь от высокого давления к низкому, чтобы сформировать равновесие. Это означает, что воздух может течь в обоих направлениях по трубной сети, и весь воздух в системе доступен для использования всем, что подключено. Конечно, если одна машина истощает весь воздух, это может означать, что другим его не хватит для работы."
+				""
+				"Рецепты с использованием воздуха покажут минимальное давление, необходимое для работы. Это измеряется в барах. Это будет отображаться в виде зеленой зоны на индикаторе давления в рецепте. Наличие давления в любом месте этого диапазона является приемлемым."
+				""
+				"Чем больше объем системы, тем больше воздуха требуется для достижения того же давления. Добавление обновлений тома к машинам или просто включение большего количества машин в линию увеличит общее количество воздуха, которое может удерживать система. Это может временно снизить давление, по крайней мере, до тех пор, пока компрессор не сможет заполнить его обратно."
+				""
+				"Примечание. При строительстве барокамеры необходимо соблюдать осторожность, и вся конструкция не должна пересекать границы блоков. F3+G отобразит границы фрагментов."
+			]
+			icon: "pneumaticcraft:pressure_chamber_wall"
+			id: "2BCEA81413D908E4"
+			min_width: 400
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7364D55166238332"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 23L
+					id: "7CAE99944A5DA34E"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "12F082C412932885"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
+				}
+				{
+					id: "5529379BA0E98053"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+			]
+			title: "Pressure Chamber"
+			x: -21.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: [
+				"Хотя в следующем тысячелетии вас не посетит опасная лапша из космоса или не облучает сельскую местность, сжатый воздух может быть опасен сам по себе, поскольку превышение давления может привести к взрыву и потере этого блока."
+				""
+				"Для управления воздушными компрессорами можно построить простой предохранитель Redstone, и это не только предотвратит случайные взрывы, но и поможет снизить расход топлива."
+				""
+				"Поместите модуль трубки манометра на первую трубку давления, выходящую из компрессора, затем направьте цикл из ровно девяти красных камней обратно к повторителю, направленному в сам компрессор. Наконец, настройте компрессор на работу при низком уровне сигнала на панели Redstone Behavior. Конечным результатом является компрессор, который отключается при давлении около 4,5 бар."
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:flux_compressor"
+			id: "3BDD27D9FDC82E36"
+			min_width: 300
+			rewards: [
+				{
+					count: 9
+					id: "2CF05CB4198898DA"
+					item: "minecraft:redstone"
+					title: "Redstone Dust"
+					type: "item"
+				}
+				{
+					id: "3F1E0BD337B23FF2"
+					item: "minecraft:repeater"
+					title: "Redstone Repeater"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Under Pressure"
+			tasks: [
+				{
+					id: "322423F415E284D8"
+					item: "pneumaticcraft:pressure_gauge_module"
+					type: "item"
+				}
+				{
+					id: "457687F0BC37E9EA"
+					item: "pneumaticcraft:flux_compressor"
+					title: "Air Compressors"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5631F8C109FD8A29"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Pressure Management"
+			x: -21.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["2BCEA81413D908E4"]
+			description: [
+				"Даже самые продуманные планы могут быть разрушены неожиданными событиями. Установите обновления безопасности на машины, чтобы предотвратить быструю внеплановую разборку."
+				""
+				"Следует подчеркнуть, что обновления безопасности следует рассматривать как резервную защиту. Правильно управляемый компрессор Redstone должен быть приоритетом номер один."
+				""
+				"Примечание. Подкрадитесь + щелкните правой кнопкой мыши любой блок PNC:R с помощью пневматического гаечного ключа, чтобы мгновенно поднять его, сохранив при этом запас воздуха и улучшения. Это также работает с клапанами камеры давления."
+			]
+			id: "21E80B4F1712E3FF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6E8BDFC4506F6E33"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Cautiously Optimistic"
+			tasks: [
+				{
+					count: 2L
+					id: "1177F882F4EC6D68"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
+			]
+			title: "Security Upgrades"
+			x: -21.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Несмотря на свое название, Керосиновая Лампа может использовать все то же топливо, что и Жидкостный Компрессор, освещая территорию радиусом до 30 блоков."
+				""
+				"Идеально подходит для сдерживания ужасов."
+			]
+			hide_dependency_lines: true
+			id: "64B5744F479C4279"
+			rewards: [
+				{
+					id: "1F3042103791237B"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:medium_tank"
+						tag: {
+							BlockEntityTag: {
+								SavedTanks: {
+									Tank: {
+										Amount: 64000
+										FluidName: "pneumaticcraft:kerosene"
+									}
+								}
+							}
+						}
+					}
+					title: "Medium Fluid Tank"
+					type: "item"
+				}
+			]
+			subtitle: "The Night is Dark..."
+			tasks: [
+				{
+					id: "0372C21229B0B51F"
+					item: "pneumaticcraft:kerosene_lamp"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"Вихревая трубка, построенная по принципу закручивания воздуха под высоким давлением в специальной камере для создания перепада температур, позволяет точно контролировать нагрев или охлаждение, просто регулируя подаваемое в нее давление."
+				""
+				"Вихревая трубка имеет горячую и холодную стороны, которые термически связаны. Насколько горячей становится горячая сторона, зависит от температуры холодной стороны и наоборот. Например, размещение радиатора на холодной стороне позволяет холоду быстрее рассеиваться в воздухе, повышая температуру как холодной, так и горячей стороны."
+				""
+				"Однако вихревая трубка — не единственный способ генерировать тепло. Поиск вариантов использования тепловых трубок в JEI приведет к появлению множества блоков и жидкостей, которые также можно использовать для нагрева и охлаждения."
+				""
+				"Наконец, PNC:R имеет встроенную поддержку системы Mekanism Heat и совместимость с Immersive Engineering. Некоторые известные источники тепла включают:"
+				""
+				"● Внешний нагреватель"
+				"● Резистивный нагреватель"
+				"● Дровяной обогреватель"
+			]
+			id: "52165EC21DD8ABFB"
+			min_width: 250
+			rewards: [
+				{
+					count: 3
+					id: "4CF7E22863B404CF"
+					item: "pneumaticcraft:heat_sink"
+					title: "Heat Sink"
+					type: "item"
+				}
+			]
+			subtitle: "Whirling Dervishes"
+			tasks: [
+				{
+					id: "6C43F51641A8BB70"
+					item: "pneumaticcraft:vortex_tube"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: [
+				"Хотя управление теплом является второстепенным по отношению к давлению, оно является важной частью работы с машинами PNC:R. Некоторые из них необходимо поддерживать при температуре выше определенной, в то время как другие должны быть прохладными для правильной работы."
+				""
+				"Тепло, как и давление, будет пытаться выровняться по всей системе, распространяясь по всем чувствительным к теплу машинам и даже рассеиваясь в воздухе. Использование тепловой трубки позволяет перемещать тепло из одного места в другое без ущерба для окружающей среды."
+				""
+				"В тех случаях, когда требуется достижение очень высоких или низких температур, потребуется какая-либо изоляция."
+				""
+				"Изоляция принимает множество форм. Практически любой блок, не чувствительный к нагреву, считается; Люки, трубы и стекло – все можно использовать. Тем не менее, термическая задержка, как правило, идеальна, поскольку она по-прежнему позволяет получить доступ правой кнопкой мыши к машине, на которой она установлена."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:blue_ice"
+			id: "011EE483D38C9C23"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "29CC4AE5D8D278BA"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "The Cold Never Bothered Me Anyway"
+			tasks: [
+				{
+					count: 6L
+					id: "0BF764D71DBB2DA1"
+					item: "pneumaticcraft:heat_pipe"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "51CB4BC0AB80DA66"
+					item: "pneumaticcraft:thermal_lagging"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Heat Management"
+			x: -10.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["52165EC21DD8ABFB"]
+			description: [
+				"Стоит отметить, что Vortex Tube использует много воздуха и не реагирует напрямую на управление Redstone. Для того чтобы его выключить, необходимо перекрыть подачу воздуха. Модуль регуляторной трубки может сделать именно это."
+				""
+				"Поместив его на одну линию с трубкой давления и подав на него сигнал красного камня, количество давления, которое он пропускает, будет уменьшено. Полный сигнал 15 полностью отключит поток воздуха, отключив все машины на линии."
+				""
+				"Регуляторы также идеально подходят для перехода от высокого давления к низкому и автоматически регулируют давление до 4,9 бар без каких-либо дополнительных усилий. Это имеет тенденцию упрощать управление напорными трубками, поскольку высокое давление может работать повсюду, а затем снижаться для запуска машин с низким давлением, где это необходимо."
+				""
+				"Примечание. Когда дело доходит до размещения, меньший конец является «регулируемым». Как и в случае с любым модулем трубки, щелчок правой кнопкой мыши поместит его в сторону от той стороны, на которую он был нажат. Скрытность + щелчок правой кнопкой мыши поместит его на противоположную сторону трубы."
+			]
+			id: "6A0D0EE149F91408"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "42EDFE52FEF7D948"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6FCA9EB91BB33E7E"
+					item: "pneumaticcraft:regulator_tube_module"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"Тепловой каркас размещается на любом инвентаре и позволяет инвентарю использовать тепло или холод для выполнения операций крафта. При нагревании он плавит предметы, как это делает печь. В остывшем виде из него можно сделать множество полезных предметов."
+				""
+				"Чтобы охладить жидкости, наполните резервуар PNC:R или ведро и поместите его в инвентарь. Охлажденные предметы появятся в сундуке, если там есть место."
+			]
+			hide_dependency_lines: true
+			id: "47AFE9BB5B8C4655"
+			rewards: [
+				{
+					id: "0952FFF35BFD54EE"
+					item: "pneumaticcraft:reinforced_chest"
+					title: "Reinforced Chest"
+					type: "item"
+				}
+			]
+			subtitle: "Freeze Frame"
+			tasks: [
+				{
+					id: "598785CD3F83C151"
+					item: "pneumaticcraft:heat_frame"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Универсальный датчик — это мощный блок, который выдает сигнал красного камня в зависимости от различных условий, таких как обнаружение ближайшего игрока, когда игрок щелкает правой кнопкой мыши по блоку, наличие блоков, уровень освещенности или даже текущая температура блока. ."
+				""
+				"При считывании тепла попробуйте направить его на тепловую трубку или машину PNC:R, а не на инвентарь с тепловой рамкой."
+			]
+			hide_dependency_lines: true
+			id: "7798C42F46156ECE"
+			rewards: [
+				{
+					id: "4225A74DA201F312"
+					item: "pneumaticcraft:block_tracker_upgrade"
+					title: "Block Tracker Upgrade"
+					type: "item"
+				}
+				{
+					id: "2345C95FB18383C8"
+					item: "pneumaticcraft:gps_tool"
+					title: "GPS Tool"
+					type: "item"
+				}
+			]
+			subtitle: "Under the Radar"
+			tasks: [
+				{
+					id: "6EFE971150331862"
+					item: "pneumaticcraft:universal_sensor"
+					type: "item"
+				}
+			]
+			x: -14.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: [
+				"Газлифт можно использовать для перекачивания жидкостей из окружающего мира. А при использовании для перекачки воды размером 3х3 будет рассматриваться как бесконечный источник."
+				""
+				"Поместите его над блоком источника любой жидкости, вставьте бурильные трубы и подайте воздух. Трубы будут проходить вниз к источнику, при необходимости ломая блоки на пути, и будут пытаться вытащить все близлежащие подключенные блоки источника."
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:gas_lift"
+			id: "4BE812408CBFB588"
+			rewards: [
+				{
+					count: 4
+					id: "012A65117575B993"
+					item: "pneumaticcraft:volume_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Hands Off!"
+			tasks: [
+				{
+					id: "278BF9D026EEEC6D"
+					item: "pneumaticcraft:gas_lift"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "4F62F1E2676A8DDF"
+					item: "pneumaticcraft:drill_pipe"
+					type: "item"
+				}
+			]
+			x: -22.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"Нефтеперерабатывающий завод работает исключительно на тепле и строится путем размещения контроллера и установки на него от двух до четырех выходов. Обязательно изолируйте все стороны, чтобы предотвратить потерю тепла, так как для работы он должен быть очень горячим."
+				""
+				"Примечание. Показания компаратора от контроллера будут выдавать сигнал всякий раз, когда нефтеперерабатывающий завод может выполнять работу, что означает, что у него есть действительный вход и достаточно места для выходов, что делает его отличным способом эффективного управления вихревой трубкой."
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:refinery_output"
+			id: "77B7A8530C3B3421"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "2120D4C24F7F303D"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Refined Company"
+			tasks: [
+				{
+					id: "1337A526608EDFB0"
+					item: "pneumaticcraft:refinery"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5354E44458DBF503"
+					item: "pneumaticcraft:refinery_output"
+					type: "item"
+				}
+			]
+			title: "Oil Refinery"
+			x: -10.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"Сокращенно TPP, эта машина использует сочетание тепла и давления для преобразования твердых веществ и жидкостей. В последние годы он даже нашел применение на кухне."
+				""
+				"Размещение машин в ряд позволяет им распределять тепло и давление по бокам."
+				""
+				"Некоторые рецепты потребуют очень точного контроля температуры, например от 30° до 60°. Этого можно добиться, регулируя поток воздуха, поступающего в вихревую трубку, с помощью универсального датчика, отключающего поток воздуха, когда блок достигает определенной температуры."
+			]
+			hide_dependency_lines: true
+			id: "341CD0E12D534A44"
+			rewards: [
+				{
+					count: 16
+					id: "27115E85D1071701"
+					item: "pneumaticcraft:cod_n_chips"
+					title: "Cod n Chips"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29296A9922AAC24F"
+					item: "pneumaticcraft:dispenser_upgrade"
+					title: "Dispenser Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Thermo-new-what-now?"
+			tasks: [
+				{
+					id: "28A39770D414504E"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+					type: "item"
+				}
+			]
+			title: "Thermopneumatic Processing"
+			x: -11.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: [
+				"Логистические рамки и модули — это основные инструменты, используемые в логистической сети. Они позволяют перемещать как предметы, так и жидкости по одной и той же сети труб одновременно."
+				""
+				"Сами фреймы определяют действия, которые необходимо предпринять, и здесь можно устанавливать фильтры. Например, рамка запроса, прикрепленная к печи, может извлекать уголь из инвентаря с прикрепленной структурой хранения."
+				""
+				"Рамы можно установить на любой инвентарь и настроить с помощью логистического конфигуратора. Для более крупных настроек полный набор кадров можно настроить заранее, щелкнув их правой кнопкой мыши в воздухе. Любой набор фильтров будет применяться ко всему стеку."
+				""
+				"Модули должны быть установлены на напорной трубке, направленной внутрь рамы. Для каждой операции используется небольшое количество воздуха, а для нормальной работы требуется минимум 3 бара. Эти модули также имеют канал с цветовой кодировкой, что позволяет использовать очень сложные системы в одной и той же сети трубок."
+			]
+			id: "6F9B23BB2F05C9CF"
+			min_width: 300
+			rewards: [
+				{
+					count: 8
+					id: "0971F4B903BC0755"
+					item: "pneumaticcraft:logistics_frame_requester"
+					title: "Logistic Requester Frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5B69B45A7A2CEB1C"
+					item: "pneumaticcraft:logistics_frame_passive_provider"
+					title: "Logistic Passive Provider Frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3D2E76A2F71FD9F3"
+					item: "pneumaticcraft:logistics_frame_storage"
+					title: "Logistic Storage Frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "405F63DF3A2DA57F"
+					item: "pneumaticcraft:logistics_frame_active_provider"
+					title: "Logistic Active Provider Frame"
+					type: "item"
+				}
+				{
+					id: "17906620288CD598"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:logistics_configurator"
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Framing Your Request"
+			tasks: [
+				{
+					count: 8L
+					id: "05D615B75A5D5E7E"
+					item: "pneumaticcraft:logistics_module"
+					type: "item"
+				}
+			]
+			title: "Logistics"
+			x: -17.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["Взрывозащищенный сундук, сохраняющий свое содержимое даже при разрушении."]
+			hide_dependency_lines: true
+			id: "78AA867A347E4A37"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "620CA924053FE1B1"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Who Says You Can't Take It With You?"
+			tasks: [
+				{
+					id: "39F7DFB8722C0D56"
+					item: "pneumaticcraft:reinforced_chest"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["Усовершенствованная версия усиленного сундука с увеличенным инвентарем, фильтрацией по типу и количеству предметов по ячейкам, сбором предметов дальнего боя, а также возможностью перемещать и вытаскивать предметы в близлежащие инвентари и из них."]
+			hide_dependency_lines: true
+			id: "31F1D77166705C31"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3621E6BD54CDE738"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					id: "7B999E99D0741012"
+					item: "pneumaticcraft:magnet_upgrade"
+					title: "Magnet Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Work Smarter, Not Harder"
+			tasks: [
+				{
+					id: "559FDDE96388DC40"
+					item: "pneumaticcraft:smart_chest"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["Быстродействующие и фильтруемые бункеры PNC:R можно ориентировать по своему усмотрению и принимать множество полезных обновлений. Проверьте их графический интерфейс для получения дополнительной информации."]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:omnidirectional_hopper"
+			id: "2B9F6B6CA560D326"
+			rewards: [
+				{
+					count: 2
+					id: "52A67AF1A81A0B58"
+					item: "pneumaticcraft:speed_upgrade"
+					title: "Speed Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Weird Flex, Bro"
+			tasks: [
+				{
+					id: "008D9C03C28B8704"
+					item: "pneumaticcraft:omnidirectional_hopper"
+					type: "item"
+				}
+				{
+					id: "1F4C8424CE84CA8F"
+					item: "pneumaticcraft:liquid_hopper"
+					type: "item"
+				}
+			]
+			title: "Hoppers"
+			x: -15.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: ["Автоматизация — это сердце и душа PNC:R, и ее возможности в области логистики, Redstone и программирования составляют большую часть того, что она может сделать."]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:logistics_core"
+			id: "7F36F40E0465B923"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "4598DFE37D84B116"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: "pneumaticcraft:pressure_tube"
+					id: "4547231CF39FE5A6"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "pneumaticcraft:pressure_tube"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:reinforced_pressure_tube"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:advanced_pressure_tube"
+								}
+							]
+						}
+					}
+					title: "Logistics and Programming"
+					type: "item"
+				}
+			]
+			title: "Logistics and Programming"
+			x: -16.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: [
+				"Модули Redstone используются для чтения и вывода сигналов Redstone путем их передачи по трубопроводной сети. Каждый модуль может быть настроен на цветовой канал, что позволяет передавать до 16 различных сигналов по одной и той же сети ламп."
+				""
+				"Для этого не требуется воздух, и сигнал не ухудшается с расстоянием."
+				""
+				"Установив карту расширения модуля в модуль в режиме приема, ее можно настроить на поведение точно так же, как обычный компаратор, получая сигнал от блоков, которые выдают специальные значения для компараторов, таких как нефтеперерабатывающий завод."
+				""
+				"При установке такой карты в модуль в режиме излучения становится доступным несколько функций. Например, используя цветовые каналы, он может работать как логический элемент И, логический элемент ИЛИ, сравнивать с другим каналом или с постоянным значением и многое другое. Соединив их вместе, можно создать по-настоящему компактную логику Redstone."
+			]
+			id: "33C871735DD99224"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "5D3612DC6DF205A4"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Redstone Evolution"
+			tasks: [
+				{
+					count: 2L
+					id: "25B087926548F8F0"
+					item: "pneumaticcraft:redstone_module"
+					type: "item"
+				}
+			]
+			title: "Redstone Modules"
+			x: -14.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["33C871735DD99224"]
+			description: [
+				"Кристаллы расширения модулей используются для добавления дополнительных функций различным ламповым модулям. Просто щелкните правой кнопкой мыши на любом модуле Tube, чтобы добавить новые функции."
+				""
+				"● Модуль трубки регулятора: точный контроль регулируемого давления."
+				""
+				"● Модуль манометрической трубки: точный контроль сигнала красного камня."
+				""
+				"● Модуль воздушной решетки: добавляет фильтр для того, на что он будет влиять."
+				""
+				"● Модуль Redstone: добавляет множество логических функций, таких как логические элементы И и ИЛИ, часы, функции компаратора и многое другое."
+				""
+				"Например, управление компрессором Redstone можно значительно упростить, подключив к манометру карту расширения модуля. Установите этот параметр для вывода сигнала только тогда, когда манометр ниже 4,9 бар (или 19,9 бар для продвинутых), затем используйте короткую секцию модулей Redstone, чтобы подать этот сигнал непосредственно на компрессор. Это устраняет необходимость в длинном цикле Редстоуна, предложенном ранее."
+			]
+			id: "600E9DF5041FA21F"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "5600DC7079A960F8"
+					title: "Legendary PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Raspberry Pi"
+			tasks: [
+				{
+					id: "5366CD0611A2224C"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+			]
+			x: -14.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["Логистические дроны — удобные маленькие помощники в тех местах, где вы не хотите иметь полноценную воздушную инфраструктуру. Поэкспериментируйте с некоторыми логистическими структурами и используйте логистический дрон, чтобы перемещать товары за вас."]
+			hide_dependency_lines: true
+			id: "2BF0EE004239C2AC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "312B40790B0E6AE3"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "27AE33E162A1D6B8"
+					item: "pneumaticcraft:inventory_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Flying Circus"
+			tasks: [
+				{
+					id: "3B8551B48F0F93A4"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "pneumaticcraft:drone"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:logistics_drone"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:harvesting_drone"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:guard_drone"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:collector_drone"
+								}
+							]
+						}
+					}
+					title: "Simple Drones"
+					type: "item"
+				}
+			]
+			x: -16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2BCEA81413D908E4"]
+			description: [
+				"Зарядная станция — это основной способ зарядки пневматических предметов, таких как пневматический гаечный ключ, отбойный молоток или броня. Он также выполняет двойную функцию: средство внесения улучшений в эти предметы."
+				""
+				"Если установить улучшение раздатчика на зарядную станцию, оно будет заряжать объекты над ним, перезаряжая дронов или любое оборудование на игроке."
+				""
+				"Ближайшие дроны будут автоматически искать такую ​​зарядную станцию, когда у них заканчивается эфир."
+			]
+			id: "3730F4664875AF9E"
+			min_width: 300
+			rewards: [
+				{
+					id: "18CE044363A25CBD"
+					item: "pneumaticcraft:dispenser_upgrade"
+					title: "Dispenser Upgrade"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "440B5CB8A502E3BF"
+					item: "pneumaticcraft:volume_upgrade"
+					title: "Volume Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "In-Flight Refueling"
+			tasks: [
+				{
+					id: "378CFDE8FC3E5363"
+					item: "pneumaticcraft:charging_station"
+					type: "item"
+				}
+			]
+			x: -22.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["Установите одно или несколько обновлений срока службы предметов на дрон, чтобы помочь ему оставаться в рабочем состоянии. Иногда они могут получить урон от опасностей окружающей среды, и эти улучшения заставят их самовосстанавливаться за счет некоторого количества Воздуха."]
+			id: "694279B52360ADD9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "09056410AC7B4F5E"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "In Her Time of Need"
+			tasks: [
+				{
+					id: "406148B6217C1944"
+					item: "pneumaticcraft:item_life_upgrade"
+					type: "item"
+				}
+			]
+			x: -15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["Установка резервного обновления на непрограммируемый дрон позволит ему перейти в спящий режим, когда нет необходимости выполнять работу. Программируемые дроны можно запрограммировать на то же самое без необходимости обновления."]
+			id: "2AF8CE856E0E9D71"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "501A756DAB89889A"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "She's All Alone, All Alone"
+			tasks: [
+				{
+					id: "3D07056B2E9FE5B7"
+					item: "pneumaticcraft:standby_upgrade"
+					type: "item"
+				}
+			]
+			x: -15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["Установите несколько обновлений дальности на непрограммируемый дрон, чтобы увеличить зону его покрытия."]
+			id: "0C0CF19495038130"
+			rewards: [
+				{
+					count: 2
+					id: "6FD71C3AAA7C5554"
+					item: "pneumaticcraft:range_upgrade"
+					title: "Range Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "He's Going the Distance"
+			tasks: [
+				{
+					id: "636E74B833DE113E"
+					item: "pneumaticcraft:range_upgrade"
+					type: "item"
+				}
+			]
+			x: -17.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["Ускорьте процесс с помощью нескольких таких устройств в дроне. Многие другие блоки также извлекают из этого пользу."]
+			id: "2CE1808F9FF6F4E6"
+			rewards: [
+				{
+					count: 2
+					id: "0459D9273A6BCEB3"
+					item: "pneumaticcraft:speed_upgrade"
+					title: "Speed Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "He's Going for Speed"
+			tasks: [
+				{
+					id: "64F51201D174AF98"
+					item: "pneumaticcraft:speed_upgrade"
+					type: "item"
+				}
+			]
+			x: -17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: [
+				"Программируемые дроны — это вершина возможностей автоматизации PNC:R, и их возможности практически безграничны, поскольку они могут взаимодействовать с блоками и объектами, владеть оружием и инструментами и выполнять свои действия в зависимости от сложных условий."
+				""
+				"Погрузитесь в этот визуальный язык программирования и посмотрите, что у вас получится! Если вам не хватает идей, попробуйте некоторые из них:"
+				""
+				"● Автоматизируйте сферу энергии Повы."
+				"● Автоматизируйте рунический алтарь Ботании."
+				"● Автоматизируйте производство биодизеля PNC:R."
+				"● Создайте ферму слизи, используя ведра с молоком и зеленый краситель."
+				"● Создайте транспортную сеть, используя дронов, которые подберут вас и телепортируют."
+			]
+			icon: "pneumaticcraft:programmer"
+			id: "4BC617E2C8CDEF24"
+			rewards: [
+				{
+					count: 64
+					id: "7BB4D8C166E01C91"
+					item: "pneumaticcraft:programming_puzzle"
+					title: "Programming Puzzle Piece"
+					type: "item"
+				}
+			]
+			subtitle: "Doin’ It My Way"
+			tasks: [
+				{
+					id: "241C4FF7CA84BE39"
+					item: "pneumaticcraft:drone"
+					type: "item"
+				}
+				{
+					id: "60AFC2899CB71778"
+					item: "pneumaticcraft:programmer"
+					type: "item"
+				}
+			]
+			title: "Programmable Drones"
+			x: -16.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["Пульты дистанционного управления — это программируемые интерфейсные устройства, которые работают путем манипулирования глобальными переменными. Вы можете использовать их для дистанционного управления красным камнем в сочетании с универсальным датчиком или для управления программируемыми дронами."]
+			id: "60B082796E10B210"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "05534AA4AD901FDD"
+					title: "Legendary PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Always At Arms Reach"
+			tasks: [
+				{
+					id: "7AB632F4DB89BCE9"
+					item: "pneumaticcraft:remote"
+					type: "item"
+				}
+			]
+			x: -16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Вершина домашнего шопинга. Нажмите кнопку, и ваш заказ будет готов еще до того, как вы о нем узнаете."
+				""
+				"Начните с привязки Таблички к сундуку, используя Скрытность + щелчок правой кнопкой мыши по инвентарю. При желании его можно дополнительно привязать к резервуару."
+				""
+				"Поместите любые платежные предметы в сундук, затем завершите заказ с самого Планшета. После отправки появится дрон и достанет платеж из сундука. Через некоторое время появится второй дрон и положит покупку в сундук. При покупке жидкостей они будут отправлены в привязанный резервуар."
+			]
+			hide_dependency_lines: true
+			id: "11D246E41A38ECDF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "71C74EE7350259ED"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Prime Delivery"
+			tasks: [
+				{
+					id: "694D30A4D11B1C83"
+					item: "pneumaticcraft:amadron_tablet"
+					type: "item"
+				}
+			]
+			x: -16.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: [
+				"Сборочный стол — это многоблочная машина, способная выполнять более сложные задачи."
+				""
+				"Каждая деталь имеет ограничения на то, где ее можно разместить. Точные правила размещения см. в руководстве PNC:R."
+				""
+				"Однако простой макет можно сделать в пространстве 2x3:"
+				""
+				"Ввод-вывод, контроллер, ввод-вывод"
+				"Дрель, Стол, Лазер"
+				""
+				"Примечание. Программа «Сверло\\& Лазер» позволяет на сборочном столе создавать рецепты, требующие только дрели или лазера. В большинстве случаев нет смысла использовать отдельные программы."
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:assembly_program_drill_laser"
+			id: "2C9A30956A2044A0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "33A65EE79C654898"
+					title: "Legendary PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Some Assembly Required"
+			tasks: [
+				{
+					id: "39256304C4298D2F"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "19E0D9C1E5354D91"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "577EB62DCE88CD01"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+				{
+					id: "50F09710E1BFAEF9"
+					item: "pneumaticcraft:assembly_drill"
+					type: "item"
+				}
+				{
+					id: "3D44FA9D501C2E3E"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+				{
+					id: "494CDB809E9F7ED1"
+					item: "pneumaticcraft:assembly_laser"
+					type: "item"
+				}
+				{
+					id: "3B65CED47E97C648"
+					item: "pneumaticcraft:assembly_program_drill_laser"
+					type: "item"
+				}
+			]
+			title: "Assembly Table"
+			x: -21.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: [
+				"Портативное хранилище жидкости. Также способен наполнять ведра и другие резервуары в целях автоматизации."
+				""
+				"Сложите их вертикально и щелкните правой кнопкой мыши пневматическим ключом, чтобы сформировать многоблочный резервуар."
+			]
+			hide_dependency_lines: true
+			id: "6B98810EDAC8DB0C"
+			rewards: [
+				{
+					id: "0BFF7AA6126076FD"
+					item: "pneumaticcraft:medium_tank"
+					title: "Medium Fluid Tank"
+					type: "item"
+				}
+			]
+			subtitle: "Stacking the Odds"
+			tasks: [
+				{
+					count: 2L
+					id: "0EAB2205FB361207"
+					item: "pneumaticcraft:small_tank"
+					type: "item"
+				}
+			]
+			title: "Fluid Tanks"
+			x: -15.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3EFFC773FB6104ED"]
+			description: [
+				"Усовершенствованные компрессоры могут достигать давления до 20 бар, приводя в действие некоторые из наиболее требовательных к давлению машин. Однако это происходит за счет необходимости сохранять прохладу для эффективной работы."
+				""
+				"Хотя охлаждение этих компрессоров с помощью чего-то вроде вихревой трубки, безусловно, работает, оно далеко от идеала, поскольку вихревые трубки потребляют огромное количество воздуха для охлаждения чего-либо. Очень большой процент воздуха, производимого компрессором, будет сразу же возвращаться на охлаждение."
+				""
+				"Вместо этого рассмотрите возможность их охлаждения с помощью радиаторов и воздушных решеток. Три радиатора, находящихся в непосредственном контакте с компрессором, и несколько воздушных решеток, установленных таким образом, что каждая из них обдувает все три радиатора, позволяют высокоскоростному компрессору работать очень прохладно и с незначительной долей воздуха по сравнению с охлаждением вихревой трубкой."
+			]
+			icon: "pneumaticcraft:flux_compressor"
+			id: "34334E03CA719084"
+			min_width: 300
+			progression_mode: "flexible"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "14C53EBF59D4E97D"
+					title: "Legendary PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Super Laminar Flow"
+			tasks: [
+				{
+					id: "04E4EB4FC3EA866B"
+					item: "pneumaticcraft:flux_compressor"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2BCEA81413D908E4"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Хотя для работы большинства вещей потребуется высокое давление, некоторым машинам для выполнения своей работы потребуется вакуум. Именно для этой цели можно использовать вакуумный насос."
+				""
+				"Подайте давление в сторону машины с зеленым знаком плюс, затем выведите трубку из стороны с красным знаком минус. Все, что будет дальше, будет помещено в вакуум."
+				""
+				"Совет: наличие второй барокамеры под постоянным вакуумом может оказаться чрезвычайно полезным, поскольку вакуумную камеру можно использовать для переноса чар из предметов в книги. Аналогично, книги можно повторно применить к предметам в обычной барокамере за небольшую затрату воздуха."
+			]
+			id: "19F79435C6D185E3"
+			min_width: 300
+			rewards: [
+				{
+					id: "46B99CC6A928D067"
+					item: "pneumaticcraft:memory_stick"
+					title: "Memory Stick"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D37487ECAD39A8D"
+					item: "pneumaticcraft:volume_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Full Reverse!"
+			tasks: [
+				{
+					id: "543D0169C84EBE30"
+					item: "pneumaticcraft:vacuum_pump"
+					type: "item"
+				}
+			]
+			x: -20.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["19F79435C6D185E3"]
+			description: [
+				"Ваш путь к пользовательскому спаву."
+				""
+				"Не каждый моб доступен в естественных источниках. К счастью, есть способ воссоздать магию Ядра-производителя: Вакуумная ловушка."
+				""
+				"Процесс начинается аналогично экстрактору спавнера: подсоедините вакуумную ловушку к вакуумному насосу и выкачайте весь воздух. Рекомендуется обновление тома и требуется ядро ​​Spawner. Подкрадитесь + щелкните правой кнопкой мыши по заряженной ловушке с помощью пневматического гаечного ключа, чтобы поднять ее. Теперь поместите его рядом с любым мобом и подкрадитесь + щелкните правой кнопкой мыши пустой рукой, чтобы открыть. Ближайшие мобы будут затянуты и добавлены в Ядро."
+				""
+				"В ядре можно хранить несколько типов мобов, что делает возможным использование смешанных спавнеров."
+				""
+				"Ядро спавнера, в котором находится только один моб, по-прежнему пригодно для использования в генераторе под давлением; очень полезно для трудно поймаемых или редких мобов."
+				""
+				"Ловушка работает более эффективно, если во внутреннем резервуаре есть эссенция памяти, а это означает, что для ее полного заполнения требуется меньше мобов."
+				""
+				"Случайные мобы могут быть выпущены из ядра, если прокрасться + щелкнуть правой кнопкой мыши по земле, что упрощает транспортировку мобов даже до того, как станет доступен прессованный генератор."
+			]
+			icon: "pneumaticcraft:vacuum_trap"
+			id: "40BD357818C3FC4B"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "71E7B2F1A0C4BCF2"
+					title: "Legendary PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Who Ya Gonna Call?"
+			tasks: [
+				{
+					id: "20D3B02690AA1ED2"
+					item: "pneumaticcraft:vacuum_trap"
+					type: "item"
+				}
+				{
+					id: "41F20BAC1A7A8ED0"
+					item: "pneumaticcraft:spawner_core"
+					type: "item"
+				}
+			]
+			x: -20.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: ["Помимо машин и логистики, PNC:R предлагает ряд очень полезных инструментов, брони и вспомогательных устройств."]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:plastic"
+			id: "32D56D0E1A7E8DAC"
+			rewards: [
+				{
+					id: "2B4ADC90E329AD37"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:camo_applicator"
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "You Can Touch, You Can Play"
+			tasks: [
+				{
+					icon: "pneumaticcraft:pressure_tube"
+					id: "3812A5C0C325C4CA"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "pneumaticcraft:pressure_tube"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:reinforced_pressure_tube"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:advanced_pressure_tube"
+								}
+							]
+						}
+					}
+					title: "Tools and Utility"
+					type: "item"
+				}
+			]
+			title: "Tools and Utility"
+			x: -16.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"Радиаторы пассивно увеличивают скорость передачи тепла в воздух, помогая быстро и эффективно охладить вещи до температуры окружающей среды."
+				""
+				"Теплоотводы в зоне действия активной воздушной решетки будут работать еще быстрее. Это один из наиболее эффективных способов охлаждения машин, когда воздушные решетки регулируются до уровня, достаточного для работы."
+				""
+				"При подключении к линии давления в вакууме Воздушная решетка также выполняет функцию сборщика предметов, притягивая к себе предметы и другие объекты. Предметы, дотянутые до него, будут вставлены в любые соседние инвентари."
+			]
+			icon: "pneumaticcraft:heat_sink"
+			id: "3EFFC773FB6104ED"
+			rewards: [
+				{
+					id: "7DD78B29101BCA5B"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+				{
+					id: "1D728890056FF024"
+					item: "pneumaticcraft:regulator_tube_module"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2F3872182DE0552B"
+					item: "pneumaticcraft:heat_sink"
+					type: "item"
+				}
+				{
+					id: "203BC2C64168D2C7"
+					item: "pneumaticcraft:air_grate_module"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Все части можно улучшать, чтобы улучшить их броню, самовосстанавливаться или позолотить, чтобы предотвратить атаки пиглинов."
+				""
+				"Другие заметные обновления:"
+				""
+				"Шлем"
+				"● Ночное видение"
+				"● Отслеживание объектов и блоков."
+				"● Взлом сущностей и блоков."
+				"● ПОДВОДНОЕ ПЛАВАНИЕ. Механизм"
+				""
+				"Нагрудник"
+				"● Магнитное обновление"
+				"● Автоматическая зарядка инструмента"
+				"● Заблокировать лаунчер"
+				"● Надкрылья"
+				""
+				"Леггинсы"
+				"● Скорость работы"
+				"● Высота прыжка"
+				""
+				"Сапоги"
+				"● Встроенная функция Step Assist."
+				"● Встроенное подавление урона от падения."
+				"● Скорость плавания"
+				"● Творческий полет"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:pneumatic_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4023F483F5859ABE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "45F1066AD1B2C401"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0C55EECDCDE4C01C"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "320E3090BF091078"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0CE417ED326B8137"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Send Your Armies But They'll Never Be Enough, My Shell's Too Tough"
+			tasks: [
+				{
+					id: "54F6FEA6017FA1A3"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "406C722BC077C13F"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D6070EB3A5012AD"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41A9A6E8911D79B0"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Универсальный многофункциональный инструмент, способный легко очищать большие площади. Нажмите ПКМ, чтобы получить доступ к графическому интерфейсу, в котором можно установить сверла и зачарованные книги, а также изменить режим тренировки."
+				""
+				"Принимаются книги Fortune или Silk Touch."
+			]
+			hide_dependency_lines: true
+			id: "4DB935C9023BE022"
+			rewards: [
+				{
+					id: "717B60C4CC221693"
+					item: "pneumaticcraft:magnet_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Swiss-Army… Hammer"
+			tasks: [
+				{
+					id: "215DF4ECB6072D79"
+					item: "pneumaticcraft:jackhammer"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: ["Умная турель, которую можно настроить так, чтобы она атаковала только определенных существ. Например, только взрослые животные."]
+			hide_dependency_lines: true
+			id: "738C5B461AAEBDA7"
+			rewards: [
+				{
+					id: "30C7FE88AE977339"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:gun_ammo_ap"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 5s
+								}
+							]
+						}
+					}
+					title: "Armor-Piercing Minigun Ammo"
+					type: "item"
+				}
+			]
+			subtitle: "Stand and Deliver"
+			tasks: [
+				{
+					id: "158359A805347117"
+					item: "pneumaticcraft:sentry_turret"
+					type: "item"
+				}
+			]
+			x: -18.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Современное решение для уничтожения монстров. Возможно размещение с домашними животными!"
+				""
+				"Добавьте улучшение безопасности, чтобы оно не причиняло вреда прирученным существам и другим игрокам."
+			]
+			hide_dependency_lines: true
+			id: "6E6FC569FE823C92"
+			rewards: [
+				{
+					id: "4B4D3D2CDAAC172C"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:gun_ammo"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 5s
+								}
+							]
+						}
+					}
+					title: "Minigun Ammo"
+					type: "item"
+				}
+			]
+			subtitle: "Leveling the Playing Field"
+			tasks: [
+				{
+					id: "1551C0D6DB15C9E7"
+					item: "pneumaticcraft:minigun"
+					type: "item"
+				}
+			]
+			x: -18.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Летучие мыши. Величайший враг из всех. Теперь вот, их судьба в ваших руках."
+				""
+				"Микроракеты — это целеуправляемые взрывчатые вещества. Они не наносят ущерба местности и могут быть настроены на различную степень взрывного урона, скорость движения и скорость поворота. Подкрадитесь, щелкните правой кнопкой мыши, чтобы настроить."
+			]
+			hide_dependency_lines: true
+			id: "7228CB144D83D28F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "0AF178227D43E923"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "Target Acquired"
+			tasks: [
+				{
+					id: "5A9880172381AF71"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:micromissiles"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -17.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: ["Опоры для сельскохозяйственных культур способствуют здоровому росту растений, увеличивая скорость их роста."]
+			hide_dependency_lines: true
+			id: "318DFB6006EB5CC5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "624B43310C57D3AF"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Reach for the sky!"
+			tasks: [
+				{
+					id: "7DBBDF18FF73F327"
+					item: "pneumaticcraft:crop_support"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Лифты PNC:R, идеальное дополнение к любой вертикальной базе операций, оснащены простым в использовании устройством вызова лифта, которое доставит пользователя прямо на требуемый этаж."
+				""
+				"Каждая база лифта имеет ограничение на высоту, на которую она может подняться, но если сложить их друг на друга, эта высота будет увеличиваться дополнительно. Рамы лифта должны быть размещены поверх основания до максимально желаемой высоты."
+				""
+				"Для получения дополнительной информации обратитесь к руководству PNC:R."
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:elevator_base"
+			id: "07348A594F53E20F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "1C96B75BC65D3936"
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Uplifting News"
+			tasks: [
+				{
+					id: "0D40D8A30E373F43"
+					item: "pneumaticcraft:elevator_base"
+					type: "item"
+				}
+				{
+					id: "1CCA7FB5D25FD689"
+					item: "pneumaticcraft:elevator_frame"
+					type: "item"
+				}
+				{
+					id: "1315EE038A39A303"
+					item: "pneumaticcraft:elevator_caller"
+					type: "item"
+				}
+			]
+			title: "Elevators"
+			x: -14.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["Несмотря на то, что воздушная пушка способна наносить урон с помощью запущенного ТНТ или стрел, что, возможно, более интересно, ее можно использовать для транспортировки предметов, мобов или просто бросать вещи на землю для создания предметов в мире с талантом."]
+			hide_dependency_lines: true
+			id: "2F2DFDE1AF2C7CC2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "03A761B743DDD4FD"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "67B5DD98EB8424A5"
+					item: "pneumaticcraft:air_cannon"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["При размещении сбоку от инвентаря или резервуара гаджет для переноса облегчает перенос предметов и жидкостей в любой соседний резервуар. Это немного медленно, но имеет то преимущество, что не требует блочного пространства."]
+			hide_dependency_lines: true
+			id: "357E818321B68CEE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "15748F8C017B2B45"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5BEA30C650A77769"
+					item: "pneumaticcraft:transfer_gadget"
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"Aerial Interface — мощный инструмент персональной автоматизации. Его стороны можно настроить так, чтобы инвентарь игрока подвергался автоматизации, что позволяет автоматически пополнять запасы боеприпасов и других предметов удаленно."
+				""
+				"Поскольку он рассматривает инвентарь игрока как любой другой, он также позволяет удаленно заряжать любое пневматическое оборудование. Например, настройте сторону для доступа к слотам брони, а затем направьте трубку с зарядным модулем на эту сторону. Благодаря этому пневматическая броня всегда будет на высоте."
+				""
+				"В дополнение к этому, с установленным обновлением дозатора он может автоматически кормить игрока или взаимодействовать с его XP, позволяя вводить и выводить его по трубопроводу в виде эссенции памяти."
+			]
+			hide_dependency_lines: true
+			id: "2861AD0EB02F37A2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "3A10D0CC45A7D514"
+					title: "Legendary PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "It's Over! I Have the High Ground!"
+			tasks: [
+				{
+					id: "4A701F7EA5F5A104"
+					item: "pneumaticcraft:aerial_interface"
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["6F9B23BB2F05C9CF"]
+			description: [
+				"Сами фреймы имеют встроенные надежные параметры фильтрации, но они не охватывают все случаи использования."
+				""
+				"Для фильтрации по тегам необходимо создать фильтр тегов в Tag Workbench и вставить его в фильтр вместо элемента. Поместите предмет в левую прорезь и немного бумаги в прорезь слева от значка книги. Под элементом появится список тегов, который можно выбрать и отправить справа."
+				""
+				"После нажатия значка «Книга» все теги справа будут закодированы в фильтр тегов. Один фильтр тегов может содержать теги из нескольких типов элементов."
+				""
+				"Фильтр классификации также можно использовать для фильтрации широких категорий элементов. Например, все печное топливо, все нештабелируемые предметы, все зачарованные предметы или все, что можно приготовить в печи."
+			]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:classify_filter"
+				tag: {
+					Filter: {
+						Conditions: [ ]
+						MatchAll: 0b
+					}
+				}
+			}
+			id: "72A73E10358253E8"
+			min_width: 300
+			tasks: [
+				{
+					id: "5FF6B6605886B59D"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:classify_filter"
+						tag: {
+							Filter: {
+								Conditions: [ ]
+								MatchAll: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5119730D4A3EAA91"
+					item: "pneumaticcraft:tag_workbench"
+					type: "item"
+				}
+			]
+			title: "Filters"
+			x: -17.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["52165EC21DD8ABFB"]
+			description: [
+				"Очень удобный трубчатый модуль, модуль термостата считывает температуру блока, перед которым он стоит, выдавая сигнал красного камня вдоль трубки, который можно использовать для управления вихревой трубкой или любым другим приспособлением."
+				""
+				"Это позволяет очень просто и очень компактно обеспечить соблюдение определенных температурных порогов при изготовлении!"
+			]
+			id: "697B1DC7E396FEA6"
+			rewards: [
+				{
+					id: "40EC73245610633E"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7F9CE0E8672E7028"
+					item: "pneumaticcraft:thermostat_module"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6C1F18A8BD2AF6CF"]
+			description: [
+				"Spellbound Air Blower выводит воздуходувку на новый уровень, обрабатывая в четыре раза быстрее, чем базовый Encased Fan. Он использует специальные сетки и механику тепла PNC для замены воды, лавы, огня души или огня, используемых закрытым вентилятором."
+				""
+				"Сетки устанавливаются щелчком правой кнопкой мыши на передней части вентилятора, при этом тепло должно подаваться на корпус вентилятора."
+				""
+				"Для рецептов брызг будет использоваться пропитанная водой сетка. Обычно для этого достаточно температуры окружающей среды. Слишком холодно, и сетка может замерзнуть. Слишком жарко, и он снова превратится в тканую сетку, из которой был сделан."
+				""
+				"Для рецептов копчения сетка не требуется, однако воздуходувку необходимо нагреть примерно до 110°C. Однако если установлена ​​Dense Mesh, ее нужно нагреть всего лишь до 55°C."
+				""
+				"Для рецептов струйной обработки температура должна достигать примерно 330°C, однако, как и в случае с копчением, это требование к температуре можно значительно снизить, установив плотную сетку. Это позволяет начать струйную очистку уже при температуре 110°C."
+				""
+				"Наконец, рецепты с призраками требуют сетки с привидениями и температуры примерно 110C."
+			]
+			id: "6BD73A0A40A22B92"
+			min_width: 300
+			rewards: [
+				{
+					id: "1DA734BB4AA7029C"
+					item: "compressedcreativity:mesh_dense"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "70C2E8C62171FF4B"
+					item: "compressedcreativity:industrial_air_blower"
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: ["Устройство с пневматическим приводом, имитирующее встроенный вентилятор Create, Air Blower использует небольшое количество воздуха для обработки рецептов в два раза быстрее, чем встроенный вентилятор, что делает его очень удобным обновлением, когда скорость имеет первостепенное значение."]
+			hide_dependency_lines: true
+			id: "6C1F18A8BD2AF6CF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "5B619EDC810C432B"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "60A5458BE637B6AB"
+					item: "compressedcreativity:air_blower"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			dependency_requirement: "all_started"
+			description: ["Двигатель Zephyr — это компактное средство преобразования сжатого воздуха во вращательную силу. Эти двигатели могут быть объединены в цепочку, тем самым суммируя свои эффекты для достижения более высоких значений стрессоустойчивости."]
+			hide_dependency_lines: true
+			id: "6C3F0BEBC4650B5D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "28DF7399F734FE9E"
+					title: "Rare PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2A7CA436DF22BFE9"
+					item: "compressedcreativity:compressed_air_engine"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -6.5d
+		}
+	]
+	title: "PneumaticCraft: Repressurized"
+}

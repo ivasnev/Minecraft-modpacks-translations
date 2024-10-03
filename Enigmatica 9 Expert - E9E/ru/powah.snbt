@@ -1,0 +1,1129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powah"
+	group: "72A9465344128AF9"
+	icon: "powah:dielectric_casing"
+	id: "000000000000016E"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E45018D600614BA"]
+			description: [
+				"Как следует из названия, Пава! Речь идет о генерации, хранении и передаче энергии различными способами."
+				""
+				"Кроме того, он предлагает несколько уникальных механик и множество новых материалов для различных уровней. Читайте дальше, чтобы узнать больше."
+			]
+			hide: true
+			icon: "powah:book"
+			id: "000000000000016F"
+			min_width: 250
+			rewards: [
+				{
+					id: "413EB9C7629D2B60"
+					item: {
+						Count: 1b
+						id: "powah:wrench"
+						tag: {
+							PowahWrenchNBT: { }
+						}
+					}
+					title: "Wrench"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "4C763494FAB6F8A2"
+					item: "powah:dielectric_paste"
+					type: "item"
+				}
+			]
+			title: "Powah!"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["000000000000016F"]
+			description: ["Мод, генерирующий энергию, вряд ли был бы полным без способов ее передачи и хранения. В комплект поставки Powah входит все: от личных аккумуляторов до зарядных устройств, кабелей и мировых ячеек хранения."]
+			hide_dependency_lines: true
+			icon: "powah:dielectric_casing"
+			id: "0000000000000172"
+			min_width: 300
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "112F2336BA13572A"
+					item: "powah:dielectric_casing"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Logistics and Storage"
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["146BB956A5575B4D"]
+			description: [
+				"Работая на всех видах основного топлива для печей, фурнаторы с самого начала генерируют приличную энергию и являются отличным способом получить немного дополнительной энергии из материалов, которые в противном случае можно было бы считать отходами."
+				""
+				"Каждый уровень Furnator будет генерировать одинаковое количество энергии на топливо, просто они будут делать это быстрее. Таким образом, хотя Nitro Furnator может генерировать приличную энергию, для этого он будет потреблять топливо очень быстро."
+			]
+			hide_dependency_lines: true
+			icon: "powah:furnator_nitro"
+			id: "0000000000000176"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000288"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000177"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:furnator_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:furnator_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:furnator_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:furnator_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:furnator_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:furnator_nitro"
+								}
+							]
+						}
+					}
+					title: "Furnators"
+					type: "item"
+				}
+			]
+			title: "Furnator"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000172"]
+			description: [
+				"Простые кабели для передачи энергии из одного места в другое без суеты."
+				""
+				"Часть кабеля, которая подключается к машине, можно щелкнуть правой кнопкой мыши, чтобы отрегулировать ее или сделать ее чувствительной к красному камню."
+			]
+			hide_dependency_lines: true
+			id: "000000000000017C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000289"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: "powah:energy_cable_nitro"
+					id: "000000000000017D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:energy_cable_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cable_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cable_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cable_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cable_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cable_nitro"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_nitro"
+								}
+							]
+						}
+					}
+					title: "Energy Cables"
+					type: "item"
+				}
+			]
+			title: "Energy Cables"
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["146BB956A5575B4D"]
+			description: [
+				"Магматор, своего рода геотермальный генератор, генерирует энергию из горячих жидкостей, таких как лава."
+				""
+				"Магматоры каждого уровня будут генерировать одинаковое количество энергии на ведро топлива, просто они будут делать это быстрее. Таким образом, хотя Нитро-Магматор может генерировать приличную энергию, для этого он будет потреблять топливо очень быстро."
+			]
+			hide_dependency_lines: true
+			icon: "powah:magmator_nitro"
+			id: "000000000000017E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "074EB4DE8F4FF559"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000017F"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:magmator_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:magmator_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:magmator_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:magmator_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:magmator_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:magmator_nitro"
+								}
+							]
+						}
+					}
+					title: "Magmators"
+					type: "item"
+				}
+			]
+			title: "Magmator"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["146BB956A5575B4D"]
+			description: [
+				"Термоэлектрический генератор, которому для выработки энергии требуется перепад тепла. Термогенератор следует разместить на каком-нибудь горячем блоке и подать в него охлаждающую жидкость."
+				""
+				"Сам источник тепла никогда не будет израсходован, но охлаждающая жидкость со временем израсходуется медленно."
+				""
+				"Проверьте «Использование термогенератора» в JEI, чтобы увидеть все доступные источники тепла и охлаждающие жидкости."
+			]
+			hide_dependency_lines: true
+			icon: "powah:thermo_generator_nitro"
+			id: "0000000000000180"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "000000000000064D"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000181"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:thermo_generator_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:thermo_generator_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:thermo_generator_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:thermo_generator_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:thermo_generator_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:thermo_generator_nitro"
+								}
+							]
+						}
+					}
+					title: "Thermo Generators"
+					type: "item"
+				}
+			]
+			title: "Thermo Generator"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["146BB956A5575B4D"]
+			description: ["Солнечные панели, работающие только половину дня, по-прежнему являются отличным источником энергии для определенных приложений."]
+			hide_dependency_lines: true
+			id: "0000000000000182"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "000000000000028A"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000183"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:solar_panel_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:solar_panel_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:solar_panel_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:solar_panel_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:solar_panel_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:solar_panel_nitro"
+								}
+							]
+						}
+					}
+					title: "Solar Panels"
+					type: "item"
+				}
+			]
+			title: "Solar Panel"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000182"]
+			description: ["При применении к солнечной панели Линза Эндера позволит ей видеть солнце, даже находясь глубоко под землей. Ночью он по-прежнему не будет работать, но его, по крайней мере, можно занести внутрь или спрятать."]
+			id: "0000000000000184"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "000000000000064C"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000185"
+					item: "powah:lens_of_ender"
+					type: "item"
+				}
+			]
+			title: "Lens of Ender"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			description: ["Мощное топливо для использования в реакторах, хотя его высокая стоимость изготовления означает, что реакторы более низкого уровня могут работать с чистыми убытками."]
+			id: "0000000000000186"
+			rewards: [
+				{
+					count: 16
+					id: "2F952BDC96B6C978"
+					item: "powah:uraninite"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "0000000000000187"
+					item: "powah:uraninite"
+					type: "item"
+				}
+			]
+			title: "Uraninite"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["146BB956A5575B4D"]
+			description: [
+				"Реакторы — это большие многоблочные генераторы, которые для эффективной работы потребляют несколько входов."
+				""
+				"Во-первых, и самое главное, это настоящее топливо — уранинит. Каждая часть соответствует 100 мегабайтам на указателе уровня топлива, и Реактор работает лучше всего, когда указатель уровня топлива полон. Добавление одной порции топлива вместо заполнения манометра приведет к значительному снижению расхода топлива, поэтому старайтесь держать его полным во время работы."
+				""
+				"Далее идет охлаждающая жидкость. При работе реактора выделяется тепло, которое необходимо рассеивать. Для этого реактору нужны как твердые, так и жидкие теплоносители. Проверка использования реакторного блока в JEI покажет, что важно для каждого из них. Жидкие охлаждающие жидкости не расходуются, а твердые охлаждающие жидкости расходуются."
+				""
+				"Наконец, Реактор принимает два регуляторных материала: углерод, который помогает реактору работать более эффективно, и красный камень, который позволяет ему производить больше энергии за такт, хотя и менее эффективно."
+				""
+				"Датчик углерода принимает те же входные данные, что и печь или печь; Древесный уголь, вероятно, легче всего поставлять бесконечно."
+				""
+				"Построить реактор так же просто, как взять стопку из 36 блоков и разместить один из них. Остальные будут размещены автоматически."
+			]
+			hide_dependency_lines: true
+			icon: "powah:reactor_nitro"
+			id: "0000000000000188"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "2D695290477D3526"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "3171C436450BF2F4"
+					item: "powah:dry_ice"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 36L
+					id: "0000000000000189"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:reactor_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:reactor_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:reactor_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:reactor_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:reactor_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:reactor_nitro"
+								}
+							]
+						}
+					}
+					title: "Reactors"
+					type: "item"
+				}
+			]
+			title: "Reactor"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["000000000000016F"]
+			description: [
+				"В Powah представлено всего несколько типов машин, но каждая из них имеет несколько уровней. Для получения более высоких уровней требуются более мощные материалы, которые изготавливаются с помощью Энергетической сферы."
+				""
+				"Сферой можно управлять вручную или с помощью автоматизации, принимая предметы из любых труб или транспортных средств. После того, как предметы вставлены, их нельзя будет удалить с помощью автоматизации до завершения создания, что значительно упрощает автоматическое создание. Однако элементы можно удалить вручную в любое время."
+				""
+				"Энергия для корабля требует Энергетических Жезлов, размещенных вокруг Сферы. Их необходимо разместить на каком-либо энергетическом кабеле или батарее. Сами стержни могут находиться на расстоянии до шести блоков от Сферы и не требуют прямой видимости; они с радостью прострелят лазерами любой блок."
+				""
+				"Стержни будут автоматически связаны с ближайшим шаром при размещении, но их можно повторно связать с другим шаром вручную с помощью гаечного ключа. Подкрадитесь. Щелкните правой кнопкой мыши гаечный ключ в воздухе, чтобы переключить его в режим связи."
+				""
+				"Поскольку затраты на энергию для материалов более высокого уровня увеличиваются, рекомендуется использовать Жезлы более высокого уровня, чтобы увеличить скорость доставки энергии, хотя также возможно просто добавить больше Жезлов."
+			]
+			hide_dependency_lines: true
+			icon: "powah:energizing_orb"
+			id: "000000000000018C"
+			min_width: 250
+			rewards: [
+				{
+					count: 2
+					id: "00000000000001C5"
+					item: "powah:energizing_rod_basic"
+					title: "Energizing Rod (Basic)"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "000000000000018D"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00000000000001C3"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:energizing_rod_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_nitro"
+								}
+							]
+						}
+					}
+					title: "Energizing Rods"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Energizing"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000172"]
+			description: [
+				"Простое многоуровневое хранилище энергии, которое можно использовать как зарядное устройство для предметов."
+				""
+				"Каждую сторону можно настроить отдельно, а всю ячейку можно сделать чувствительной к красному камню."
+			]
+			hide_dependency_lines: true
+			icon: "powah:energy_cell_nitro"
+			id: "000000000000018E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "000000000000028E"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000018F"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:energy_cell_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cell_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cell_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cell_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cell_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_cell_nitro"
+								}
+							]
+						}
+					}
+					title: "Energy Cells"
+					type: "item"
+				}
+			]
+			title: "Energy Cell"
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["000000000000018E"]
+			description: [
+				"Клетки Эндера являются основой для межпространственной и беспроводной передачи энергии."
+				""
+				"Каждая ячейка может быть связана с одним из двенадцати каналов на каждого игрока, причем каждый канал имеет отдельную емкость хранения. При первой инициализации канал не будет иметь собственной энергоемкости, и к нему необходимо будет добавить батареи или энергетические элементы. В открытом интерфейсе щелкните правой кнопкой мыши «Ячейки» или «Батареи», чтобы добавить их в выбранный канал. Каждый из них добавит свою полную мощность, а также передаст всю накопленную энергию в Канал."
+				""
+				"Это идеальный способ переработать и конденсировать любые дополнительные запасы энергии."
+			]
+			icon: "powah:ender_cell_nitro"
+			id: "0000000000000190"
+			min_width: 300
+			rewards: [
+				{
+					id: "0000000000000226"
+					item: "powah:energy_cell_hardened"
+					title: "Energy Cell (Hardened)"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000191"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:ender_cell_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_cell_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_cell_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_cell_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_cell_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_cell_nitro"
+								}
+							]
+						}
+					}
+					title: "Ender Cells"
+					type: "item"
+				}
+			]
+			title: "Ender Cell"
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000172"]
+			description: [
+				"Носить с собой батарею — отличный способ поддерживать питание оборудования заряженным в пути, но что, если мы сможем вернуть себе это место в инвентаре? Передатчик игрока позволяет именно это, дистанционно заряжая любые предметы в инвентаре владельца."
+				""
+				"Чтобы установить владельца, создайте связывающую карту и щелкните правой кнопкой мыши карту в воздухе. Карта будет привязана к этому игроку. Затем карту можно вставить в передатчик игрока для ее настройки."
+			]
+			hide_dependency_lines: true
+			icon: "powah:player_transmitter_nitro"
+			id: "0000000000000192"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "000000000000028F"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000193"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:player_transmitter_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_nitro"
+								}
+							]
+						}
+					}
+					title: "Player Transmitter"
+					type: "item"
+				}
+				{
+					id: "0000000000000224"
+					item: "powah:binding_card"
+					type: "item"
+				}
+			]
+			title: "Player Transmitter"
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000190"]
+			description: [
+				"На каждый канал действительно требуется только одна Ender Cell. Конечно, можно использовать больше, но они значительно дороже, чем альтернатива, Эндер Гейтс."
+				""
+				"Как и Клетки Края, Врата Края могут быть связаны с Каналом в их интерфейсе. Их можно использовать как для ввода, так и вывода в сеть Ender Network и из нее."
+				""
+				"Однако, в отличие от Ячейки Края, к Сети Края нельзя добавить больше места из Врат. Это можно сделать только в ячейке."
+			]
+			icon: "powah:ender_gate_nitro"
+			id: "0000000000000194"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "51F5753437957980"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000195"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:ender_gate_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:ender_gate_nitro"
+								}
+							]
+						}
+					}
+					title: "Ender Gates"
+					type: "item"
+				}
+			]
+			title: "Ender Gate"
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000192"]
+			description: ["Обычная привязывающая карта будет работать только в том же измерении, что и передатчик игрока. Однако, обновив его до размерной карты, игрок сможет пользоваться беспроводной зарядкой где угодно."]
+			id: "0000000000000198"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000290"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000199"
+					item: "powah:binding_card_dim"
+					type: "item"
+				}
+			]
+			title: "Dimensional Binding Card"
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			description: ["После базового уровня идет «Закаленный», первый уровень, требующий заряженных материалов."]
+			id: "000000000000019A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "09CDE670DE70DDAE"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000019B"
+					item: "powah:steel_energized"
+					type: "item"
+				}
+			]
+			title: "Energized Steel"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			description: ["Пылающие кристаллы, первый из нескольких кристаллических материалов, необходимых Пове, сохраняют огромное тепло и служат достойным источником тепла для термогенераторов."]
+			id: "000000000000019C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "15BA1F3744D7C2CF"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000019D"
+					item: "powah:crystal_blazing"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			description: ["По мере увеличения затрат растут и вознаграждения: машины уровня Niotic работают гораздо быстрее."]
+			id: "000000000000019E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "68CD30E38E3F5BF1"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000019F"
+					item: "powah:crystal_niotic"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			description: ["Предпоследний уровень материалов, Spirited, сам по себе довольно мощный. Но с подходящими материалами мы можем пойти еще дальше."]
+			id: "00000000000001A0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "37664B9288E40001"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "00000000000001A1"
+					item: "powah:crystal_spirited"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			description: ["Используя невероятно редкие материалы для изготовления, Нитро представляет собой высший уровень Пова."]
+			id: "00000000000001A2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0000000000000294"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "00000000000001A3"
+					item: "powah:crystal_nitro"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000172"]
+			description: ["Energy Hoppers эффективно превращают простой сундук в инвентарь для массовой зарядки. Просто поместите его напротив сундука или другого инвентаря; любые элементы питания внутри будут заряжены в кратчайшие сроки."]
+			hide_dependency_lines: true
+			icon: "powah:energy_hopper_nitro"
+			id: "414387508B9644C8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4D1C32404BCA93FF"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0993F0AC43F031C2"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:energy_hopper_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_hopper_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_hopper_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_hopper_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_hopper_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_hopper_nitro"
+								}
+							]
+						}
+					}
+					title: "Energy Hoppers"
+					type: "item"
+				}
+			]
+			title: "Energy Hoppers"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000172"]
+			description: ["Разрядники энергии быстро истощают энергию, накопленную в батареях, позволяя передавать ее в машины. Хотя они, возможно, и менее полезны по сравнению с Эндер-ячейками, они все же позволяют осуществлять быструю и дальнюю транспортировку энергии за счет доставки батарей."]
+			hide_dependency_lines: true
+			icon: "powah:energy_discharger_nitro"
+			id: "0DADA0DB59C7F1B3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4884AAB9BEA3FB71"
+					title: "Powah Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5C293198033B6C0D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:energy_discharger_basic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_discharger_hardened"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_discharger_blazing"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_discharger_niotic"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_discharger_spirited"
+								}
+								{
+									Count: 1b
+									id: "powah:energy_discharger_nitro"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Energy Discharger"
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["000000000000016F"]
+			description: ["Powah предлагает пять различных генераторов, каждый из которых полезен в зависимости от ситуации. Рассмотрите приложение с умом, выбирая, какое использовать."]
+			hide_dependency_lines: true
+			id: "146BB956A5575B4D"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6124DA30CE1586E0"
+					item: "powah:capacitor_basic_large"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Power Generation"
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	title: "Powah!"
+}

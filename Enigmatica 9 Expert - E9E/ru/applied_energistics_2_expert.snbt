@@ -1,0 +1,1053 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics_2_expert"
+	group: "72A9465344128AF9"
+	icon: "ae2:drive"
+	id: "57299B70360DE499"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: [
+				"Сети контроллера ME состоят из мультиблока контроллера ME, некоторого количества кабелей и количества каналов в зависимости от размера мультиблока контроллера. В этой конфигурации каналы распределяются в порядке очереди, поэтому, если к стеклянному кабелю подключено более восьми устройств, работать будут только восемь ближайших к контроллеру."
+				""
+				"Сам мультиблок имеет относительно свободную форму, однако применяются определенные правила:"
+				"1. Все блоки контроллера ME должны быть подключены напрямую."
+				"2. Мультиблок должен умещаться в кубе 7х7х7."
+				"3. ME-контроллер может иметь два соседних блока по адресу."
+				"максимум одна ось. Итак, Т-пересечения действительны, но"
+				"креста нет."
+				""
+				"Сами блоки контроллера будут принимать мощность для всей сети, а это означает, что приемник энергии не требуется."
+				""
+				"Каждая открытая лицевая панель ME-контроллера может обеспечить до 32 каналов с подключенным к ней плотным кабелем или P2P-туннелем. Подробнее о P2P позже. На данный момент знайте, что один кабель Dense может передавать 32 канала в одну зону, позволяя подключить к нему до 32 устройств."
+			]
+			hide_dependency_lines: true
+			id: "5F3E20C3B3A32ACF"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4F04543FFF72A9BD"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "70CEB08A623209D4"
+					item: "ae2:controller"
+					type: "item"
+				}
+			]
+			title: "ME Controller Networks"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: ["Основной целью любой ME-сети, будь то Ad Hoc или на базе контроллера, является хранение и логистика. Что касается хранилища, у сети ME есть два варианта: шина хранения ME и диск ME."]
+			hide_dependency_lines: true
+			icon: "ae2:chest"
+			id: "7FB8B3BF03A89410"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "5CA8480BEB290EE9"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3D82AB251B74143F"
+					item: "ae2:certus_quartz_wrench"
+					type: "item"
+				}
+			]
+			title: "Storage"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7FB8B3BF03A89410"]
+			description: [
+				"ME Drive, способный вместить до десяти ячеек хранения данных, является сердцем цифровой системы хранения данных AE2."
+				""
+				"Поскольку каждая ячейка хранения имеет ограниченное количество типов материалов, которые она может хранить, часто нежелательно позволять помещать в них что угодно. Поэтому в Cell Workbench можно установить фильтры, чтобы предотвратить хранение любого другого материала в этой ячейке."
+				""
+				"Фильтры можно удобно перетаскивать из JEI, не держа их под рукой."
+			]
+			icon: "ae2:drive"
+			id: "156CA5F24C59302A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "01BF4CB94D87B2BF"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2D9BECD55CCD5D5F"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "63392F77E05B0BF4"
+					item: "ae2:cell_workbench"
+					type: "item"
+				}
+			]
+			title: "Digital Storage"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156CA5F24C59302A"]
+			description: [
+				"Базовое хранилище предметов, способное вместить до 63 типов предметов, таких как камень или руда. Будьте осторожны, предметы с разными данными NBT будут рассматриваться как отдельные типы, поэтому сброс всей этой зачарованной брони с вашей фермы мобов в хранилище очень быстро заполнит ячейки."
+				""
+				"Хотя математические расчеты, лежащие в основе того, что такое байт, могут быть немного сложными, знайте, что ячейки хранения будут хранить больше, если они ограничены одним типом, чем если им разрешено хранить несколько типов."
+				""
+				"{\"text\":\"AE2 Wiki: Математика хранилища\",\"color\":\"blue\",\"подчеркнуто\":\"true\",\"clickEvent\":{\" action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-, Емкость%20Limits,-Storage%20cells%20have\"}}"
+			]
+			id: "0B95DC452E02E964"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "332B628F01F6ACC8"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0685913D68AE2214"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["156CA5F24C59302A"]
+			description: [
+				"Базовое хранилище жидкости, способное вмещать до пяти типов жидкостей, таких как лава или вода."
+				""
+				"Хотя математические расчеты, лежащие в основе того, что такое байт, могут быть немного сложными, знайте, что ячейки хранения будут хранить больше, если они ограничены одним типом, чем если им разрешено хранить несколько типов."
+				""
+				"{\"text\":\"AE2 Wiki: Математика хранилища\",\"color\":\"blue\",\"подчеркнуто\":\"true\",\"clickEvent\":{\" action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-, Емкость%20Limits,-Storage%20cells%20have\"}}"
+			]
+			id: "4B21571216DCDC69"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "2191B6E99F2D07AD"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "33E354A291EA4A94"
+					item: {
+						Count: 1b
+						id: "ae2:fluid_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156CA5F24C59302A"]
+			description: [
+				"Базовое химическое хранилище, способное хранить до пяти типов химикатов, таких как натрий или серная кислота. Радиоактивные химикаты не допускаются в систему."
+				""
+				"Хотя математические расчеты, лежащие в основе того, что такое байт, могут быть немного сложными, знайте, что ячейки хранения будут хранить больше, если они ограничены одним типом, чем если им разрешено хранить несколько типов."
+				""
+				"{\"text\":\"AE2 Wiki: Математика хранилища\",\"color\":\"blue\",\"подчеркнуто\":\"true\",\"clickEvent\":{\" action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-, Емкость%20Limits,-Storage%20cells%20have\"}}"
+			]
+			id: "73765EC8E099FD57"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "15402D7A6B44E06D"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6A8CF9203996BA11"
+					item: {
+						Count: 1b
+						id: "appmek:chemical_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7FB8B3BF03A89410"]
+			description: [
+				"Шины ME Storage Bus действуют как интерфейс между большинством внешних блоков хранения данных и сетью ME."
+				""
+				"Это может быть так же просто, как подключение к одному сундуку или резервуару с жидкостью; или может использоваться для подключения к Сети гораздо более крупных сетей хранения данных."
+			]
+			id: "731CE00BD8C9E575"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "60E138B701BF7801"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "210F35A3EE24C0EC"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+			]
+			title: "External Storage"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5F3E20C3B3A32ACF"
+				"7346C9F69D3927FF"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Стандартный кабель «рабочая лошадка» Glass может передавать до восьми каналов и доступен в семнадцати цветах."
+				""
+				"Различные цвета можно располагать рядом, не соединяя их, что позволяет использовать их для сохранения разделения между каналами."
+			]
+			id: "64845BD36C494E85"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "1E9648A738A38B54"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: "ae2:fluix_glass_cable"
+					id: "3F0F39B75A23111F"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:glass_cable"
+						}
+					}
+					title: "ME Glass Cables"
+					type: "item"
+				}
+			]
+			title: "Making Connections"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["64845BD36C494E85"]
+			description: [
+				"Покрытые кабели функционально эквивалентны стеклянным кабелям, но имеют более чистый внешний вид."
+				""
+				"С другой стороны, кабели с плотным покрытием передают в четыре раза больше каналов на один кабель, что делает их лучшими при извлечении каналов из контроллера ME, извлекая до 32 каналов на каждую сторону."
+				""
+				"Однако устройства с частичной блокировкой, такие как терминалы или шины, не будут подключаться к плотному кабелю, поэтому, хотя они и создают отличные магистральные линии, для окончательного подключения к этим устройствам все равно потребуются обычные кабели."
+			]
+			id: "78F2C89B4BDC3518"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "67827C9AA3B11001"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "672C399C73401663"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:fluix_covered_cable"
+								}
+								{
+									Count: 1b
+									id: "ae2:fluix_covered_dense_cable"
+								}
+							]
+						}
+					}
+					title: "Covered Cables"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5F3E20C3B3A32ACF"]
+			description: ["Автоматическое создание состоит из трех частей: процессора создания, поставщиков шаблонов и самих шаблонов. Все три работают согласованно, чтобы выполнить любой запрос на автоматическое создание."]
+			id: "103D66D58E2AE871"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0B9B7C9D9C4B7E3C"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "723A3C0A0248D17A"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "Autocrafting"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7346C9F69D3927FF"]
+			description: [
+				"Терминалы позволяют вручную вставлять и извлекать из сети, а крафтовые терминалы добавляют встроенный крафтовый стол, позволяющий быстро создавать материалы из системы."
+				""
+				"Предметы можно брать как обычно, а жидкости и химикаты можно получить, щелкнув левой кнопкой мыши по баку с жидкостью или баку с химикатами на жидкости или химикате в терминале. Точно так же их можно добавить, щелкнув правой кнопкой мыши по резервуару в списке в Терминале."
+			]
+			hide_dependency_lines: true
+			id: "489B2FA4E73E5951"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "73050A813C48DF48"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1F7BA3B5B9ADFEB8"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:crafting_terminal"
+								}
+								{
+									Count: 1b
+									id: "ae2:terminal"
+								}
+							]
+						}
+					}
+					title: "Terminals"
+					type: "item"
+				}
+			]
+			title: "System Access"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"Когда дело доходит до того, чтобы сообщить системе, как что-то создать, шаблон должен быть закодирован в терминале кодирования шаблонов. Рецепты можно легко закодировать, выполнив поиск в JEI и нажав кнопку «плюс» (+), чтобы перенести элементы в кодировщик шаблонов. Не обязательно иметь ингредиенты под рукой."
+				""
+				"После кодирования поместите шаблон в соответствующий поставщик шаблонов."
+			]
+			id: "5D1DAA00815D0590"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "404BC61163C2C12B"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "40ABE1BE92DFCC5C"
+					item: "ae2:pattern_encoding_terminal"
+					type: "item"
+				}
+			]
+			title: "Encoding Patterns"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F3E20C3B3A32ACF"]
+			description: [
+				"P2P или «точка-точка» — это концепция использования одного канала для передачи до 32 каналов. Настройка P2P-соединения, безусловно, может быть сложной задачей для игроков, которые плохо знакомы с AE2, но основы довольно доступны."
+				""
+				"{\"text\":\"AE2 Wiki: P2P-туннели\",\"color\":\"blue\",\"подчеркнуто\":\"true\",\"clickEvent\":{\" action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/misc/p2p-tunnel\"}}"
+				""
+				"На следующих страницах приведен пример настройки."
+				""
+				"{@разрыв страницы}"
+				"Пример P2P:"
+				""
+				"1. Положите контроллер и включите его."
+				""
+				"2. Затем поместите ME P2P-туннель напротив контроллера;"
+				"плоская сторона должна соприкасаться с контроллером."
+				""
+				"3. Следуйте этому, проложив красный стеклянный кабель ME."
+				"из P2P-туннеля обратно в контроллер. Этот"
+				"регистрирует P2P-туннель в сети. Этот красный я"
+				"Стеклянный кабель будет нашей линией контроллера. Любой цвет будет"
+				"делать; Хитрость заключается в том, чтобы оставаться последовательным и организованным."
+				""
+				"4. Теперь с любого свободного грани на Контроллере запускаем"
+				"Зеленый кабель с покрытием. Зеленый будет представлять нашего оператора связи"
+				"кабели и будут использоваться только для передачи P2P"
+				"связи. Опять же, подойдет любой цвет; однако избегайте"
+				"использование всего, что может случайно стать перекрестным соединением"
+				"с другими сегментами."
+				""
+				"5. В конце этого кабеля с зеленой оплеткой поместите еще один"
+				"ME P2P-туннель. Это должно располагаться плоской стороной"
+				"лицевой стороной наружу, открывая прекрасный вид на текстуру Certus на"
+				"это лицо."
+				"{@разрыв страницы}"
+				"6. Далее эти два туннеля необходимо соединить; Это"
+				"выполняется с Картой Памяти; цвет карты"
+				"не имеет значения."
+				""
+				"7. Прокрадитесь правой кнопкой мыши по карте в туннеле ME P2P."
+				"подключен к контроллеру. Частота будет меняться"
+				"от 0000 до произвольного четырехзначного идентификатора."
+				"Этот идентификатор теперь хранится на карте памяти."
+				""
+				"10. Теперь отнесите карту памяти в другой P2P-туннель."
+				"и щелкните правой кнопкой мыши туннель. Теперь должно быть"
+				"настроен на тот же идентификатор частоты и должен"
+				"отображаться как «Связано (выходная сторона)». Поместите желтый"
+				"Плотный кабель прилегает к плоской стороне этого туннеля и"
+				"все 32 канала контроллера теперь будут"
+				"доступен для желтого плотного кабеля."
+				""
+				"На этом этапе зеленый кабель должен показывать, что используется только один канал, независимо от того, сколько подключений выполнено на желтом кабеле."
+				""
+				"При такой маленькой сети может показаться, что это большая работа без небольшой выгоды, и это будет точная оценка. Однако рассмотрим более крупный мультиблок контроллера:"
+				""
+				"● Возле контроллера можно разместить восемь P2P-туннелей."
+				"и подключен через одну линию контроллера, как указано выше."
+				" "
+				"● Один закрытый кабель может затем передавать все восемь"
+				"эти P2P-туннели ведут в удаленное место на вашей базе."
+				""
+				"● Каждый из этих P2P-туннелей будет передавать 32 канала в течение"
+				"всего 256 каналов, и все они передаются по"
+				"одиночный кабель с покрытием."
+				" "
+				"Чтобы сделать то же самое без P2P, потребуется проложить восемь отдельных кабелей Dense Cable до одного и того же удаленного места."
+			]
+			icon: "ae2:me_p2p_tunnel"
+			id: "78F157F1561D932F"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "05BD8A1423C36C57"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4F3701C0B742470B"
+					item: "ae2:me_p2p_tunnel"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "ae2:memory_card"
+						tag: { }
+					}
+					id: "797A4938CFEFE5F4"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:memory_cards"
+						}
+					}
+					title: "Memory Cards"
+					type: "item"
+				}
+			]
+			title: "ME P2P Tunnels"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"Сам крафтовый процессор представляет собой кубовидный мультиблок, состоящий из крафтовых юнитов, крафтового хранилища и, опционально, крафтовых юнитов совместной обработки."
+				""
+				"Сами крафтовые единицы представляют собой строго блоки-заполнители, используемые для завершения требуемой кубовидной формы в случае, если дополнительное хранилище либо недоступно, либо нежелательно."
+				""
+				"Хранилище крафта определяет, насколько большой корабль может быть обработан этим процессором. Для глубоко вложенных проектов с множеством шагов потребуются более крупные процессоры, чтобы вместить все."
+				""
+				"Создание модулей совместной обработки позволяет процессору выполнять распараллеливание, при условии, что сеть настроена на это. Это означает либо размещение одного и того же шаблона в нескольких поставщиках шаблонов, подключенных к разным машинам, либо подключение нескольких молекулярных ассемблеров к одному поставщику шаблонов."
+				""
+				"Каждый ремесленный процессор способен выполнять одну ремесленную задачу от начала до конца. Это может включать в себя несколько шагов, например, превращение бревен в доски, затем из досок в палки и, наконец, превращение этих палок в инструмент."
+			]
+			id: "7E5425AD75D67C77"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "328112AEC0ACFA08"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					icon: "ae2:1k_crafting_storage"
+					id: "00BE39BD462DCEB9"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:crafting_unit"
+								}
+								{
+									Count: 1b
+									id: "ae2:1k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:4k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:16k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:64k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:256k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:crafting_accelerator"
+								}
+							]
+						}
+					}
+					title: "Crafting CPU"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"В то время как процессор крафта управляет ремеслом, поставщики выкроек отвечают за выдачу предметов и возврат результатов обратно в систему."
+				""
+				"Для базового крафта в стиле крафт-стола поставщику шаблонов требуется один или несколько соседних молекулярных ассемблеров, подключенных к нему. Сборщики получат входные данные и шаблон от поставщика шаблонов, а затем автоматически отправят результат обратно поставщику шаблонов после завершения. Молекулярные ассемблеры также способны автоматизировать кузнечный стол и камнерез. Процесс идентичен базовым рецептам крафта."
+				""
+				"Для ремесел с участием других машин, также известных как «Шаблоны обработки», Поставщик шаблонов должен быть размещен рядом с машиной с правильной стороны. Например, автоматизация обычной печи потребует установки поставщика шаблонов сверху печи и потребует чего-то, например бункера, для извлечения результата снизу и возврата его через поставщика шаблонов."
+				""
+				"Во многих случаях проще всего использовать другие логистические моды для ручного распределения входных данных и получения выходных данных, но это упражнение, которое вам предстоит решить."
+				""
+				"Такие машины, как Mekanism или Thermal, которые могут выдвигать обратно ту же сторону, на которой они получили предметы, поэтому гораздо проще автоматизировать, поскольку все, что необходимо, — это один поставщик шаблонов."
+			]
+			icon: "ae2:molecular_assembler"
+			id: "67DC697DC3116C61"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "19C4E8870DEE24D3"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "155CF4EBC1624BC5"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					id: "741963BCF3511107"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+			]
+			title: "Crafting"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: [
+				"Плоскости формирования и уничтожения, исключительно полезные для задач автоматизации, позволяют размещать и разрушать блоки соответственно. Их также можно настроить на то, чтобы бросать или поднимать предметы."
+				""
+				"Однако Плоскость Формирования не будет извлекаться из сети. Вместо этого элементы размещаются по мере их поступления в систему. Это означает, что во многих случаях необходимо будет построить отдельную сеть или подсеть, чтобы в полной мере использовать плоскость формирования. Он может состоять всего лишь из контроллера или приемника энергии для питания, интерфейса, кабеля и плоскости формирования. Любые предметы, отправленные в интерфейс, будут немедленно размещены."
+				""
+				"Самолет Аннигиляции будет немедленно работать над любым блоком перед ним. Его также можно зачаровать Фортуной или Шелковым прикосновением, чтобы он мог эффективно обрабатывать такие вещи, как скопления цертусового кварца или лед. Однако его нельзя отфильтровать напрямую. Чтобы отфильтровать то, что оно ломает, необходима Подсеть с фильтруемым хранилищем, которая пропускает в систему только нужный блок. Например, при работе с Certus Quartz, чтобы гарантировать, что он разрушает только полный кластер Certus Quartz, в подсети должно быть отфильтрованное хранилище, которое принимает только кристаллы Certus Quartz. Достаточно отфильтрованной шины хранения, направленной в сундук."
+			]
+			id: "4BD11D2FEB20CA76"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "255A9411D3B4D8FC"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "46017C60DD0D02F9"
+					item: "ae2:annihilation_plane"
+					type: "item"
+				}
+				{
+					id: "6D8DF3C5F4C0F25C"
+					item: "ae2:formation_plane"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: ["Там, где интерфейс пассивно принимает или предоставляет материалы, шины импорта и экспорта активно их подталкивают и вытягивают. Установите экспортную шину для резервуара и настройте ее для экспорта воды, чтобы резервуар оставался заполненным, или установите импортную шину для резервуара с водородом, чтобы импортировать ее в хранилище."]
+			id: "380710CC9E988E6E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "4523DC97AA9D7388"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1F4B3425D2AED786"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+				{
+					id: "51DFC730611E90FE"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+			]
+			title: "ME Import/Export bus"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: ["Интерфейс ME позволяет как вводить, так и извлекать материал из системы ME в одном блоке. Любой материал, вставленный в Интерфейс, мгновенно переносится в доступное хранилище в Сети. При желании его можно настроить на поставку до девяти материалов, что делает их доступными для труб из других модов для извлечения их из системы."]
+			id: "45FD47C73C76D9EB"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "15C35DA822BB37E1"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "698BD2581B49FE93"
+					item: "ae2:interface"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: [
+				"Quantum Network Bridge — это мультиблок, позволяющий расширять сеть по беспроводной сети и в разных измерениях. Он состоит из кольца из восьми блоков Квантового Кольца МЕ, окружающего центральную Камеру Квантовой Связи МЕ, и может быть построен как вертикально, так и горизонтально."
+				""
+				"Для функционирования мультиблока необходимы две такие структуры, и в каждый конец должна быть помещена пара квантовых запутанных особенностей. Удаленная сторона также должна быть обеспечена питанием для ее запуска."
+				""
+				"После создания обе стороны сети кажутся одинаковыми. Однако обязательно загружайте обе стороны частями."
+				""
+				"{\"text\":\"AE2 Wiki: Quantum Bridge\",\"color\":\"blue\",\"подчеркнуто\":\"true\",\"clickEvent\":{\" action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/quantum-bridge\"}}"
+			]
+			icon: "ae2:quantum_entangled_singularity"
+			id: "03662FB8C114E255"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7201CC8D7142B3D1"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1386C9EFE6AF9CF1"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "207D87975B1F6F7B"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "67B8DB06E27CB172"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+			]
+			title: "Quantum Network Bridge"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7FB8B3BF03A89410"]
+			description: [
+				"Мониторы хранения позволяют получить окно в Сеть, отображающее общее количество данного предмета."
+				""
+				"Мониторы конверсий расширяют эту функциональность, позволяя игроку вставлять и извлекать эти элементы, просто щелкнув их правой кнопкой мыши."
+			]
+			id: "4A481FE223072D06"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "520888C8211BEEC9"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "757E4B8921A9764C"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:storage_monitor"
+								}
+								{
+									Count: 1b
+									id: "ae2:conversion_monitor"
+								}
+							]
+						}
+					}
+					title: "Storage and Conversion Monitors"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"Поставщики шаблонов иногда могут оказаться спрятанными в труднодоступных местах. Терминал доступа к шаблонам предоставляет удаленный доступ к каждому провайдеру в сети, позволяя легко устанавливать новые шаблоны из одного места."
+				""
+				"Поставщики шаблонов автоматически наследуют имя блока, к которому они прикреплены, однако, если по организационным причинам требуется собственное имя, их можно переименовать на наковальне."
+				""
+				"Отдельные поставщики шаблонов можно скрыть от терминала, переключив кнопку терминала доступа к шаблонам в графическом интерфейсе."
+			]
+			id: "7DC10A42E9E03052"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7C383955F6661648"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "332A01187B9AAEC5"
+					item: "ae2:pattern_access_terminal"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: [
+				"Одноранговые сети состоят из приемника энергии, некоторого количества кабеля и до восьми каналов. Если используется более восьми каналов, вся сеть отключится."
+				""
+				"Ограничение канала может быть довольно строгим, но учтите, что одна шина хранения данных ME может использоваться с контроллером хранения данных из функционального хранилища или сложного хранилища; Таким образом, небольшая одноранговая сеть может обеспечить централизованный доступ к очень большому объему хранилища, что делает это отличным способом организовать работу на раннем этапе."
+			]
+			hide_dependency_lines: true
+			id: "7346C9F69D3927FF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "5AF2CC718C7B645A"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "48D6E5FE2CD4FC03"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+			]
+			title: "Ad Hoc Networks"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: [
+				"Автоматизация сбора Certus Quartz станет одной из основных задач на пути к AE2, поскольку Certus Quartz будет пользоваться большим спросом."
+				""
+				"Существует несколько вариантов автоматического сбора урожая, в том числе аметистовые големы от Ars Nouveau."
+			]
+			id: "23B703D29164C39A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "78266754B7850F70"
+					title: "Miner's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "283AEFC457EF26C8"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["78F2C89B4BDC3518"]
+			description: [
+				"Смарт-кабели и плотные смарт-кабели функционируют так же, как и их аналоги с закрытым кабелем, с одним дополнением; они отображают количество используемых на их стороне каналов."
+				""
+				"Примечание. Кабели Smart и покрытые кабели одного типа и цвета подключаются друг к другу, поэтому нет необходимости прокладывать смарт-кабели большой длины. Вместо этого рассмотрите возможность использования одного из них в начальной точке линии и продолжения использования покрытых кабелей оттуда. Это позволяет легко определить количество используемых каналов на всей линии."
+			]
+			id: "066690B512F54C08"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "09CFB74977302E69"
+					title: "Rare Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1D45B4425C813E2F"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:fluix_smart_cable"
+								}
+								{
+									Count: 1b
+									id: "ae2:fluix_smart_dense_cable"
+								}
+							]
+						}
+					}
+					title: "Smart Cables"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["78F157F1561D932F"]
+			description: [
+				"Однако P2P можно использовать не только для каналов передачи, позволяя транспортировать по сети на большие расстояния многие материалы, которые вскоре будут пересекать вашу базу."
+				""
+				"Чтобы настроить P2P-туннель для данного типа передачи, поместите обычный ME P2P-туннель, затем щелкните его правой кнопкой мыши с помощью элемента настройки. Например, для энергетического туннеля это будет почти любой элемент, совместимый с FE. Элемент не используется, и в JEI отображаются все допустимые параметры для каждого типа туннеля."
+				""
+				"Помимо обеспечения более аккуратной прокладки кабелей через базу, каналы P2P имеют практически безграничную пропускную способность и не требуют времени в пути; предметы, вставленные в один конец, немедленно выходят из другого конца."
+				""
+				"Хотя туннели ME P2P не могут быть вложенными, другие типы туннелей P2P могут передаваться через соединение туннеля ME P2P."
+			]
+			id: "0F0C0C200A524CBF"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "165D78BF236C3E68"
+					title: "Epic Applied Energistics Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "35D05AF6D564F15D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "appmek:chemical_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:fluid_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:item_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:fe_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:me_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:redstone_p2p_tunnel"
+								}
+								{
+									Count: 1b
+									id: "ae2:light_p2p_tunnel"
+								}
+							]
+						}
+					}
+					title: "Other P2P Tunnels"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Applied Energistics выводит хранение и логистику на новый уровень. Сам по себе он способен автоматизировать многие поделки, а также предоставлять решения для глубокого хранения и возможности для объединения многих модов."
+				""
+				"Для начала потребуется найти немного Certus Quartz, а это потребует небольшого исследования. Берите ботинки, пора выходить."
+				""
+				"{\"текст\": \"AE2 Wiki\", \"цвет\": \"синий\", \"подчёркнутый\": \"истина\", \"clickEvent\":{\"action\" :\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"}}"
+			]
+			hide: true
+			icon: "ae2:singularity"
+			id: "0097F2FB87804251"
+			rewards: [
+				{
+					id: "2111D1788D713E16"
+					item: "ae2:certus_quartz_wrench"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					icon: "ae2:certus_quartz_crystal"
+					id: "04533E87C2D77F38"
+					item: "ae2:certus_quartz_crystal"
+					title: "Applied Energistics 2"
+					type: "item"
+				}
+			]
+			title: "Applied Energistics 2"
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "Applied Energistics 2"
+}
